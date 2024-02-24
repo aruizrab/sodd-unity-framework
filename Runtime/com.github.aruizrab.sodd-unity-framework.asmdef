@@ -1,0 +1,14 @@
+{
+    "name": "com.github.aruizrab.sodd-unity-framework",
+    "rootNamespace": "SODD",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
