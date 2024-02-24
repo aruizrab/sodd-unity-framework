@@ -1,0 +1,46 @@
+name: Unity CI
+
+on: [pull_request]
+
+jobs:
+  test:
+    name: Run Unity Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Cache Library Folder
+        uses: actions/cache@v2
+        with:
+          path: Library
+          key: Library-${{ hashFiles('**/ProjectSettings/ProjectVersion.txt') }}
+          restore-keys: |
+            Library-
+
+      - name: Setup Unity
+        uses: game-ci/unity-action@v2
+        with:
+          unityVersion: '2021.3.20f1'
+
+      - name: Run Playmode Tests
+        run: unity -runTests -projectPath . -testResults /test-results/playmode-results.xml -testPlatform playmode
+        continue-on-error: false
+
+      - name: Upload Playmode Test Results
+        uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: Playmode Test Results
+          path: /test-results/playmode-results.xml
+
+      - name: Run Editmode Tests
+        run: unity -runTests -projectPath . -testResults /test-results/editmode-results.xml -testPlatform editmode
+        continue-on-error: false
+
+      - name: Upload Editmode Test Results
+        uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: Editmode Test Results
+          path: /test-results/editmode-results.xml
