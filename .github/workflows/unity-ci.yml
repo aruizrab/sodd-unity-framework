@@ -27,4 +27,4 @@ jobs:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           packageMode: true
           unityVersion: 2022.3
-          projectPath: ./copiedProject/com.github.aruizrab.sodd-unity-framework
+          projectPath: ./copiedProject/sodd-unity-framework
