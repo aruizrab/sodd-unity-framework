@@ -1,2 +1,2 @@
 # sodd-unity-framework
-A ScriptableObject Driven Development (SODD) Framework for Unity
+A ScriptableObject Driven Development (SODD) Framework for Unity.
