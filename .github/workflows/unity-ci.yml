@@ -17,7 +17,7 @@ jobs:
           ls -F "copiedProject/$folderName"
 
       - name: Run tests
-        id: tests
+        id: runTests
         uses: game-ci/unity-test-runner@v4
         env:
             UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
@@ -36,11 +36,11 @@ jobs:
         if: always()
         with:
           name: Test results
-          path: ${{ steps.tests.outputs.artifactsPath }}
+          path: artifacts
 
       - name: Upload test coverage
         uses: actions/upload-artifact@v3
         if: always()
         with:
           name: Coverage results
-          path: ${{ steps.tests.outputs.coveragePath }}
+          path: ${{ steps.runTests.outputs.coveragePath }}
