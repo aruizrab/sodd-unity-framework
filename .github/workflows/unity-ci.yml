@@ -24,7 +24,7 @@ jobs:
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           projectPath: ./copiedProject/sodd-unity-framework
-          unityVersion: "2023.2.10f1"
+          unityVersion: "2023.1.8f1"
           testMode: all
           coverageOptions: 'generateAdditionalMetrics;generateHtmlReport;generateBadgeReport;assemblyFilters:+trudeaua.EasyAccessibility.*,-*Tests*'
           packageMode: true
