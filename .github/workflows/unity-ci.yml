@@ -7,9 +7,29 @@ jobs:
     name: Run Unity Tests
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
 
       - name: Unity - Test runner
         uses: game-ci/unity-test-runner@v4.1.1
-        
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+
+  build: 
+    needs: test
+    name: Build Package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.1
+
+      - name: Build project
+        uses: game-ci/unity-builder@v4
+        with:
+          targetPlatform: StandaloneWindows64
+          allowDirtyBuild: true
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: Build
+          path: build
