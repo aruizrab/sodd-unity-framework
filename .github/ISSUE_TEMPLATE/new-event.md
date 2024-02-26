@@ -9,7 +9,13 @@ assignees: aruizrab
 
 Create an event that handles [type] payloads.
 
-- [ ] SO Implementation
+*Event:*
+- [ ] Implementation
 - [ ] Editor script
+- [ ] Menu action
+- [ ] Tests
+
+*Event Listener:*
+- [ ] Implementation
 - [ ] Menu action
 - [ ] Tests
