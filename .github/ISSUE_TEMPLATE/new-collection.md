@@ -2,7 +2,7 @@
 name: New Collection
 about: Template for creating a new scriptable collection.
 title: "[Type] Collection"
-labels: enhancement
+labels: enhancement, scriptable collection
 assignees: aruizrab
 
 ---
