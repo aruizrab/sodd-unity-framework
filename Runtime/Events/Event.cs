@@ -39,12 +39,12 @@ namespace SODD.Events
     {
 #if UNITY_EDITOR
         [SerializeField] 
-        [Tooltip("Payload to send when invoking this event from the inspector.")]
-        private T payload;
+        [Tooltip("The payload value to be sent when this event is triggered from the inspector panel.")]
+        public T payload;
 
         [SerializeField] 
-        [Tooltip("Log the invocations of this event.")]
-        private bool debug;
+        [Tooltip("Enable this setting to log the invocations of this event in the console.")]
+        public bool debug;
 #endif
         
         /// <inheritdoc />
