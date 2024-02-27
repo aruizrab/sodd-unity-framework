@@ -124,3 +124,7 @@ $RECYCLE.BIN/
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+
+# Temporary generated diff file for AI-based commit message generation purposes
+.diff
+.diff.meta
