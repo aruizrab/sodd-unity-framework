@@ -14,11 +14,164 @@
       }
     },
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Editor.Events.EventEditor-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Editor.Events.EventEditor-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Editor.Events.IntEventEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Editor.Events.IntEventEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Editor.Events.IntEventMenu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Editor.Events.IntEventMenu.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Editor.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Editor.Events.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Events.Event-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Events.Event-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Events.IEvent-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Events.IEvent-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Events.IntEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Events.IntEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Events.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Listeners.EventListener-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Listeners.EventListener-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Listeners.IEventListener-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Listeners.IEventListener-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Listeners.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Listeners.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Tests.Runtime.Events.EventTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Tests.Runtime.Events.EventTest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Tests.Runtime.Events.IntEventTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Tests.Runtime.Events.IntEventTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Tests.Runtime.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Tests.Runtime.Events.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
           "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
         }
       },
       "version": ""
