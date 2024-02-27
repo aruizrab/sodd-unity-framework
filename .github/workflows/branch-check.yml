@@ -1,0 +1,19 @@
+name: Branch Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-branch-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if PR is from 'develop' to 'main'
+        run: |
+          if [[ "${{ github.head_ref }}" != "develop" ]]; then
+            echo "Error: Pull requests to 'main' must originate from 'develop'."
+            exit 1
+          else
+            echo "Check passed: PR is from 'develop' to 'main'."
+          fi
