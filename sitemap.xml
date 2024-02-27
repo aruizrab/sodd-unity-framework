@@ -1,110 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Editor.Events.EventEditor-1.html</loc>
-    <lastmod>2024-02-27T06:49:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Editor.Events.IntEventEditor.html</loc>
-    <lastmod>2024-02-27T06:49:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Editor.Events.IntEventMenu.html</loc>
-    <lastmod>2024-02-27T06:49:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Editor.Events.html</loc>
-    <lastmod>2024-02-27T06:49:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Events.Event-1.html</loc>
-    <lastmod>2024-02-27T06:49:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Events.IEvent-1.html</loc>
-    <lastmod>2024-02-27T06:49:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Events.IntEvent.html</loc>
-    <lastmod>2024-02-27T06:49:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Events.html</loc>
-    <lastmod>2024-02-27T06:49:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Listeners.EventListener-1.html</loc>
-    <lastmod>2024-02-27T06:49:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Listeners.IEventListener-1.html</loc>
-    <lastmod>2024-02-27T06:49:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Listeners.html</loc>
-    <lastmod>2024-02-27T06:49:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Tests.Runtime.Events.EventTest.html</loc>
-    <lastmod>2024-02-27T06:49:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Tests.Runtime.Events.IntEventTests.html</loc>
-    <lastmod>2024-02-27T06:49:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Tests.Runtime.Events.html</loc>
-    <lastmod>2024-02-27T06:49:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/index.html</loc>
-    <lastmod>2024-02-27T06:49:57+00:00</lastmod>
+    <lastmod>2024-02-27T06:55:31+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/index.html</loc>
-    <lastmod>2024-02-27T06:49:57+00:00</lastmod>
+    <lastmod>2024-02-27T06:55:31+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/license/LICENSE.html</loc>
-    <lastmod>2024-02-27T06:49:57+00:00</lastmod>
+    <lastmod>2024-02-27T06:55:31+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/manual/index.html</loc>
-    <lastmod>2024-02-27T06:49:57+00:00</lastmod>
+    <lastmod>2024-02-27T06:55:31+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
