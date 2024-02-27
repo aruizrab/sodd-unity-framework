@@ -3,7 +3,7 @@ using SODD.Events;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Tests.Runtime.Events
+namespace SODD.Tests.Runtime.Events
 {
     public class EventTest
     {

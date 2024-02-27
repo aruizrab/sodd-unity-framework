@@ -20,7 +20,7 @@ namespace SODD.Events
     ///     </para>
     ///     <para>
     ///         To create custom scriptable events, inherit from this class and specify the
-    ///         payload type <c>T</c>, it can be any valid Unity type (e.g., int, string, GameObject, etc.).
+    ///         payload type <typeparamref name="T" />, it can be any valid Unity type (e.g., int, string, GameObject, etc.).
     ///         Then, in your derived classes, you can override the necessary methods (if needed) and add more properties
     ///         or methods that are specific to your requirements. However, the base
     ///         <see cref="Event{T}.AddListener">AddListener</see>,
@@ -29,7 +29,7 @@ namespace SODD.Events
     ///     </para>
     /// </remarks>
     /// <example>
-    ///     For example, a StringEvent implementation would look like this:
+    ///     A StringEvent implementation would look like this:
     ///     <code>
     ///         public class StringEvent : Event&lt;string&gt; {}
     ///     </code>
