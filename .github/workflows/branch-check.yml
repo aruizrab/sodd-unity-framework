@@ -1,19 +1,17 @@
 name: Branch Check
 
-on:
-  pull_request:
-    branches:
-      - main
+on: pull_request
 
 jobs:
   check-branch-name:
     runs-on: ubuntu-latest
     steps:
-      - name: Check if PR is from 'develop' to 'main'
+      - name: Check target and source branches
         run: |
-          if [[ "${{ github.head_ref }}" != "develop" ]]; then
-            echo "Error: Pull requests to 'main' must originate from 'develop'."
+          echo "Target branch: ${{ github.base_ref }}"
+          echo "Source branch: ${{ github.head_ref }}"
+          if [[ "${{ github.base_ref }}" == "main" && "${{ github.head_ref }}" != "develop" ]]; then
+            echo "::error::Pull requests to 'main' must originate from 'develop'."
             exit 1
           else
-            echo "Check passed: PR is from 'develop' to 'main'."
-          fi
+            echo "Check passed or PR is not targeting 'main'."
