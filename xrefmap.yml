@@ -1,3 +1,362 @@
 ### YamlMime:XRefMap
 sorted: true
-references: []
+references:
+- uid: SODD.Editor.Events
+  name: SODD.Editor.Events
+  href: api/SODD.Editor.Events.html
+  commentId: N:SODD.Editor.Events
+  fullName: SODD.Editor.Events
+  nameWithType: SODD.Editor.Events
+- uid: SODD.Editor.Events.EventEditor`1
+  name: EventEditor<T>
+  href: api/SODD.Editor.Events.EventEditor-1.html
+  commentId: T:SODD.Editor.Events.EventEditor`1
+  name.vb: EventEditor(Of T)
+  fullName: SODD.Editor.Events.EventEditor<T>
+  fullName.vb: SODD.Editor.Events.EventEditor(Of T)
+  nameWithType: EventEditor<T>
+  nameWithType.vb: EventEditor(Of T)
+- uid: SODD.Editor.Events.EventEditor`1.OnInspectorGUI
+  name: OnInspectorGUI()
+  href: api/SODD.Editor.Events.EventEditor-1.html#SODD_Editor_Events_EventEditor_1_OnInspectorGUI
+  commentId: M:SODD.Editor.Events.EventEditor`1.OnInspectorGUI
+  fullName: SODD.Editor.Events.EventEditor<T>.OnInspectorGUI()
+  fullName.vb: SODD.Editor.Events.EventEditor(Of T).OnInspectorGUI()
+  nameWithType: EventEditor<T>.OnInspectorGUI()
+  nameWithType.vb: EventEditor(Of T).OnInspectorGUI()
+- uid: SODD.Editor.Events.EventEditor`1.OnInspectorGUI*
+  name: OnInspectorGUI
+  href: api/SODD.Editor.Events.EventEditor-1.html#SODD_Editor_Events_EventEditor_1_OnInspectorGUI_
+  commentId: Overload:SODD.Editor.Events.EventEditor`1.OnInspectorGUI
+  isSpec: "True"
+  fullName: SODD.Editor.Events.EventEditor<T>.OnInspectorGUI
+  fullName.vb: SODD.Editor.Events.EventEditor(Of T).OnInspectorGUI
+  nameWithType: EventEditor<T>.OnInspectorGUI
+  nameWithType.vb: EventEditor(Of T).OnInspectorGUI
+- uid: SODD.Events
+  name: SODD.Events
+  href: api/SODD.Events.html
+  commentId: N:SODD.Events
+  fullName: SODD.Events
+  nameWithType: SODD.Events
+- uid: SODD.Events.Event`1
+  name: Event<T>
+  href: api/SODD.Events.Event-1.html
+  commentId: T:SODD.Events.Event`1
+  name.vb: Event(Of T)
+  fullName: SODD.Events.Event<T>
+  fullName.vb: SODD.Events.Event(Of T)
+  nameWithType: Event<T>
+  nameWithType.vb: Event(Of T)
+- uid: SODD.Events.Event`1.AddListener(System.Action{`0})
+  name: AddListener(Action<T>)
+  href: api/SODD.Events.Event-1.html#SODD_Events_Event_1_AddListener_System_Action__0__
+  commentId: M:SODD.Events.Event`1.AddListener(System.Action{`0})
+  name.vb: AddListener(Action(Of T))
+  fullName: SODD.Events.Event<T>.AddListener(System.Action<T>)
+  fullName.vb: SODD.Events.Event(Of T).AddListener(System.Action(Of T))
+  nameWithType: Event<T>.AddListener(Action<T>)
+  nameWithType.vb: Event(Of T).AddListener(Action(Of T))
+- uid: SODD.Events.Event`1.AddListener*
+  name: AddListener
+  href: api/SODD.Events.Event-1.html#SODD_Events_Event_1_AddListener_
+  commentId: Overload:SODD.Events.Event`1.AddListener
+  isSpec: "True"
+  fullName: SODD.Events.Event<T>.AddListener
+  fullName.vb: SODD.Events.Event(Of T).AddListener
+  nameWithType: Event<T>.AddListener
+  nameWithType.vb: Event(Of T).AddListener
+- uid: SODD.Events.Event`1.Invoke(`0)
+  name: Invoke(T)
+  href: api/SODD.Events.Event-1.html#SODD_Events_Event_1_Invoke__0_
+  commentId: M:SODD.Events.Event`1.Invoke(`0)
+  fullName: SODD.Events.Event<T>.Invoke(T)
+  fullName.vb: SODD.Events.Event(Of T).Invoke(T)
+  nameWithType: Event<T>.Invoke(T)
+  nameWithType.vb: Event(Of T).Invoke(T)
+- uid: SODD.Events.Event`1.Invoke*
+  name: Invoke
+  href: api/SODD.Events.Event-1.html#SODD_Events_Event_1_Invoke_
+  commentId: Overload:SODD.Events.Event`1.Invoke
+  isSpec: "True"
+  fullName: SODD.Events.Event<T>.Invoke
+  fullName.vb: SODD.Events.Event(Of T).Invoke
+  nameWithType: Event<T>.Invoke
+  nameWithType.vb: Event(Of T).Invoke
+- uid: SODD.Events.Event`1.RemoveListener(System.Action{`0})
+  name: RemoveListener(Action<T>)
+  href: api/SODD.Events.Event-1.html#SODD_Events_Event_1_RemoveListener_System_Action__0__
+  commentId: M:SODD.Events.Event`1.RemoveListener(System.Action{`0})
+  name.vb: RemoveListener(Action(Of T))
+  fullName: SODD.Events.Event<T>.RemoveListener(System.Action<T>)
+  fullName.vb: SODD.Events.Event(Of T).RemoveListener(System.Action(Of T))
+  nameWithType: Event<T>.RemoveListener(Action<T>)
+  nameWithType.vb: Event(Of T).RemoveListener(Action(Of T))
+- uid: SODD.Events.Event`1.RemoveListener*
+  name: RemoveListener
+  href: api/SODD.Events.Event-1.html#SODD_Events_Event_1_RemoveListener_
+  commentId: Overload:SODD.Events.Event`1.RemoveListener
+  isSpec: "True"
+  fullName: SODD.Events.Event<T>.RemoveListener
+  fullName.vb: SODD.Events.Event(Of T).RemoveListener
+  nameWithType: Event<T>.RemoveListener
+  nameWithType.vb: Event(Of T).RemoveListener
+- uid: SODD.Events.IEvent`1
+  name: IEvent<T>
+  href: api/SODD.Events.IEvent-1.html
+  commentId: T:SODD.Events.IEvent`1
+  name.vb: IEvent(Of T)
+  fullName: SODD.Events.IEvent<T>
+  fullName.vb: SODD.Events.IEvent(Of T)
+  nameWithType: IEvent<T>
+  nameWithType.vb: IEvent(Of T)
+- uid: SODD.Events.IEvent`1.AddListener(System.Action{`0})
+  name: AddListener(Action<T>)
+  href: api/SODD.Events.IEvent-1.html#SODD_Events_IEvent_1_AddListener_System_Action__0__
+  commentId: M:SODD.Events.IEvent`1.AddListener(System.Action{`0})
+  name.vb: AddListener(Action(Of T))
+  fullName: SODD.Events.IEvent<T>.AddListener(System.Action<T>)
+  fullName.vb: SODD.Events.IEvent(Of T).AddListener(System.Action(Of T))
+  nameWithType: IEvent<T>.AddListener(Action<T>)
+  nameWithType.vb: IEvent(Of T).AddListener(Action(Of T))
+- uid: SODD.Events.IEvent`1.AddListener*
+  name: AddListener
+  href: api/SODD.Events.IEvent-1.html#SODD_Events_IEvent_1_AddListener_
+  commentId: Overload:SODD.Events.IEvent`1.AddListener
+  isSpec: "True"
+  fullName: SODD.Events.IEvent<T>.AddListener
+  fullName.vb: SODD.Events.IEvent(Of T).AddListener
+  nameWithType: IEvent<T>.AddListener
+  nameWithType.vb: IEvent(Of T).AddListener
+- uid: SODD.Events.IEvent`1.Invoke(`0)
+  name: Invoke(T)
+  href: api/SODD.Events.IEvent-1.html#SODD_Events_IEvent_1_Invoke__0_
+  commentId: M:SODD.Events.IEvent`1.Invoke(`0)
+  fullName: SODD.Events.IEvent<T>.Invoke(T)
+  fullName.vb: SODD.Events.IEvent(Of T).Invoke(T)
+  nameWithType: IEvent<T>.Invoke(T)
+  nameWithType.vb: IEvent(Of T).Invoke(T)
+- uid: SODD.Events.IEvent`1.Invoke*
+  name: Invoke
+  href: api/SODD.Events.IEvent-1.html#SODD_Events_IEvent_1_Invoke_
+  commentId: Overload:SODD.Events.IEvent`1.Invoke
+  isSpec: "True"
+  fullName: SODD.Events.IEvent<T>.Invoke
+  fullName.vb: SODD.Events.IEvent(Of T).Invoke
+  nameWithType: IEvent<T>.Invoke
+  nameWithType.vb: IEvent(Of T).Invoke
+- uid: SODD.Events.IEvent`1.RemoveListener(System.Action{`0})
+  name: RemoveListener(Action<T>)
+  href: api/SODD.Events.IEvent-1.html#SODD_Events_IEvent_1_RemoveListener_System_Action__0__
+  commentId: M:SODD.Events.IEvent`1.RemoveListener(System.Action{`0})
+  name.vb: RemoveListener(Action(Of T))
+  fullName: SODD.Events.IEvent<T>.RemoveListener(System.Action<T>)
+  fullName.vb: SODD.Events.IEvent(Of T).RemoveListener(System.Action(Of T))
+  nameWithType: IEvent<T>.RemoveListener(Action<T>)
+  nameWithType.vb: IEvent(Of T).RemoveListener(Action(Of T))
+- uid: SODD.Events.IEvent`1.RemoveListener*
+  name: RemoveListener
+  href: api/SODD.Events.IEvent-1.html#SODD_Events_IEvent_1_RemoveListener_
+  commentId: Overload:SODD.Events.IEvent`1.RemoveListener
+  isSpec: "True"
+  fullName: SODD.Events.IEvent<T>.RemoveListener
+  fullName.vb: SODD.Events.IEvent(Of T).RemoveListener
+  nameWithType: IEvent<T>.RemoveListener
+  nameWithType.vb: IEvent(Of T).RemoveListener
+- uid: SODD.Listeners
+  name: SODD.Listeners
+  href: api/SODD.Listeners.html
+  commentId: N:SODD.Listeners
+  fullName: SODD.Listeners
+  nameWithType: SODD.Listeners
+- uid: SODD.Listeners.EventListener`1
+  name: EventListener<T>
+  href: api/SODD.Listeners.EventListener-1.html
+  commentId: T:SODD.Listeners.EventListener`1
+  name.vb: EventListener(Of T)
+  fullName: SODD.Listeners.EventListener<T>
+  fullName.vb: SODD.Listeners.EventListener(Of T)
+  nameWithType: EventListener<T>
+  nameWithType.vb: EventListener(Of T)
+- uid: SODD.Listeners.EventListener`1.OnEventInvoked(`0)
+  name: OnEventInvoked(T)
+  href: api/SODD.Listeners.EventListener-1.html#SODD_Listeners_EventListener_1_OnEventInvoked__0_
+  commentId: M:SODD.Listeners.EventListener`1.OnEventInvoked(`0)
+  fullName: SODD.Listeners.EventListener<T>.OnEventInvoked(T)
+  fullName.vb: SODD.Listeners.EventListener(Of T).OnEventInvoked(T)
+  nameWithType: EventListener<T>.OnEventInvoked(T)
+  nameWithType.vb: EventListener(Of T).OnEventInvoked(T)
+- uid: SODD.Listeners.EventListener`1.OnEventInvoked*
+  name: OnEventInvoked
+  href: api/SODD.Listeners.EventListener-1.html#SODD_Listeners_EventListener_1_OnEventInvoked_
+  commentId: Overload:SODD.Listeners.EventListener`1.OnEventInvoked
+  isSpec: "True"
+  fullName: SODD.Listeners.EventListener<T>.OnEventInvoked
+  fullName.vb: SODD.Listeners.EventListener(Of T).OnEventInvoked
+  nameWithType: EventListener<T>.OnEventInvoked
+  nameWithType.vb: EventListener(Of T).OnEventInvoked
+- uid: SODD.Listeners.EventListener`1.StartListening(SODD.Events.IEvent{`0})
+  name: StartListening(IEvent<T>)
+  href: api/SODD.Listeners.EventListener-1.html#SODD_Listeners_EventListener_1_StartListening_SODD_Events_IEvent__0__
+  commentId: M:SODD.Listeners.EventListener`1.StartListening(SODD.Events.IEvent{`0})
+  name.vb: StartListening(IEvent(Of T))
+  fullName: SODD.Listeners.EventListener<T>.StartListening(SODD.Events.IEvent<T>)
+  fullName.vb: SODD.Listeners.EventListener(Of T).StartListening(SODD.Events.IEvent(Of T))
+  nameWithType: EventListener<T>.StartListening(IEvent<T>)
+  nameWithType.vb: EventListener(Of T).StartListening(IEvent(Of T))
+- uid: SODD.Listeners.EventListener`1.StartListening*
+  name: StartListening
+  href: api/SODD.Listeners.EventListener-1.html#SODD_Listeners_EventListener_1_StartListening_
+  commentId: Overload:SODD.Listeners.EventListener`1.StartListening
+  isSpec: "True"
+  fullName: SODD.Listeners.EventListener<T>.StartListening
+  fullName.vb: SODD.Listeners.EventListener(Of T).StartListening
+  nameWithType: EventListener<T>.StartListening
+  nameWithType.vb: EventListener(Of T).StartListening
+- uid: SODD.Listeners.EventListener`1.StopListening(SODD.Events.IEvent{`0})
+  name: StopListening(IEvent<T>)
+  href: api/SODD.Listeners.EventListener-1.html#SODD_Listeners_EventListener_1_StopListening_SODD_Events_IEvent__0__
+  commentId: M:SODD.Listeners.EventListener`1.StopListening(SODD.Events.IEvent{`0})
+  name.vb: StopListening(IEvent(Of T))
+  fullName: SODD.Listeners.EventListener<T>.StopListening(SODD.Events.IEvent<T>)
+  fullName.vb: SODD.Listeners.EventListener(Of T).StopListening(SODD.Events.IEvent(Of T))
+  nameWithType: EventListener<T>.StopListening(IEvent<T>)
+  nameWithType.vb: EventListener(Of T).StopListening(IEvent(Of T))
+- uid: SODD.Listeners.EventListener`1.StopListening*
+  name: StopListening
+  href: api/SODD.Listeners.EventListener-1.html#SODD_Listeners_EventListener_1_StopListening_
+  commentId: Overload:SODD.Listeners.EventListener`1.StopListening
+  isSpec: "True"
+  fullName: SODD.Listeners.EventListener<T>.StopListening
+  fullName.vb: SODD.Listeners.EventListener(Of T).StopListening
+  nameWithType: EventListener<T>.StopListening
+  nameWithType.vb: EventListener(Of T).StopListening
+- uid: SODD.Listeners.EventListener`1.onEventInvoked
+  name: onEventInvoked
+  href: api/SODD.Listeners.EventListener-1.html#SODD_Listeners_EventListener_1_onEventInvoked
+  commentId: F:SODD.Listeners.EventListener`1.onEventInvoked
+  fullName: SODD.Listeners.EventListener<T>.onEventInvoked
+  fullName.vb: SODD.Listeners.EventListener(Of T).onEventInvoked
+  nameWithType: EventListener<T>.onEventInvoked
+  nameWithType.vb: EventListener(Of T).onEventInvoked
+- uid: SODD.Listeners.EventListener`1.targetEvent
+  name: targetEvent
+  href: api/SODD.Listeners.EventListener-1.html#SODD_Listeners_EventListener_1_targetEvent
+  commentId: F:SODD.Listeners.EventListener`1.targetEvent
+  fullName: SODD.Listeners.EventListener<T>.targetEvent
+  fullName.vb: SODD.Listeners.EventListener(Of T).targetEvent
+  nameWithType: EventListener<T>.targetEvent
+  nameWithType.vb: EventListener(Of T).targetEvent
+- uid: SODD.Listeners.IEventListener`1
+  name: IEventListener<T>
+  href: api/SODD.Listeners.IEventListener-1.html
+  commentId: T:SODD.Listeners.IEventListener`1
+  name.vb: IEventListener(Of T)
+  fullName: SODD.Listeners.IEventListener<T>
+  fullName.vb: SODD.Listeners.IEventListener(Of T)
+  nameWithType: IEventListener<T>
+  nameWithType.vb: IEventListener(Of T)
+- uid: SODD.Listeners.IEventListener`1.OnEventInvoked(`0)
+  name: OnEventInvoked(T)
+  href: api/SODD.Listeners.IEventListener-1.html#SODD_Listeners_IEventListener_1_OnEventInvoked__0_
+  commentId: M:SODD.Listeners.IEventListener`1.OnEventInvoked(`0)
+  fullName: SODD.Listeners.IEventListener<T>.OnEventInvoked(T)
+  fullName.vb: SODD.Listeners.IEventListener(Of T).OnEventInvoked(T)
+  nameWithType: IEventListener<T>.OnEventInvoked(T)
+  nameWithType.vb: IEventListener(Of T).OnEventInvoked(T)
+- uid: SODD.Listeners.IEventListener`1.OnEventInvoked*
+  name: OnEventInvoked
+  href: api/SODD.Listeners.IEventListener-1.html#SODD_Listeners_IEventListener_1_OnEventInvoked_
+  commentId: Overload:SODD.Listeners.IEventListener`1.OnEventInvoked
+  isSpec: "True"
+  fullName: SODD.Listeners.IEventListener<T>.OnEventInvoked
+  fullName.vb: SODD.Listeners.IEventListener(Of T).OnEventInvoked
+  nameWithType: IEventListener<T>.OnEventInvoked
+  nameWithType.vb: IEventListener(Of T).OnEventInvoked
+- uid: SODD.Listeners.IEventListener`1.StartListening(SODD.Events.IEvent{`0})
+  name: StartListening(IEvent<T>)
+  href: api/SODD.Listeners.IEventListener-1.html#SODD_Listeners_IEventListener_1_StartListening_SODD_Events_IEvent__0__
+  commentId: M:SODD.Listeners.IEventListener`1.StartListening(SODD.Events.IEvent{`0})
+  name.vb: StartListening(IEvent(Of T))
+  fullName: SODD.Listeners.IEventListener<T>.StartListening(SODD.Events.IEvent<T>)
+  fullName.vb: SODD.Listeners.IEventListener(Of T).StartListening(SODD.Events.IEvent(Of T))
+  nameWithType: IEventListener<T>.StartListening(IEvent<T>)
+  nameWithType.vb: IEventListener(Of T).StartListening(IEvent(Of T))
+- uid: SODD.Listeners.IEventListener`1.StartListening*
+  name: StartListening
+  href: api/SODD.Listeners.IEventListener-1.html#SODD_Listeners_IEventListener_1_StartListening_
+  commentId: Overload:SODD.Listeners.IEventListener`1.StartListening
+  isSpec: "True"
+  fullName: SODD.Listeners.IEventListener<T>.StartListening
+  fullName.vb: SODD.Listeners.IEventListener(Of T).StartListening
+  nameWithType: IEventListener<T>.StartListening
+  nameWithType.vb: IEventListener(Of T).StartListening
+- uid: SODD.Listeners.IEventListener`1.StopListening(SODD.Events.IEvent{`0})
+  name: StopListening(IEvent<T>)
+  href: api/SODD.Listeners.IEventListener-1.html#SODD_Listeners_IEventListener_1_StopListening_SODD_Events_IEvent__0__
+  commentId: M:SODD.Listeners.IEventListener`1.StopListening(SODD.Events.IEvent{`0})
+  name.vb: StopListening(IEvent(Of T))
+  fullName: SODD.Listeners.IEventListener<T>.StopListening(SODD.Events.IEvent<T>)
+  fullName.vb: SODD.Listeners.IEventListener(Of T).StopListening(SODD.Events.IEvent(Of T))
+  nameWithType: IEventListener<T>.StopListening(IEvent<T>)
+  nameWithType.vb: IEventListener(Of T).StopListening(IEvent(Of T))
+- uid: SODD.Listeners.IEventListener`1.StopListening*
+  name: StopListening
+  href: api/SODD.Listeners.IEventListener-1.html#SODD_Listeners_IEventListener_1_StopListening_
+  commentId: Overload:SODD.Listeners.IEventListener`1.StopListening
+  isSpec: "True"
+  fullName: SODD.Listeners.IEventListener<T>.StopListening
+  fullName.vb: SODD.Listeners.IEventListener(Of T).StopListening
+  nameWithType: IEventListener<T>.StopListening
+  nameWithType.vb: IEventListener(Of T).StopListening
+- uid: SODD.Tests.Runtime.Events
+  name: SODD.Tests.Runtime.Events
+  href: api/SODD.Tests.Runtime.Events.html
+  commentId: N:SODD.Tests.Runtime.Events
+  fullName: SODD.Tests.Runtime.Events
+  nameWithType: SODD.Tests.Runtime.Events
+- uid: SODD.Tests.Runtime.Events.EventTest
+  name: EventTest
+  href: api/SODD.Tests.Runtime.Events.EventTest.html
+  commentId: T:SODD.Tests.Runtime.Events.EventTest
+  fullName: SODD.Tests.Runtime.Events.EventTest
+  nameWithType: EventTest
+- uid: SODD.Tests.Runtime.Events.EventTest.Event_InvokesListenerWithCorrectValue
+  name: Event_InvokesListenerWithCorrectValue()
+  href: api/SODD.Tests.Runtime.Events.EventTest.html#SODD_Tests_Runtime_Events_EventTest_Event_InvokesListenerWithCorrectValue
+  commentId: M:SODD.Tests.Runtime.Events.EventTest.Event_InvokesListenerWithCorrectValue
+  fullName: SODD.Tests.Runtime.Events.EventTest.Event_InvokesListenerWithCorrectValue()
+  nameWithType: EventTest.Event_InvokesListenerWithCorrectValue()
+- uid: SODD.Tests.Runtime.Events.EventTest.Event_InvokesListenerWithCorrectValue*
+  name: Event_InvokesListenerWithCorrectValue
+  href: api/SODD.Tests.Runtime.Events.EventTest.html#SODD_Tests_Runtime_Events_EventTest_Event_InvokesListenerWithCorrectValue_
+  commentId: Overload:SODD.Tests.Runtime.Events.EventTest.Event_InvokesListenerWithCorrectValue
+  isSpec: "True"
+  fullName: SODD.Tests.Runtime.Events.EventTest.Event_InvokesListenerWithCorrectValue
+  nameWithType: EventTest.Event_InvokesListenerWithCorrectValue
+- uid: SODD.Tests.Runtime.Events.EventTest.Event_RemoveListener_StopsReceivingEvents
+  name: Event_RemoveListener_StopsReceivingEvents()
+  href: api/SODD.Tests.Runtime.Events.EventTest.html#SODD_Tests_Runtime_Events_EventTest_Event_RemoveListener_StopsReceivingEvents
+  commentId: M:SODD.Tests.Runtime.Events.EventTest.Event_RemoveListener_StopsReceivingEvents
+  fullName: SODD.Tests.Runtime.Events.EventTest.Event_RemoveListener_StopsReceivingEvents()
+  nameWithType: EventTest.Event_RemoveListener_StopsReceivingEvents()
+- uid: SODD.Tests.Runtime.Events.EventTest.Event_RemoveListener_StopsReceivingEvents*
+  name: Event_RemoveListener_StopsReceivingEvents
+  href: api/SODD.Tests.Runtime.Events.EventTest.html#SODD_Tests_Runtime_Events_EventTest_Event_RemoveListener_StopsReceivingEvents_
+  commentId: Overload:SODD.Tests.Runtime.Events.EventTest.Event_RemoveListener_StopsReceivingEvents
+  isSpec: "True"
+  fullName: SODD.Tests.Runtime.Events.EventTest.Event_RemoveListener_StopsReceivingEvents
+  nameWithType: EventTest.Event_RemoveListener_StopsReceivingEvents
+- uid: SODD.Tests.Runtime.Events.EventTest.SetUp
+  name: SetUp()
+  href: api/SODD.Tests.Runtime.Events.EventTest.html#SODD_Tests_Runtime_Events_EventTest_SetUp
+  commentId: M:SODD.Tests.Runtime.Events.EventTest.SetUp
+  fullName: SODD.Tests.Runtime.Events.EventTest.SetUp()
+  nameWithType: EventTest.SetUp()
+- uid: SODD.Tests.Runtime.Events.EventTest.SetUp*
+  name: SetUp
+  href: api/SODD.Tests.Runtime.Events.EventTest.html#SODD_Tests_Runtime_Events_EventTest_SetUp_
+  commentId: Overload:SODD.Tests.Runtime.Events.EventTest.SetUp
+  isSpec: "True"
+  fullName: SODD.Tests.Runtime.Events.EventTest.SetUp
+  nameWithType: EventTest.SetUp
