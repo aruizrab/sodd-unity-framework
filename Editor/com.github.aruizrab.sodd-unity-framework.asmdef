@@ -1,6 +1,6 @@
 {
   "name": "com.github.aruizrab.sodd-unity-framework.Editor",
-  "rootNamespace": "SODD",
+  "rootNamespace": "SODD.Editor",
   "references": [
     "com.github.aruizrab.sodd-unity-framework"
   ],
