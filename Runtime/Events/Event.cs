@@ -46,26 +46,27 @@ namespace SODD.Events
         [Tooltip("Enable this setting to log the invocations of this event in the console.")]
         public bool debug;
 #endif
+
+        protected readonly GenericEvent<T> GenericEvent = new();
         
         /// <inheritdoc />
         public void AddListener(Action<T> listener)
         {
-            Listeners += listener;
+            GenericEvent.AddListener(listener);
         }
 
         /// <inheritdoc />
         public void RemoveListener(Action<T> listener)
         {
-            Listeners -= listener;
+            GenericEvent.RemoveListener(listener);
         }
 
         /// <inheritdoc />
         public void Invoke(T payload)
         {
-            Listeners?.Invoke(payload);
+            GenericEvent.Invoke(payload);
 #if UNITY_EDITOR
             if (!debug) return;
-
             var assetPath = AssetDatabase.GetAssetPath(this);
             var filename = Path.GetFileName(assetPath).Replace(".asset", "");
             var linkToEvent = $"<a href=\"{assetPath}\">{filename}</a>";
@@ -73,7 +74,5 @@ namespace SODD.Events
             Debug.Log(message);
 #endif
         }
-
-        private event Action<T> Listeners;
     }
 }
