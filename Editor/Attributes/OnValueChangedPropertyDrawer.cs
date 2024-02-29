@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System.Reflection;
 using SODD.Attributes;
 using UnityEditor;
 using UnityEngine;
@@ -8,6 +9,9 @@ namespace SODD.Editor.Attributes
     [CustomPropertyDrawer(typeof(OnValueChangedAttribute))]
     public class OnValueChangedPropertyDrawer : PropertyDrawer
     {
+        private const BindingFlags BindingFlags =
+            System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic;
+
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             EditorGUI.BeginChangeCheck();
@@ -15,11 +19,12 @@ namespace SODD.Editor.Attributes
 
             if (!EditorGUI.EndChangeCheck()) return;
 
-            var targetObject = property.serializedObject.targetObject;
             var onValueChangedAttribute = attribute as OnValueChangedAttribute;
-            var methodName = onValueChangedAttribute?.MethodName;
-            var classType = targetObject.GetType();
-            var methodInfo = classType.GetMethods().FirstOrDefault(info => info.Name == methodName);
+            var targetObject = property.serializedObject.targetObject;
+            var methodInfo = targetObject
+                .GetType()
+                .GetMethods(BindingFlags)
+                .FirstOrDefault(info => info.Name == onValueChangedAttribute?.MethodName);
 
             property.serializedObject.ApplyModifiedProperties();
 

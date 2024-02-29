@@ -76,7 +76,7 @@ namespace SODD.Variables
             }
         }
 #if UNITY_EDITOR
-        public void OnSerializedValueChanged()
+        protected void OnSerializedValueChanged()
         {
             OnValueChanged?.Invoke(value, this);
         }
