@@ -42,7 +42,7 @@ namespace SODD.Variables
     public abstract class Variable<T> : ScriptableObject, IVariable, IVariable<T>
     {
         [SerializeField] 
-        [OnValueChanged("OnSerializedValueChanged")]
+        [OnValueChanged("HandleValueChange")]
         protected T value;
 
         [SerializeField]
@@ -52,7 +52,8 @@ namespace SODD.Variables
         [Tooltip("Enable this setting to log the changes in value of this variable in the console.")]
         [SerializeField] private bool debug;
 #endif
-        public readonly ValueChangedEvent<T> OnValueChanged = new();
+        
+        public readonly GenericEvent<T> OnValueChanged = new();
 
         object IVariable.Value
         {
@@ -72,47 +73,21 @@ namespace SODD.Variables
                 if (readOnly) return;
                 if (this.value != null && this.value.Equals(value)) return;
                 this.value = value;
-                OnValueChanged?.Invoke(value, this);
+                HandleValueChange();
             }
         }
-#if UNITY_EDITOR
-        protected void OnSerializedValueChanged()
+        
+        protected void HandleValueChange()
         {
-            OnValueChanged?.Invoke(value, this);
-        }
-#endif
-        public class ValueChangedEvent<TV> : IEvent<TV>
-        {
-            public void AddListener(Action<TV> listener)
-            {
-                Listeners += listener;
-            }
-
-            public void RemoveListener(Action<TV> listener)
-            {
-                Listeners -= listener;
-            }
-
-            public void Invoke(TV payload)
-            {
-                Listeners?.Invoke(payload);
-            }
-
-
-            private event Action<TV> Listeners;
-
-            public void Invoke(TV payload, Variable<TV> parent)
-            {
-                Invoke(payload);
+            OnValueChanged?.Invoke(value);
 #if UNITY_EDITOR
-                if (!parent.debug) return;
-                var assetPath = AssetDatabase.GetAssetPath(parent);
-                var filename = Path.GetFileName(assetPath).Replace(".asset", "");
-                var linkToVariable = $"<a href=\"{assetPath}\">{filename}</a>";
-                var message = $"[{parent.GetType().FullName}] {linkToVariable} value changed. New value = {payload}";
-                Debug.Log(message);
+            if (!debug) return;
+            var assetPath = AssetDatabase.GetAssetPath(this);
+            var filename = Path.GetFileName(assetPath).Replace(".asset", "");
+            var linkToVariable = $"<a href=\"{assetPath}\">{filename}</a>";
+            var message = $"[{GetType().FullName}] {linkToVariable} value changed. New value = {value}";
+            Debug.Log(message);
 #endif
-            }
         }
     }
 }
