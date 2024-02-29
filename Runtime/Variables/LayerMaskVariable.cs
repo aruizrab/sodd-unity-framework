@@ -23,7 +23,7 @@ namespace SODD.Variables
     ///         scripts to react dynamically to LayerMask updates.
     ///     </para>
     /// </remarks>
-    [CreateAssetMenu(menuName = Framework.Variables.LayerMask, fileName = nameof(StringVariable),
+    [CreateAssetMenu(menuName = Framework.Variables.LayerMask, fileName = nameof(LayerMaskVariable),
         order = Framework.MenuOrders.LayerMask)]
     public class LayerMaskVariable : Variable<LayerMask>
     {

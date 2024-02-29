@@ -9,7 +9,7 @@ namespace SODD.Editor.Variables
         [MenuItem("Tools/" + Framework.Variables.LayerMask, priority = Framework.MenuOrders.LayerMask)]
         public static void Create(MenuCommand command)
         {
-            EditorHelper.CreateScriptableObject<StringVariable>();
+            EditorHelper.CreateScriptableObject<LayerMaskVariable>();
         }
     }
 }

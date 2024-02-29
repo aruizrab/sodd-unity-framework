@@ -2,7 +2,7 @@
 using UnityEngine;
 using SODD.Variables;
 
-namespace SODD.Editor.Tests.Variables
+namespace SODD.Tests.Runtime.Variables
 {
     public class BoolVariableTests
     {
