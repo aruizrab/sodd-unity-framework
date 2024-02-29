@@ -5,6 +5,6 @@ namespace SODD.Core
     [Serializable]
     public struct Void
     {
-        public static readonly Void Instance = new Void();
+        public static readonly Void Instance = new();
     }
 }
