@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using Logger = SODD.Core.Logger;
+using Void = SODD.Core.Void;
 #if UNITY_EDITOR
 using UnityEditor;
 using System.IO;
@@ -68,7 +69,7 @@ namespace SODD.Events
             GenericEvent.Invoke(payload);
 #if UNITY_EDITOR
             if (!debug) return;
-            Logger.LogAsset(this, $"Invoked. Payload = {payload}");
+            Logger.LogAsset(this, "Invoked. " + (Void.Instance.Equals(payload) ? "" : $"Payload = {payload}"));
 #endif
         }
     }
