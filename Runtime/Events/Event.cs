@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using Logger = SODD.Core.Logger;
 #if UNITY_EDITOR
 using UnityEditor;
 using System.IO;
@@ -67,11 +68,7 @@ namespace SODD.Events
             GenericEvent.Invoke(payload);
 #if UNITY_EDITOR
             if (!debug) return;
-            var assetPath = AssetDatabase.GetAssetPath(this);
-            var filename = Path.GetFileName(assetPath).Replace(".asset", "");
-            var linkToEvent = $"<a href=\"{assetPath}\">{filename}</a>";
-            var message = $"[{GetType().FullName}] {linkToEvent} invoked. Payload = {payload}";
-            Debug.Log(message);
+            Logger.LogAsset(this, $"Invoked. Payload = {payload}");
 #endif
         }
     }

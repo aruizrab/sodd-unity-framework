@@ -1,7 +1,7 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using SODD.Attributes;
 using SODD.Events;
+using Logger = SODD.Core.Logger;
 #if UNITY_EDITOR
 using System.IO;
 using UnityEditor;
@@ -82,11 +82,7 @@ namespace SODD.Variables
             OnValueChanged?.Invoke(value);
 #if UNITY_EDITOR
             if (!debug) return;
-            var assetPath = AssetDatabase.GetAssetPath(this);
-            var filename = Path.GetFileName(assetPath).Replace(".asset", "");
-            var linkToVariable = $"<a href=\"{assetPath}\">{filename}</a>";
-            var message = $"[{GetType().FullName}] {linkToVariable} value changed. New value = {value}";
-            Debug.Log(message);
+            Logger.LogAsset(this, $"Value changed. New value = {value}");
 #endif
         }
     }

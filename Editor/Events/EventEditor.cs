@@ -13,7 +13,7 @@ namespace SODD.Editor.Events
 
         private void OnEnable()
         {
-            _event = (Event<T>)target;
+            _event = target as Event<T>;
         }
 
         public override void OnInspectorGUI()
@@ -21,7 +21,7 @@ namespace SODD.Editor.Events
             DrawDefaultInspector();
 
             // ReSharper disable once Unity.PerformanceCriticalCodeInvocation
-            if (GUILayout.Button("Invoke")) _event.Invoke(_event.payload);
+            if (GUILayout.Button("Invoke") && _event) _event.Invoke(_event.payload);
         }
     }
 }
