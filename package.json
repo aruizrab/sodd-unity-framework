@@ -8,5 +8,8 @@
     "name": "Alex Ruiz",
     "email": "a.ruiz.rabasseda@gmail.com",
     "url": "https://github.com/aruizrab"
+  },
+  "dependencies": {
+    "com.unity.inputsystem": "1.7.0"
   }
 }
