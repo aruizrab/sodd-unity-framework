@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 namespace SODD.Input.ActionHandlers
 {
     /// <summary>
-    ///     A ScriptableObject that handles boolean input actions.
+    ///     A ScriptableObject that handles input actions passing boolean data.
     /// </summary>
     /// <remarks>
     ///     <para>
@@ -19,28 +19,19 @@ namespace SODD.Input.ActionHandlers
         order = Framework.MenuOrders.Bool)]
     public sealed class BoolInputActionHandler : InputActionHandler<bool>
     {
-        /// <summary>
-        ///     Invoked when the boolean input action starts.
-        /// </summary>
-        /// <param name="context">The callback context from the input system.</param>
+        /// <inheritdoc />
         protected override void OnActionStarted(InputAction.CallbackContext context)
         {
             if (onActionStarted) onActionStarted.Invoke(context.ReadValueAsButton());
         }
 
-        /// <summary>
-        ///     Invoked when the boolean input action is performed.
-        /// </summary>
-        /// <param name="context">The callback context from the input system.</param>
+        /// <inheritdoc />
         protected override void OnActionPerformed(InputAction.CallbackContext context)
         {
             if (onActionPerformed) onActionPerformed.Invoke(context.ReadValueAsButton());
         }
 
-        /// <summary>
-        ///     Invoked when the boolean input action is canceled.
-        /// </summary>
-        /// <param name="context">The callback context from the input system.</param>
+        /// <inheritdoc />
         protected override void OnActionCanceled(InputAction.CallbackContext context)
         {
             if (onActionCanceled) onActionCanceled.Invoke(context.ReadValueAsButton());

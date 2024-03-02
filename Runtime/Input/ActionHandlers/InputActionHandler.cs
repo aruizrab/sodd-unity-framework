@@ -90,7 +90,7 @@ namespace SODD.Input.ActionHandlers
         }
 
         /// <summary>
-        ///     Virtual method called when the input action starts.
+        ///     Called when the input action starts.
         /// </summary>
         /// <param name="context">Context of the input action callback.</param>
         protected virtual void OnActionStarted(InputAction.CallbackContext context)
@@ -99,7 +99,7 @@ namespace SODD.Input.ActionHandlers
         }
 
         /// <summary>
-        ///     Virtual method called when the input action is performed.
+        ///     Called when the input action is performed.
         /// </summary>
         /// <param name="context">Context of the input action callback.</param>
         protected virtual void OnActionPerformed(InputAction.CallbackContext context)
@@ -108,7 +108,7 @@ namespace SODD.Input.ActionHandlers
         }
 
         /// <summary>
-        ///     Virtual method called when the input action is canceled.
+        ///     Called when the input action is canceled.
         /// </summary>
         /// <param name="context">Context of the input action callback.</param>
         protected virtual void OnActionCanceled(InputAction.CallbackContext context)
