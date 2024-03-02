@@ -1,7 +1,9 @@
 {
     "name": "com.github.aruizrab.sodd-unity-framework",
     "rootNamespace": "SODD",
-    "references": [],
+    "references": [
+        "Unity.InputSystem"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

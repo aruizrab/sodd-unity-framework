@@ -170,5 +170,22 @@ namespace SODD
             public const string Component = Path + DataTypes.Component;
             public const string Object = Path + DataTypes.Object;
         }
+
+        public static class Input
+        {
+            public const string Path = Root + "Input/";
+
+            public static class ActionHandlers
+            {
+                public const string Path = Input.Path + "Action Handlers/";
+
+                public const string Void = Path + DataTypes.Void;
+                public const string Bool = Path + DataTypes.Bool;
+                public const string Float = Path + DataTypes.Float;
+                public const string Int = Path + DataTypes.Int;
+                public const string Vector2 = Path + DataTypes.Vector2;
+                public const string Vector3 = Path + DataTypes.Vector3;
+            }
+        }
     }
 }
