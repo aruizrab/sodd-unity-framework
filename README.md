@@ -1,7 +1,7 @@
 <div align="center">
   <br>
   <a href="https://github.com/aruizrab/sodd-unity-framework">
-    <img src="https://github.com/aruizrab/sodd-unity-framework/assets/68024691/0a22970a-0505-4121-b6e7-c23299e8b16d" alt="Logo" width="800">
+    <img src="https://github.com/aruizrab/sodd-unity-framework/assets/68024691/0a22970a-0505-4121-b6e7-c23299e8b16d" alt="Logo" width="600">
   </a>
   <br>
   <br>
