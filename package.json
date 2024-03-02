@@ -12,6 +12,7 @@
   "changelogUrl": "https://github.com/aruizrab/sodd-unity-framework/blob/main/CHANGELOG.md",
   "documentationUrl": "https://aruizrab.github.io/sodd-unity-framework/",
   "license": "MIT",
+  "licensesUrl": "https://github.com/aruizrab/sodd-unity-framework/blob/main/LICENSE",
   "dependencies": {
     "com.unity.inputsystem": "1.7.0"
   }
