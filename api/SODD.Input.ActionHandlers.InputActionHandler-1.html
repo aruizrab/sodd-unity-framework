@@ -1,0 +1,429 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class InputActionHandler&lt;T&gt; | SODD Framework | 0.1.0 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class InputActionHandler&lt;T&gt; | SODD Framework | 0.1.0 ">
+      
+      <meta name="description" content="Represents an ScriptableObject event that handles input actions and triggers scriptable events in response.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      <meta name="docfx:disablenewtab" content="true">
+      
+      <meta name="docfx:docurl" content="https://github.com/aruizrab/sodd-unity-framework/new/main/apiSpec/new?filename=SODD_Input_ActionHandlers_InputActionHandler_1.md&amp;value=---%0Auid%3A%20SODD.Input.ActionHandlers.InputActionHandler%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SODD.Input.ActionHandlers.InputActionHandler`1">
+
+
+
+  <h1 id="SODD_Input_ActionHandlers_InputActionHandler_1" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1" class="text-break">
+Class InputActionHandler&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SODD.html">SODD</a>.<a class="xref" href="SODD.Input.html">Input</a>.<a class="xref" href="SODD.Input.ActionHandlers.html">ActionHandlers</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Represents an ScriptableObject event that handles input actions and triggers scriptable events in response.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class InputActionHandler&lt;T&gt; : ScriptableObject where T : struct</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The data type of the input value, defined by the input action being handled.</p>
+</dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">InputActionHandler&lt;T&gt;</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="SODD.Input.ActionHandlers.BoolInputActionHandler.html">BoolInputActionHandler</a></div>
+      <div><a class="xref" href="SODD.Input.ActionHandlers.FloatInputActionHandler.html">FloatInputActionHandler</a></div>
+      <div><a class="xref" href="SODD.Input.ActionHandlers.Vector2InputActionHandler.html">Vector2InputActionHandler</a></div>
+      <div><a class="xref" href="SODD.Input.ActionHandlers.Vector3InputActionHandler.html">Vector3InputActionHandler</a></div>
+      <div><a class="xref" href="SODD.Input.ActionHandlers.VoidInputActionHandler.html">VoidInputActionHandler</a></div>
+    </dd>
+  </dl>
+
+
+
+
+  <h2 id="SODD_Input_ActionHandlers_InputActionHandler_1_examples">Examples</h2>
+  <p>Below is an example of how to create a concrete implementation of <code>InputActionHandler&lt;T&gt;</code> for handling
+Vector2 input actions, commonly used for 2D movement:</p>
+<pre><code class="lang-csharp">[CreateAssetMenu(menuName = "InputHandlers/Vector2InputActionHandler")]
+public class Vector2InputActionHandler : InputActionHandler&lt;Vector2&gt;
+{
+    // Override methods if needed for custom behavior upon input events.
+}</code></pre>
+<p>In the Unity Editor, create an instance of this ScriptableObject and assign the input action reference along with
+any event subscribers to handle the input action events.</p>
+
+
+  <h2 id="SODD_Input_ActionHandlers_InputActionHandler_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+    This abstract class serves as the base for all input action handler implementations. It facilitates the
+    decoupling of input handling logic from GameObjects and components by providing ScriptableObjects that
+    translate the events provided by Unity's Input System into the event system based on scriptable events provided
+    by the SODD Framework.
+</p>
+<p>
+    This class listens to three phases of an input action—started, performed, and canceled—and invokes
+    the corresponding scriptable events.
+</p>
+<p>
+    To use <code>InputActionHandler&lt;T&gt;</code>, create a subclass specifying the appropriate type for
+    <code class="typeparamref">T</code>
+    based on your input action's expected output. Then, assign input action references and connect event listeners
+    to handle specific input events.
+</p>
+</div>
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="SODD_Input_ActionHandlers_InputActionHandler_1_inputActionReference" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.inputActionReference">
+  inputActionReference
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reference to the InputAction to be handled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected InputActionReference inputActionReference</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">InputActionReference</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SODD_Input_ActionHandlers_InputActionHandler_1_onActionCanceled" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.onActionCanceled">
+  onActionCanceled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event triggered when the input action is canceled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Event&lt;T&gt; onActionCanceled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SODD.Events.Event-1.html">Event</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SODD_Input_ActionHandlers_InputActionHandler_1_onActionPerformed" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.onActionPerformed">
+  onActionPerformed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event triggered when the input action is performed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Event&lt;T&gt; onActionPerformed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SODD.Events.Event-1.html">Event</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SODD_Input_ActionHandlers_InputActionHandler_1_onActionStarted" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.onActionStarted">
+  onActionStarted
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event triggered when the input action starts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Event&lt;T&gt; onActionStarted</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SODD.Events.Event-1.html">Event</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SODD_Input_ActionHandlers_InputActionHandler_1_OnActionCanceled_" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.OnActionCanceled*"></a>
+
+  <h3 id="SODD_Input_ActionHandlers_InputActionHandler_1_OnActionCanceled_InputAction_CallbackContext_" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.OnActionCanceled(InputAction.CallbackContext)">
+  OnActionCanceled(CallbackContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when the input action is canceled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnActionCanceled(InputAction.CallbackContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <span class="xref">CallbackContext</span></dt>
+    <dd><p>Context of the input action callback.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SODD_Input_ActionHandlers_InputActionHandler_1_OnActionPerformed_" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.OnActionPerformed*"></a>
+
+  <h3 id="SODD_Input_ActionHandlers_InputActionHandler_1_OnActionPerformed_InputAction_CallbackContext_" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.OnActionPerformed(InputAction.CallbackContext)">
+  OnActionPerformed(CallbackContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when the input action is performed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnActionPerformed(InputAction.CallbackContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <span class="xref">CallbackContext</span></dt>
+    <dd><p>Context of the input action callback.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SODD_Input_ActionHandlers_InputActionHandler_1_OnActionStarted_" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.OnActionStarted*"></a>
+
+  <h3 id="SODD_Input_ActionHandlers_InputActionHandler_1_OnActionStarted_InputAction_CallbackContext_" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.OnActionStarted(InputAction.CallbackContext)">
+  OnActionStarted(CallbackContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when the input action starts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnActionStarted(InputAction.CallbackContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <span class="xref">CallbackContext</span></dt>
+    <dd><p>Context of the input action callback.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="SODD.Events.Event-1.html">Event</a>&lt;T&gt;</div>
+  </div>
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made by <a href="https://github.com/aruizrab" target="_blank">aruizrab</a> using <a href="https://dotnet.github.io/docfx" target="_blank">DocFX</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
