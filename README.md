@@ -30,7 +30,7 @@
 ## About
 Unity developers often face challenges related to dependency management and interactions between systems within their projects. These issues, if not addressed adequately, can lead to complex and rigid game structures, hindering scalability and maintainability.
 
-It is in this context that Ryan Hipple, principal engineer of Schell Games, introduces in the [Unite Austin conference of 2017](https://youtu.be/raQ3iHhE_Kk?si=nst5iqlbFVMHBNqT) a novel approach to game development employing ScriptableObjects. Hipple’s proposal advocates for a more modular and manageable game architecture in Unity, harnessing the potential of ScriptableObjects to mitigate common development challenges.
+It is in this context that Ryan Hipple, principal engineer of Schell Games, introduces in the [Unite Austin conference of 2017](https://www.youtube.com/watch?v=raQ3iHhE_Kk) a novel approach to game development employing ScriptableObjects. Hipple’s proposal advocates for a more modular and manageable game architecture in Unity, harnessing the potential of ScriptableObjects to mitigate common development challenges.
 
 **SODD Framework** aims to provide a comprehensive and practical implementation of Hipple’s proposal towards a development methodology based on Scriptable Objects, which can be termed as **ScriptableObject Driven Development (SODD)**.
 
