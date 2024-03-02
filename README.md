@@ -1,24 +1,28 @@
 <div align="center">
   <br>
   <a href="https://github.com/aruizrab/sodd-unity-framework">
-    <img src="https://github.com/aruizrab/sodd-unity-framework/assets/68024691/0a22970a-0505-4121-b6e7-c23299e8b16d" alt="Logo" width="600">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/aruizrab/sodd-unity-framework/assets/68024691/0a22970a-0505-4121-b6e7-c23299e8b16d">
+      <source media="(prefers-color-scheme: light)" srcset="https://github.com/aruizrab/sodd-unity-framework/assets/68024691/ae5d59df-a69c-455a-8be9-e259c5404dda">
+      <img alt="SODD Framework Logo" src="https://github.com/aruizrab/sodd-unity-framework/assets/68024691/0a22970a-0505-4121-b6e7-c23299e8b16d" width="600">
+    </picture>
   </a>
   <br>
   <br>
   <br>
   <a href="https://unity3d.com/get-unity/download/archive">
-    <img src="https://img.shields.io/github/package-json/unity/aruizrab/sodd-unity-framework?logo=unity" alt="Unity version">
+    <img src="https://img.shields.io/github/package-json/unity/aruizrab/sodd-unity-framework?logo=unity" alt="Unity version"/>
   </a>
   <a href="https://github.com/aruizrab/sodd-unity-framework/releases/latest">
-    <img src="https://img.shields.io/github/v/release/aruizrab/sodd-unity-framework" alt="Release (latest by date)">
+    <img src="https://img.shields.io/github/v/release/aruizrab/sodd-unity-framework" alt="Release (latest by date)"/>
   </a>
   <a href="https://github.com/aruizrab/sodd-unity-framework/blob/main/LICENSE.md">
-    <img src="https://img.shields.io/github/license/aruizrab/sodd-unity-framework?label=license" alt="License">
+    <img src="https://img.shields.io/github/license/aruizrab/sodd-unity-framework?label=license" alt="License"/>
   </a>
   <br>
   <br>
   <p align="center">
-    A framework that provides a solid codebase for architecturing your games with ScriptableObjects.
+    A framework for architecturing your games with ScriptableObjects.
   </p>
   <a href="https://aruizrab.github.io/sodd-unity-framework/"><strong>Explore the docs »</strong></a>
 </div>
