@@ -30,13 +30,14 @@ namespace SODD.Collections
     ///         To create a custom collection, inherit from this class and specify the item type <typeparamref name="T" />,
     ///         which can be any type supported by Unity (e.g., GameObject, int, string).
     ///     </para>
-    ///     <example>
-    ///         Example of a GameObject collection implementation:
-    ///         <code>
-    ///             public class GameObjectCollection : Collection&lt;GameObject&gt; {}
-    ///         </code>
-    ///     </example>
     /// </remarks>
+    /// <example>
+    ///     Example of a GameObject collection implementation:
+    ///     <code>
+    ///         [CreateAssetMenu(menuName = "My Collections/GameObject Collection", fileName = nameof(GameObjectCollection)]    
+    ///         public class GameObjectCollection : Collection&lt;GameObject&gt; {}
+    ///     </code>
+    /// </example>
     public abstract class Collection<T> : ScriptableObject, ICollection<T>
     {
         [SerializeField] 
