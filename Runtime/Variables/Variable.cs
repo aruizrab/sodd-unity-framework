@@ -34,10 +34,10 @@ namespace SODD.Variables
     ///     <example>
     ///         Example of an IntVariable implementation:
     ///         <code>
+    ///         [CreateAssetMenu(menuName = "My Variables/Int Variable", fileName = nameof(StringVariable))]
     ///         public class IntVariable : Variable&lt;int&gt; {}
     ///     </code>
     ///     </example>
-    /// <seealso cref="IVariable{T}"/>
     /// </remarks>
     public abstract class Variable<T> : ScriptableObject, IVariable, IVariable<T>
     {
@@ -53,6 +53,9 @@ namespace SODD.Variables
         [SerializeField] private bool debug;
 #endif
         
+        /// <summary>
+        /// An event that is triggered whenever the value of the variable changes.
+        /// </summary>
         public readonly GenericEvent<T> OnValueChanged = new();
 
         object IVariable.Value
@@ -77,6 +80,9 @@ namespace SODD.Variables
             }
         }
         
+        /// <summary>
+        /// Invokes the OnValueChanged event and can log the change if debugging is enabled.
+        /// </summary>
         protected void HandleValueChange()
         {
             OnValueChanged?.Invoke(value);
