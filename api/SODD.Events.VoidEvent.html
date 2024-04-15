@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class VoidEvent | SODD Framework | 0.1.0 </title>
+      <title>Class VoidEvent | SODD Framework | 1.0.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class VoidEvent | SODD Framework | 0.1.0 ">
+      <meta name="title" content="Class VoidEvent | SODD Framework | 1.0.0 ">
       
-      <meta name="description" content="A ScriptableObject that represents an event carrying no payload.">
-      <link rel="icon" href="../favicon.ico">
+      <meta name="description" content="Represents a scriptable event that carries no payload.">
+      <link rel="icon" href="../manual/images/favicon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
       <meta name="docfx:navrel" content="../toc.html">
@@ -29,22 +29,22 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="">
+            <img id="logo" class="svg" src="../manual/images/logo.png" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,7 +89,7 @@
 
 
   <h1 id="SODD_Events_VoidEvent" data-uid="SODD.Events.VoidEvent" class="text-break">
-Class VoidEvent  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/VoidEvent.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class VoidEvent  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/VoidEvent.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,7 @@ Class VoidEvent  <a class="header-action link-secondary" title="View source" hre
   
   </div>
 
-  <div class="markdown summary"><p>A ScriptableObject that represents an event carrying no payload.</p>
+  <div class="markdown summary"><p>Represents a scriptable event that carries no payload.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -141,7 +141,43 @@ Class VoidEvent  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <h2 id="SODD_Events_VoidEvent_examples">Examples</h2>
+  <p>Below is an example demonstrating how to define and use a <a class="xref" href="SODD.Events.VoidEvent.html">VoidEvent</a> to trigger a level reset in a
+game:</p>
+<pre><code class="lang-csharp">public class LevelManager : MonoBehaviour
+{
+    public VoidEvent onLevelReset; // Assign this through the Unity Editor.
 
+    private void OnEnable()
+    {
+        onLevelReset.AddListener(ResetLevel);
+    }
+
+    private void OnDisable()
+    {
+        onLevelReset.RemoveListener(ResetLevel);
+    }
+
+    private void ResetLevel()
+    {
+        // Add logic here to reset the level
+    }
+}</code></pre>
+<p>This example shows how the <code>onLevelReset</code> event can be used to initiate a level reset without needing to pass
+any specific data. This ensures that the action to reset can be easily triggered from multiple parts of the game
+without any dependencies on the event sender.</p>
+
+
+  <h2 id="SODD_Events_VoidEvent_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+        This class extends the generic <a class="xref" href="SODD.Events.Event-1.html">Event&lt;T&gt;</a> class, specifying <code>Void</code> as the type parameter.
+        It is ideal for situations where the occurrence of the event is important, but no data needs to be
+        communicated.
+    </p>
+<p>
+        This class can be created as a ScriptableObject asset directly from the Unity Editor.
+    </p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -152,7 +188,7 @@ Class VoidEvent  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="SODD_Events_VoidEvent_Invoke" data-uid="SODD.Events.VoidEvent.Invoke">
   Invoke()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/VoidEvent.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/VoidEvent.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -174,10 +210,6 @@ Class VoidEvent  <a class="header-action link-secondary" title="View source" hre
 
 
 
-  <h2 id="seealso">See Also</h2>
-  <div class="seealso">
-      <div><a class="xref" href="SODD.Events.Event-1.html">Event</a>&lt;T&gt;</div>
-  </div>
 
 </article>
 

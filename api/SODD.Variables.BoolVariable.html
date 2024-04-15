@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class BoolVariable | SODD Framework | 0.1.0 </title>
+      <title>Class BoolVariable | SODD Framework | 1.0.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class BoolVariable | SODD Framework | 0.1.0 ">
+      <meta name="title" content="Class BoolVariable | SODD Framework | 1.0.0 ">
       
       <meta name="description" content="A ScriptableObject representing a boolean variable.">
-      <link rel="icon" href="../favicon.ico">
+      <link rel="icon" href="../manual/images/favicon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
       <meta name="docfx:navrel" content="../toc.html">
@@ -29,22 +29,22 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="">
+            <img id="logo" class="svg" src="../manual/images/logo.png" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -151,19 +151,19 @@ Class BoolVariable  <a class="header-action link-secondary" title="View source" 
 
   <h2 id="SODD_Variables_BoolVariable_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>
-    The BoolVariable class is a specialized implementation of the Variable class for boolean (true/false) values.
-    It facilitates the creation and management of a boolean value that can be shared across different components
-    and scripts within a Unity project, allowing for a centralized approach to handling binary states.
-</p>
+        The BoolVariable class is a specialized implementation of the Variable class for boolean (true/false) values.
+        It facilitates the creation and management of a boolean value that can be shared across different components
+        and scripts within a Unity project, allowing for a centralized approach to handling binary states.
+    </p>
 <p>
-    This class can be used to create boolean variables directly in the Unity Editor. These variables are
-    ideal for toggling states, managing conditions, or controlling binary features such as switches or flags
-    in game mechanics.
-</p>
+        This class can be used to create boolean variables directly in the Unity Editor. These variables are
+        ideal for toggling states, managing conditions, or controlling binary features such as switches or flags
+        in game mechanics.
+    </p>
 <p>
-    The boolean value can be marked as read-only to prevent runtime modifications. Additionally, the class
-    emits an event whenever the value changes, providing the capability to react dynamically to state changes.
-</p>
+        The boolean value can be marked as read-only to prevent runtime modifications. Additionally, the class
+        emits an event whenever the value changes, providing the capability to react dynamically to state changes.
+    </p>
 </div>
 
 

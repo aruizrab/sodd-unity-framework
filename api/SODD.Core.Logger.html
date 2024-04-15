@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class Logger | SODD Framework | 0.1.0 </title>
+      <title>Class Logger | SODD Framework | 1.0.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Logger | SODD Framework | 0.1.0 ">
+      <meta name="title" content="Class Logger | SODD Framework | 1.0.0 ">
       
-      
-      <link rel="icon" href="../favicon.ico">
+      <meta name="description" content="Provides utility functions for logging in the Unity Editor.">
+      <link rel="icon" href="../manual/images/favicon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
       <meta name="docfx:navrel" content="../toc.html">
@@ -29,22 +29,22 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="">
+            <img id="logo" class="svg" src="../manual/images/logo.png" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,7 +89,7 @@
 
 
   <h1 id="SODD_Core_Logger" data-uid="SODD.Core.Logger" class="text-break">
-Class Logger  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/Logger.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class Logger  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/Logger.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class Logger  <a class="header-action link-secondary" title="View source" href="
   
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides utility functions for logging in the Unity Editor.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -117,31 +118,6 @@ Class Logger  <a class="header-action link-secondary" title="View source" href="
 
 
 
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
-    </div>
-  </dd></dl>
 
 
 
@@ -156,10 +132,12 @@ Class Logger  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="SODD_Core_Logger_LogAsset_Object_System_String_" data-uid="SODD.Core.Logger.LogAsset(Object,System.String)">
   LogAsset(Object, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/Logger.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/Logger.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Logs a message associated with a specific Unity asset in the console, including a clickable link to the asset in
+the editor.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,9 +147,11 @@ Class Logger  <a class="header-action link-secondary" title="View source" href="
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>asset</code> <span class="xref">Object</span></dt>
-    <dd></dd>
+    <dd><p>The asset related to the message.</p>
+</dd>
     <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The message to log.</p>
+</dd>
   </dl>
 
 
@@ -180,7 +160,17 @@ Class Logger  <a class="header-action link-secondary" title="View source" href="
 
 
 
+  <h4 class="section" id="SODD_Core_Logger_LogAsset_Object_System_String__examples">Examples</h4>
+  <p>Example of logging an asset-related message:</p>
+<pre><code class="lang-csharp">// Assuming 'exampleAsset' is a Unity asset, such as a ScriptableObject
+Logger.LogAsset(exampleAsset, "This is a test message for logging purposes.");</code></pre>
+<p>This will output a log message in the Unity console with a clickable link to 'exampleAsset'.</p>
 
+
+  <h4 class="section" id="SODD_Core_Logger_LogAsset_Object_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method enhances debugging and logging in the Unity Editor by providing a direct link to the asset involved,
+making it easier to identify and access assets directly from the console log. Only available in the Unity Editor.</p>
+</div>
 
 
 

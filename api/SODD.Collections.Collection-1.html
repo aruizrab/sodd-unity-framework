@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class Collection&lt;T&gt; | SODD Framework | 0.1.0 </title>
+      <title>Class Collection&lt;T&gt; | SODD Framework | 1.0.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Collection&lt;T&gt; | SODD Framework | 0.1.0 ">
+      <meta name="title" content="Class Collection&lt;T&gt; | SODD Framework | 1.0.0 ">
       
       <meta name="description" content="Represents an abstract collection of items of type T.">
-      <link rel="icon" href="../favicon.ico">
+      <link rel="icon" href="../manual/images/favicon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
       <meta name="docfx:navrel" content="../toc.html">
@@ -29,22 +29,22 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="">
+            <img id="logo" class="svg" src="../manual/images/logo.png" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,7 +89,7 @@
 
 
   <h1 id="SODD_Collections_Collection_1" data-uid="SODD.Collections.Collection`1" class="text-break">
-Class Collection&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L40"><i class="bi bi-code-slash"></i></a>
+Class Collection&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class Collection&lt;T&gt;  <a class="header-action link-secondary" title="View s
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class Collection&lt;T&gt; : ScriptableObject, ICollection&lt;T&gt;, IEnumerable&lt;T&gt;, IEnumerable</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class Collection&lt;T&gt; : ScriptableObject, IList&lt;T&gt;, ICollection&lt;T&gt;, IEnumerable&lt;T&gt;, IEnumerable</code></pre>
   </div>
 
 
@@ -125,6 +125,7 @@ Class Collection&lt;T&gt;  <a class="header-action link-secondary" title="View s
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;T&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
@@ -145,28 +146,29 @@ Class Collection&lt;T&gt;  <a class="header-action link-secondary" title="View s
 
 
 
+  <h2 id="SODD_Collections_Collection_1_examples">Examples</h2>
+  <p>Example of a GameObject collection implementation:</p>
+<pre><code class="lang-csharp">[CreateAssetMenu(menuName = "My Collections/GameObject Collection", fileName = nameof(GameObjectCollection)]    
+public class GameObjectCollection : Collection&lt;GameObject&gt; {}</code></pre>
+
 
   <h2 id="SODD_Collections_Collection_1_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>
-    This abstract class provides the foundation for creating scriptable collection implementations.
-    It enables the encapsulation and serialization a list of items, allowing for easy manipulation and reference
-    within the Unity Editor
-    and across different game components. Such collections are beneficial for managing groups of related items,
-    such as inventory items, enemies, or waypoints, in a centralized and organized manner.
-</p>
+        This abstract class provides the foundation for creating scriptable collection implementations.
+        It enables the encapsulation and serialization a list of items, allowing for easy manipulation and reference
+        within the Unity Editor
+        and across different game components. Such collections are beneficial for managing groups of related items,
+        such as inventory items, enemies, or waypoints, in a centralized and organized manner.
+    </p>
 <p>
-    The collection supports adding and removing items and provides events for tracking these modifications.
-    This functionality facilitates reactive programming patterns, where changes to the collection can trigger
-    corresponding actions or updates within the game.
-</p>
+        The collection supports adding and removing items and provides events for tracking these modifications.
+        This functionality facilitates reactive programming patterns, where changes to the collection can trigger
+        corresponding actions or updates within the game.
+    </p>
 <p>
-    To create a custom collection, inherit from this class and specify the item type <code class="typeparamref">T</code>,
-    which can be any type supported by Unity (e.g., GameObject, int, string).
-</p>
-<example>
-    Example of a GameObject collection implementation:
-    <pre><code class="lang-csharp">public class GameObjectCollection : Collection&lt;GameObject&gt; {}</code></pre>
-</example>
+        To create a custom collection, inherit from this class and specify the item type <code class="typeparamref">T</code>,
+        which can be any type supported by Unity (e.g., GameObject, int, string).
+    </p>
 </div>
 
 
@@ -177,7 +179,7 @@ Class Collection&lt;T&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="SODD_Collections_Collection_1_OnItemAdded" data-uid="SODD.Collections.Collection`1.OnItemAdded">
   OnItemAdded
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Event triggered when an item is added to the collection.</p>
@@ -208,7 +210,7 @@ Class Collection&lt;T&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="SODD_Collections_Collection_1_OnItemRemoved" data-uid="SODD.Collections.Collection`1.OnItemRemoved">
   OnItemRemoved
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Event triggered when an item is removed from the collection.</p>
@@ -244,7 +246,7 @@ Class Collection&lt;T&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="SODD_Collections_Collection_1_Count" data-uid="SODD.Collections.Collection`1.Count">
   Count
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L133"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the number of elements contained in the collection.</p>
@@ -276,7 +278,7 @@ Class Collection&lt;T&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="SODD_Collections_Collection_1_IsReadOnly" data-uid="SODD.Collections.Collection`1.IsReadOnly">
   IsReadOnly
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L138"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets a value indicating whether the collection is read-only.</p>
@@ -304,6 +306,45 @@ Class Collection&lt;T&gt;  <a class="header-action link-secondary" title="View s
 
 
 
+  <a id="SODD_Collections_Collection_1_Item_" data-uid="SODD.Collections.Collection`1.Item*"></a>
+
+  <h3 id="SODD_Collections_Collection_1_Item_System_Int32_" data-uid="SODD.Collections.Collection`1.Item(System.Int32)">
+  this[int]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the element at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T this[int index] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the element to get or set.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>The element at the specified index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -312,7 +353,7 @@ Class Collection&lt;T&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="SODD_Collections_Collection_1_Add__0_" data-uid="SODD.Collections.Collection`1.Add(`0)">
   Add(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds an item to the collection, triggering the OnItemAdded event.</p>
@@ -345,7 +386,7 @@ Class Collection&lt;T&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="SODD_Collections_Collection_1_Clear" data-uid="SODD.Collections.Collection`1.Clear">
   Clear()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Removes all items from the collection, triggering the OnItemRemoved event for each item.</p>
@@ -372,7 +413,7 @@ Class Collection&lt;T&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="SODD_Collections_Collection_1_Contains__0_" data-uid="SODD.Collections.Collection`1.Contains(`0)">
   Contains(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the collection contains a specific value.</p>
@@ -411,7 +452,7 @@ Class Collection&lt;T&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="SODD_Collections_Collection_1_CopyTo__0___System_Int32_" data-uid="SODD.Collections.Collection`1.CopyTo(`0[],System.Int32)">
   CopyTo(T[], int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L113"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Copies the elements of the collection to an Array, starting at a particular Array index.</p>
@@ -447,7 +488,7 @@ Class Collection&lt;T&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="SODD_Collections_Collection_1_GetEnumerator" data-uid="SODD.Collections.Collection`1.GetEnumerator">
   GetEnumerator()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the collection.</p>
@@ -476,11 +517,119 @@ Class Collection&lt;T&gt;  <a class="header-action link-secondary" title="View s
 
 
 
+  <a id="SODD_Collections_Collection_1_GetRandom_" data-uid="SODD.Collections.Collection`1.GetRandom*"></a>
+
+  <h3 id="SODD_Collections_Collection_1_GetRandom" data-uid="SODD.Collections.Collection`1.GetRandom">
+  GetRandom()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a random item from the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetRandom()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>A randomly selected item from the collection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SODD_Collections_Collection_1_IndexOf_" data-uid="SODD.Collections.Collection`1.IndexOf*"></a>
+
+  <h3 id="SODD_Collections_Collection_1_IndexOf__0_" data-uid="SODD.Collections.Collection`1.IndexOf(`0)">
+  IndexOf(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the index of a specific item in the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(T item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <span class="xref">T</span></dt>
+    <dd><p>The item to locate in the collection.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the item if found in the collection; otherwise, -1.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SODD_Collections_Collection_1_Insert_" data-uid="SODD.Collections.Collection`1.Insert*"></a>
+
+  <h3 id="SODD_Collections_Collection_1_Insert_System_Int32__0_" data-uid="SODD.Collections.Collection`1.Insert(System.Int32,`0)">
+  Insert(int, T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts an item at the specified index in the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int index, T item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index at which item should be inserted.</p>
+</dd>
+    <dt><code>item</code> <span class="xref">T</span></dt>
+    <dd><p>The item to insert.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="SODD_Collections_Collection_1_Remove_" data-uid="SODD.Collections.Collection`1.Remove*"></a>
 
   <h3 id="SODD_Collections_Collection_1_Remove__0_" data-uid="SODD.Collections.Collection`1.Remove(`0)">
   Remove(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L123"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Removes the first occurrence of a specific object from the collection, triggering the OnItemRemoved event.</p>
@@ -504,6 +653,39 @@ Class Collection&lt;T&gt;  <a class="header-action link-secondary" title="View s
     <dd><p>true if item was successfully removed from the collection; otherwise, false.</p>
 </dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SODD_Collections_Collection_1_RemoveAt_" data-uid="SODD.Collections.Collection`1.RemoveAt*"></a>
+
+  <h3 id="SODD_Collections_Collection_1_RemoveAt_System_Int32_" data-uid="SODD.Collections.Collection`1.RemoveAt(System.Int32)">
+  RemoveAt(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Collections/Collection.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes the item at the specified index from the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAt(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the item to remove.</p>
+</dd>
+  </dl>
+
 
 
 

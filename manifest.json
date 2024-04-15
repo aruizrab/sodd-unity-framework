@@ -135,526 +135,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Attributes.OnValueChangedPropertyDrawer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Attributes.OnValueChangedPropertyDrawer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Attributes.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Attributes.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Collections.AudioClipCollectionMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Collections.AudioClipCollectionMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Collections.ComponentCollectionMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Collections.ComponentCollectionMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Collections.GameObjectCollectionMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Collections.GameObjectCollectionMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Collections.ObjectCollectionMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Collections.ObjectCollectionMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Collections.ScriptableObjectCollectionMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Collections.ScriptableObjectCollectionMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Collections.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Collections.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Events.BoolEventEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Events.BoolEventEditor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Events.BoolEventMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Events.BoolEventMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Events.EventEditor-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Events.EventEditor-1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Events.FloatEventEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Events.FloatEventEditor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Events.FloatEventMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Events.FloatEventMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Events.GameObjectEventEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Events.GameObjectEventEditor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Events.GameObjectEventMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Events.GameObjectEventMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Events.IntEventEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Events.IntEventEditor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Events.IntEventMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Events.IntEventMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Events.StringEventEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Events.StringEventEditor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Events.StringEventMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Events.StringEventMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Events.Vector2EventEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Events.Vector2EventEditor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Events.Vector2EventMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Events.Vector2EventMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Events.Vector3EventEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Events.Vector3EventEditor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Events.Vector3EventMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Events.Vector3EventMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Events.VoidEventEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Events.VoidEventEditor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Events.VoidEventMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Events.VoidEventMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Events.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Events.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Input.ActionHandlers.BoolInputActionHandlerMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Input.ActionHandlers.BoolInputActionHandlerMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Input.ActionHandlers.FloatInputActionHandlerMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Input.ActionHandlers.FloatInputActionHandlerMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Input.ActionHandlers.Vector2InputActionHandlerMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Input.ActionHandlers.Vector2InputActionHandlerMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Input.ActionHandlers.Vector3InputActionHandlerMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Input.ActionHandlers.Vector3InputActionHandlerMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Input.ActionHandlers.VoidInputActionHandlerMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Input.ActionHandlers.VoidInputActionHandlerMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Input.ActionHandlers.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Input.ActionHandlers.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Listeners.BoolEventListenerMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Listeners.BoolEventListenerMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Listeners.FloatEventListenerMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Listeners.FloatEventListenerMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Listeners.GameObjectEventListenerMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Listeners.GameObjectEventListenerMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Listeners.IntEventListenerMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Listeners.IntEventListenerMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Listeners.StringEventListenerMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Listeners.StringEventListenerMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Listeners.Vector2EventListenerMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Listeners.Vector2EventListenerMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Listeners.Vector3EventListenerMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Listeners.Vector3EventListenerMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Listeners.VoidEventListenerMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Listeners.VoidEventListenerMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Listeners.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Listeners.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Tests.Events.GameObjectEventTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Tests.Events.GameObjectEventTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Tests.Events.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Tests.Events.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Variables.BoolVariableMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Variables.BoolVariableMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Variables.FloatVariableMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Variables.FloatVariableMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Variables.GameObjectVariableMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Variables.GameObjectVariableMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Variables.IntVariableMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Variables.IntVariableMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Variables.LayerMaskVariableMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Variables.LayerMaskVariableMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Variables.StringVariableMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Variables.StringVariableMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Variables.Vector2VariableMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Variables.Vector2VariableMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Variables.Vector3VariableMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Variables.Vector3VariableMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Editor.Variables.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Editor.Variables.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/SODD.Events.BoolEvent.yml",
       "output": {
         ".html": {
@@ -955,216 +435,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Tests.Editor.Events.GenericEventTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Tests.Editor.Events.GenericEventTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Tests.Editor.Events.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Tests.Editor.Events.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Tests.Runtime.Collections.CollectionTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Tests.Runtime.Collections.CollectionTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Tests.Runtime.Collections.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Tests.Runtime.Collections.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Tests.Runtime.Events.BoolEventTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Tests.Runtime.Events.BoolEventTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Tests.Runtime.Events.EventTest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Tests.Runtime.Events.EventTest.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Tests.Runtime.Events.FloatEventTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Tests.Runtime.Events.FloatEventTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Tests.Runtime.Events.IntEventTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Tests.Runtime.Events.IntEventTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Tests.Runtime.Events.StringEventTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Tests.Runtime.Events.StringEventTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Tests.Runtime.Events.Vector2EventTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Tests.Runtime.Events.Vector2EventTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Tests.Runtime.Events.Vector3EventTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Tests.Runtime.Events.Vector3EventTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Tests.Runtime.Events.VoidEventTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Tests.Runtime.Events.VoidEventTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Tests.Runtime.Events.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Tests.Runtime.Events.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Tests.Runtime.Variables.BoolVariableTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Tests.Runtime.Variables.BoolVariableTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Tests.Runtime.Variables.FloatVariableTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Tests.Runtime.Variables.FloatVariableTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Tests.Runtime.Variables.IntVariableTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Tests.Runtime.Variables.IntVariableTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Tests.Runtime.Variables.StringVariableTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Tests.Runtime.Variables.StringVariableTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Tests.Runtime.Variables.VariableTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Tests.Runtime.Variables.VariableTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Tests.Runtime.Variables.Vector2VariableTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Tests.Runtime.Variables.Vector2VariableTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Tests.Runtime.Variables.Vector3VariableTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Tests.Runtime.Variables.Vector3VariableTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SODD.Tests.Runtime.Variables.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SODD.Tests.Runtime.Variables.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/SODD.Variables.BoolVariable.yml",
       "output": {
         ".html": {
@@ -1297,11 +567,34 @@
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "api/toc.html"
-        },
         ".json": {
           "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "changelog/CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "changelog/CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "changelog/toc.md",
+      "output": {
+        ".json": {
+          "relative_path": "changelog/toc.json"
+        },
+        ".html": {
+          "relative_path": "changelog/toc.html"
         }
       },
       "version": ""
@@ -1330,11 +623,31 @@
       "type": "Toc",
       "source_relative_path": "license/toc.md",
       "output": {
-        ".html": {
-          "relative_path": "license/toc.html"
-        },
         ".json": {
           "relative_path": "license/toc.json"
+        },
+        ".html": {
+          "relative_path": "license/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/favicon.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/favicon.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/logo.png"
         }
       },
       "version": ""
@@ -1353,11 +666,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "toc.html"
-        },
         ".json": {
           "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
         }
       },
       "version": ""

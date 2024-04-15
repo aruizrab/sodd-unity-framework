@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class Event&lt;T&gt; | SODD Framework | 0.1.0 </title>
+      <title>Class Event&lt;T&gt; | SODD Framework | 1.0.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Event&lt;T&gt; | SODD Framework | 0.1.0 ">
+      <meta name="title" content="Class Event&lt;T&gt; | SODD Framework | 1.0.0 ">
       
-      <meta name="description" content="Represents an abstract event that can be listened to and invoked.">
-      <link rel="icon" href="../favicon.ico">
+      <meta name="description" content="Provides a generic base class for scriptable event implementations, enabling events to be defined with specific data types as payloads.">
+      <link rel="icon" href="../manual/images/favicon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
       <meta name="docfx:navrel" content="../toc.html">
@@ -29,22 +29,22 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="">
+            <img id="logo" class="svg" src="../manual/images/logo.png" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,7 +89,7 @@
 
 
   <h1 id="SODD_Events_Event_1" data-uid="SODD.Events.Event`1" class="text-break">
-Class Event&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/Event.cs/#L40"><i class="bi bi-code-slash"></i></a>
+Class Event&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/Event.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class Event&lt;T&gt;  <a class="header-action link-secondary" title="View source
   
   </div>
 
-  <div class="markdown summary"><p>Represents an abstract event that can be listened to and invoked.</p>
+  <div class="markdown summary"><p>Provides a generic base class for scriptable event implementations, enabling events to be defined with specific
+data types as payloads.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -147,25 +148,31 @@ Class Event&lt;T&gt;  <a class="header-action link-secondary" title="View source
 
 
   <h2 id="SODD_Events_Event_1_examples">Examples</h2>
-  <p>A StringEvent implementation would look like this:</p>
-<pre><code class="lang-csharp">public class StringEvent : Event&lt;string&gt; {}</code></pre>
+  <p>Definition of a string event implementation:</p>
+<pre><code class="lang-csharp">[CreateAssetMenu(menuName = "My Events/String Event", fileName = nameof(StringEvent))]
+public class StringEvent : Event&lt;string&gt; {}</code></pre>
 
 
   <h2 id="SODD_Events_Event_1_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>
-    This abstract class serves as the base for all scriptable event implementations. It implements
-    the <a class="xref" href="SODD.Events.IEvent-1.html">IEvent&lt;T&gt;</a> interface allowing listeners to subscribe to and unsubscribe from events
-    and provides a method to invoke the event with a specific payload.
-</p>
+        This abstract class serves as the base of the ScriptableObject-based event system provided by the SODD
+        Framework. It allows developers to create custom events that are reusable, and loosely coupled,
+        enhancing the modularity and flexibility of game architecture.
+    </p>
 <p>
-    To create custom scriptable events, inherit from this class and specify the
-    payload type <code class="typeparamref">T</code>, it can be any valid Unity type (e.g., int, string, GameObject, etc.).
-    Then, in your derived classes, you can override the necessary methods (if needed) and add more properties
-    or methods that are specific to your requirements. However, the base
-    <a class="xref" href="SODD.Events.Event-1.html#SODD_Events_Event_1_AddListener_System_Action__0__">AddListener</a>,
-    <a class="xref" href="SODD.Events.Event-1.html#SODD_Events_Event_1_RemoveListener_System_Action__0__">RemoveListener</a> and <a class="xref" href="SODD.Events.Event-1.html#SODD_Events_Event_1_Invoke__0_">Invoke</a>
-    methods, already implemented by this abstract class, should be enough to handle basic use cases.
-</p>
+        It implements the <a class="xref" href="SODD.Events.IEvent-1.html">IEvent&lt;T&gt;</a> interface, which includes methods to add or remove listeners, and
+        to invoke the event. This class can be extended to define events with any valid Unity type as a payload, such
+        as <code>int</code>, <code>string</code>, <code>GameObject</code>, etc.
+    </p>
+<p>
+        The methods <a class="xref" href="SODD.Events.Event-1.html#SODD_Events_Event_1_AddListener_System_Action__0__">AddListener(Action&lt;T&gt;)</a>, <a class="xref" href="SODD.Events.Event-1.html#SODD_Events_Event_1_RemoveListener_System_Action__0__">RemoveListener(Action&lt;T&gt;)</a>, and
+        <a class="xref" href="SODD.Events.Event-1.html#SODD_Events_Event_1_Invoke__0_">Invoke(T)</a> provided by this class should suffice for basic event handling scenarios. Developers
+        can override these methods in derived classes to tailor event behavior to specific needs.
+    </p>
+<p>
+        To create custom scriptable events, inherit from this class and specify the
+        payload type <code class="typeparamref">T</code>.
+    </p>
 </div>
 
 
@@ -176,7 +183,7 @@ Class Event&lt;T&gt;  <a class="header-action link-secondary" title="View source
 
   <h3 id="SODD_Events_Event_1_GenericEvent" data-uid="SODD.Events.Event`1.GenericEvent">
   GenericEvent
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/Event.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/Event.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -211,10 +218,10 @@ Class Event&lt;T&gt;  <a class="header-action link-secondary" title="View source
 
   <h3 id="SODD_Events_Event_1_AddListener_System_Action__0__" data-uid="SODD.Events.Event`1.AddListener(System.Action{`0})">
   AddListener(Action&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/Event.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/Event.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Adds a listener to the event.</p>
+  <div class="markdown level1 summary"><p>Subscribes a listener to the event, allowing it to be notified when the event is invoked.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -225,7 +232,8 @@ Class Event&lt;T&gt;  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>listener</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
-    <dd><p>The listener to add.</p>
+    <dd><p>The listener to add. It is a method that matches the signature of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action&lt;T&gt;</a>
+delegate, accepting a single parameter of type <code class="typeparamref">T</code>.</p>
 </dd>
   </dl>
 
@@ -244,10 +252,10 @@ Class Event&lt;T&gt;  <a class="header-action link-secondary" title="View source
 
   <h3 id="SODD_Events_Event_1_Invoke__0_" data-uid="SODD.Events.Event`1.Invoke(`0)">
   Invoke(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/Event.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/Event.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Invokes the event and notifies all registered listeners with the specified payload.</p>
+  <div class="markdown level1 summary"><p>Triggers the event, notifying all subscribed listeners and passing the specified payload to them.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -277,10 +285,11 @@ Class Event&lt;T&gt;  <a class="header-action link-secondary" title="View source
 
   <h3 id="SODD_Events_Event_1_RemoveListener_System_Action__0__" data-uid="SODD.Events.Event`1.RemoveListener(System.Action{`0})">
   RemoveListener(Action&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/Event.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/Event.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Removes the specified listener from the event.</p>
+  <div class="markdown level1 summary"><p>Unsubscribes a previously added listener from the event, preventing it from being notified when the event is
+invoked.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -291,7 +300,8 @@ Class Event&lt;T&gt;  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>listener</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
-    <dd><p>The listener to be removed.</p>
+    <dd><p>The listener to remove. It must be the same instance that was previously added with
+<a class="xref" href="SODD.Events.IEvent-1.html#SODD_Events_IEvent_1_AddListener_System_Action__0__">AddListener(Action&lt;T&gt;)</a>.</p>
 </dd>
   </dl>
 
@@ -306,10 +316,6 @@ Class Event&lt;T&gt;  <a class="header-action link-secondary" title="View source
 
 
 
-  <h2 id="seealso">See Also</h2>
-  <div class="seealso">
-      <div><a class="xref" href="SODD.Events.IEvent-1.html">IEvent</a>&lt;T&gt;</div>
-  </div>
 
 </article>
 

@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class FloatInputActionHandler | SODD Framework | 0.1.0 </title>
+      <title>Class FloatInputActionHandler | SODD Framework | 1.0.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class FloatInputActionHandler | SODD Framework | 0.1.0 ">
+      <meta name="title" content="Class FloatInputActionHandler | SODD Framework | 1.0.0 ">
       
       <meta name="description" content="A ScriptableObject that handles input actions passing float data.">
-      <link rel="icon" href="../favicon.ico">
+      <link rel="icon" href="../manual/images/favicon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
       <meta name="docfx:navrel" content="../toc.html">
@@ -29,22 +29,22 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="">
+            <img id="logo" class="svg" src="../manual/images/logo.png" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -125,17 +125,17 @@ Class FloatInputActionHandler  <a class="header-action link-secondary" title="Vi
 
   <h2 id="SODD_Input_ActionHandlers_FloatInputActionHandler_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>
-    The <code>FloatInputActionHandler</code> specializes in processing input actions that output float data, such as
-    analog stick movement,
-    trigger pressure, or any other input mechanism that generates a continuous range of values rather than discrete
-    on/off signals.
-</p>
+        The <code>FloatInputActionHandler</code> specializes in processing input actions that output float data, such as
+        analog stick movement,
+        trigger pressure, or any other input mechanism that generates a continuous range of values rather than discrete
+        on/off signals.
+    </p>
 <p>
-    This handler is ideal for scenarios where the precise value of an input, within a defined range, influences the
-    game's behavior.
-    Examples include adjusting the speed of a character's movement based on analog stick deflection or modulating
-    audio volume.
-</p>
+        This handler is ideal for scenarios where the precise value of an input, within a defined range, influences the
+        game's behavior.
+        Examples include adjusting the speed of a character's movement based on analog stick deflection or modulating
+        audio volume.
+    </p>
 </div>
 
 

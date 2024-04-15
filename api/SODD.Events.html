@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Namespace SODD.Events | SODD Framework | 0.1.0 </title>
+      <title>Namespace SODD.Events | SODD Framework | 1.0.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace SODD.Events | SODD Framework | 0.1.0 ">
+      <meta name="title" content="Namespace SODD.Events | SODD Framework | 1.0.0 ">
       
       
-      <link rel="icon" href="../favicon.ico">
+      <link rel="icon" href="../manual/images/favicon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
       <meta name="docfx:navrel" content="../toc.html">
@@ -29,22 +29,22 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="">
+            <img id="logo" class="svg" src="../manual/images/logo.png" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,22 +96,23 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="SODD.Events.BoolEvent.html">BoolEvent</a></dt>
-      <dd><p>A ScriptableObject that represents an event carrying an boolean payload.</p>
+      <dd><p>Represents a scriptable event that carries a boolean payload.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="SODD.Events.Event-1.html">Event&lt;T&gt;</a></dt>
-      <dd><p>Represents an abstract event that can be listened to and invoked.</p>
+      <dd><p>Provides a generic base class for scriptable event implementations, enabling events to be defined with specific
+data types as payloads.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="SODD.Events.FloatEvent.html">FloatEvent</a></dt>
-      <dd><p>Represents an event that carries a float payload.</p>
+      <dd><p>Represents a scriptable event that carries a float payload.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="SODD.Events.GameObjectEvent.html">GameObjectEvent</a></dt>
-      <dd><p>A ScriptableObject that represents an event carrying an GameObject payload.</p>
+      <dd><p>Represents a scriptable event that carries a GameObject payload.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -121,27 +122,27 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="SODD.Events.IntEvent.html">IntEvent</a></dt>
-      <dd><p>A ScriptableObject that represents an event carrying an integer payload.</p>
+      <dd><p>Represents a scriptable event that carries an integer payload.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="SODD.Events.StringEvent.html">StringEvent</a></dt>
-      <dd><p>A ScriptableObject that represents an event carrying an string payload.</p>
+      <dd><p>Represents a scriptable event that carries a string payload.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="SODD.Events.Vector2Event.html">Vector2Event</a></dt>
-      <dd><p>Represents an event that carries a Vector2 payload.</p>
+      <dd><p>Represents a scriptable event that carries a Vector2 payload.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="SODD.Events.Vector3Event.html">Vector3Event</a></dt>
-      <dd><p>A ScriptableObject that represents an event carrying an Vector3 payload.</p>
+      <dd><p>Represents a scriptable event that carries a Vector3 payload.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="SODD.Events.VoidEvent.html">VoidEvent</a></dt>
-      <dd><p>A ScriptableObject that represents an event carrying no payload.</p>
+      <dd><p>Represents a scriptable event that carries no payload.</p>
 </dd>
     </dl>
     <h3 id="interfaces">
@@ -149,7 +150,8 @@ Interfaces
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="SODD.Events.IEvent-1.html">IEvent&lt;T&gt;</a></dt>
-      <dd><p>Represents an event that can be listened to and invoked.</p>
+      <dd><p>Defines a generic interface for events that can have listeners added or removed, and be invoked with a payload of
+type <code class="typeparamref">T</code>.</p>
 </dd>
     </dl>
 

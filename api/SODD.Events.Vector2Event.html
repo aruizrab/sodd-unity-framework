@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class Vector2Event | SODD Framework | 0.1.0 </title>
+      <title>Class Vector2Event | SODD Framework | 1.0.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Vector2Event | SODD Framework | 0.1.0 ">
+      <meta name="title" content="Class Vector2Event | SODD Framework | 1.0.0 ">
       
-      <meta name="description" content="Represents an event that carries a Vector2 payload.">
-      <link rel="icon" href="../favicon.ico">
+      <meta name="description" content="Represents a scriptable event that carries a Vector2 payload.">
+      <link rel="icon" href="../manual/images/favicon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
       <meta name="docfx:navrel" content="../toc.html">
@@ -29,22 +29,22 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="">
+            <img id="logo" class="svg" src="../manual/images/logo.png" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,7 +89,7 @@
 
 
   <h1 id="SODD_Events_Vector2Event" data-uid="SODD.Events.Vector2Event" class="text-break">
-Class Vector2Event  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/Vector2Event.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class Vector2Event  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/Vector2Event.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,7 @@ Class Vector2Event  <a class="header-action link-secondary" title="View source" 
   
   </div>
 
-  <div class="markdown summary"><p>Represents an event that carries a Vector2 payload.</p>
+  <div class="markdown summary"><p>Represents a scriptable event that carries a Vector2 payload.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -141,13 +141,59 @@ Class Vector2Event  <a class="header-action link-secondary" title="View source" 
 
 
 
+  <h2 id="SODD_Events_Vector2Event_examples">Examples</h2>
+  <p>Below is an example demonstrating how to use a <a class="xref" href="SODD.Events.Vector2Event.html">Vector2Event</a> for capturing and handling 2D
+player input in a game:</p>
+<pre><code class="lang-csharp">using UnityEngine;
+using SODD.Events;
+
+public class PlayerController : MonoBehaviour
+{
+    public Vector2Event onPlayerMove; // Assign this through the Unity Editor.
+
+    private Vector2 _direction;
+
+    private void OnEnable()
+    {
+        onPlayerMove.AddListener(OnPlayerMove);
+    }
+
+    private void OnDisable()
+    {
+        onPlayerMove.RemoveListener(OnPlayerMove);
+    }
+
+    private void FixedUpdate()
+    {
+        // Move player based on _direction
+    }
+
+    private void OnPlayerMove(Vector2 direction)
+    {
+        _direction = direction;
+    }
+}</code></pre>
+<p>This example shows how the <code>onPlayerMove</code> event can be used to read and respond to 2D movement inputs from the
+player. This method decouples input gathering from movement logic, allowing for more modular and easily
+maintainable code.</p>
 
 
+  <h2 id="SODD_Events_Vector2Event_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+        This class extends the generic <a class="xref" href="SODD.Events.Event-1.html">Event&lt;T&gt;</a> class, specifying <code>Vector2</code> as the type parameter.
+        It is particularly useful for scenarios involving 2D vectors, such as player movement, touch inputs, or any
+        other two-dimensional data transmission.
+    </p>
+<p>
+        Typical use cases include capturing player directional inputs, tracking touch gestures, or sending
+        coordinates for game elements to react to.
+    </p>
+<p>
+        This class can be created as a ScriptableObject asset directly from the Unity Editor.
+    </p>
+</div>
 
-  <h2 id="seealso">See Also</h2>
-  <div class="seealso">
-      <div><a class="xref" href="SODD.Events.Event-1.html">Event</a>&lt;T&gt;</div>
-  </div>
+
 
 </article>
 

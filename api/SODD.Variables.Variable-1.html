@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class Variable&lt;T&gt; | SODD Framework | 0.1.0 </title>
+      <title>Class Variable&lt;T&gt; | SODD Framework | 1.0.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Variable&lt;T&gt; | SODD Framework | 0.1.0 ">
+      <meta name="title" content="Class Variable&lt;T&gt; | SODD Framework | 1.0.0 ">
       
       <meta name="description" content="Represents an abstract variable of type T.">
-      <link rel="icon" href="../favicon.ico">
+      <link rel="icon" href="../manual/images/favicon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
       <meta name="docfx:navrel" content="../toc.html">
@@ -29,22 +29,22 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="">
+            <img id="logo" class="svg" src="../manual/images/logo.png" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -147,31 +147,30 @@ Class Variable&lt;T&gt;  <a class="header-action link-secondary" title="View sou
 
 
 
+  <h2 id="SODD_Variables_Variable_1_examples">Examples</h2>
+  <p>Example of an IntVariable implementation:</p>
+<pre><code class="lang-csharp">[CreateAssetMenu(menuName = "My Variables/Int Variable", fileName = nameof(StringVariable))]
+public class IntVariable : Variable&lt;int&gt; {}</code></pre>
+
 
   <h2 id="SODD_Variables_Variable_1_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><pre><code>&lt;p&gt;
-    This abstract class serves as the base for all scriptable variable implementations.
-    It implements the &lt;xref href=&quot;SODD.Variables.IVariable%601&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; interface allowing the creation of data containers that can be
-    easily manipulated within the Unity Editor and
-    referenced across different scripts, making it useful for a wide range
-    of applications, such as game settings, runtime configurations, or shared data across different
-    game components.
-&lt;/p&gt;
-&lt;p&gt;
-    The value of the variable can be marked as read-only to prevent modification at runtime.
-    Additionally, the class provides an event, OnValueChanged, which is invoked whenever
-    the value of the variable is changed, allowing for reactive programming patterns.
-&lt;/p&gt;
-&lt;p&gt;
-    To create custom scriptable variable, inherit from this class and specify the
-    payload type &lt;code class=&quot;typeparamref&quot;&gt;T&lt;/code&gt;, it can be any valid Unity type (e.g., int, string, GameObject, etc.).
-&lt;/p&gt;
-&lt;example&gt;
-    Example of an IntVariable implementation:
-    &lt;pre&gt;&lt;code class=&quot;lang-csharp&quot;&gt;public class IntVariable : Variable&lt;int&gt; {}&lt;/code&gt;&lt;/pre&gt;
-&lt;/example&gt;
-</code></pre>
-<p><a class="xref" href="SODD.Variables.IVariable-1.html">IVariable&lt;T&gt;</a></p>
+  <div class="markdown level0 remarks"><p>
+        This abstract class serves as the base for all scriptable variable implementations.
+        It implements the <a class="xref" href="SODD.Variables.IVariable-1.html">IVariable&lt;T&gt;</a> interface allowing the creation of data containers that can be
+        easily manipulated within the Unity Editor and
+        referenced across different scripts, making it useful for a wide range
+        of applications, such as game settings, runtime configurations, or shared data across different
+        game components.
+    </p>
+<p>
+        The value of the variable can be marked as read-only to prevent modification at runtime.
+        Additionally, the class provides an event, OnValueChanged, which is invoked whenever
+        the value of the variable is changed, allowing for reactive programming patterns.
+    </p>
+<p>
+        To create custom scriptable variable, inherit from this class and specify the
+        payload type <code class="typeparamref">T</code>, it can be any valid Unity type (e.g., int, string, GameObject, etc.).
+    </p>
 </div>
 
 
@@ -182,10 +181,11 @@ Class Variable&lt;T&gt;  <a class="header-action link-secondary" title="View sou
 
   <h3 id="SODD_Variables_Variable_1_OnValueChanged" data-uid="SODD.Variables.Variable`1.OnValueChanged">
   OnValueChanged
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/Variable.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/Variable.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An event that is triggered whenever the value of the variable changes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -278,7 +278,7 @@ protected T value</code></pre>
 
   <h3 id="SODD_Variables_Variable_1_Value" data-uid="SODD.Variables.Variable`1.Value">
   Value
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/Variable.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/Variable.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the value of the variable.</p>
@@ -315,10 +315,11 @@ protected T value</code></pre>
 
   <h3 id="SODD_Variables_Variable_1_HandleValueChange" data-uid="SODD.Variables.Variable`1.HandleValueChange">
   HandleValueChange()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/Variable.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/Variable.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invokes the OnValueChanged event and can log the change if debugging is enabled.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
