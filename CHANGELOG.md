@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/aruizrab/sodd-unity-framework/compare/v1.0.0...v1.1.0) (2024-04-15)
+
+
+### Features
+
+* **collections:** collections now implement IList interface and have a method to get random items ([48784a1](https://github.com/aruizrab/sodd-unity-framework/commit/48784a198d2cffe1b61d4c15f135a2bda61deae8))
+
 # 1.0.0 (2024-03-02)
 
 
