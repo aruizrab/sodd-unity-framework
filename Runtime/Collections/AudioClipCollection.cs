@@ -3,7 +3,7 @@
 namespace SODD.Collections
 {
     /// <summary>
-    ///     Represents a specialized collection of <see cref="AudioClip" /> objects.
+    ///     Represents a scriptable collection that stores <see cref="AudioClip" /> objects.
     /// </summary>
     /// <remarks>
     ///     <para>
@@ -43,7 +43,7 @@ namespace SODD.Collections
     /// }
     /// </code>
     ///     This script demonstrates how an <see cref="AudioClipCollection" /> can be used in conjunction with a
-    ///     <see cref="Vector3Event" />
+    ///     <see cref="Events.Vector3Event" />
     ///     to play a random audio clip from a collection at the position specified by the event.
     /// </example>
     [CreateAssetMenu(menuName = Framework.Collections.AudioClip, fileName = nameof(AudioClipCollection),
