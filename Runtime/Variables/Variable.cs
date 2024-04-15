@@ -31,14 +31,14 @@ namespace SODD.Variables
     ///         To create custom scriptable variable, inherit from this class and specify the
     ///         payload type <typeparamref name="T" />, it can be any valid Unity type (e.g., int, string, GameObject, etc.).
     ///     </para>
-    ///     <example>
-    ///         Example of an IntVariable implementation:
-    ///         <code>
+    /// </remarks>
+    /// <example>
+    ///     Example of an IntVariable implementation:
+    ///     <code>
     ///         [CreateAssetMenu(menuName = "My Variables/Int Variable", fileName = nameof(StringVariable))]
     ///         public class IntVariable : Variable&lt;int&gt; {}
     ///     </code>
-    ///     </example>
-    /// </remarks>
+    /// </example>
     public abstract class Variable<T> : ScriptableObject, IVariable, IVariable<T>
     {
         [SerializeField] 
