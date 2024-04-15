@@ -1,0 +1,14 @@
+﻿apiRules:
+  - exclude:
+      # inherited Object methods
+      uidRegex: ^System\.Object\..*$
+      type: Method
+  - exclude:
+      # tests
+      uidRegex: SODD.Tests
+      type: Namespace
+  - exclude:
+      # editor
+      uidRegex: SODD.Editor
+      type: Namespace
+      

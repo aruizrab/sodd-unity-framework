@@ -5,22 +5,21 @@ using UnityEngine.InputSystem;
 namespace SODD.Input.ActionHandlers
 {
     /// <summary>
-    ///     Represents an ScriptableObject event that handles input actions and triggers scriptable events in response.
+    ///     Provides a base class for handling input actions and converting them into scriptable events.
     /// </summary>
     /// <typeparam name="T">The data type of the input value, defined by the input action being handled.</typeparam>
     /// <remarks>
     ///     <para>
-    ///         This abstract class serves as the base for all input action handler implementations. It facilitates the
-    ///         decoupling of input handling logic from GameObjects and components by providing ScriptableObjects that
-    ///         translate the events provided by Unity's Input System into the event system based on scriptable events provided
-    ///         by the SODD Framework.
+    ///         This abstract class serves as the foundation for all input action handler implementations within the SODD Framework.
+    /// It allows for the decoupling of input handling logic from game objects and components by translating the events provided
+    /// by Unity's Input System into the SODD Framework's scriptable event system.
     ///     </para>
     ///     <para>
     ///         This class listens to three phases of an input action—started, performed, and canceled—and invokes
     ///         the corresponding scriptable events.
     ///     </para>
     ///     <para>
-    ///         To use <c>InputActionHandler&lt;T&gt;</c>, create a subclass specifying the appropriate type for
+    ///         To create custom input action handlers inherit from this class and specifying the appropriate type for
     ///         <typeparamref name="T" />
     ///         based on your input action's expected output. Then, assign input action references and connect event listeners
     ///         to handle specific input events.

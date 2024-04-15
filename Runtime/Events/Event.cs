@@ -11,32 +11,38 @@ using System.IO;
 namespace SODD.Events
 {
     /// <summary>
-    ///     Represents an abstract event that can be listened to and invoked.
+    ///     Provides a generic base class for scriptable event implementations, enabling events to be defined with specific
+    ///     data types as payloads.
     /// </summary>
     /// <typeparam name="T">The type of the event payload.</typeparam>
     /// <remarks>
     ///     <para>
-    ///         This abstract class serves as the base for all scriptable event implementations. It implements
-    ///         the <see cref="IEvent{T}" /> interface allowing listeners to subscribe to and unsubscribe from events
-    ///         and provides a method to invoke the event with a specific payload.
+    ///         This abstract class serves as the base of the ScriptableObject-based event system provided by the SODD
+    ///         Framework. It allows developers to create custom events that are reusable, and loosely coupled,
+    ///         enhancing the modularity and flexibility of game architecture.
+    ///     </para>
+    ///     <para>
+    ///         It implements the <see cref="IEvent{T}" /> interface, which includes methods to add or remove listeners, and
+    ///         to invoke the event. This class can be extended to define events with any valid Unity type as a payload, such
+    ///         as <c>int</c>, <c>string</c>, <c>GameObject</c>, etc.
+    ///     </para>
+    ///     <para>
+    ///         The methods <see cref="AddListener(Action{T})" />, <see cref="RemoveListener(Action{T})" />, and
+    ///         <see cref="Invoke(T)" /> provided by this class should suffice for basic event handling scenarios. Developers
+    ///         can override these methods in derived classes to tailor event behavior to specific needs.
     ///     </para>
     ///     <para>
     ///         To create custom scriptable events, inherit from this class and specify the
-    ///         payload type <typeparamref name="T" />, it can be any valid Unity type (e.g., int, string, GameObject, etc.).
-    ///         Then, in your derived classes, you can override the necessary methods (if needed) and add more properties
-    ///         or methods that are specific to your requirements. However, the base
-    ///         <see cref="Event{T}.AddListener">AddListener</see>,
-    ///         <see cref="Event{T}.RemoveListener">RemoveListener</see> and <see cref="Event{T}.Invoke">Invoke</see>
-    ///         methods, already implemented by this abstract class, should be enough to handle basic use cases.
+    ///         payload type <typeparamref name="T" />.
     ///     </para>
     /// </remarks>
     /// <example>
-    ///     A StringEvent implementation would look like this:
+    ///     Definition of a string event implementation:
     ///     <code>
+    ///         [CreateAssetMenu(menuName = "My Events/String Event", fileName = nameof(StringEvent))]
     ///         public class StringEvent : Event&lt;string&gt; {}
     ///     </code>
     /// </example>
-    /// <seealso cref="IEvent{T}" />
     public abstract class Event<T> : ScriptableObject, IEvent<T>
     {
 #if UNITY_EDITOR

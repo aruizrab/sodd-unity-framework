@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using SODD.Attributes;
 using SODD.Events;
 using UnityEngine;
+using Random = System.Random;
 #if UNITY_EDITOR
 using Logger = SODD.Core.Logger;
 #endif
@@ -30,14 +31,15 @@ namespace SODD.Collections
     ///         To create a custom collection, inherit from this class and specify the item type <typeparamref name="T" />,
     ///         which can be any type supported by Unity (e.g., GameObject, int, string).
     ///     </para>
-    ///     <example>
-    ///         Example of a GameObject collection implementation:
-    ///         <code>
-    ///             public class GameObjectCollection : Collection&lt;GameObject&gt; {}
-    ///         </code>
-    ///     </example>
     /// </remarks>
-    public abstract class Collection<T> : ScriptableObject, ICollection<T>
+    /// <example>
+    ///     Example of a GameObject collection implementation:
+    ///     <code>
+    ///         [CreateAssetMenu(menuName = "My Collections/GameObject Collection", fileName = nameof(GameObjectCollection)]    
+    ///         public class GameObjectCollection : Collection&lt;GameObject&gt; {}
+    ///     </code>
+    /// </example>
+    public abstract class Collection<T> : ScriptableObject, ICollection<T>, IList<T>
     {
         [SerializeField] 
         private List<T> items = new();
@@ -149,6 +151,58 @@ namespace SODD.Collections
 #if UNITY_EDITOR
             if (debug) Logger.LogAsset(this, $"Item removed: {item}");
 #endif
+        }
+
+        /// <summary>
+        ///     Retrieves the index of a specific item in the collection.
+        /// </summary>
+        /// <param name="item">The item to locate in the collection.</param>
+        /// <returns>The index of the item if found in the collection; otherwise, -1.</returns>
+        public int IndexOf(T item)
+        {
+            return items.IndexOf(item);
+        }
+
+        /// <summary>
+        ///     Inserts an item at the specified index in the collection.
+        /// </summary>
+        /// <param name="index">The zero-based index at which item should be inserted.</param>
+        /// <param name="item">The item to insert.</param>
+        public void Insert(int index, T item)
+        {
+            items.Insert(index, item);
+            HandleItemAdded(item);
+        }
+
+        /// <summary>
+        ///     Removes the item at the specified index from the collection.
+        /// </summary>
+        /// <param name="index">The zero-based index of the item to remove.</param>
+        public void RemoveAt(int index)
+        {
+            var item = items[index];
+            items.RemoveAt(index);
+            HandleItemRemoved(item);
+        }
+
+        /// <summary>
+        ///     Gets or sets the element at the specified index.
+        /// </summary>
+        /// <param name="index">The zero-based index of the element to get or set.</param>
+        /// <returns>The element at the specified index.</returns>
+        public T this[int index]
+        {
+            get => items[index];
+            set => items[index] = value;
+        }
+
+        /// <summary>
+        ///     Returns a random item from the collection.
+        /// </summary>
+        /// <returns>A randomly selected item from the collection.</returns>
+        public T GetRandom()
+        {
+            return items[new Random().Next(0, items.Count)];
         }
     }
 }
