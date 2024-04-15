@@ -1,12 +1,13 @@
 ﻿namespace SODD.Variables
 {
     /// <summary>
-    ///     Represents a generic variable interface.
+    ///     Represents a generic variable interface for type-agnostic variable usage.
     /// </summary>
     /// <remarks>
-    ///     This interface defines a generic variable with a non-specific type.
-    ///     It's intended for use in scenarios where the type of the variable isn't known
-    ///     at compile-time or needs to be treated in a type-agnostic manner.
+    ///     This interface allows for handling variables whose type might not be known at compile time or
+    ///     when it is necessary to operate on variables in a type-agnostic manner. It can be used in scenarios
+    ///     where variables are managed dynamically, such as in systems that load or save settings where the
+    ///     types can vary.
     /// </remarks>
     public interface IVariable
     {
