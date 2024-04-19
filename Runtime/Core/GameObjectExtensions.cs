@@ -2,6 +2,9 @@
 
 namespace SODD.Core
 {
+    /// <summary>
+    ///     Extends <see cref="GameObject" /> type providing utility methods.
+    /// </summary>
     public static class GameObjectExtensions
     {
         /// <summary>
@@ -44,6 +47,39 @@ namespace SODD.Core
                 .CancelOnDisable(cancelOnDisable);
             coroutineBuilder.hideFlags = HideFlags.HideInInspector;
             return coroutineBuilder;
+        }
+
+        /// <summary>
+        ///     Determines whether the <see cref="GameObject" /> is part of the specified <see cref="LayerMask" />.
+        /// </summary>
+        /// <param name="gameObject">The <see cref="GameObject" /> to test.</param>
+        /// <param name="layerMask">The <see cref="LayerMask" /> to check against.</param>
+        /// <returns><c>true</c> if the gameObject's layer is included in the layerMask; otherwise, <c>false</c>.</returns>
+        /// <remarks>
+        ///     This method checks if the layer to which the gameObject belongs is included in the specified layerMask.
+        ///     It uses bitwise operations to compare the gameObject's layer with the layerMask.
+        /// </remarks>
+        /// <example>
+        ///     This example demonstrates how to check if a GameObject named "Player" is in a LayerMask defined for enemies:
+        ///     <code>
+        /// GameObject player = GameObject.Find("Player");
+        /// LayerMask enemyLayerMask = LayerMask.GetMask("Enemy");
+        /// 
+        /// bool isPlayerInEnemyLayer = player.IsInLayerMask(enemyLayerMask);
+        /// 
+        /// if (isPlayerInEnemyLayer)
+        /// {
+        ///     Debug.Log("Player is in the Enemy Layer.");
+        /// }
+        /// else
+        /// {
+        ///     Debug.Log("Player is not in the Enemy Layer.");
+        /// }
+        /// </code>
+        /// </example>
+        public static bool IsInLayerMask(this GameObject gameObject, LayerMask layerMask)
+        {
+            return layerMask == (layerMask | (1 << gameObject.layer));
         }
     }
 }
