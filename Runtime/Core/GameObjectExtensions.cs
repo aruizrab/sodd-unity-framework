@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Linq;
+using UnityEngine;
 
 namespace SODD.Core
 {
@@ -80,6 +82,190 @@ namespace SODD.Core
         public static bool IsInLayerMask(this GameObject gameObject, LayerMask layerMask)
         {
             return layerMask == (layerMask | (1 << gameObject.layer));
+        }
+
+        /// <summary>
+        ///     Retrieves a component of type <typeparamref name="T" /> from the specified <see cref="GameObject" /> according to
+        ///     the provided <paramref name="scope" />.
+        /// </summary>
+        /// <typeparam name="T">The type of the component to retrieve.</typeparam>
+        /// <param name="gameObject">The <see cref="GameObject" /> from which the component is to be retrieved.</param>
+        /// <param name="scope">
+        ///     The scope of the search for the component, which can be limited to the GameObject, its children,
+        ///     its parent, or both its parent and children. The default value is <see cref="Scope.GameObject" />.
+        /// </param>
+        /// <returns>
+        ///     The component of type <typeparamref name="T" /> found within the specified <paramref name="scope" /> or <c>null</c>
+        ///     if no such component exists.
+        /// </returns>
+        /// <exception cref="ArgumentOutOfRangeException">
+        ///     Thrown if the <paramref name="scope" /> is not one of the enumerated
+        ///     values.
+        /// </exception>
+        /// <remarks>
+        ///     This method allows for a flexible component search by specifying a <paramref name="scope" /> for the search area:
+        ///     <list type="bullet">
+        ///         <item>
+        ///             <description><c>GameObject</c>: Searches only on the given GameObject.</description>
+        ///         </item>
+        ///         <item>
+        ///             <description><c>Children</c>: Searches all children of the GameObject, not including itself.</description>
+        ///         </item>
+        ///         <item>
+        ///             <description><c>Parents</c>: Searches the parent objects of the GameObject, moving up the hierarchy.</description>
+        ///         </item>
+        ///         <item>
+        ///             <description>
+        ///                 <c>ParentsAndChildren</c>: First searches up the parent chain, and if no component is found,
+        ///                 searches down through the children.
+        ///             </description>
+        ///         </item>
+        ///     </list>
+        /// </remarks>
+        /// <example>
+        ///     <code>
+        /// // Retrieve a Rigidbody component only from the GameObject itself
+        /// Rigidbody rb = gameObject.GetComponent&lt;Rigidbody&gt;();
+        /// 
+        /// // Retrieve a Rigidbody component from the children
+        /// Rigidbody rbChild = gameObject.GetComponent&lt;Rigidbody&gt;(Scope.Children);
+        /// 
+        /// // Retrieve a Rigidbody component from the parent or children
+        /// Rigidbody rbFamily = gameObject.GetComponent&lt;Rigidbody&gt;(Scope.ParentsAndChildren);
+        /// </code>
+        ///     This example demonstrates how to retrieve a Rigidbody component from a GameObject with different scopes of search.
+        /// </example>
+        public static T GetComponent<T>(this GameObject gameObject, Scope scope = Scope.GameObject)
+        {
+            return scope switch
+            {
+                Scope.GameObject => gameObject.GetComponent<T>(),
+                Scope.Children => gameObject.GetComponentInChildren<T>(),
+                Scope.Parents => gameObject.GetComponentInParent<T>(),
+                Scope.ParentsAndChildren => gameObject.GetComponentInParent<T>() ??
+                                            gameObject.GetComponentInChildren<T>(),
+                _ => throw new ArgumentOutOfRangeException(nameof(scope), scope, null)
+            };
+        }
+
+        /// <summary>
+        ///     Retrieves all components of type <typeparamref name="T" /> from the specified <see cref="GameObject" /> according
+        ///     to the provided <paramref name="scope" />.
+        /// </summary>
+        /// <typeparam name="T">The type of the components to retrieve.</typeparam>
+        /// <param name="gameObject">The <see cref="GameObject" /> from which the components are to be retrieved.</param>
+        /// <param name="scope">
+        ///     The scope of the search for the components, which can be limited to the GameObject, its children,
+        ///     its parent, or both its parent and children. The default is <see cref="Scope.GameObject" />.
+        /// </param>
+        /// <returns>
+        ///     An array of components of type <typeparamref name="T" /> found within the specified <paramref name="scope" />.
+        /// </returns>
+        /// <exception cref="ArgumentOutOfRangeException">
+        ///     Thrown if the <paramref name="scope" /> is not one of the enumerated
+        ///     values.
+        /// </exception>
+        /// <remarks>
+        ///     This method expands the capabilities of the standard <see cref="GameObject.GetComponent{T}" /> method by allowing
+        ///     the search
+        ///     for components to be scoped more broadly than just the current GameObject. Depending on the
+        ///     <paramref name="scope" /> parameter,
+        ///     components can be retrieved from:
+        ///     <list type="bullet">
+        ///         <item>
+        ///             <description>The GameObject itself (<see cref="Scope.GameObject" />).</description>
+        ///         </item>
+        ///         <item>
+        ///             <description>All direct and indirect children of the GameObject (<see cref="Scope.Children" />).</description>
+        ///         </item>
+        ///         <item>
+        ///             <description>The parent and all higher ancestors of the GameObject (<see cref="Scope.Parents" />).</description>
+        ///         </item>
+        ///         <item>
+        ///             <description>
+        ///                 Both the parent hierarchy and the children hierarchy (<see cref="Scope.ParentsAndChildren" />
+        ///                 ), ensuring a unique set of components by removing duplicates.
+        ///             </description>
+        ///         </item>
+        ///     </list>
+        ///     This method is particularly useful for complex GameObject hierarchies where a single GameObject may interact with
+        ///     multiple related components spread across different levels of the hierarchy.
+        /// </remarks>
+        /// <example>
+        ///     <code>
+        ///  // Retrieve all Rigidbody components only from the GameObject itself
+        ///  Rigidbody[] rigidbodies = gameObject.GetComponents&lt;Rigidbody&gt;();
+        ///  
+        ///  // Retrieve all Rigidbody components from the children
+        ///  Rigidbody[] childRigidbodies = gameObject.GetComponents&lt;Rigidbody&gt;(Scope.Children);
+        ///  
+        ///  // Retrieve all unique Rigidbody components from both the parent and children
+        ///  Rigidbody[] familyRigidbodies = gameObject.GetComponents&lt;Rigidbody&gt;(Scope.ParentsAndChildren);
+        ///  </code>
+        ///     <para>
+        ///         This example demonstrates how to retrieve Rigidbody components from a GameObject with different scopes of
+        ///         search.
+        ///     </para>
+        /// </example>
+        public static T[] GetComponents<T>(this GameObject gameObject, Scope scope = Scope.GameObject)
+        {
+            return scope switch
+            {
+                Scope.GameObject => gameObject.GetComponents<T>(),
+                Scope.Children => gameObject.GetComponentsInChildren<T>(),
+                Scope.Parents => gameObject.GetComponentsInParent<T>(),
+                Scope.ParentsAndChildren => gameObject.GetComponentsInParent<T>()
+                    .Concat(gameObject.GetComponentsInChildren<T>()).Distinct().ToArray(),
+                _ => throw new ArgumentOutOfRangeException(nameof(scope), scope, null)
+            };
+        }
+
+        /// <summary>W
+        ///     Tries to retrieve a component of type <typeparamref name="T" /> from the specified <paramref name="gameObject" />
+        ///     according to the provided <paramref name="scope" />, and outputs the result.
+        /// </summary>
+        /// <typeparam name="T">The type of the component to retrieve.</typeparam>
+        /// <param name="gameObject">The <see cref="GameObject" /> from which to retrieve the component.</param>
+        /// <param name="component">
+        ///     When this method returns, contains the component of type <typeparamref name="T" /> if found,
+        ///     otherwise null. This parameter is passed uninitialized.
+        /// </param>
+        /// <param name="scope">
+        ///     The <see cref="Scope" /> within which to search for the component. The default is
+        ///     <see cref="Scope.GameObject" />.
+        /// </param>
+        /// <returns>
+        ///     <see langword="true" /> if a component of type <typeparamref name="T" /> is found; otherwise,
+        ///     <see langword="false" />.
+        /// </returns>
+        /// <remarks>
+        ///     This method extends <see cref="GameObject" /> and utilizes <see cref="GameObject.GetComponent{T}" /> to attempt to
+        ///     retrieve a component
+        ///     of the specified type T. If the component exists within the given scope on the GameObject,
+        ///     it is assigned to the output parameter 'component', and the method returns true. If no such component
+        ///     is found, the method returns false.
+        /// </remarks>
+        /// <example>
+        ///     The following example demonstrates how to use the <see cref="TryGetComponent{T}" /> method to attempt to retrieve a
+        ///     component of type <c>MeshRenderer</c> from a game object.
+        ///     <code>
+        /// MeshRenderer renderer;
+        /// 
+        /// if (gameObject.TryGetComponent&lt;MeshRenderer&gt;(out renderer))
+        /// {
+        ///     Console.WriteLine("Component found!");
+        /// }
+        /// else
+        /// {
+        ///     Console.WriteLine("Component not found.");
+        /// }
+        /// </code>
+        /// </example>
+        public static bool TryGetComponent<T>(this GameObject gameObject, out T component,
+            Scope scope = Scope.GameObject)
+        {
+            component = gameObject.GetComponent<T>(scope);
+            return component != null;
         }
     }
 }
