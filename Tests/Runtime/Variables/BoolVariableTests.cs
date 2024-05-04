@@ -19,7 +19,7 @@ namespace SODD.Tests.Runtime.Variables
             _lastEventValue = false;
 
             // Subscribe to the OnValueChanged event
-            _boolVariable.OnValueChanged.AddListener(value =>
+            _boolVariable.AddListener(value =>
             {
                 _eventTriggered = true;
                 _lastEventValue = value;

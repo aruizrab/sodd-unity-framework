@@ -1,18 +1,21 @@
 ﻿using System;
+using System.Collections.Generic;
+using SODD.Attributes;
+using SODD.Events;
 using UnityEngine;
 
 namespace SODD.Variables
 {
     /// <summary>
-    ///     Represents a reference holder for values of type <typeparamref name="T"/>.
+    ///     Represents a reference holder for values of type <typeparamref name="T" />.
     /// </summary>
     /// <typeparam name="T">The type of the data held by this reference.</typeparam>
     /// <remarks>
     ///     <para>
-    ///         This class provides a flexible mechanism to reference values either directly as serialized fields within a
-    ///         MonoBehaviour
-    ///         or ScriptableObject, or indirectly through a reference to a <see cref="Variable{T}" /> asset. This allows
-    ///         developers to switch between inner instance-specific values and shared variable value without modifying the code that uses said values.
+    ///         This class provides a flexible mechanism to reference values either directly as serialized fields, or
+    ///         indirectly through a reference to a <see cref="Variable{T}" /> asset. This allows
+    ///         developers to switch between inner instance-specific values and shared variable values without modifying the
+    ///         code that uses said values.
     ///     </para>
     /// </remarks>
     /// <example>
@@ -34,11 +37,36 @@ namespace SODD.Variables
     ///     needing to touch the source code.
     /// </example>
     [Serializable]
-    public class ValueReference<T>
+    public class ValueReference<T> : IVariable<T>, IListenableEvent<T>
     {
         [SerializeField] private bool useField;
-        [SerializeField] private T field;
+
+        [SerializeField] [OnValueChanged("HandleValueChange")]
+        private T field;
+
         [SerializeField] private Variable<T> variable;
+
+        private readonly IEvent<T> _onValueChanged = new GenericEvent<T>();
+
+        /// <summary>
+        ///     Registers an action to be called when the referenced value changes.
+        /// </summary>
+        /// <param name="listener">The action to invoke when the value changes.</param>
+        public void AddListener(Action<T> listener)
+        {
+            if (useField) _onValueChanged?.AddListener(listener);
+            else variable?.AddListener(listener);
+        }
+
+        /// <summary>
+        ///     Unregisters an action previously added to listen for value changes.
+        /// </summary>
+        /// <param name="listener">The action to remove.</param>
+        public void RemoveListener(Action<T> listener)
+        {
+            if (useField) _onValueChanged?.RemoveListener(listener);
+            else variable?.RemoveListener(listener);
+        }
 
         /// <summary>
         ///     Gets or sets the value of the reference, choosing between a local field and an external variable based on
@@ -46,16 +74,26 @@ namespace SODD.Variables
         /// </summary>
         public T Value
         {
-            get
-            {
-                if (!useField && variable) return variable.Value;
-                return field;
-            }
+            get => useField ? field : variable ? variable.Value : default;
             set
             {
-                if (!useField && variable) variable.Value = value;
-                else field = value;
+                if (useField)
+                {
+                    if (EqualityComparer<T>.Default.Equals(field, value)) return;
+                    field = value;
+                    _onValueChanged?.Invoke(value);
+                    return;
+                }
+
+                if (!variable) return;
+
+                variable.Value = value;
             }
+        }
+
+        private void HandleValueChange()
+        {
+            _onValueChanged?.Invoke(field);
         }
     }
 }

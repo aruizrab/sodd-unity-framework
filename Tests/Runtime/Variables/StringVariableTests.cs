@@ -19,7 +19,7 @@ namespace SODD.Tests.Runtime.Variables
             _lastEventValue = "";
 
             // Subscribe to the OnValueChanged event
-            _stringVariable.OnValueChanged.AddListener(value =>
+            _stringVariable.AddListener(value =>
             {
                 _eventTriggered = true;
                 _lastEventValue = value;

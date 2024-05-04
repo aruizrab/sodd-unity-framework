@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections.Generic;
+using UnityEngine;
 using SODD.Attributes;
 using SODD.Events;
 using Logger = SODD.Core.Logger;
@@ -10,7 +12,7 @@ using UnityEditor;
 namespace SODD.Variables
 {
     /// <summary>
-    ///     Represents an abstract variable of type T.
+    ///     Represents an abstract variable of type <typeparamref name="T" />.
     /// </summary>
     /// <typeparam name="T">The type of the variable.</typeparam>
     /// <remarks>
@@ -24,8 +26,8 @@ namespace SODD.Variables
     ///     </para>
     ///     <para>
     ///         The value of the variable can be marked as read-only to prevent modification at runtime.
-    ///         Additionally, the class provides an event, OnValueChanged, which is invoked whenever
-    ///         the value of the variable is changed, allowing for reactive programming patterns.
+    ///         Additionally, the class implements the <see cref="IListenableEvent{T}" /> interface, which allows listeners to
+    ///         be added and notified when the value of the variable changes.
     ///     </para>
     ///     <para>
     ///         To create custom scriptable variable, inherit from this class and specify the
@@ -39,7 +41,7 @@ namespace SODD.Variables
     ///         public class IntVariable : Variable&lt;int&gt; {}
     ///     </code>
     /// </example>
-    public abstract class Variable<T> : ScriptableObject, IVariable, IVariable<T>
+    public abstract class Variable<T> : ScriptableObject, IVariable, IVariable<T>, IListenableEvent<T>
     {
         [SerializeField] 
         [OnValueChanged("HandleValueChange")]
@@ -56,7 +58,7 @@ namespace SODD.Variables
         /// <summary>
         /// An event that is triggered whenever the value of the variable changes.
         /// </summary>
-        public readonly GenericEvent<T> OnValueChanged = new();
+        protected readonly IEvent<T> OnValueChanged = new GenericEvent<T>();
 
         object IVariable.Value
         {
@@ -73,8 +75,10 @@ namespace SODD.Variables
             get => value;
             set
             {
-                if (readOnly) return;
-                if (this.value != null && this.value.Equals(value)) return;
+                if (readOnly || EqualityComparer<T>.Default.Equals(this.value, value))
+                {
+                    return;
+                }
                 this.value = value;
                 HandleValueChange();
             }
@@ -90,6 +94,24 @@ namespace SODD.Variables
             if (!debug) return;
             Logger.LogAsset(this, $"Value changed. New value = {value}");
 #endif
+        }
+
+        /// <summary>
+        ///     Registers an action to be called when the variable's value changes.
+        /// </summary>
+        /// <param name="listener">The action to invoke when the value changes.</param>
+        public void AddListener(Action<T> listener)
+        {
+            OnValueChanged.AddListener(listener);
+        }
+
+        /// <summary>
+        ///     Unregisters an action previously added to listen for value changes.
+        /// </summary>
+        /// <param name="listener">The action to remove.</param>
+        public void RemoveListener(Action<T> listener)
+        {
+            OnValueChanged.RemoveListener(listener);
         }
     }
 }
