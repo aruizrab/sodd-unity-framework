@@ -2,7 +2,7 @@
 using SODD.Events;
 using UnityEngine;
 
-namespace SODD.Editor.Tests.Events
+namespace SODD.Tests.Runtime.Events
 {
     public class GameObjectEventTests
     {
