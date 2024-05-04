@@ -17,8 +17,8 @@ namespace SODD.Events
     ///         provided by the SODD Framework, from which all scriptable events implement.
     ///     </para>
     ///     <para>
-    ///         Listeners can subscribe to the event using <see cref="AddListener" /> and unsubscribe using
-    ///         <see cref="RemoveListener" />. The event can be triggered using the <see cref="Invoke" />
+    ///         Listeners can subscribe to the event using <see cref="IListenableEvent{T}.AddListener" /> and unsubscribe using
+    ///         <see cref="IListenableEvent{T}.RemoveListener" />. The event can be triggered using the <see cref="Invoke" />
     ///         method, which notifies all subscribed listeners, passing the specified payload to them.
     ///     </para>
     ///     <para>
@@ -56,29 +56,8 @@ namespace SODD.Events
     ///     </code>
     ///     This example will print "Hello, World!" to the console.
     /// </example>
-    public interface IEvent<T>
+    public interface IEvent<T>: IListenableEvent<T>
     {
-        /// <summary>
-        ///     Subscribes a listener to the event, allowing it to be notified when the event is invoked.
-        /// </summary>
-        /// <param name="listener">
-        ///     The listener to add. It is a method that matches the signature of the <see cref="Action{T}" />
-        ///     delegate, accepting a single parameter of type <typeparamref name="T" />.
-        /// </param>
-        /// <typeparam name="T">The type of the listener's argument.</typeparam>
-        void AddListener(Action<T> listener);
-
-        /// <summary>
-        ///     Unsubscribes a previously added listener from the event, preventing it from being notified when the event is
-        ///     invoked.
-        /// </summary>
-        /// <param name="listener">
-        ///     The listener to remove. It must be the same instance that was previously added with
-        ///     <see cref="AddListener" />.
-        /// </param>
-        /// <typeparam name="T">The type of the listener's argument.</typeparam>
-        void RemoveListener(Action<T> listener);
-
         /// <summary>
         ///     Triggers the event, notifying all subscribed listeners and passing the specified payload to them.
         /// </summary>
