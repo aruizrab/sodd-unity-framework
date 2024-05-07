@@ -220,7 +220,8 @@ namespace SODD.Core
             };
         }
 
-        /// <summary>W
+        /// <summary>
+        ///     W
         ///     Tries to retrieve a component of type <typeparamref name="T" /> from the specified <paramref name="gameObject" />
         ///     according to the provided <paramref name="scope" />, and outputs the result.
         /// </summary>
@@ -266,6 +267,103 @@ namespace SODD.Core
         {
             component = gameObject.GetComponent<T>(scope);
             return component != null;
+        }
+
+        /// <summary>
+        ///     Executes the provided <see cref="Action{T}" /> on the first <typeparamref name="T" /> component found on the
+        ///     specified <paramref name="gameObject" />
+        ///     within the defined <paramref name="scope" />.
+        /// </summary>
+        /// <param name="gameObject">The GameObject from which the component is to be retrieved and the action is to be executed.</param>
+        /// <param name="action">
+        ///     The action to execute on the retrieved component. If the component is not found, the action is not
+        ///     executed.
+        /// </param>
+        /// <param name="scope">
+        ///     The <see cref="Scope" /> defining where to search for the component. The default scope is
+        ///     <see cref="Scope.GameObject" />.
+        /// </param>
+        /// <typeparam name="T">The type of the component to retrieve and act upon.</typeparam>
+        /// <remarks>
+        ///     <para>
+        ///         This method offers a robust and more efficient alternative to Unity's <c>SendMessage</c>, which relies on
+        ///         string method names and lacks type safety. By directly invoking a delegate on the component,
+        ///         <c>Send</c> avoids the overhead and errors associated with string-based method invocation.
+        ///     </para>
+        ///     <para>
+        ///         This method attempts to find a component of type <typeparamref name="T" /> on the
+        ///         <paramref name="gameObject" />
+        ///         according to the specified <paramref name="scope" />.
+        ///         If the component is found, the provided <paramref name="action" /> is executed with the component as its
+        ///         argument.
+        ///         If no such component is found, or if <paramref name="action" />
+        ///         is null, no action is executed.
+        ///     </para>
+        ///     <para>
+        ///         This method is useful for applying operations to components when the exact presence of the component is not
+        ///         guaranteed, or when the operation should only be applied conditionally
+        ///         based on the presence of the component.
+        ///     </para>
+        /// </remarks>
+        /// <example>
+        ///     The following example shows the use of <c>Send</c> to apply damage to a damageable component upon projectile
+        ///     impact:
+        ///     <code>
+        /// public class Projectile : MonoBehaviour
+        /// {
+        ///     public float damage;
+        ///     public LayerMask targetLayers;
+        ///     public Event&lt;Vector3&gt; onProjectileImpact;
+        /// 
+        ///     private void OnCollisionEnter(Collision other)
+        ///     {
+        ///         if (other.gameObject.IsInLayerMask(targetLayers))
+        ///         {
+        ///             other.gameObject.Send&lt;IDamageable&gt;(damageable =&gt; damageable.ReceiveDamage(damage));
+        ///             onProjectileImpact.Invoke(transform.position);
+        ///             Destroy(gameObject);
+        ///         }
+        ///     }
+        /// }
+        /// </code>
+        ///     This example shows how the <c>Send</c> method is used within the <c>Projectile</c> class to find and interact with
+        ///     an <c>IDamageable</c> component on a collision object,
+        ///     applying damage and triggering an event upon impact.
+        /// </example>
+        public static void Send<T>(this GameObject gameObject, Action<T> action, Scope scope = Scope.GameObject)
+        {
+            if (gameObject.TryGetComponent(out T t, scope)) action?.Invoke(t);
+        }
+        
+        /// <summary>
+        /// Executes the provided <see cref="Action{T}"/> on all components of type <typeparamref name="T"/> found on the specified <paramref name="gameObject"/>
+        /// within the defined <paramref name="scope"/>.
+        /// </summary>
+        /// <param name="gameObject">The GameObject from which the components are to be retrieved and the action is to be executed on each.</param>
+        /// <param name="action">The action to execute on each retrieved component. If no components are found, the action is not executed.</param>
+        /// <param name="scope">
+        /// The <see cref="Scope"/> defining where to search for the components. The default is <see cref="Scope.GameObject"/>.
+        /// </param>
+        /// <typeparam name="T">The type of the components to retrieve and act upon.</typeparam>
+        /// <remarks>
+        /// This method facilitates the application of a single action to multiple components of the same type distributed throughout the specified scope.
+        /// It is particularly useful for scenarios where a uniform operation needs to be applied to an array of components, such as enabling, disabling, or resetting component states.
+        /// </remarks>
+        /// <example>
+        /// The following example shows the use of <c>Broadcast</c> to disable all Collider components within and including children of a GameObject:
+        /// <code>
+        /// public class ExampleUsage : MonoBehaviour
+        /// {
+        ///     void Start()
+        ///     {
+        ///         gameObject.Broadcast&lt;Collider&gt;(collider =&gt; collider.enabled = false, Scope.Children);
+        ///     }
+        /// }
+        /// </code>
+        /// </example>
+        public static void Broadcast<T>(this GameObject gameObject, Action<T> action, Scope scope = Scope.GameObject)
+        {
+            foreach (var component in gameObject.GetComponents<T>(scope)) action?.Invoke(component);
         }
     }
 }
