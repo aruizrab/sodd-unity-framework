@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using JetBrains.Annotations;
 using UnityEngine;
 
 namespace SODD.Core
@@ -364,6 +365,264 @@ namespace SODD.Core
         public static void Broadcast<T>(this GameObject gameObject, Action<T> action, Scope scope = Scope.GameObject)
         {
             foreach (var component in gameObject.GetComponents<T>(scope)) action?.Invoke(component);
+        }
+        
+        /// <summary>
+        ///     Calculates the direction vector from the GameObject's position to the specified point.
+        /// </summary>
+        /// <param name="gameObject">The GameObject to calculate the vector from.</param>
+        /// <param name="point">The target point to which the direction vector is calculated.</param>
+        /// <returns>
+        ///     A Vector3 representing the direction vector from the GameObject's position to the specified point.
+        /// </returns>
+        /// <remarks>
+        ///     This method calculates the direction vector from the GameObject's position to the specified point.
+        ///     It uses the GameObject's current position as the starting point and the specified point as the target.
+        ///     The resulting direction vector points from the GameObject towards the specified point.
+        /// </remarks>
+        public static Vector3 VectorTo(this GameObject gameObject, Vector3 point)
+        {
+            return gameObject.transform.position.VectorTo(point);
+        }
+
+        /// <summary>
+        ///     Calculates the direction vector from the GameObject's position to the position of the specified Transform.
+        /// </summary>
+        /// <param name="gameObject">The GameObject to calculate the vector from.</param>
+        /// <param name="transform">The Transform whose position is the target of the direction vector.</param>
+        /// <returns>
+        ///     A Vector3 representing the direction vector from the GameObject's position to the position of the specified
+        ///     Transform.
+        /// </returns>
+        /// <exception cref="System.ArgumentNullException">Thrown when the specified Transform is null.</exception>
+        /// <remarks>
+        ///     This method calculates the direction vector from the GameObject's position to the position of the specified
+        ///     Transform.
+        ///     It uses the GameObject's current position as the starting point and the position of the specified Transform as the
+        ///     target.
+        ///     The resulting direction vector points from the GameObject towards the position of the specified Transform.
+        /// </remarks>
+        public static Vector3 VectorTo(this GameObject gameObject, [NotNull] Transform transform)
+        {
+            if (transform == null) throw new ArgumentNullException(nameof(transform));
+            return gameObject.transform.position.VectorTo(transform.position);
+        }
+
+        /// <summary>
+        ///     Calculates the direction vector from the position of the GameObject to the position of the specified GameObject.
+        /// </summary>
+        /// <param name="gameObject">The GameObject to calculate the direction vector from.</param>
+        /// <param name="other">The target GameObject whose position is the target of the direction vector.</param>
+        /// <returns>
+        ///     A Vector3 representing the direction vector from the position of the GameObject to the position of the specified
+        ///     GameObject.
+        /// </returns>
+        /// <exception cref="System.ArgumentNullException">Thrown when the specified GameObject is null.</exception>
+        /// <remarks>
+        ///     This method calculates the direction vector from the position of the GameObject to the position of the specified
+        ///     GameObject.
+        ///     It uses the GameObject's current position as the starting point and the position of the specified GameObject as the
+        ///     target.
+        ///     The resulting direction vector points from the GameObject towards the position of the specified GameObject.
+        /// </remarks>
+        public static Vector3 VectorTo(this GameObject gameObject, [NotNull] GameObject other)
+        {
+            if (other == null) throw new ArgumentNullException(nameof(other));
+            return gameObject.transform.position.VectorTo(other.transform.position);
+        }
+
+        /// <summary>
+        ///     Calculates the direction vector from the specified point to the position of the GameObject.
+        /// </summary>
+        /// <param name="gameObject">The GameObject to calculate the direction vector to.</param>
+        /// <param name="point">The source point from which the direction vector is calculated.</param>
+        /// <returns>
+        ///     A Vector3 representing the direction vector from the specified point to the position of the GameObject.
+        /// </returns>
+        /// <remarks>
+        ///     This method calculates the direction vector from the specified point to the position of the GameObject.
+        ///     It uses the specified point as the starting point and the GameObject's current position as the target.
+        ///     The resulting direction vector points from the specified point towards the position of the GameObject.
+        /// </remarks>
+        public static Vector3 VectorFrom(this GameObject gameObject, Vector3 point)
+        {
+            return gameObject.transform.position.VectorFrom(point);
+        }
+
+        /// <summary>
+        ///     Calculates the direction vector from the specified Transform to the position of the GameObject.
+        /// </summary>
+        /// <param name="gameObject">The GameObject to calculate the direction vector to.</param>
+        /// <param name="transform">The Transform whose position is the source of the direction vector.</param>
+        /// <returns>
+        ///     A Vector3 representing the direction vector from the specified Transform to the position of the GameObject.
+        /// </returns>
+        /// <exception cref="System.ArgumentNullException">Thrown when the specified Transform is null.</exception>
+        /// <remarks>
+        ///     This method calculates the direction vector from the specified Transform to the position of the GameObject.
+        ///     It uses the Transform's position as the starting point and the GameObject's current position as the target.
+        ///     The resulting direction vector points from the specified Transform towards the position of the GameObject.
+        /// </remarks>
+        public static Vector3 VectorFrom(this GameObject gameObject, [NotNull] Transform transform)
+        {
+            if (transform == null) throw new ArgumentNullException(nameof(transform));
+            return gameObject.transform.position.VectorFrom(transform.position);
+        }
+
+        /// <summary>
+        ///     Calculates the direction vector from the position of the specified GameObject to the position of the GameObject.
+        /// </summary>
+        /// <param name="gameObject">The GameObject to calculate the direction vector to.</param>
+        /// <param name="other">The source GameObject whose position is the source of the direction vector.</param>
+        /// <returns>
+        ///     A Vector3 representing the direction vector from the position of the specified GameObject to the position of the
+        ///     GameObject.
+        /// </returns>
+        /// <exception cref="System.ArgumentNullException">Thrown when the specified GameObject is null.</exception>
+        /// <remarks>
+        ///     This method calculates the direction vector from the position of the specified GameObject to the position of the
+        ///     GameObject.
+        ///     It uses the position of the specified GameObject as the starting point and the GameObject's current position as the
+        ///     target.
+        ///     The resulting direction vector points from the position of the specified GameObject towards the position of the
+        ///     GameObject.
+        /// </remarks>
+        public static Vector3 VectorFrom(this GameObject gameObject, [NotNull] GameObject other)
+        {
+            if (other == null) throw new ArgumentNullException(nameof(other));
+            return gameObject.transform.position.VectorFrom(other.transform.position);
+        }
+
+        /// <summary>
+        ///     Calculates the direction vector from the position of the GameObject to the specified point.
+        /// </summary>
+        /// <param name="gameObject">The GameObject to calculate the direction vector from.</param>
+        /// <param name="point">The target point to which the direction vector is calculated.</param>
+        /// <returns>
+        ///     A Vector3 representing the direction vector from the position of the GameObject to the specified point.
+        /// </returns>
+        public static Vector3 DirectionTo(this GameObject gameObject, Vector3 point)
+        {
+            return gameObject.transform.position.DirectionTo(point);
+        }
+
+        /// <summary>
+        ///     Calculates the direction vector from the position of the GameObject to the position of the specified Transform.
+        /// </summary>
+        /// <param name="gameObject">The GameObject to calculate the direction vector from.</param>
+        /// <param name="transform">The Transform whose position is the target of the direction vector.</param>
+        /// <returns>
+        ///     A Vector3 representing the direction vector from the position of the GameObject to the position of the specified
+        ///     Transform.
+        /// </returns>
+        /// <exception cref="System.ArgumentNullException">Thrown when the specified Transform is null.</exception>
+        public static Vector3 DirectionTo(this GameObject gameObject, [NotNull] Transform transform)
+        {
+            if (transform == null) throw new ArgumentNullException(nameof(transform));
+            return gameObject.transform.position.DirectionTo(transform.position);
+        }
+
+        /// <summary>
+        ///     Calculates the direction vector from the position of the GameObject to the position of the specified GameObject.
+        /// </summary>
+        /// <param name="gameObject">The GameObject to calculate the direction vector from.</param>
+        /// <param name="other">The target GameObject whose position is the target of the direction vector.</param>
+        /// <returns>
+        ///     A Vector3 representing the direction vector from the position of the GameObject to the position of the specified
+        ///     GameObject.
+        /// </returns>
+        /// <exception cref="System.ArgumentNullException">Thrown when the specified GameObject is null.</exception>
+        public static Vector3 DirectionTo(this GameObject gameObject, [NotNull] GameObject other)
+        {
+            if (other == null) throw new ArgumentNullException(nameof(other));
+            return gameObject.transform.position.DirectionTo(other.transform.position);
+        }
+
+        /// <summary>
+        ///     Calculates the direction vector from the specified point to the position of the GameObject.
+        /// </summary>
+        /// <param name="gameObject">The GameObject to calculate the direction vector to.</param>
+        /// <param name="point">The source point from which the direction vector is calculated.</param>
+        /// <returns>
+        ///     A Vector3 representing the direction vector from the specified point to the position of the GameObject.
+        /// </returns>
+        public static Vector3 DirectionFrom(this GameObject gameObject, Vector3 point)
+        {
+            return gameObject.transform.position.DirectionFrom(point);
+        }
+
+        /// <summary>
+        ///     Calculates the direction vector from the specified Transform to the position of the GameObject.
+        /// </summary>
+        /// <param name="gameObject">The GameObject to calculate the direction vector to.</param>
+        /// <param name="transform">The Transform whose position is the source of the direction vector.</param>
+        /// <returns>
+        ///     A Vector3 representing the direction vector from the specified Transform to the position of the GameObject.
+        /// </returns>
+        /// <exception cref="System.ArgumentNullException">Thrown when the specified Transform is null.</exception>
+        public static Vector3 DirectionFrom(this GameObject gameObject, [NotNull] Transform transform)
+        {
+            if (transform == null) throw new ArgumentNullException(nameof(transform));
+            return gameObject.transform.position.DirectionFrom(transform.position);
+        }
+
+        /// <summary>
+        ///     Calculates the direction vector from the position of the specified GameObject to the position of the GameObject.
+        /// </summary>
+        /// <param name="gameObject">The GameObject to calculate the direction vector to.</param>
+        /// <param name="other">The source GameObject whose position is the source of the direction vector.</param>
+        /// <returns>
+        ///     A Vector3 representing the direction vector from the position of the specified GameObject to the position of the
+        ///     GameObject.
+        /// </returns>
+        /// <exception cref="System.ArgumentNullException">Thrown when the specified GameObject is null.</exception>
+        public static Vector3 DirectionFrom(this GameObject gameObject, [NotNull] GameObject other)
+        {
+            if (other == null) throw new ArgumentNullException(nameof(other));
+            return gameObject.transform.position.DirectionFrom(other.transform.position);
+        }
+
+        /// <summary>
+        ///     Calculates the distance between the position of the GameObject and the specified point.
+        /// </summary>
+        /// <param name="gameObject">The GameObject to calculate the distance to.</param>
+        /// <param name="point">The target point whose distance is calculated from the GameObject's position.</param>
+        /// <returns>
+        ///     The distance between the position of the GameObject and the specified point.
+        /// </returns>
+        public static float DistanceTo(this GameObject gameObject, Vector3 point)
+        {
+            return gameObject.transform.position.DistanceTo(point);
+        }
+
+        /// <summary>
+        ///     Calculates the distance between the position of the GameObject and the position of the specified Transform.
+        /// </summary>
+        /// <param name="gameObject">The GameObject to calculate the distance to.</param>
+        /// <param name="transform">The Transform whose position is the target of the distance calculation.</param>
+        /// <returns>
+        ///     The distance between the position of the GameObject and the position of the specified Transform.
+        /// </returns>
+        /// <exception cref="System.ArgumentNullException">Thrown when the specified Transform is null.</exception>
+        public static float DistanceTo(this GameObject gameObject, [NotNull] Transform transform)
+        {
+            if (transform == null) throw new ArgumentNullException(nameof(transform));
+            return gameObject.transform.position.DistanceTo(transform.position);
+        }
+
+        /// <summary>
+        ///     Calculates the distance between the position of the GameObject and the position of the specified GameObject.
+        /// </summary>
+        /// <param name="gameObject">The GameObject to calculate the distance to.</param>
+        /// <param name="other">The target GameObject whose position is the target of the distance calculation.</param>
+        /// <returns>
+        ///     The distance between the position of the GameObject and the position of the specified GameObject.
+        /// </returns>
+        /// <exception cref="System.ArgumentNullException">Thrown when the specified GameObject is null.</exception>
+        public static float DistanceTo(this GameObject gameObject, [NotNull] GameObject other)
+        {
+            if (other == null) throw new ArgumentNullException(nameof(other));
+            return gameObject.transform.position.DistanceTo(other.transform.position);
         }
     }
 }
