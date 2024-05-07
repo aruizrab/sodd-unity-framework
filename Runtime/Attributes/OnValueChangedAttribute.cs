@@ -19,22 +19,24 @@ namespace SODD.Attributes
     /// </remarks>
     /// <example>
     ///     <code>
-    /// using UnityEngine;
-    /// using SODD.Attributes;
+    ///         using UnityEngine;
+    ///         using SODD.Attributes;
     /// 
-    /// public class Example : MonoBehaviour
-    /// {
-    ///     [OnValueChanged("OnHealthChanged")]
-    ///     public int health;
+    ///         public class Example : MonoBehaviour
+    ///         {
+    ///             [OnValueChanged("OnHealthChanged")]
+    ///             public int health;
     /// 
-    ///     private void OnHealthChanged()
-    ///     {
-    ///         Debug.Log("Health value changed to: " + health);
-    ///     }
-    /// }
-    /// </code>
-    ///     This example demonstrates the attribute applied to a health field, where any change in the editor
-    ///     will automatically call the OnHealthChanged method to handle related updates or logic.
+    ///             private void OnHealthChanged()
+    ///             {
+    ///                 Debug.Log("Health value changed to: " + health);
+    ///             }
+    ///         }
+    ///     </code>
+    ///     <para>
+    ///         This example demonstrates the attribute applied to a health field, where any change in the editor
+    ///         will automatically call the OnHealthChanged method to handle related updates or logic.
+    ///     </para>
     /// </example>
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]
     public class OnValueChangedAttribute : PropertyAttribute

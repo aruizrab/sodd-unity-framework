@@ -19,7 +19,7 @@ namespace SODD.Tests.Runtime.Variables
             _lastEventValue = default(Vector3);
 
             // Subscribe to the OnValueChanged event
-            _vector3Variable.OnValueChanged.AddListener(value =>
+            _vector3Variable.AddListener(value =>
             {
                 _eventTriggered = true;
                 _lastEventValue = value;
