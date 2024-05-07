@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface IEventListener&lt;T&gt; | SODD Framework | 1.1.0 </title>
+      <title>Class NavMeshAgentExtensions | SODD Framework | 1.1.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface IEventListener&lt;T&gt; | SODD Framework | 1.1.0 ">
+      <meta name="title" content="Class NavMeshAgentExtensions | SODD Framework | 1.1.0 ">
       
-      <meta name="description" content="Represents a listener for an event of type T.">
+      <meta name="description" content="Extends NavMeshAgent type providing utility methods.">
       <link rel="icon" href="../manual/images/favicon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/aruizrab/sodd-unity-framework/new/main/apiSpec/new?filename=SODD_Listeners_IEventListener_1.md&amp;value=---%0Auid%3A%20SODD.Listeners.IEventListener%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/aruizrab/sodd-unity-framework/new/main/apiSpec/new?filename=SODD_Core_NavMeshAgentExtensions.md&amp;value=---%0Auid%3A%20SODD.Core.NavMeshAgentExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,36 +84,37 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="SODD.Listeners.IEventListener`1">
+        <article data-uid="SODD.Core.NavMeshAgentExtensions">
 
 
 
-  <h1 id="SODD_Listeners_IEventListener_1" data-uid="SODD.Listeners.IEventListener`1" class="text-break">
-Interface IEventListener&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Listeners/IEventListener.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  <h1 id="SODD_Core_NavMeshAgentExtensions" data-uid="SODD.Core.NavMeshAgentExtensions" class="text-break">
+Class NavMeshAgentExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/NavMeshAgentExtensions.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="SODD.html">SODD</a>.<a class="xref" href="SODD.Listeners.html">Listeners</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SODD.html">SODD</a>.<a class="xref" href="SODD.Core.html">Core</a></dd></dl>
   
   </div>
 
-  <div class="markdown summary"><p>Represents a listener for an event of type T.</p>
+  <div class="markdown summary"><p>Extends NavMeshAgent type providing utility methods.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IEventListener&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public static class NavMeshAgentExtensions</code></pre>
   </div>
 
 
 
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd><p>The type of the event payload.</p>
-</dd>
-  </dl>
 
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">NavMeshAgentExtensions</span></div>
+    </dd>
+  </dl>
 
 
 
@@ -127,25 +128,33 @@ Interface IEventListener&lt;T&gt;  <a class="header-action link-secondary" title
 </h2>
 
 
-  <a id="SODD_Listeners_IEventListener_1_OnEventInvoked_" data-uid="SODD.Listeners.IEventListener`1.OnEventInvoked*"></a>
+  <a id="SODD_Core_NavMeshAgentExtensions_CanReachDestination_" data-uid="SODD.Core.NavMeshAgentExtensions.CanReachDestination*"></a>
 
-  <h3 id="SODD_Listeners_IEventListener_1_OnEventInvoked__0_" data-uid="SODD.Listeners.IEventListener`1.OnEventInvoked(`0)">
-  OnEventInvoked(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Listeners/IEventListener.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <h3 id="SODD_Core_NavMeshAgentExtensions_CanReachDestination_NavMeshAgent_" data-uid="SODD.Core.NavMeshAgentExtensions.CanReachDestination(NavMeshAgent)">
+  CanReachDestination(NavMeshAgent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/NavMeshAgentExtensions.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Defines a method that is called when an event is invoked.</p>
+  <div class="markdown level1 summary"><p>Checks if the NavMeshAgent can reach its destination.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OnEventInvoked(T payload)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool CanReachDestination(this NavMeshAgent agent)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>payload</code> <span class="xref">T</span></dt>
-    <dd><p>The payload passed to the event.</p>
+    <dt><code>agent</code> <span class="xref">NavMeshAgent</span></dt>
+    <dd><p>The NavMeshAgent instance to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the agent can reach its destination without any obstacles or path errors;
+otherwise, false if the agent's path is incomplete or blocked.</p>
 </dd>
   </dl>
 
@@ -155,30 +164,41 @@ Interface IEventListener&lt;T&gt;  <a class="header-action link-secondary" title
 
 
 
+  <h4 class="section" id="SODD_Core_NavMeshAgentExtensions_CanReachDestination_NavMeshAgent__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method checks the path status of the NavMeshAgent to determine if it can reach its destination.
+If the path is complete and there are no obstacles or path errors, the agent can reach its destination.</p>
+</div>
 
 
 
 
+  <a id="SODD_Core_NavMeshAgentExtensions_HasReachedDestination_" data-uid="SODD.Core.NavMeshAgentExtensions.HasReachedDestination*"></a>
 
-  <a id="SODD_Listeners_IEventListener_1_StartListening_" data-uid="SODD.Listeners.IEventListener`1.StartListening*"></a>
-
-  <h3 id="SODD_Listeners_IEventListener_1_StartListening_SODD_Events_IEvent__0__" data-uid="SODD.Listeners.IEventListener`1.StartListening(SODD.Events.IEvent{`0})">
-  StartListening(IEvent&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Listeners/IEventListener.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <h3 id="SODD_Core_NavMeshAgentExtensions_HasReachedDestination_NavMeshAgent_" data-uid="SODD.Core.NavMeshAgentExtensions.HasReachedDestination(NavMeshAgent)">
+  HasReachedDestination(NavMeshAgent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/NavMeshAgentExtensions.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Starts listening to the specified event by adding the supplied event listener.</p>
+  <div class="markdown level1 summary"><p>Checks if the NavMeshAgent has reached its destination.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void StartListening(IEvent&lt;T&gt; @event)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool HasReachedDestination(this NavMeshAgent agent)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>event</code> <a class="xref" href="SODD.Events.IEvent-1.html">IEvent</a>&lt;T&gt;</dt>
-    <dd><p>The event to listen to.</p>
+    <dt><code>agent</code> <span class="xref">NavMeshAgent</span></dt>
+    <dd><p>The NavMeshAgent instance to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the agent has reached its destination or is very close to it;
+otherwise, false if the agent is still moving towards the destination.</p>
 </dd>
   </dl>
 
@@ -188,44 +208,10 @@ Interface IEventListener&lt;T&gt;  <a class="header-action link-secondary" title
 
 
 
-
-  <h4 class="section" id="SODD_Listeners_IEventListener_1_StartListening_SODD_Events_IEvent__0___remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>This method adds the <a class="xref" href="SODD.Listeners.IEventListener-1.html#SODD_Listeners_IEventListener_1_OnEventInvoked__0_">OnEventInvoked(T)</a> method as a listener to the specified event,
-which will be invoked whenever the event is triggered.</p>
+  <h4 class="section" id="SODD_Core_NavMeshAgentExtensions_HasReachedDestination_NavMeshAgent__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method checks if the NavMeshAgent has reached its destination or is very close to it.
+It takes into account any pending path calculations, stopping distance, and current velocity.</p>
 </div>
-
-
-
-
-  <a id="SODD_Listeners_IEventListener_1_StopListening_" data-uid="SODD.Listeners.IEventListener`1.StopListening*"></a>
-
-  <h3 id="SODD_Listeners_IEventListener_1_StopListening_SODD_Events_IEvent__0__" data-uid="SODD.Listeners.IEventListener`1.StopListening(SODD.Events.IEvent{`0})">
-  StopListening(IEvent&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Listeners/IEventListener.cs/#L30"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Stops listening to an event.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void StopListening(IEvent&lt;T&gt; @event)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>event</code> <a class="xref" href="SODD.Events.IEvent-1.html">IEvent</a>&lt;T&gt;</dt>
-    <dd><p>The event to stop listening to.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
 
 
 

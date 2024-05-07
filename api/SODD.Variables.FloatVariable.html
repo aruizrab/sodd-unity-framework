@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class FloatVariable | SODD Framework | 1.0.0 </title>
+      <title>Class FloatVariable | SODD Framework | 1.1.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class FloatVariable | SODD Framework | 1.0.0 ">
+      <meta name="title" content="Class FloatVariable | SODD Framework | 1.1.0 ">
       
       <meta name="description" content="A ScriptableObject representing a floating-point number variable.">
       <link rel="icon" href="../manual/images/favicon.png">
@@ -102,7 +102,7 @@ Class FloatVariable  <a class="header-action link-secondary" title="View source"
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FloatVariable : Variable&lt;float&gt;, IVariable, IVariable&lt;float&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class FloatVariable : Variable&lt;float&gt;, IVariable, IVariable&lt;float&gt;, IListenableEvent&lt;float&gt;</code></pre>
   </div>
 
 
@@ -122,6 +122,7 @@ Class FloatVariable  <a class="header-action link-secondary" title="View source"
     <dd>
       <div><a class="xref" href="SODD.Variables.IVariable.html">IVariable</a></div>
       <div><a class="xref" href="SODD.Variables.IVariable-1.html">IVariable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</div>
+      <div><a class="xref" href="SODD.Events.IListenableEvent-1.html">IListenableEvent</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</div>
     </dd>
   </dl>
 
@@ -143,6 +144,12 @@ Class FloatVariable  <a class="header-action link-secondary" title="View source"
     </div>
     <div>
       <a class="xref" href="SODD.Variables.Variable-1.html#SODD_Variables_Variable_1_HandleValueChange">Variable&lt;float&gt;.HandleValueChange()</a>
+    </div>
+    <div>
+      <a class="xref" href="SODD.Variables.Variable-1.html#SODD_Variables_Variable_1_AddListener_System_Action__0__">Variable&lt;float&gt;.AddListener(Action&lt;float&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="SODD.Variables.Variable-1.html#SODD_Variables_Variable_1_RemoveListener_System_Action__0__">Variable&lt;float&gt;.RemoveListener(Action&lt;float&gt;)</a>
     </div>
   </dd></dl>
 

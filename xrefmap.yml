@@ -331,6 +331,563 @@ references:
   commentId: N:SODD.Core
   fullName: SODD.Core
   nameWithType: SODD.Core
+- uid: SODD.Core.AudioMixerExtensions
+  name: AudioMixerExtensions
+  href: api/SODD.Core.AudioMixerExtensions.html
+  commentId: T:SODD.Core.AudioMixerExtensions
+  fullName: SODD.Core.AudioMixerExtensions
+  nameWithType: AudioMixerExtensions
+- uid: SODD.Core.AudioMixerExtensions.GetVolume(AudioMixer,System.String,System.Single@)
+  name: GetVolume(AudioMixer, string, out float)
+  href: api/SODD.Core.AudioMixerExtensions.html#SODD_Core_AudioMixerExtensions_GetVolume_AudioMixer_System_String_System_Single__
+  commentId: M:SODD.Core.AudioMixerExtensions.GetVolume(AudioMixer,System.String,System.Single@)
+  name.vb: GetVolume(AudioMixer, String, Single)
+  fullName: SODD.Core.AudioMixerExtensions.GetVolume(AudioMixer, string, out float)
+  fullName.vb: SODD.Core.AudioMixerExtensions.GetVolume(AudioMixer, String, Single)
+  nameWithType: AudioMixerExtensions.GetVolume(AudioMixer, string, out float)
+  nameWithType.vb: AudioMixerExtensions.GetVolume(AudioMixer, String, Single)
+- uid: SODD.Core.AudioMixerExtensions.GetVolume*
+  name: GetVolume
+  href: api/SODD.Core.AudioMixerExtensions.html#SODD_Core_AudioMixerExtensions_GetVolume_
+  commentId: Overload:SODD.Core.AudioMixerExtensions.GetVolume
+  isSpec: "True"
+  fullName: SODD.Core.AudioMixerExtensions.GetVolume
+  nameWithType: AudioMixerExtensions.GetVolume
+- uid: SODD.Core.AudioMixerExtensions.SetVolume(AudioMixer,System.String,System.Single)
+  name: SetVolume(AudioMixer, string, float)
+  href: api/SODD.Core.AudioMixerExtensions.html#SODD_Core_AudioMixerExtensions_SetVolume_AudioMixer_System_String_System_Single_
+  commentId: M:SODD.Core.AudioMixerExtensions.SetVolume(AudioMixer,System.String,System.Single)
+  name.vb: SetVolume(AudioMixer, String, Single)
+  fullName: SODD.Core.AudioMixerExtensions.SetVolume(AudioMixer, string, float)
+  fullName.vb: SODD.Core.AudioMixerExtensions.SetVolume(AudioMixer, String, Single)
+  nameWithType: AudioMixerExtensions.SetVolume(AudioMixer, string, float)
+  nameWithType.vb: AudioMixerExtensions.SetVolume(AudioMixer, String, Single)
+- uid: SODD.Core.AudioMixerExtensions.SetVolume*
+  name: SetVolume
+  href: api/SODD.Core.AudioMixerExtensions.html#SODD_Core_AudioMixerExtensions_SetVolume_
+  commentId: Overload:SODD.Core.AudioMixerExtensions.SetVolume
+  isSpec: "True"
+  fullName: SODD.Core.AudioMixerExtensions.SetVolume
+  nameWithType: AudioMixerExtensions.SetVolume
+- uid: SODD.Core.CoroutineBuilder
+  name: CoroutineBuilder
+  href: api/SODD.Core.CoroutineBuilder.html
+  commentId: T:SODD.Core.CoroutineBuilder
+  fullName: SODD.Core.CoroutineBuilder
+  nameWithType: CoroutineBuilder
+- uid: SODD.Core.CoroutineBuilder.Append(SODD.Core.CoroutineBuilder[])
+  name: Append(params CoroutineBuilder[])
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_Append_SODD_Core_CoroutineBuilder___
+  commentId: M:SODD.Core.CoroutineBuilder.Append(SODD.Core.CoroutineBuilder[])
+  name.vb: Append(ParamArray CoroutineBuilder())
+  fullName: SODD.Core.CoroutineBuilder.Append(params SODD.Core.CoroutineBuilder[])
+  fullName.vb: SODD.Core.CoroutineBuilder.Append(ParamArray SODD.Core.CoroutineBuilder())
+  nameWithType: CoroutineBuilder.Append(params CoroutineBuilder[])
+  nameWithType.vb: CoroutineBuilder.Append(ParamArray CoroutineBuilder())
+- uid: SODD.Core.CoroutineBuilder.Append*
+  name: Append
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_Append_
+  commentId: Overload:SODD.Core.CoroutineBuilder.Append
+  isSpec: "True"
+  fullName: SODD.Core.CoroutineBuilder.Append
+  nameWithType: CoroutineBuilder.Append
+- uid: SODD.Core.CoroutineBuilder.Cancel
+  name: Cancel()
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_Cancel
+  commentId: M:SODD.Core.CoroutineBuilder.Cancel
+  fullName: SODD.Core.CoroutineBuilder.Cancel()
+  nameWithType: CoroutineBuilder.Cancel()
+- uid: SODD.Core.CoroutineBuilder.Cancel*
+  name: Cancel
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_Cancel_
+  commentId: Overload:SODD.Core.CoroutineBuilder.Cancel
+  isSpec: "True"
+  fullName: SODD.Core.CoroutineBuilder.Cancel
+  nameWithType: CoroutineBuilder.Cancel
+- uid: SODD.Core.CoroutineBuilder.CancelOnDisable(System.Boolean)
+  name: CancelOnDisable(bool)
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_CancelOnDisable_System_Boolean_
+  commentId: M:SODD.Core.CoroutineBuilder.CancelOnDisable(System.Boolean)
+  name.vb: CancelOnDisable(Boolean)
+  fullName: SODD.Core.CoroutineBuilder.CancelOnDisable(bool)
+  fullName.vb: SODD.Core.CoroutineBuilder.CancelOnDisable(Boolean)
+  nameWithType: CoroutineBuilder.CancelOnDisable(bool)
+  nameWithType.vb: CoroutineBuilder.CancelOnDisable(Boolean)
+- uid: SODD.Core.CoroutineBuilder.CancelOnDisable*
+  name: CancelOnDisable
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_CancelOnDisable_
+  commentId: Overload:SODD.Core.CoroutineBuilder.CancelOnDisable
+  isSpec: "True"
+  fullName: SODD.Core.CoroutineBuilder.CancelOnDisable
+  nameWithType: CoroutineBuilder.CancelOnDisable
+- uid: SODD.Core.CoroutineBuilder.Clone
+  name: Clone()
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_Clone
+  commentId: M:SODD.Core.CoroutineBuilder.Clone
+  fullName: SODD.Core.CoroutineBuilder.Clone()
+  nameWithType: CoroutineBuilder.Clone()
+- uid: SODD.Core.CoroutineBuilder.Clone*
+  name: Clone
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_Clone_
+  commentId: Overload:SODD.Core.CoroutineBuilder.Clone
+  isSpec: "True"
+  fullName: SODD.Core.CoroutineBuilder.Clone
+  nameWithType: CoroutineBuilder.Clone
+- uid: SODD.Core.CoroutineBuilder.DestroyOnFinish(System.Boolean)
+  name: DestroyOnFinish(bool)
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_DestroyOnFinish_System_Boolean_
+  commentId: M:SODD.Core.CoroutineBuilder.DestroyOnFinish(System.Boolean)
+  name.vb: DestroyOnFinish(Boolean)
+  fullName: SODD.Core.CoroutineBuilder.DestroyOnFinish(bool)
+  fullName.vb: SODD.Core.CoroutineBuilder.DestroyOnFinish(Boolean)
+  nameWithType: CoroutineBuilder.DestroyOnFinish(bool)
+  nameWithType.vb: CoroutineBuilder.DestroyOnFinish(Boolean)
+- uid: SODD.Core.CoroutineBuilder.DestroyOnFinish*
+  name: DestroyOnFinish
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_DestroyOnFinish_
+  commentId: Overload:SODD.Core.CoroutineBuilder.DestroyOnFinish
+  isSpec: "True"
+  fullName: SODD.Core.CoroutineBuilder.DestroyOnFinish
+  nameWithType: CoroutineBuilder.DestroyOnFinish
+- uid: SODD.Core.CoroutineBuilder.ForTimes(System.Int32)
+  name: ForTimes(int)
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_ForTimes_System_Int32_
+  commentId: M:SODD.Core.CoroutineBuilder.ForTimes(System.Int32)
+  name.vb: ForTimes(Integer)
+  fullName: SODD.Core.CoroutineBuilder.ForTimes(int)
+  fullName.vb: SODD.Core.CoroutineBuilder.ForTimes(Integer)
+  nameWithType: CoroutineBuilder.ForTimes(int)
+  nameWithType.vb: CoroutineBuilder.ForTimes(Integer)
+- uid: SODD.Core.CoroutineBuilder.ForTimes*
+  name: ForTimes
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_ForTimes_
+  commentId: Overload:SODD.Core.CoroutineBuilder.ForTimes
+  isSpec: "True"
+  fullName: SODD.Core.CoroutineBuilder.ForTimes
+  nameWithType: CoroutineBuilder.ForTimes
+- uid: SODD.Core.CoroutineBuilder.Invoke(System.Action)
+  name: Invoke(Action)
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_Invoke_System_Action_
+  commentId: M:SODD.Core.CoroutineBuilder.Invoke(System.Action)
+  fullName: SODD.Core.CoroutineBuilder.Invoke(System.Action)
+  nameWithType: CoroutineBuilder.Invoke(Action)
+- uid: SODD.Core.CoroutineBuilder.Invoke*
+  name: Invoke
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_Invoke_
+  commentId: Overload:SODD.Core.CoroutineBuilder.Invoke
+  isSpec: "True"
+  fullName: SODD.Core.CoroutineBuilder.Invoke
+  nameWithType: CoroutineBuilder.Invoke
+- uid: SODD.Core.CoroutineBuilder.IsRunning
+  name: IsRunning
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_IsRunning
+  commentId: P:SODD.Core.CoroutineBuilder.IsRunning
+  fullName: SODD.Core.CoroutineBuilder.IsRunning
+  nameWithType: CoroutineBuilder.IsRunning
+- uid: SODD.Core.CoroutineBuilder.IsRunning*
+  name: IsRunning
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_IsRunning_
+  commentId: Overload:SODD.Core.CoroutineBuilder.IsRunning
+  isSpec: "True"
+  fullName: SODD.Core.CoroutineBuilder.IsRunning
+  nameWithType: CoroutineBuilder.IsRunning
+- uid: SODD.Core.CoroutineBuilder.Run
+  name: Run()
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_Run
+  commentId: M:SODD.Core.CoroutineBuilder.Run
+  fullName: SODD.Core.CoroutineBuilder.Run()
+  nameWithType: CoroutineBuilder.Run()
+- uid: SODD.Core.CoroutineBuilder.Run*
+  name: Run
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_Run_
+  commentId: Overload:SODD.Core.CoroutineBuilder.Run
+  isSpec: "True"
+  fullName: SODD.Core.CoroutineBuilder.Run
+  nameWithType: CoroutineBuilder.Run
+- uid: SODD.Core.CoroutineBuilder.WaitForEndOfFrame
+  name: WaitForEndOfFrame()
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_WaitForEndOfFrame
+  commentId: M:SODD.Core.CoroutineBuilder.WaitForEndOfFrame
+  fullName: SODD.Core.CoroutineBuilder.WaitForEndOfFrame()
+  nameWithType: CoroutineBuilder.WaitForEndOfFrame()
+- uid: SODD.Core.CoroutineBuilder.WaitForEndOfFrame*
+  name: WaitForEndOfFrame
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_WaitForEndOfFrame_
+  commentId: Overload:SODD.Core.CoroutineBuilder.WaitForEndOfFrame
+  isSpec: "True"
+  fullName: SODD.Core.CoroutineBuilder.WaitForEndOfFrame
+  nameWithType: CoroutineBuilder.WaitForEndOfFrame
+- uid: SODD.Core.CoroutineBuilder.WaitForFixedUpdate
+  name: WaitForFixedUpdate()
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_WaitForFixedUpdate
+  commentId: M:SODD.Core.CoroutineBuilder.WaitForFixedUpdate
+  fullName: SODD.Core.CoroutineBuilder.WaitForFixedUpdate()
+  nameWithType: CoroutineBuilder.WaitForFixedUpdate()
+- uid: SODD.Core.CoroutineBuilder.WaitForFixedUpdate*
+  name: WaitForFixedUpdate
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_WaitForFixedUpdate_
+  commentId: Overload:SODD.Core.CoroutineBuilder.WaitForFixedUpdate
+  isSpec: "True"
+  fullName: SODD.Core.CoroutineBuilder.WaitForFixedUpdate
+  nameWithType: CoroutineBuilder.WaitForFixedUpdate
+- uid: SODD.Core.CoroutineBuilder.WaitForSeconds(System.Single)
+  name: WaitForSeconds(float)
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_WaitForSeconds_System_Single_
+  commentId: M:SODD.Core.CoroutineBuilder.WaitForSeconds(System.Single)
+  name.vb: WaitForSeconds(Single)
+  fullName: SODD.Core.CoroutineBuilder.WaitForSeconds(float)
+  fullName.vb: SODD.Core.CoroutineBuilder.WaitForSeconds(Single)
+  nameWithType: CoroutineBuilder.WaitForSeconds(float)
+  nameWithType.vb: CoroutineBuilder.WaitForSeconds(Single)
+- uid: SODD.Core.CoroutineBuilder.WaitForSeconds*
+  name: WaitForSeconds
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_WaitForSeconds_
+  commentId: Overload:SODD.Core.CoroutineBuilder.WaitForSeconds
+  isSpec: "True"
+  fullName: SODD.Core.CoroutineBuilder.WaitForSeconds
+  nameWithType: CoroutineBuilder.WaitForSeconds
+- uid: SODD.Core.CoroutineBuilder.WaitUntil(System.Func{System.Boolean})
+  name: WaitUntil(Func<bool>)
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_WaitUntil_System_Func_System_Boolean__
+  commentId: M:SODD.Core.CoroutineBuilder.WaitUntil(System.Func{System.Boolean})
+  name.vb: WaitUntil(Func(Of Boolean))
+  fullName: SODD.Core.CoroutineBuilder.WaitUntil(System.Func<bool>)
+  fullName.vb: SODD.Core.CoroutineBuilder.WaitUntil(System.Func(Of Boolean))
+  nameWithType: CoroutineBuilder.WaitUntil(Func<bool>)
+  nameWithType.vb: CoroutineBuilder.WaitUntil(Func(Of Boolean))
+- uid: SODD.Core.CoroutineBuilder.WaitUntil*
+  name: WaitUntil
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_WaitUntil_
+  commentId: Overload:SODD.Core.CoroutineBuilder.WaitUntil
+  isSpec: "True"
+  fullName: SODD.Core.CoroutineBuilder.WaitUntil
+  nameWithType: CoroutineBuilder.WaitUntil
+- uid: SODD.Core.CoroutineBuilder.WaitWhile(System.Func{System.Boolean})
+  name: WaitWhile(Func<bool>)
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_WaitWhile_System_Func_System_Boolean__
+  commentId: M:SODD.Core.CoroutineBuilder.WaitWhile(System.Func{System.Boolean})
+  name.vb: WaitWhile(Func(Of Boolean))
+  fullName: SODD.Core.CoroutineBuilder.WaitWhile(System.Func<bool>)
+  fullName.vb: SODD.Core.CoroutineBuilder.WaitWhile(System.Func(Of Boolean))
+  nameWithType: CoroutineBuilder.WaitWhile(Func<bool>)
+  nameWithType.vb: CoroutineBuilder.WaitWhile(Func(Of Boolean))
+- uid: SODD.Core.CoroutineBuilder.WaitWhile*
+  name: WaitWhile
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_WaitWhile_
+  commentId: Overload:SODD.Core.CoroutineBuilder.WaitWhile
+  isSpec: "True"
+  fullName: SODD.Core.CoroutineBuilder.WaitWhile
+  nameWithType: CoroutineBuilder.WaitWhile
+- uid: SODD.Core.CoroutineBuilder.While(System.Func{System.Boolean})
+  name: While(Func<bool>)
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_While_System_Func_System_Boolean__
+  commentId: M:SODD.Core.CoroutineBuilder.While(System.Func{System.Boolean})
+  name.vb: While(Func(Of Boolean))
+  fullName: SODD.Core.CoroutineBuilder.While(System.Func<bool>)
+  fullName.vb: SODD.Core.CoroutineBuilder.While(System.Func(Of Boolean))
+  nameWithType: CoroutineBuilder.While(Func<bool>)
+  nameWithType.vb: CoroutineBuilder.While(Func(Of Boolean))
+- uid: SODD.Core.CoroutineBuilder.While*
+  name: While
+  href: api/SODD.Core.CoroutineBuilder.html#SODD_Core_CoroutineBuilder_While_
+  commentId: Overload:SODD.Core.CoroutineBuilder.While
+  isSpec: "True"
+  fullName: SODD.Core.CoroutineBuilder.While
+  nameWithType: CoroutineBuilder.While
+- uid: SODD.Core.EnumerableExtensions
+  name: EnumerableExtensions
+  href: api/SODD.Core.EnumerableExtensions.html
+  commentId: T:SODD.Core.EnumerableExtensions
+  fullName: SODD.Core.EnumerableExtensions
+  nameWithType: EnumerableExtensions
+- uid: SODD.Core.EnumerableExtensions.ForEach*
+  name: ForEach
+  href: api/SODD.Core.EnumerableExtensions.html#SODD_Core_EnumerableExtensions_ForEach_
+  commentId: Overload:SODD.Core.EnumerableExtensions.ForEach
+  isSpec: "True"
+  fullName: SODD.Core.EnumerableExtensions.ForEach
+  nameWithType: EnumerableExtensions.ForEach
+- uid: SODD.Core.EnumerableExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  name: ForEach<T>(IEnumerable<T>, Action<T>)
+  href: api/SODD.Core.EnumerableExtensions.html#SODD_Core_EnumerableExtensions_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  commentId: M:SODD.Core.EnumerableExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  name.vb: ForEach(Of T)(IEnumerable(Of T), Action(Of T))
+  fullName: SODD.Core.EnumerableExtensions.ForEach<T>(System.Collections.Generic.IEnumerable<T>, System.Action<T>)
+  fullName.vb: SODD.Core.EnumerableExtensions.ForEach(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Action(Of T))
+  nameWithType: EnumerableExtensions.ForEach<T>(IEnumerable<T>, Action<T>)
+  nameWithType.vb: EnumerableExtensions.ForEach(Of T)(IEnumerable(Of T), Action(Of T))
+- uid: SODD.Core.EnumerableExtensions.TryFind*
+  name: TryFind
+  href: api/SODD.Core.EnumerableExtensions.html#SODD_Core_EnumerableExtensions_TryFind_
+  commentId: Overload:SODD.Core.EnumerableExtensions.TryFind
+  isSpec: "True"
+  fullName: SODD.Core.EnumerableExtensions.TryFind
+  nameWithType: EnumerableExtensions.TryFind
+- uid: SODD.Core.EnumerableExtensions.TryFind``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},``0@)
+  name: TryFind<T>(IEnumerable<T>, Func<T, bool>, out T)
+  href: api/SODD.Core.EnumerableExtensions.html#SODD_Core_EnumerableExtensions_TryFind__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean____0__
+  commentId: M:SODD.Core.EnumerableExtensions.TryFind``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},``0@)
+  name.vb: TryFind(Of T)(IEnumerable(Of T), Func(Of T, Boolean), T)
+  fullName: SODD.Core.EnumerableExtensions.TryFind<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, bool>, out T)
+  fullName.vb: SODD.Core.EnumerableExtensions.TryFind(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, Boolean), T)
+  nameWithType: EnumerableExtensions.TryFind<T>(IEnumerable<T>, Func<T, bool>, out T)
+  nameWithType.vb: EnumerableExtensions.TryFind(Of T)(IEnumerable(Of T), Func(Of T, Boolean), T)
+- uid: SODD.Core.EnumerableExtensions.WrapAround*
+  name: WrapAround
+  href: api/SODD.Core.EnumerableExtensions.html#SODD_Core_EnumerableExtensions_WrapAround_
+  commentId: Overload:SODD.Core.EnumerableExtensions.WrapAround
+  isSpec: "True"
+  fullName: SODD.Core.EnumerableExtensions.WrapAround
+  nameWithType: EnumerableExtensions.WrapAround
+- uid: SODD.Core.EnumerableExtensions.WrapAround``1(System.Collections.Generic.IEnumerable{``0})
+  name: WrapAround<T>(IEnumerable<T>)
+  href: api/SODD.Core.EnumerableExtensions.html#SODD_Core_EnumerableExtensions_WrapAround__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:SODD.Core.EnumerableExtensions.WrapAround``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: WrapAround(Of T)(IEnumerable(Of T))
+  fullName: SODD.Core.EnumerableExtensions.WrapAround<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: SODD.Core.EnumerableExtensions.WrapAround(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: EnumerableExtensions.WrapAround<T>(IEnumerable<T>)
+  nameWithType.vb: EnumerableExtensions.WrapAround(Of T)(IEnumerable(Of T))
+- uid: SODD.Core.GameObjectExtensions
+  name: GameObjectExtensions
+  href: api/SODD.Core.GameObjectExtensions.html
+  commentId: T:SODD.Core.GameObjectExtensions
+  fullName: SODD.Core.GameObjectExtensions
+  nameWithType: GameObjectExtensions
+- uid: SODD.Core.GameObjectExtensions.Broadcast*
+  name: Broadcast
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_Broadcast_
+  commentId: Overload:SODD.Core.GameObjectExtensions.Broadcast
+  isSpec: "True"
+  fullName: SODD.Core.GameObjectExtensions.Broadcast
+  nameWithType: GameObjectExtensions.Broadcast
+- uid: SODD.Core.GameObjectExtensions.Broadcast``1(GameObject,System.Action{``0},SODD.Core.Scope)
+  name: Broadcast<T>(GameObject, Action<T>, Scope)
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_Broadcast__1_GameObject_System_Action___0__SODD_Core_Scope_
+  commentId: M:SODD.Core.GameObjectExtensions.Broadcast``1(GameObject,System.Action{``0},SODD.Core.Scope)
+  name.vb: Broadcast(Of T)(GameObject, Action(Of T), Scope)
+  fullName: SODD.Core.GameObjectExtensions.Broadcast<T>(GameObject, System.Action<T>, SODD.Core.Scope)
+  fullName.vb: SODD.Core.GameObjectExtensions.Broadcast(Of T)(GameObject, System.Action(Of T), SODD.Core.Scope)
+  nameWithType: GameObjectExtensions.Broadcast<T>(GameObject, Action<T>, Scope)
+  nameWithType.vb: GameObjectExtensions.Broadcast(Of T)(GameObject, Action(Of T), Scope)
+- uid: SODD.Core.GameObjectExtensions.Coroutine(GameObject,System.Boolean,System.Boolean)
+  name: Coroutine(GameObject, bool, bool)
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_Coroutine_GameObject_System_Boolean_System_Boolean_
+  commentId: M:SODD.Core.GameObjectExtensions.Coroutine(GameObject,System.Boolean,System.Boolean)
+  name.vb: Coroutine(GameObject, Boolean, Boolean)
+  fullName: SODD.Core.GameObjectExtensions.Coroutine(GameObject, bool, bool)
+  fullName.vb: SODD.Core.GameObjectExtensions.Coroutine(GameObject, Boolean, Boolean)
+  nameWithType: GameObjectExtensions.Coroutine(GameObject, bool, bool)
+  nameWithType.vb: GameObjectExtensions.Coroutine(GameObject, Boolean, Boolean)
+- uid: SODD.Core.GameObjectExtensions.Coroutine*
+  name: Coroutine
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_Coroutine_
+  commentId: Overload:SODD.Core.GameObjectExtensions.Coroutine
+  isSpec: "True"
+  fullName: SODD.Core.GameObjectExtensions.Coroutine
+  nameWithType: GameObjectExtensions.Coroutine
+- uid: SODD.Core.GameObjectExtensions.DirectionFrom(GameObject,GameObject)
+  name: DirectionFrom(GameObject, GameObject)
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_DirectionFrom_GameObject_GameObject_
+  commentId: M:SODD.Core.GameObjectExtensions.DirectionFrom(GameObject,GameObject)
+  fullName: SODD.Core.GameObjectExtensions.DirectionFrom(GameObject, GameObject)
+  nameWithType: GameObjectExtensions.DirectionFrom(GameObject, GameObject)
+- uid: SODD.Core.GameObjectExtensions.DirectionFrom(GameObject,Transform)
+  name: DirectionFrom(GameObject, Transform)
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_DirectionFrom_GameObject_Transform_
+  commentId: M:SODD.Core.GameObjectExtensions.DirectionFrom(GameObject,Transform)
+  fullName: SODD.Core.GameObjectExtensions.DirectionFrom(GameObject, Transform)
+  nameWithType: GameObjectExtensions.DirectionFrom(GameObject, Transform)
+- uid: SODD.Core.GameObjectExtensions.DirectionFrom(GameObject,Vector3)
+  name: DirectionFrom(GameObject, Vector3)
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_DirectionFrom_GameObject_Vector3_
+  commentId: M:SODD.Core.GameObjectExtensions.DirectionFrom(GameObject,Vector3)
+  fullName: SODD.Core.GameObjectExtensions.DirectionFrom(GameObject, Vector3)
+  nameWithType: GameObjectExtensions.DirectionFrom(GameObject, Vector3)
+- uid: SODD.Core.GameObjectExtensions.DirectionFrom*
+  name: DirectionFrom
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_DirectionFrom_
+  commentId: Overload:SODD.Core.GameObjectExtensions.DirectionFrom
+  isSpec: "True"
+  fullName: SODD.Core.GameObjectExtensions.DirectionFrom
+  nameWithType: GameObjectExtensions.DirectionFrom
+- uid: SODD.Core.GameObjectExtensions.DirectionTo(GameObject,GameObject)
+  name: DirectionTo(GameObject, GameObject)
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_DirectionTo_GameObject_GameObject_
+  commentId: M:SODD.Core.GameObjectExtensions.DirectionTo(GameObject,GameObject)
+  fullName: SODD.Core.GameObjectExtensions.DirectionTo(GameObject, GameObject)
+  nameWithType: GameObjectExtensions.DirectionTo(GameObject, GameObject)
+- uid: SODD.Core.GameObjectExtensions.DirectionTo(GameObject,Transform)
+  name: DirectionTo(GameObject, Transform)
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_DirectionTo_GameObject_Transform_
+  commentId: M:SODD.Core.GameObjectExtensions.DirectionTo(GameObject,Transform)
+  fullName: SODD.Core.GameObjectExtensions.DirectionTo(GameObject, Transform)
+  nameWithType: GameObjectExtensions.DirectionTo(GameObject, Transform)
+- uid: SODD.Core.GameObjectExtensions.DirectionTo(GameObject,Vector3)
+  name: DirectionTo(GameObject, Vector3)
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_DirectionTo_GameObject_Vector3_
+  commentId: M:SODD.Core.GameObjectExtensions.DirectionTo(GameObject,Vector3)
+  fullName: SODD.Core.GameObjectExtensions.DirectionTo(GameObject, Vector3)
+  nameWithType: GameObjectExtensions.DirectionTo(GameObject, Vector3)
+- uid: SODD.Core.GameObjectExtensions.DirectionTo*
+  name: DirectionTo
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_DirectionTo_
+  commentId: Overload:SODD.Core.GameObjectExtensions.DirectionTo
+  isSpec: "True"
+  fullName: SODD.Core.GameObjectExtensions.DirectionTo
+  nameWithType: GameObjectExtensions.DirectionTo
+- uid: SODD.Core.GameObjectExtensions.DistanceTo(GameObject,GameObject)
+  name: DistanceTo(GameObject, GameObject)
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_DistanceTo_GameObject_GameObject_
+  commentId: M:SODD.Core.GameObjectExtensions.DistanceTo(GameObject,GameObject)
+  fullName: SODD.Core.GameObjectExtensions.DistanceTo(GameObject, GameObject)
+  nameWithType: GameObjectExtensions.DistanceTo(GameObject, GameObject)
+- uid: SODD.Core.GameObjectExtensions.DistanceTo(GameObject,Transform)
+  name: DistanceTo(GameObject, Transform)
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_DistanceTo_GameObject_Transform_
+  commentId: M:SODD.Core.GameObjectExtensions.DistanceTo(GameObject,Transform)
+  fullName: SODD.Core.GameObjectExtensions.DistanceTo(GameObject, Transform)
+  nameWithType: GameObjectExtensions.DistanceTo(GameObject, Transform)
+- uid: SODD.Core.GameObjectExtensions.DistanceTo(GameObject,Vector3)
+  name: DistanceTo(GameObject, Vector3)
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_DistanceTo_GameObject_Vector3_
+  commentId: M:SODD.Core.GameObjectExtensions.DistanceTo(GameObject,Vector3)
+  fullName: SODD.Core.GameObjectExtensions.DistanceTo(GameObject, Vector3)
+  nameWithType: GameObjectExtensions.DistanceTo(GameObject, Vector3)
+- uid: SODD.Core.GameObjectExtensions.DistanceTo*
+  name: DistanceTo
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_DistanceTo_
+  commentId: Overload:SODD.Core.GameObjectExtensions.DistanceTo
+  isSpec: "True"
+  fullName: SODD.Core.GameObjectExtensions.DistanceTo
+  nameWithType: GameObjectExtensions.DistanceTo
+- uid: SODD.Core.GameObjectExtensions.GetComponent*
+  name: GetComponent
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_GetComponent_
+  commentId: Overload:SODD.Core.GameObjectExtensions.GetComponent
+  isSpec: "True"
+  fullName: SODD.Core.GameObjectExtensions.GetComponent
+  nameWithType: GameObjectExtensions.GetComponent
+- uid: SODD.Core.GameObjectExtensions.GetComponent``1(GameObject,SODD.Core.Scope)
+  name: GetComponent<T>(GameObject, Scope)
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_GetComponent__1_GameObject_SODD_Core_Scope_
+  commentId: M:SODD.Core.GameObjectExtensions.GetComponent``1(GameObject,SODD.Core.Scope)
+  name.vb: GetComponent(Of T)(GameObject, Scope)
+  fullName: SODD.Core.GameObjectExtensions.GetComponent<T>(GameObject, SODD.Core.Scope)
+  fullName.vb: SODD.Core.GameObjectExtensions.GetComponent(Of T)(GameObject, SODD.Core.Scope)
+  nameWithType: GameObjectExtensions.GetComponent<T>(GameObject, Scope)
+  nameWithType.vb: GameObjectExtensions.GetComponent(Of T)(GameObject, Scope)
+- uid: SODD.Core.GameObjectExtensions.GetComponents*
+  name: GetComponents
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_GetComponents_
+  commentId: Overload:SODD.Core.GameObjectExtensions.GetComponents
+  isSpec: "True"
+  fullName: SODD.Core.GameObjectExtensions.GetComponents
+  nameWithType: GameObjectExtensions.GetComponents
+- uid: SODD.Core.GameObjectExtensions.GetComponents``1(GameObject,SODD.Core.Scope)
+  name: GetComponents<T>(GameObject, Scope)
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_GetComponents__1_GameObject_SODD_Core_Scope_
+  commentId: M:SODD.Core.GameObjectExtensions.GetComponents``1(GameObject,SODD.Core.Scope)
+  name.vb: GetComponents(Of T)(GameObject, Scope)
+  fullName: SODD.Core.GameObjectExtensions.GetComponents<T>(GameObject, SODD.Core.Scope)
+  fullName.vb: SODD.Core.GameObjectExtensions.GetComponents(Of T)(GameObject, SODD.Core.Scope)
+  nameWithType: GameObjectExtensions.GetComponents<T>(GameObject, Scope)
+  nameWithType.vb: GameObjectExtensions.GetComponents(Of T)(GameObject, Scope)
+- uid: SODD.Core.GameObjectExtensions.IsInLayerMask(GameObject,LayerMask)
+  name: IsInLayerMask(GameObject, LayerMask)
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_IsInLayerMask_GameObject_LayerMask_
+  commentId: M:SODD.Core.GameObjectExtensions.IsInLayerMask(GameObject,LayerMask)
+  fullName: SODD.Core.GameObjectExtensions.IsInLayerMask(GameObject, LayerMask)
+  nameWithType: GameObjectExtensions.IsInLayerMask(GameObject, LayerMask)
+- uid: SODD.Core.GameObjectExtensions.IsInLayerMask*
+  name: IsInLayerMask
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_IsInLayerMask_
+  commentId: Overload:SODD.Core.GameObjectExtensions.IsInLayerMask
+  isSpec: "True"
+  fullName: SODD.Core.GameObjectExtensions.IsInLayerMask
+  nameWithType: GameObjectExtensions.IsInLayerMask
+- uid: SODD.Core.GameObjectExtensions.Send*
+  name: Send
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_Send_
+  commentId: Overload:SODD.Core.GameObjectExtensions.Send
+  isSpec: "True"
+  fullName: SODD.Core.GameObjectExtensions.Send
+  nameWithType: GameObjectExtensions.Send
+- uid: SODD.Core.GameObjectExtensions.Send``1(GameObject,System.Action{``0},SODD.Core.Scope)
+  name: Send<T>(GameObject, Action<T>, Scope)
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_Send__1_GameObject_System_Action___0__SODD_Core_Scope_
+  commentId: M:SODD.Core.GameObjectExtensions.Send``1(GameObject,System.Action{``0},SODD.Core.Scope)
+  name.vb: Send(Of T)(GameObject, Action(Of T), Scope)
+  fullName: SODD.Core.GameObjectExtensions.Send<T>(GameObject, System.Action<T>, SODD.Core.Scope)
+  fullName.vb: SODD.Core.GameObjectExtensions.Send(Of T)(GameObject, System.Action(Of T), SODD.Core.Scope)
+  nameWithType: GameObjectExtensions.Send<T>(GameObject, Action<T>, Scope)
+  nameWithType.vb: GameObjectExtensions.Send(Of T)(GameObject, Action(Of T), Scope)
+- uid: SODD.Core.GameObjectExtensions.TryGetComponent*
+  name: TryGetComponent
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_TryGetComponent_
+  commentId: Overload:SODD.Core.GameObjectExtensions.TryGetComponent
+  isSpec: "True"
+  fullName: SODD.Core.GameObjectExtensions.TryGetComponent
+  nameWithType: GameObjectExtensions.TryGetComponent
+- uid: SODD.Core.GameObjectExtensions.TryGetComponent``1(GameObject,``0@,SODD.Core.Scope)
+  name: TryGetComponent<T>(GameObject, out T, Scope)
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_TryGetComponent__1_GameObject___0__SODD_Core_Scope_
+  commentId: M:SODD.Core.GameObjectExtensions.TryGetComponent``1(GameObject,``0@,SODD.Core.Scope)
+  name.vb: TryGetComponent(Of T)(GameObject, T, Scope)
+  fullName: SODD.Core.GameObjectExtensions.TryGetComponent<T>(GameObject, out T, SODD.Core.Scope)
+  fullName.vb: SODD.Core.GameObjectExtensions.TryGetComponent(Of T)(GameObject, T, SODD.Core.Scope)
+  nameWithType: GameObjectExtensions.TryGetComponent<T>(GameObject, out T, Scope)
+  nameWithType.vb: GameObjectExtensions.TryGetComponent(Of T)(GameObject, T, Scope)
+- uid: SODD.Core.GameObjectExtensions.VectorFrom(GameObject,GameObject)
+  name: VectorFrom(GameObject, GameObject)
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_VectorFrom_GameObject_GameObject_
+  commentId: M:SODD.Core.GameObjectExtensions.VectorFrom(GameObject,GameObject)
+  fullName: SODD.Core.GameObjectExtensions.VectorFrom(GameObject, GameObject)
+  nameWithType: GameObjectExtensions.VectorFrom(GameObject, GameObject)
+- uid: SODD.Core.GameObjectExtensions.VectorFrom(GameObject,Transform)
+  name: VectorFrom(GameObject, Transform)
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_VectorFrom_GameObject_Transform_
+  commentId: M:SODD.Core.GameObjectExtensions.VectorFrom(GameObject,Transform)
+  fullName: SODD.Core.GameObjectExtensions.VectorFrom(GameObject, Transform)
+  nameWithType: GameObjectExtensions.VectorFrom(GameObject, Transform)
+- uid: SODD.Core.GameObjectExtensions.VectorFrom(GameObject,Vector3)
+  name: VectorFrom(GameObject, Vector3)
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_VectorFrom_GameObject_Vector3_
+  commentId: M:SODD.Core.GameObjectExtensions.VectorFrom(GameObject,Vector3)
+  fullName: SODD.Core.GameObjectExtensions.VectorFrom(GameObject, Vector3)
+  nameWithType: GameObjectExtensions.VectorFrom(GameObject, Vector3)
+- uid: SODD.Core.GameObjectExtensions.VectorFrom*
+  name: VectorFrom
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_VectorFrom_
+  commentId: Overload:SODD.Core.GameObjectExtensions.VectorFrom
+  isSpec: "True"
+  fullName: SODD.Core.GameObjectExtensions.VectorFrom
+  nameWithType: GameObjectExtensions.VectorFrom
+- uid: SODD.Core.GameObjectExtensions.VectorTo(GameObject,GameObject)
+  name: VectorTo(GameObject, GameObject)
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_VectorTo_GameObject_GameObject_
+  commentId: M:SODD.Core.GameObjectExtensions.VectorTo(GameObject,GameObject)
+  fullName: SODD.Core.GameObjectExtensions.VectorTo(GameObject, GameObject)
+  nameWithType: GameObjectExtensions.VectorTo(GameObject, GameObject)
+- uid: SODD.Core.GameObjectExtensions.VectorTo(GameObject,Transform)
+  name: VectorTo(GameObject, Transform)
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_VectorTo_GameObject_Transform_
+  commentId: M:SODD.Core.GameObjectExtensions.VectorTo(GameObject,Transform)
+  fullName: SODD.Core.GameObjectExtensions.VectorTo(GameObject, Transform)
+  nameWithType: GameObjectExtensions.VectorTo(GameObject, Transform)
+- uid: SODD.Core.GameObjectExtensions.VectorTo(GameObject,Vector3)
+  name: VectorTo(GameObject, Vector3)
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_VectorTo_GameObject_Vector3_
+  commentId: M:SODD.Core.GameObjectExtensions.VectorTo(GameObject,Vector3)
+  fullName: SODD.Core.GameObjectExtensions.VectorTo(GameObject, Vector3)
+  nameWithType: GameObjectExtensions.VectorTo(GameObject, Vector3)
+- uid: SODD.Core.GameObjectExtensions.VectorTo*
+  name: VectorTo
+  href: api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_VectorTo_
+  commentId: Overload:SODD.Core.GameObjectExtensions.VectorTo
+  isSpec: "True"
+  fullName: SODD.Core.GameObjectExtensions.VectorTo
+  nameWithType: GameObjectExtensions.VectorTo
 - uid: SODD.Core.Logger
   name: Logger
   href: api/SODD.Core.Logger.html
@@ -353,6 +910,411 @@ references:
   isSpec: "True"
   fullName: SODD.Core.Logger.LogAsset
   nameWithType: Logger.LogAsset
+- uid: SODD.Core.NavMeshAgentExtensions
+  name: NavMeshAgentExtensions
+  href: api/SODD.Core.NavMeshAgentExtensions.html
+  commentId: T:SODD.Core.NavMeshAgentExtensions
+  fullName: SODD.Core.NavMeshAgentExtensions
+  nameWithType: NavMeshAgentExtensions
+- uid: SODD.Core.NavMeshAgentExtensions.CanReachDestination(NavMeshAgent)
+  name: CanReachDestination(NavMeshAgent)
+  href: api/SODD.Core.NavMeshAgentExtensions.html#SODD_Core_NavMeshAgentExtensions_CanReachDestination_NavMeshAgent_
+  commentId: M:SODD.Core.NavMeshAgentExtensions.CanReachDestination(NavMeshAgent)
+  fullName: SODD.Core.NavMeshAgentExtensions.CanReachDestination(NavMeshAgent)
+  nameWithType: NavMeshAgentExtensions.CanReachDestination(NavMeshAgent)
+- uid: SODD.Core.NavMeshAgentExtensions.CanReachDestination*
+  name: CanReachDestination
+  href: api/SODD.Core.NavMeshAgentExtensions.html#SODD_Core_NavMeshAgentExtensions_CanReachDestination_
+  commentId: Overload:SODD.Core.NavMeshAgentExtensions.CanReachDestination
+  isSpec: "True"
+  fullName: SODD.Core.NavMeshAgentExtensions.CanReachDestination
+  nameWithType: NavMeshAgentExtensions.CanReachDestination
+- uid: SODD.Core.NavMeshAgentExtensions.HasReachedDestination(NavMeshAgent)
+  name: HasReachedDestination(NavMeshAgent)
+  href: api/SODD.Core.NavMeshAgentExtensions.html#SODD_Core_NavMeshAgentExtensions_HasReachedDestination_NavMeshAgent_
+  commentId: M:SODD.Core.NavMeshAgentExtensions.HasReachedDestination(NavMeshAgent)
+  fullName: SODD.Core.NavMeshAgentExtensions.HasReachedDestination(NavMeshAgent)
+  nameWithType: NavMeshAgentExtensions.HasReachedDestination(NavMeshAgent)
+- uid: SODD.Core.NavMeshAgentExtensions.HasReachedDestination*
+  name: HasReachedDestination
+  href: api/SODD.Core.NavMeshAgentExtensions.html#SODD_Core_NavMeshAgentExtensions_HasReachedDestination_
+  commentId: Overload:SODD.Core.NavMeshAgentExtensions.HasReachedDestination
+  isSpec: "True"
+  fullName: SODD.Core.NavMeshAgentExtensions.HasReachedDestination
+  nameWithType: NavMeshAgentExtensions.HasReachedDestination
+- uid: SODD.Core.PrimitiveTypeExtensions
+  name: PrimitiveTypeExtensions
+  href: api/SODD.Core.PrimitiveTypeExtensions.html
+  commentId: T:SODD.Core.PrimitiveTypeExtensions
+  fullName: SODD.Core.PrimitiveTypeExtensions
+  nameWithType: PrimitiveTypeExtensions
+- uid: SODD.Core.PrimitiveTypeExtensions.ToBool(System.Int32)
+  name: ToBool(int)
+  href: api/SODD.Core.PrimitiveTypeExtensions.html#SODD_Core_PrimitiveTypeExtensions_ToBool_System_Int32_
+  commentId: M:SODD.Core.PrimitiveTypeExtensions.ToBool(System.Int32)
+  name.vb: ToBool(Integer)
+  fullName: SODD.Core.PrimitiveTypeExtensions.ToBool(int)
+  fullName.vb: SODD.Core.PrimitiveTypeExtensions.ToBool(Integer)
+  nameWithType: PrimitiveTypeExtensions.ToBool(int)
+  nameWithType.vb: PrimitiveTypeExtensions.ToBool(Integer)
+- uid: SODD.Core.PrimitiveTypeExtensions.ToBool*
+  name: ToBool
+  href: api/SODD.Core.PrimitiveTypeExtensions.html#SODD_Core_PrimitiveTypeExtensions_ToBool_
+  commentId: Overload:SODD.Core.PrimitiveTypeExtensions.ToBool
+  isSpec: "True"
+  fullName: SODD.Core.PrimitiveTypeExtensions.ToBool
+  nameWithType: PrimitiveTypeExtensions.ToBool
+- uid: SODD.Core.PrimitiveTypeExtensions.ToInt(System.Boolean)
+  name: ToInt(bool)
+  href: api/SODD.Core.PrimitiveTypeExtensions.html#SODD_Core_PrimitiveTypeExtensions_ToInt_System_Boolean_
+  commentId: M:SODD.Core.PrimitiveTypeExtensions.ToInt(System.Boolean)
+  name.vb: ToInt(Boolean)
+  fullName: SODD.Core.PrimitiveTypeExtensions.ToInt(bool)
+  fullName.vb: SODD.Core.PrimitiveTypeExtensions.ToInt(Boolean)
+  nameWithType: PrimitiveTypeExtensions.ToInt(bool)
+  nameWithType.vb: PrimitiveTypeExtensions.ToInt(Boolean)
+- uid: SODD.Core.PrimitiveTypeExtensions.ToInt*
+  name: ToInt
+  href: api/SODD.Core.PrimitiveTypeExtensions.html#SODD_Core_PrimitiveTypeExtensions_ToInt_
+  commentId: Overload:SODD.Core.PrimitiveTypeExtensions.ToInt
+  isSpec: "True"
+  fullName: SODD.Core.PrimitiveTypeExtensions.ToInt
+  nameWithType: PrimitiveTypeExtensions.ToInt
+- uid: SODD.Core.Scope
+  name: Scope
+  href: api/SODD.Core.Scope.html
+  commentId: T:SODD.Core.Scope
+  fullName: SODD.Core.Scope
+  nameWithType: Scope
+- uid: SODD.Core.Scope.Children
+  name: Children
+  href: api/SODD.Core.Scope.html#SODD_Core_Scope_Children
+  commentId: F:SODD.Core.Scope.Children
+  fullName: SODD.Core.Scope.Children
+  nameWithType: Scope.Children
+- uid: SODD.Core.Scope.GameObject
+  name: GameObject
+  href: api/SODD.Core.Scope.html#SODD_Core_Scope_GameObject
+  commentId: F:SODD.Core.Scope.GameObject
+  fullName: SODD.Core.Scope.GameObject
+  nameWithType: Scope.GameObject
+- uid: SODD.Core.Scope.Parents
+  name: Parents
+  href: api/SODD.Core.Scope.html#SODD_Core_Scope_Parents
+  commentId: F:SODD.Core.Scope.Parents
+  fullName: SODD.Core.Scope.Parents
+  nameWithType: Scope.Parents
+- uid: SODD.Core.Scope.ParentsAndChildren
+  name: ParentsAndChildren
+  href: api/SODD.Core.Scope.html#SODD_Core_Scope_ParentsAndChildren
+  commentId: F:SODD.Core.Scope.ParentsAndChildren
+  fullName: SODD.Core.Scope.ParentsAndChildren
+  nameWithType: Scope.ParentsAndChildren
+- uid: SODD.Core.TransformExtensions
+  name: TransformExtensions
+  href: api/SODD.Core.TransformExtensions.html
+  commentId: T:SODD.Core.TransformExtensions
+  fullName: SODD.Core.TransformExtensions
+  nameWithType: TransformExtensions
+- uid: SODD.Core.TransformExtensions.DirectionFrom(Transform,GameObject)
+  name: DirectionFrom(Transform, GameObject)
+  href: api/SODD.Core.TransformExtensions.html#SODD_Core_TransformExtensions_DirectionFrom_Transform_GameObject_
+  commentId: M:SODD.Core.TransformExtensions.DirectionFrom(Transform,GameObject)
+  fullName: SODD.Core.TransformExtensions.DirectionFrom(Transform, GameObject)
+  nameWithType: TransformExtensions.DirectionFrom(Transform, GameObject)
+- uid: SODD.Core.TransformExtensions.DirectionFrom(Transform,Transform)
+  name: DirectionFrom(Transform, Transform)
+  href: api/SODD.Core.TransformExtensions.html#SODD_Core_TransformExtensions_DirectionFrom_Transform_Transform_
+  commentId: M:SODD.Core.TransformExtensions.DirectionFrom(Transform,Transform)
+  fullName: SODD.Core.TransformExtensions.DirectionFrom(Transform, Transform)
+  nameWithType: TransformExtensions.DirectionFrom(Transform, Transform)
+- uid: SODD.Core.TransformExtensions.DirectionFrom(Transform,Vector3)
+  name: DirectionFrom(Transform, Vector3)
+  href: api/SODD.Core.TransformExtensions.html#SODD_Core_TransformExtensions_DirectionFrom_Transform_Vector3_
+  commentId: M:SODD.Core.TransformExtensions.DirectionFrom(Transform,Vector3)
+  fullName: SODD.Core.TransformExtensions.DirectionFrom(Transform, Vector3)
+  nameWithType: TransformExtensions.DirectionFrom(Transform, Vector3)
+- uid: SODD.Core.TransformExtensions.DirectionFrom*
+  name: DirectionFrom
+  href: api/SODD.Core.TransformExtensions.html#SODD_Core_TransformExtensions_DirectionFrom_
+  commentId: Overload:SODD.Core.TransformExtensions.DirectionFrom
+  isSpec: "True"
+  fullName: SODD.Core.TransformExtensions.DirectionFrom
+  nameWithType: TransformExtensions.DirectionFrom
+- uid: SODD.Core.TransformExtensions.DirectionTo(Transform,GameObject)
+  name: DirectionTo(Transform, GameObject)
+  href: api/SODD.Core.TransformExtensions.html#SODD_Core_TransformExtensions_DirectionTo_Transform_GameObject_
+  commentId: M:SODD.Core.TransformExtensions.DirectionTo(Transform,GameObject)
+  fullName: SODD.Core.TransformExtensions.DirectionTo(Transform, GameObject)
+  nameWithType: TransformExtensions.DirectionTo(Transform, GameObject)
+- uid: SODD.Core.TransformExtensions.DirectionTo(Transform,Transform)
+  name: DirectionTo(Transform, Transform)
+  href: api/SODD.Core.TransformExtensions.html#SODD_Core_TransformExtensions_DirectionTo_Transform_Transform_
+  commentId: M:SODD.Core.TransformExtensions.DirectionTo(Transform,Transform)
+  fullName: SODD.Core.TransformExtensions.DirectionTo(Transform, Transform)
+  nameWithType: TransformExtensions.DirectionTo(Transform, Transform)
+- uid: SODD.Core.TransformExtensions.DirectionTo(Transform,Vector3)
+  name: DirectionTo(Transform, Vector3)
+  href: api/SODD.Core.TransformExtensions.html#SODD_Core_TransformExtensions_DirectionTo_Transform_Vector3_
+  commentId: M:SODD.Core.TransformExtensions.DirectionTo(Transform,Vector3)
+  fullName: SODD.Core.TransformExtensions.DirectionTo(Transform, Vector3)
+  nameWithType: TransformExtensions.DirectionTo(Transform, Vector3)
+- uid: SODD.Core.TransformExtensions.DirectionTo*
+  name: DirectionTo
+  href: api/SODD.Core.TransformExtensions.html#SODD_Core_TransformExtensions_DirectionTo_
+  commentId: Overload:SODD.Core.TransformExtensions.DirectionTo
+  isSpec: "True"
+  fullName: SODD.Core.TransformExtensions.DirectionTo
+  nameWithType: TransformExtensions.DirectionTo
+- uid: SODD.Core.TransformExtensions.DistanceTo(Transform,GameObject)
+  name: DistanceTo(Transform, GameObject)
+  href: api/SODD.Core.TransformExtensions.html#SODD_Core_TransformExtensions_DistanceTo_Transform_GameObject_
+  commentId: M:SODD.Core.TransformExtensions.DistanceTo(Transform,GameObject)
+  fullName: SODD.Core.TransformExtensions.DistanceTo(Transform, GameObject)
+  nameWithType: TransformExtensions.DistanceTo(Transform, GameObject)
+- uid: SODD.Core.TransformExtensions.DistanceTo(Transform,Transform)
+  name: DistanceTo(Transform, Transform)
+  href: api/SODD.Core.TransformExtensions.html#SODD_Core_TransformExtensions_DistanceTo_Transform_Transform_
+  commentId: M:SODD.Core.TransformExtensions.DistanceTo(Transform,Transform)
+  fullName: SODD.Core.TransformExtensions.DistanceTo(Transform, Transform)
+  nameWithType: TransformExtensions.DistanceTo(Transform, Transform)
+- uid: SODD.Core.TransformExtensions.DistanceTo(Transform,Vector3)
+  name: DistanceTo(Transform, Vector3)
+  href: api/SODD.Core.TransformExtensions.html#SODD_Core_TransformExtensions_DistanceTo_Transform_Vector3_
+  commentId: M:SODD.Core.TransformExtensions.DistanceTo(Transform,Vector3)
+  fullName: SODD.Core.TransformExtensions.DistanceTo(Transform, Vector3)
+  nameWithType: TransformExtensions.DistanceTo(Transform, Vector3)
+- uid: SODD.Core.TransformExtensions.DistanceTo*
+  name: DistanceTo
+  href: api/SODD.Core.TransformExtensions.html#SODD_Core_TransformExtensions_DistanceTo_
+  commentId: Overload:SODD.Core.TransformExtensions.DistanceTo
+  isSpec: "True"
+  fullName: SODD.Core.TransformExtensions.DistanceTo
+  nameWithType: TransformExtensions.DistanceTo
+- uid: SODD.Core.TransformExtensions.VectorFrom(Transform,GameObject)
+  name: VectorFrom(Transform, GameObject)
+  href: api/SODD.Core.TransformExtensions.html#SODD_Core_TransformExtensions_VectorFrom_Transform_GameObject_
+  commentId: M:SODD.Core.TransformExtensions.VectorFrom(Transform,GameObject)
+  fullName: SODD.Core.TransformExtensions.VectorFrom(Transform, GameObject)
+  nameWithType: TransformExtensions.VectorFrom(Transform, GameObject)
+- uid: SODD.Core.TransformExtensions.VectorFrom(Transform,Transform)
+  name: VectorFrom(Transform, Transform)
+  href: api/SODD.Core.TransformExtensions.html#SODD_Core_TransformExtensions_VectorFrom_Transform_Transform_
+  commentId: M:SODD.Core.TransformExtensions.VectorFrom(Transform,Transform)
+  fullName: SODD.Core.TransformExtensions.VectorFrom(Transform, Transform)
+  nameWithType: TransformExtensions.VectorFrom(Transform, Transform)
+- uid: SODD.Core.TransformExtensions.VectorFrom(Transform,Vector3)
+  name: VectorFrom(Transform, Vector3)
+  href: api/SODD.Core.TransformExtensions.html#SODD_Core_TransformExtensions_VectorFrom_Transform_Vector3_
+  commentId: M:SODD.Core.TransformExtensions.VectorFrom(Transform,Vector3)
+  fullName: SODD.Core.TransformExtensions.VectorFrom(Transform, Vector3)
+  nameWithType: TransformExtensions.VectorFrom(Transform, Vector3)
+- uid: SODD.Core.TransformExtensions.VectorFrom*
+  name: VectorFrom
+  href: api/SODD.Core.TransformExtensions.html#SODD_Core_TransformExtensions_VectorFrom_
+  commentId: Overload:SODD.Core.TransformExtensions.VectorFrom
+  isSpec: "True"
+  fullName: SODD.Core.TransformExtensions.VectorFrom
+  nameWithType: TransformExtensions.VectorFrom
+- uid: SODD.Core.TransformExtensions.VectorTo(Transform,GameObject)
+  name: VectorTo(Transform, GameObject)
+  href: api/SODD.Core.TransformExtensions.html#SODD_Core_TransformExtensions_VectorTo_Transform_GameObject_
+  commentId: M:SODD.Core.TransformExtensions.VectorTo(Transform,GameObject)
+  fullName: SODD.Core.TransformExtensions.VectorTo(Transform, GameObject)
+  nameWithType: TransformExtensions.VectorTo(Transform, GameObject)
+- uid: SODD.Core.TransformExtensions.VectorTo(Transform,Transform)
+  name: VectorTo(Transform, Transform)
+  href: api/SODD.Core.TransformExtensions.html#SODD_Core_TransformExtensions_VectorTo_Transform_Transform_
+  commentId: M:SODD.Core.TransformExtensions.VectorTo(Transform,Transform)
+  fullName: SODD.Core.TransformExtensions.VectorTo(Transform, Transform)
+  nameWithType: TransformExtensions.VectorTo(Transform, Transform)
+- uid: SODD.Core.TransformExtensions.VectorTo(Transform,Vector3)
+  name: VectorTo(Transform, Vector3)
+  href: api/SODD.Core.TransformExtensions.html#SODD_Core_TransformExtensions_VectorTo_Transform_Vector3_
+  commentId: M:SODD.Core.TransformExtensions.VectorTo(Transform,Vector3)
+  fullName: SODD.Core.TransformExtensions.VectorTo(Transform, Vector3)
+  nameWithType: TransformExtensions.VectorTo(Transform, Vector3)
+- uid: SODD.Core.TransformExtensions.VectorTo*
+  name: VectorTo
+  href: api/SODD.Core.TransformExtensions.html#SODD_Core_TransformExtensions_VectorTo_
+  commentId: Overload:SODD.Core.TransformExtensions.VectorTo
+  isSpec: "True"
+  fullName: SODD.Core.TransformExtensions.VectorTo
+  nameWithType: TransformExtensions.VectorTo
+- uid: SODD.Core.Vector2Extensions
+  name: Vector2Extensions
+  href: api/SODD.Core.Vector2Extensions.html
+  commentId: T:SODD.Core.Vector2Extensions
+  fullName: SODD.Core.Vector2Extensions
+  nameWithType: Vector2Extensions
+- uid: SODD.Core.Vector2Extensions.DirectionFrom(Vector2,Vector2)
+  name: DirectionFrom(Vector2, Vector2)
+  href: api/SODD.Core.Vector2Extensions.html#SODD_Core_Vector2Extensions_DirectionFrom_Vector2_Vector2_
+  commentId: M:SODD.Core.Vector2Extensions.DirectionFrom(Vector2,Vector2)
+  fullName: SODD.Core.Vector2Extensions.DirectionFrom(Vector2, Vector2)
+  nameWithType: Vector2Extensions.DirectionFrom(Vector2, Vector2)
+- uid: SODD.Core.Vector2Extensions.DirectionFrom*
+  name: DirectionFrom
+  href: api/SODD.Core.Vector2Extensions.html#SODD_Core_Vector2Extensions_DirectionFrom_
+  commentId: Overload:SODD.Core.Vector2Extensions.DirectionFrom
+  isSpec: "True"
+  fullName: SODD.Core.Vector2Extensions.DirectionFrom
+  nameWithType: Vector2Extensions.DirectionFrom
+- uid: SODD.Core.Vector2Extensions.DirectionTo(Vector2,Vector2)
+  name: DirectionTo(Vector2, Vector2)
+  href: api/SODD.Core.Vector2Extensions.html#SODD_Core_Vector2Extensions_DirectionTo_Vector2_Vector2_
+  commentId: M:SODD.Core.Vector2Extensions.DirectionTo(Vector2,Vector2)
+  fullName: SODD.Core.Vector2Extensions.DirectionTo(Vector2, Vector2)
+  nameWithType: Vector2Extensions.DirectionTo(Vector2, Vector2)
+- uid: SODD.Core.Vector2Extensions.DirectionTo*
+  name: DirectionTo
+  href: api/SODD.Core.Vector2Extensions.html#SODD_Core_Vector2Extensions_DirectionTo_
+  commentId: Overload:SODD.Core.Vector2Extensions.DirectionTo
+  isSpec: "True"
+  fullName: SODD.Core.Vector2Extensions.DirectionTo
+  nameWithType: Vector2Extensions.DirectionTo
+- uid: SODD.Core.Vector2Extensions.DistanceTo(Vector2,Vector2)
+  name: DistanceTo(Vector2, Vector2)
+  href: api/SODD.Core.Vector2Extensions.html#SODD_Core_Vector2Extensions_DistanceTo_Vector2_Vector2_
+  commentId: M:SODD.Core.Vector2Extensions.DistanceTo(Vector2,Vector2)
+  fullName: SODD.Core.Vector2Extensions.DistanceTo(Vector2, Vector2)
+  nameWithType: Vector2Extensions.DistanceTo(Vector2, Vector2)
+- uid: SODD.Core.Vector2Extensions.DistanceTo*
+  name: DistanceTo
+  href: api/SODD.Core.Vector2Extensions.html#SODD_Core_Vector2Extensions_DistanceTo_
+  commentId: Overload:SODD.Core.Vector2Extensions.DistanceTo
+  isSpec: "True"
+  fullName: SODD.Core.Vector2Extensions.DistanceTo
+  nameWithType: Vector2Extensions.DistanceTo
+- uid: SODD.Core.Vector2Extensions.Rotate(Vector2,System.Single,Vector2)
+  name: Rotate(Vector2, float, Vector2)
+  href: api/SODD.Core.Vector2Extensions.html#SODD_Core_Vector2Extensions_Rotate_Vector2_System_Single_Vector2_
+  commentId: M:SODD.Core.Vector2Extensions.Rotate(Vector2,System.Single,Vector2)
+  name.vb: Rotate(Vector2, Single, Vector2)
+  fullName: SODD.Core.Vector2Extensions.Rotate(Vector2, float, Vector2)
+  fullName.vb: SODD.Core.Vector2Extensions.Rotate(Vector2, Single, Vector2)
+  nameWithType: Vector2Extensions.Rotate(Vector2, float, Vector2)
+  nameWithType.vb: Vector2Extensions.Rotate(Vector2, Single, Vector2)
+- uid: SODD.Core.Vector2Extensions.Rotate*
+  name: Rotate
+  href: api/SODD.Core.Vector2Extensions.html#SODD_Core_Vector2Extensions_Rotate_
+  commentId: Overload:SODD.Core.Vector2Extensions.Rotate
+  isSpec: "True"
+  fullName: SODD.Core.Vector2Extensions.Rotate
+  nameWithType: Vector2Extensions.Rotate
+- uid: SODD.Core.Vector2Extensions.VectorFrom(Vector2,Vector2)
+  name: VectorFrom(Vector2, Vector2)
+  href: api/SODD.Core.Vector2Extensions.html#SODD_Core_Vector2Extensions_VectorFrom_Vector2_Vector2_
+  commentId: M:SODD.Core.Vector2Extensions.VectorFrom(Vector2,Vector2)
+  fullName: SODD.Core.Vector2Extensions.VectorFrom(Vector2, Vector2)
+  nameWithType: Vector2Extensions.VectorFrom(Vector2, Vector2)
+- uid: SODD.Core.Vector2Extensions.VectorFrom*
+  name: VectorFrom
+  href: api/SODD.Core.Vector2Extensions.html#SODD_Core_Vector2Extensions_VectorFrom_
+  commentId: Overload:SODD.Core.Vector2Extensions.VectorFrom
+  isSpec: "True"
+  fullName: SODD.Core.Vector2Extensions.VectorFrom
+  nameWithType: Vector2Extensions.VectorFrom
+- uid: SODD.Core.Vector2Extensions.VectorTo(Vector2,Vector2)
+  name: VectorTo(Vector2, Vector2)
+  href: api/SODD.Core.Vector2Extensions.html#SODD_Core_Vector2Extensions_VectorTo_Vector2_Vector2_
+  commentId: M:SODD.Core.Vector2Extensions.VectorTo(Vector2,Vector2)
+  fullName: SODD.Core.Vector2Extensions.VectorTo(Vector2, Vector2)
+  nameWithType: Vector2Extensions.VectorTo(Vector2, Vector2)
+- uid: SODD.Core.Vector2Extensions.VectorTo*
+  name: VectorTo
+  href: api/SODD.Core.Vector2Extensions.html#SODD_Core_Vector2Extensions_VectorTo_
+  commentId: Overload:SODD.Core.Vector2Extensions.VectorTo
+  isSpec: "True"
+  fullName: SODD.Core.Vector2Extensions.VectorTo
+  nameWithType: Vector2Extensions.VectorTo
+- uid: SODD.Core.Vector3Extensions
+  name: Vector3Extensions
+  href: api/SODD.Core.Vector3Extensions.html
+  commentId: T:SODD.Core.Vector3Extensions
+  fullName: SODD.Core.Vector3Extensions
+  nameWithType: Vector3Extensions
+- uid: SODD.Core.Vector3Extensions.DirectionFrom(Vector3,Vector3)
+  name: DirectionFrom(Vector3, Vector3)
+  href: api/SODD.Core.Vector3Extensions.html#SODD_Core_Vector3Extensions_DirectionFrom_Vector3_Vector3_
+  commentId: M:SODD.Core.Vector3Extensions.DirectionFrom(Vector3,Vector3)
+  fullName: SODD.Core.Vector3Extensions.DirectionFrom(Vector3, Vector3)
+  nameWithType: Vector3Extensions.DirectionFrom(Vector3, Vector3)
+- uid: SODD.Core.Vector3Extensions.DirectionFrom*
+  name: DirectionFrom
+  href: api/SODD.Core.Vector3Extensions.html#SODD_Core_Vector3Extensions_DirectionFrom_
+  commentId: Overload:SODD.Core.Vector3Extensions.DirectionFrom
+  isSpec: "True"
+  fullName: SODD.Core.Vector3Extensions.DirectionFrom
+  nameWithType: Vector3Extensions.DirectionFrom
+- uid: SODD.Core.Vector3Extensions.DirectionTo(Vector3,Vector3)
+  name: DirectionTo(Vector3, Vector3)
+  href: api/SODD.Core.Vector3Extensions.html#SODD_Core_Vector3Extensions_DirectionTo_Vector3_Vector3_
+  commentId: M:SODD.Core.Vector3Extensions.DirectionTo(Vector3,Vector3)
+  fullName: SODD.Core.Vector3Extensions.DirectionTo(Vector3, Vector3)
+  nameWithType: Vector3Extensions.DirectionTo(Vector3, Vector3)
+- uid: SODD.Core.Vector3Extensions.DirectionTo*
+  name: DirectionTo
+  href: api/SODD.Core.Vector3Extensions.html#SODD_Core_Vector3Extensions_DirectionTo_
+  commentId: Overload:SODD.Core.Vector3Extensions.DirectionTo
+  isSpec: "True"
+  fullName: SODD.Core.Vector3Extensions.DirectionTo
+  nameWithType: Vector3Extensions.DirectionTo
+- uid: SODD.Core.Vector3Extensions.DistanceTo(Vector3,Vector3)
+  name: DistanceTo(Vector3, Vector3)
+  href: api/SODD.Core.Vector3Extensions.html#SODD_Core_Vector3Extensions_DistanceTo_Vector3_Vector3_
+  commentId: M:SODD.Core.Vector3Extensions.DistanceTo(Vector3,Vector3)
+  fullName: SODD.Core.Vector3Extensions.DistanceTo(Vector3, Vector3)
+  nameWithType: Vector3Extensions.DistanceTo(Vector3, Vector3)
+- uid: SODD.Core.Vector3Extensions.DistanceTo*
+  name: DistanceTo
+  href: api/SODD.Core.Vector3Extensions.html#SODD_Core_Vector3Extensions_DistanceTo_
+  commentId: Overload:SODD.Core.Vector3Extensions.DistanceTo
+  isSpec: "True"
+  fullName: SODD.Core.Vector3Extensions.DistanceTo
+  nameWithType: Vector3Extensions.DistanceTo
+- uid: SODD.Core.Vector3Extensions.Rotate(Vector3,System.Single,Vector3)
+  name: Rotate(Vector3, float, Vector3)
+  href: api/SODD.Core.Vector3Extensions.html#SODD_Core_Vector3Extensions_Rotate_Vector3_System_Single_Vector3_
+  commentId: M:SODD.Core.Vector3Extensions.Rotate(Vector3,System.Single,Vector3)
+  name.vb: Rotate(Vector3, Single, Vector3)
+  fullName: SODD.Core.Vector3Extensions.Rotate(Vector3, float, Vector3)
+  fullName.vb: SODD.Core.Vector3Extensions.Rotate(Vector3, Single, Vector3)
+  nameWithType: Vector3Extensions.Rotate(Vector3, float, Vector3)
+  nameWithType.vb: Vector3Extensions.Rotate(Vector3, Single, Vector3)
+- uid: SODD.Core.Vector3Extensions.Rotate*
+  name: Rotate
+  href: api/SODD.Core.Vector3Extensions.html#SODD_Core_Vector3Extensions_Rotate_
+  commentId: Overload:SODD.Core.Vector3Extensions.Rotate
+  isSpec: "True"
+  fullName: SODD.Core.Vector3Extensions.Rotate
+  nameWithType: Vector3Extensions.Rotate
+- uid: SODD.Core.Vector3Extensions.VectorFrom(Vector3,Vector3)
+  name: VectorFrom(Vector3, Vector3)
+  href: api/SODD.Core.Vector3Extensions.html#SODD_Core_Vector3Extensions_VectorFrom_Vector3_Vector3_
+  commentId: M:SODD.Core.Vector3Extensions.VectorFrom(Vector3,Vector3)
+  fullName: SODD.Core.Vector3Extensions.VectorFrom(Vector3, Vector3)
+  nameWithType: Vector3Extensions.VectorFrom(Vector3, Vector3)
+- uid: SODD.Core.Vector3Extensions.VectorFrom*
+  name: VectorFrom
+  href: api/SODD.Core.Vector3Extensions.html#SODD_Core_Vector3Extensions_VectorFrom_
+  commentId: Overload:SODD.Core.Vector3Extensions.VectorFrom
+  isSpec: "True"
+  fullName: SODD.Core.Vector3Extensions.VectorFrom
+  nameWithType: Vector3Extensions.VectorFrom
+- uid: SODD.Core.Vector3Extensions.VectorTo(Vector3,Vector3)
+  name: VectorTo(Vector3, Vector3)
+  href: api/SODD.Core.Vector3Extensions.html#SODD_Core_Vector3Extensions_VectorTo_Vector3_Vector3_
+  commentId: M:SODD.Core.Vector3Extensions.VectorTo(Vector3,Vector3)
+  fullName: SODD.Core.Vector3Extensions.VectorTo(Vector3, Vector3)
+  nameWithType: Vector3Extensions.VectorTo(Vector3, Vector3)
+- uid: SODD.Core.Vector3Extensions.VectorTo*
+  name: VectorTo
+  href: api/SODD.Core.Vector3Extensions.html#SODD_Core_Vector3Extensions_VectorTo_
+  commentId: Overload:SODD.Core.Vector3Extensions.VectorTo
+  isSpec: "True"
+  fullName: SODD.Core.Vector3Extensions.VectorTo
+  nameWithType: Vector3Extensions.VectorTo
 - uid: SODD.Core.Void
   name: Void
   href: api/SODD.Core.Void.html
@@ -530,24 +1492,6 @@ references:
   fullName.vb: SODD.Events.IEvent(Of T)
   nameWithType: IEvent<T>
   nameWithType.vb: IEvent(Of T)
-- uid: SODD.Events.IEvent`1.AddListener(System.Action{`0})
-  name: AddListener(Action<T>)
-  href: api/SODD.Events.IEvent-1.html#SODD_Events_IEvent_1_AddListener_System_Action__0__
-  commentId: M:SODD.Events.IEvent`1.AddListener(System.Action{`0})
-  name.vb: AddListener(Action(Of T))
-  fullName: SODD.Events.IEvent<T>.AddListener(System.Action<T>)
-  fullName.vb: SODD.Events.IEvent(Of T).AddListener(System.Action(Of T))
-  nameWithType: IEvent<T>.AddListener(Action<T>)
-  nameWithType.vb: IEvent(Of T).AddListener(Action(Of T))
-- uid: SODD.Events.IEvent`1.AddListener*
-  name: AddListener
-  href: api/SODD.Events.IEvent-1.html#SODD_Events_IEvent_1_AddListener_
-  commentId: Overload:SODD.Events.IEvent`1.AddListener
-  isSpec: "True"
-  fullName: SODD.Events.IEvent<T>.AddListener
-  fullName.vb: SODD.Events.IEvent(Of T).AddListener
-  nameWithType: IEvent<T>.AddListener
-  nameWithType.vb: IEvent(Of T).AddListener
 - uid: SODD.Events.IEvent`1.Invoke(`0)
   name: Invoke(T)
   href: api/SODD.Events.IEvent-1.html#SODD_Events_IEvent_1_Invoke__0_
@@ -565,24 +1509,51 @@ references:
   fullName.vb: SODD.Events.IEvent(Of T).Invoke
   nameWithType: IEvent<T>.Invoke
   nameWithType.vb: IEvent(Of T).Invoke
-- uid: SODD.Events.IEvent`1.RemoveListener(System.Action{`0})
-  name: RemoveListener(Action<T>)
-  href: api/SODD.Events.IEvent-1.html#SODD_Events_IEvent_1_RemoveListener_System_Action__0__
-  commentId: M:SODD.Events.IEvent`1.RemoveListener(System.Action{`0})
-  name.vb: RemoveListener(Action(Of T))
-  fullName: SODD.Events.IEvent<T>.RemoveListener(System.Action<T>)
-  fullName.vb: SODD.Events.IEvent(Of T).RemoveListener(System.Action(Of T))
-  nameWithType: IEvent<T>.RemoveListener(Action<T>)
-  nameWithType.vb: IEvent(Of T).RemoveListener(Action(Of T))
-- uid: SODD.Events.IEvent`1.RemoveListener*
-  name: RemoveListener
-  href: api/SODD.Events.IEvent-1.html#SODD_Events_IEvent_1_RemoveListener_
-  commentId: Overload:SODD.Events.IEvent`1.RemoveListener
+- uid: SODD.Events.IListenableEvent`1
+  name: IListenableEvent<T>
+  href: api/SODD.Events.IListenableEvent-1.html
+  commentId: T:SODD.Events.IListenableEvent`1
+  name.vb: IListenableEvent(Of T)
+  fullName: SODD.Events.IListenableEvent<T>
+  fullName.vb: SODD.Events.IListenableEvent(Of T)
+  nameWithType: IListenableEvent<T>
+  nameWithType.vb: IListenableEvent(Of T)
+- uid: SODD.Events.IListenableEvent`1.AddListener(System.Action{`0})
+  name: AddListener(Action<T>)
+  href: api/SODD.Events.IListenableEvent-1.html#SODD_Events_IListenableEvent_1_AddListener_System_Action__0__
+  commentId: M:SODD.Events.IListenableEvent`1.AddListener(System.Action{`0})
+  name.vb: AddListener(Action(Of T))
+  fullName: SODD.Events.IListenableEvent<T>.AddListener(System.Action<T>)
+  fullName.vb: SODD.Events.IListenableEvent(Of T).AddListener(System.Action(Of T))
+  nameWithType: IListenableEvent<T>.AddListener(Action<T>)
+  nameWithType.vb: IListenableEvent(Of T).AddListener(Action(Of T))
+- uid: SODD.Events.IListenableEvent`1.AddListener*
+  name: AddListener
+  href: api/SODD.Events.IListenableEvent-1.html#SODD_Events_IListenableEvent_1_AddListener_
+  commentId: Overload:SODD.Events.IListenableEvent`1.AddListener
   isSpec: "True"
-  fullName: SODD.Events.IEvent<T>.RemoveListener
-  fullName.vb: SODD.Events.IEvent(Of T).RemoveListener
-  nameWithType: IEvent<T>.RemoveListener
-  nameWithType.vb: IEvent(Of T).RemoveListener
+  fullName: SODD.Events.IListenableEvent<T>.AddListener
+  fullName.vb: SODD.Events.IListenableEvent(Of T).AddListener
+  nameWithType: IListenableEvent<T>.AddListener
+  nameWithType.vb: IListenableEvent(Of T).AddListener
+- uid: SODD.Events.IListenableEvent`1.RemoveListener(System.Action{`0})
+  name: RemoveListener(Action<T>)
+  href: api/SODD.Events.IListenableEvent-1.html#SODD_Events_IListenableEvent_1_RemoveListener_System_Action__0__
+  commentId: M:SODD.Events.IListenableEvent`1.RemoveListener(System.Action{`0})
+  name.vb: RemoveListener(Action(Of T))
+  fullName: SODD.Events.IListenableEvent<T>.RemoveListener(System.Action<T>)
+  fullName.vb: SODD.Events.IListenableEvent(Of T).RemoveListener(System.Action(Of T))
+  nameWithType: IListenableEvent<T>.RemoveListener(Action<T>)
+  nameWithType.vb: IListenableEvent(Of T).RemoveListener(Action(Of T))
+- uid: SODD.Events.IListenableEvent`1.RemoveListener*
+  name: RemoveListener
+  href: api/SODD.Events.IListenableEvent-1.html#SODD_Events_IListenableEvent_1_RemoveListener_
+  commentId: Overload:SODD.Events.IListenableEvent`1.RemoveListener
+  isSpec: "True"
+  fullName: SODD.Events.IListenableEvent<T>.RemoveListener
+  fullName.vb: SODD.Events.IListenableEvent(Of T).RemoveListener
+  nameWithType: IListenableEvent<T>.RemoveListener
+  nameWithType.vb: IListenableEvent(Of T).RemoveListener
 - uid: SODD.Events.IntEvent
   name: IntEvent
   href: api/SODD.Events.IntEvent.html
@@ -1113,6 +2084,68 @@ references:
   commentId: T:SODD.Variables.StringVariable
   fullName: SODD.Variables.StringVariable
   nameWithType: StringVariable
+- uid: SODD.Variables.ValueReference`1
+  name: ValueReference<T>
+  href: api/SODD.Variables.ValueReference-1.html
+  commentId: T:SODD.Variables.ValueReference`1
+  name.vb: ValueReference(Of T)
+  fullName: SODD.Variables.ValueReference<T>
+  fullName.vb: SODD.Variables.ValueReference(Of T)
+  nameWithType: ValueReference<T>
+  nameWithType.vb: ValueReference(Of T)
+- uid: SODD.Variables.ValueReference`1.AddListener(System.Action{`0})
+  name: AddListener(Action<T>)
+  href: api/SODD.Variables.ValueReference-1.html#SODD_Variables_ValueReference_1_AddListener_System_Action__0__
+  commentId: M:SODD.Variables.ValueReference`1.AddListener(System.Action{`0})
+  name.vb: AddListener(Action(Of T))
+  fullName: SODD.Variables.ValueReference<T>.AddListener(System.Action<T>)
+  fullName.vb: SODD.Variables.ValueReference(Of T).AddListener(System.Action(Of T))
+  nameWithType: ValueReference<T>.AddListener(Action<T>)
+  nameWithType.vb: ValueReference(Of T).AddListener(Action(Of T))
+- uid: SODD.Variables.ValueReference`1.AddListener*
+  name: AddListener
+  href: api/SODD.Variables.ValueReference-1.html#SODD_Variables_ValueReference_1_AddListener_
+  commentId: Overload:SODD.Variables.ValueReference`1.AddListener
+  isSpec: "True"
+  fullName: SODD.Variables.ValueReference<T>.AddListener
+  fullName.vb: SODD.Variables.ValueReference(Of T).AddListener
+  nameWithType: ValueReference<T>.AddListener
+  nameWithType.vb: ValueReference(Of T).AddListener
+- uid: SODD.Variables.ValueReference`1.RemoveListener(System.Action{`0})
+  name: RemoveListener(Action<T>)
+  href: api/SODD.Variables.ValueReference-1.html#SODD_Variables_ValueReference_1_RemoveListener_System_Action__0__
+  commentId: M:SODD.Variables.ValueReference`1.RemoveListener(System.Action{`0})
+  name.vb: RemoveListener(Action(Of T))
+  fullName: SODD.Variables.ValueReference<T>.RemoveListener(System.Action<T>)
+  fullName.vb: SODD.Variables.ValueReference(Of T).RemoveListener(System.Action(Of T))
+  nameWithType: ValueReference<T>.RemoveListener(Action<T>)
+  nameWithType.vb: ValueReference(Of T).RemoveListener(Action(Of T))
+- uid: SODD.Variables.ValueReference`1.RemoveListener*
+  name: RemoveListener
+  href: api/SODD.Variables.ValueReference-1.html#SODD_Variables_ValueReference_1_RemoveListener_
+  commentId: Overload:SODD.Variables.ValueReference`1.RemoveListener
+  isSpec: "True"
+  fullName: SODD.Variables.ValueReference<T>.RemoveListener
+  fullName.vb: SODD.Variables.ValueReference(Of T).RemoveListener
+  nameWithType: ValueReference<T>.RemoveListener
+  nameWithType.vb: ValueReference(Of T).RemoveListener
+- uid: SODD.Variables.ValueReference`1.Value
+  name: Value
+  href: api/SODD.Variables.ValueReference-1.html#SODD_Variables_ValueReference_1_Value
+  commentId: P:SODD.Variables.ValueReference`1.Value
+  fullName: SODD.Variables.ValueReference<T>.Value
+  fullName.vb: SODD.Variables.ValueReference(Of T).Value
+  nameWithType: ValueReference<T>.Value
+  nameWithType.vb: ValueReference(Of T).Value
+- uid: SODD.Variables.ValueReference`1.Value*
+  name: Value
+  href: api/SODD.Variables.ValueReference-1.html#SODD_Variables_ValueReference_1_Value_
+  commentId: Overload:SODD.Variables.ValueReference`1.Value
+  isSpec: "True"
+  fullName: SODD.Variables.ValueReference<T>.Value
+  fullName.vb: SODD.Variables.ValueReference(Of T).Value
+  nameWithType: ValueReference<T>.Value
+  nameWithType.vb: ValueReference(Of T).Value
 - uid: SODD.Variables.Variable`1
   name: Variable<T>
   href: api/SODD.Variables.Variable-1.html
@@ -1122,6 +2155,24 @@ references:
   fullName.vb: SODD.Variables.Variable(Of T)
   nameWithType: Variable<T>
   nameWithType.vb: Variable(Of T)
+- uid: SODD.Variables.Variable`1.AddListener(System.Action{`0})
+  name: AddListener(Action<T>)
+  href: api/SODD.Variables.Variable-1.html#SODD_Variables_Variable_1_AddListener_System_Action__0__
+  commentId: M:SODD.Variables.Variable`1.AddListener(System.Action{`0})
+  name.vb: AddListener(Action(Of T))
+  fullName: SODD.Variables.Variable<T>.AddListener(System.Action<T>)
+  fullName.vb: SODD.Variables.Variable(Of T).AddListener(System.Action(Of T))
+  nameWithType: Variable<T>.AddListener(Action<T>)
+  nameWithType.vb: Variable(Of T).AddListener(Action(Of T))
+- uid: SODD.Variables.Variable`1.AddListener*
+  name: AddListener
+  href: api/SODD.Variables.Variable-1.html#SODD_Variables_Variable_1_AddListener_
+  commentId: Overload:SODD.Variables.Variable`1.AddListener
+  isSpec: "True"
+  fullName: SODD.Variables.Variable<T>.AddListener
+  fullName.vb: SODD.Variables.Variable(Of T).AddListener
+  nameWithType: Variable<T>.AddListener
+  nameWithType.vb: Variable(Of T).AddListener
 - uid: SODD.Variables.Variable`1.HandleValueChange
   name: HandleValueChange()
   href: api/SODD.Variables.Variable-1.html#SODD_Variables_Variable_1_HandleValueChange
@@ -1147,6 +2198,24 @@ references:
   fullName.vb: SODD.Variables.Variable(Of T).OnValueChanged
   nameWithType: Variable<T>.OnValueChanged
   nameWithType.vb: Variable(Of T).OnValueChanged
+- uid: SODD.Variables.Variable`1.RemoveListener(System.Action{`0})
+  name: RemoveListener(Action<T>)
+  href: api/SODD.Variables.Variable-1.html#SODD_Variables_Variable_1_RemoveListener_System_Action__0__
+  commentId: M:SODD.Variables.Variable`1.RemoveListener(System.Action{`0})
+  name.vb: RemoveListener(Action(Of T))
+  fullName: SODD.Variables.Variable<T>.RemoveListener(System.Action<T>)
+  fullName.vb: SODD.Variables.Variable(Of T).RemoveListener(System.Action(Of T))
+  nameWithType: Variable<T>.RemoveListener(Action<T>)
+  nameWithType.vb: Variable(Of T).RemoveListener(Action(Of T))
+- uid: SODD.Variables.Variable`1.RemoveListener*
+  name: RemoveListener
+  href: api/SODD.Variables.Variable-1.html#SODD_Variables_Variable_1_RemoveListener_
+  commentId: Overload:SODD.Variables.Variable`1.RemoveListener
+  isSpec: "True"
+  fullName: SODD.Variables.Variable<T>.RemoveListener
+  fullName.vb: SODD.Variables.Variable(Of T).RemoveListener
+  nameWithType: Variable<T>.RemoveListener
+  nameWithType.vb: Variable(Of T).RemoveListener
 - uid: SODD.Variables.Variable`1.Value
   name: Value
   href: api/SODD.Variables.Variable-1.html#SODD_Variables_Variable_1_Value

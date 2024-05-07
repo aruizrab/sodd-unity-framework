@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface IEvent&lt;T&gt; | SODD Framework | 1.1.0 </title>
+      <title>Interface IListenableEvent&lt;T&gt; | SODD Framework | 1.1.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface IEvent&lt;T&gt; | SODD Framework | 1.1.0 ">
+      <meta name="title" content="Interface IListenableEvent&lt;T&gt; | SODD Framework | 1.1.0 ">
       
-      <meta name="description" content="Defines a generic interface for events that can have listeners added or removed, and be invoked with a payload of type T.">
+      <meta name="description" content="Defines a generic interface for events with payloads of type T that can have listeners added or removed.">
       <link rel="icon" href="../manual/images/favicon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/aruizrab/sodd-unity-framework/new/main/apiSpec/new?filename=SODD_Events_IEvent_1.md&amp;value=---%0Auid%3A%20SODD.Events.IEvent%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/aruizrab/sodd-unity-framework/new/main/apiSpec/new?filename=SODD_Events_IListenableEvent_1.md&amp;value=---%0Auid%3A%20SODD.Events.IListenableEvent%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="SODD.Events.IEvent`1">
+        <article data-uid="SODD.Events.IListenableEvent`1">
 
 
 
-  <h1 id="SODD_Events_IEvent_1" data-uid="SODD.Events.IEvent`1" class="text-break">
-Interface IEvent&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/IEvent.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <h1 id="SODD_Events_IListenableEvent_1" data-uid="SODD.Events.IListenableEvent`1" class="text-break">
+Interface IListenableEvent&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/IListenableEvent.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,13 +97,13 @@ Interface IEvent&lt;T&gt;  <a class="header-action link-secondary" title="View s
   
   </div>
 
-  <div class="markdown summary"><p>Defines a generic interface for events that can have listeners added or removed, and be invoked with a payload of
-type <code class="typeparamref">T</code>.</p>
+  <div class="markdown summary"><p>Defines a generic interface for events with payloads of
+type <code class="typeparamref">T</code> that can have listeners added or removed.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IEvent&lt;T&gt; : IListenableEvent&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IListenableEvent&lt;out T&gt;</code></pre>
   </div>
 
 
@@ -119,62 +119,44 @@ receive when the event is invoked.</p>
 
 
 
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
-    <div>
-      <a class="xref" href="SODD.Events.IListenableEvent-1.html#SODD_Events_IListenableEvent_1_AddListener_System_Action__0__">IListenableEvent&lt;T&gt;.AddListener(Action&lt;T&gt;)</a>
-    </div>
-    <div>
-      <a class="xref" href="SODD.Events.IListenableEvent-1.html#SODD_Events_IListenableEvent_1_RemoveListener_System_Action__0__">IListenableEvent&lt;T&gt;.RemoveListener(Action&lt;T&gt;)</a>
-    </div>
-  </dd></dl>
 
 
 
-  <h2 id="SODD_Events_IEvent_1_examples">Examples</h2>
-  <p>Example of defining a new event and subscribing a listener:</p>
-<pre><code class="lang-csharp">// Define a new event with a string payload
-public class MyStringEvent : IEvent&lt;string&gt; {
-    private event Action&lt;string&gt; listeners;
+  <h2 id="SODD_Events_IListenableEvent_1_examples">Examples</h2>
+  <p>Implementing <a class="xref" href="SODD.Events.IListenableEvent-1.html">IListenableEvent&lt;T&gt;</a> for a custom event system:</p>
+<pre><code class="lang-csharp">public class HealthChangedEvent : IListenableEvent&lt;int&gt;
+{
+    private event Action&lt;int&gt; _onHealthChanged;
 
-    public void AddListener(Action&lt;string&gt; listener) =&gt; listeners += listener;
+    public void AddListener(Action&lt;int&gt; listener)
+    {
+        _onHealthChanged += listener;
+    }
 
-    public void RemoveListener(Action&lt;string&gt; listener) =&gt; listeners -= listener;
+    public void RemoveListener(Action&lt;int&gt; listener)
+    {
+        _onHealthChanged -= listener;
+    }
 
-    public void Invoke(string payload) =&gt; listeners?.Invoke(payload);
-}
-
-// Create an instance of the event
-MyStringEvent myEvent = new MyStringEvent();
-
-// Define a listener method
-void MyEventListener(string message) {
-    Debug.Log(message);
-}
-
-// Subscribe the listener to the event
-myEvent.AddListener(MyEventListener);
-
-// Invoke the event
-myEvent.Invoke("Hello, World!");</code></pre>
-<p>This example will print &quot;Hello, World!&quot; to the console.</p>
+    private void Invoke(int newHealth)
+    {
+        _onHealthChanged?.Invoke(newHealth);
+    }
+}</code></pre>
+<p>In this example, <code>HealthChangedEvent</code> uses an internal event delegate to manage subscribing and unsubscribing
+of listeners,
+and provides a private method <code>Invoke</code> to invoke all subscribed listeners with the current health value.</p>
 
 
-  <h2 id="SODD_Events_IEvent_1_remarks">Remarks</h2>
+  <h2 id="SODD_Events_IListenableEvent_1_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>
-        The <a class="xref" href="SODD.Events.IEvent-1.html">IEvent&lt;T&gt;</a> interface serves as the foundation of the loosely coupled event system based on
-        ScriptableObjects
-        provided by the SODD Framework, from which all scriptable events implement.
+        The <a class="xref" href="SODD.Events.IListenableEvent-1.html">IListenableEvent&lt;T&gt;</a> interface serves as the foundation for scriptable events and scriptable
+        variables.
     </p>
 <p>
         Listeners can subscribe to the event using <a class="xref" href="SODD.Events.IListenableEvent-1.html#SODD_Events_IListenableEvent_1_AddListener_System_Action__0__">AddListener(Action&lt;T&gt;)</a> and unsubscribe using
-        <a class="xref" href="SODD.Events.IListenableEvent-1.html#SODD_Events_IListenableEvent_1_RemoveListener_System_Action__0__">RemoveListener(Action&lt;T&gt;)</a>. The event can be triggered using the <a class="xref" href="SODD.Events.IEvent-1.html#SODD_Events_IEvent_1_Invoke__0_">Invoke(T)</a>
-        method, which notifies all subscribed listeners, passing the specified payload to them.
-    </p>
-<p>
-        Usage of this interface promotes a pattern where components can react to specific game events, enhancing
-        modularity and flexibility of the game's architecture.
+        <a class="xref" href="SODD.Events.IListenableEvent-1.html#SODD_Events_IListenableEvent_1_RemoveListener_System_Action__0__">RemoveListener(Action&lt;T&gt;)</a>. When the event is internally triggered, it notifies all subscribed listeners,
+        passing the specified payload to them.
     </p>
 </div>
 
@@ -183,25 +165,61 @@ myEvent.Invoke("Hello, World!");</code></pre>
 </h2>
 
 
-  <a id="SODD_Events_IEvent_1_Invoke_" data-uid="SODD.Events.IEvent`1.Invoke*"></a>
+  <a id="SODD_Events_IListenableEvent_1_AddListener_" data-uid="SODD.Events.IListenableEvent`1.AddListener*"></a>
 
-  <h3 id="SODD_Events_IEvent_1_Invoke__0_" data-uid="SODD.Events.IEvent`1.Invoke(`0)">
-  Invoke(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/IEvent.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <h3 id="SODD_Events_IListenableEvent_1_AddListener_System_Action__0__" data-uid="SODD.Events.IListenableEvent`1.AddListener(System.Action{`0})">
+  AddListener(Action&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/IListenableEvent.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Triggers the event, notifying all subscribed listeners and passing the specified payload to them.</p>
+  <div class="markdown level1 summary"><p>Subscribes a listener to the event, allowing it to be notified when the event is invoked.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Invoke(T payload)</code></pre>
+    <pre><code class="lang-csharp hljs">void AddListener(Action&lt;out T&gt; listener)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>payload</code> <span class="xref">T</span></dt>
-    <dd><p>The payload to pass to the listeners.</p>
+    <dt><code>listener</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
+    <dd><p>The listener to add. It is a method that matches the signature of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action&lt;T&gt;</a>
+delegate, accepting a single parameter of type <code class="typeparamref">T</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SODD_Events_IListenableEvent_1_RemoveListener_" data-uid="SODD.Events.IListenableEvent`1.RemoveListener*"></a>
+
+  <h3 id="SODD_Events_IListenableEvent_1_RemoveListener_System_Action__0__" data-uid="SODD.Events.IListenableEvent`1.RemoveListener(System.Action{`0})">
+  RemoveListener(Action&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/IListenableEvent.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unsubscribes a previously added listener from the event, preventing it from being notified when the event is
+invoked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveListener(Action&lt;out T&gt; listener)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listener</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
+    <dd><p>The listener to remove. It must be the same instance that was previously added with
+<a class="xref" href="SODD.Events.IListenableEvent-1.html#SODD_Events_IListenableEvent_1_AddListener_System_Action__0__">AddListener(Action&lt;T&gt;)</a>.</p>
 </dd>
   </dl>
 

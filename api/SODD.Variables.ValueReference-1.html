@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class GenericEvent&lt;T&gt; | SODD Framework | 1.1.0 </title>
+      <title>Class ValueReference&lt;T&gt; | SODD Framework | 1.1.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class GenericEvent&lt;T&gt; | SODD Framework | 1.1.0 ">
+      <meta name="title" content="Class ValueReference&lt;T&gt; | SODD Framework | 1.1.0 ">
       
-      <meta name="description" content="Represents a generic event that can be listened to and invoked.">
+      <meta name="description" content="Represents a reference holder for values of type T.">
       <link rel="icon" href="../manual/images/favicon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/aruizrab/sodd-unity-framework/new/main/apiSpec/new?filename=SODD_Events_GenericEvent_1.md&amp;value=---%0Auid%3A%20SODD.Events.GenericEvent%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/aruizrab/sodd-unity-framework/new/main/apiSpec/new?filename=SODD_Variables_ValueReference_1.md&amp;value=---%0Auid%3A%20SODD.Variables.ValueReference%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,25 +84,26 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="SODD.Events.GenericEvent`1">
+        <article data-uid="SODD.Variables.ValueReference`1">
 
 
 
-  <h1 id="SODD_Events_GenericEvent_1" data-uid="SODD.Events.GenericEvent`1" class="text-break">
-Class GenericEvent&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/GenericEvent.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  <h1 id="SODD_Variables_ValueReference_1" data-uid="SODD.Variables.ValueReference`1" class="text-break">
+Class ValueReference&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/ValueReference.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="SODD.html">SODD</a>.<a class="xref" href="SODD.Events.html">Events</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SODD.html">SODD</a>.<a class="xref" href="SODD.Variables.html">Variables</a></dd></dl>
   
   </div>
 
-  <div class="markdown summary"><p>Represents a generic event that can be listened to and invoked.</p>
+  <div class="markdown summary"><p>Represents a reference holder for values of type <code class="typeparamref">T</code>.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class GenericEvent&lt;T&gt; : IEvent&lt;T&gt;, IListenableEvent&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class ValueReference&lt;T&gt; : IVariable&lt;T&gt;, IListenableEvent&lt;T&gt;</code></pre>
   </div>
 
 
@@ -110,7 +111,7 @@ Class GenericEvent&lt;T&gt;  <a class="header-action link-secondary" title="View
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd><p>The type of the event payload.</p>
+    <dd><p>The type of the data held by this reference.</p>
 </dd>
   </dl>
 
@@ -118,16 +119,77 @@ Class GenericEvent&lt;T&gt;  <a class="header-action link-secondary" title="View
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">GenericEvent&lt;T&gt;</span></div>
+      <div><span class="xref">ValueReference&lt;T&gt;</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="SODD.Events.IEvent-1.html">IEvent</a>&lt;T&gt;</div>
+      <div><a class="xref" href="SODD.Variables.IVariable-1.html">IVariable</a>&lt;T&gt;</div>
       <div><a class="xref" href="SODD.Events.IListenableEvent-1.html">IListenableEvent</a>&lt;T&gt;</div>
     </dd>
+  </dl>
+
+
+
+
+
+  <h2 id="SODD_Variables_ValueReference_1_examples">Examples</h2>
+  <p>Example of using ValueReference to switch between a local and shared value:</p>
+<pre><code class="lang-csharp">public class Player : MonoBehaviour
+{
+    public ValueReference&lt;int&gt; maxHealth;
+
+    void Start()
+    {
+        Debug.Log("Max Health: " + maxHealth.Value);
+    }
+}</code></pre>
+<p>In this example, the <code>maxHealth</code> can be configured in the Unity Editor to use either a local field value
+or a reference to a shared Variable&lt;int&gt; asset. This allows for easy adjustments in gameplay mechanics
+without
+needing to touch the source code.</p>
+
+
+  <h2 id="SODD_Variables_ValueReference_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+        This class provides a flexible mechanism to reference values either directly as serialized fields, or
+        indirectly through a reference to a <a class="xref" href="SODD.Variables.Variable-1.html">Variable&lt;T&gt;</a> asset. This allows
+        developers to switch between inner instance-specific values and shared variable values without modifying the
+        code that uses said values.
+    </p>
+</div>
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SODD_Variables_ValueReference_1_Value_" data-uid="SODD.Variables.ValueReference`1.Value*"></a>
+
+  <h3 id="SODD_Variables_ValueReference_1_Value" data-uid="SODD.Variables.ValueReference`1.Value">
+  Value
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/ValueReference.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the value of the reference, choosing between a local field and an external variable based on
+configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Value { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
   </dl>
 
 
@@ -141,14 +203,14 @@ Class GenericEvent&lt;T&gt;  <a class="header-action link-secondary" title="View
 </h2>
 
 
-  <a id="SODD_Events_GenericEvent_1_AddListener_" data-uid="SODD.Events.GenericEvent`1.AddListener*"></a>
+  <a id="SODD_Variables_ValueReference_1_AddListener_" data-uid="SODD.Variables.ValueReference`1.AddListener*"></a>
 
-  <h3 id="SODD_Events_GenericEvent_1_AddListener_System_Action__0__" data-uid="SODD.Events.GenericEvent`1.AddListener(System.Action{`0})">
+  <h3 id="SODD_Variables_ValueReference_1_AddListener_System_Action__0__" data-uid="SODD.Variables.ValueReference`1.AddListener(System.Action{`0})">
   AddListener(Action&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/GenericEvent.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/ValueReference.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Adds a listener to the event.</p>
+  <div class="markdown level1 summary"><p>Registers an action to be called when the referenced value changes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -159,43 +221,7 @@ Class GenericEvent&lt;T&gt;  <a class="header-action link-secondary" title="View
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>listener</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
-    <dd><p>The listener to add.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h4 class="section" id="SODD_Events_GenericEvent_1_AddListener_System_Action__0___remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>This method adds a listener to the event. The listener will be triggered whenever the event is invoked.</p>
-</div>
-
-
-
-
-  <a id="SODD_Events_GenericEvent_1_Invoke_" data-uid="SODD.Events.GenericEvent`1.Invoke*"></a>
-
-  <h3 id="SODD_Events_GenericEvent_1_Invoke__0_" data-uid="SODD.Events.GenericEvent`1.Invoke(`0)">
-  Invoke(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/GenericEvent.cs/#L39"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Invokes the event and notifies all registered listeners with the specified payload.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Invoke(T payload)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>payload</code> <span class="xref">T</span></dt>
-    <dd><p>The payload to pass to the listeners.</p>
+    <dd><p>The action to invoke when the value changes.</p>
 </dd>
   </dl>
 
@@ -210,14 +236,14 @@ Class GenericEvent&lt;T&gt;  <a class="header-action link-secondary" title="View
 
 
 
-  <a id="SODD_Events_GenericEvent_1_RemoveListener_" data-uid="SODD.Events.GenericEvent`1.RemoveListener*"></a>
+  <a id="SODD_Variables_ValueReference_1_RemoveListener_" data-uid="SODD.Variables.ValueReference`1.RemoveListener*"></a>
 
-  <h3 id="SODD_Events_GenericEvent_1_RemoveListener_System_Action__0__" data-uid="SODD.Events.GenericEvent`1.RemoveListener(System.Action{`0})">
+  <h3 id="SODD_Variables_ValueReference_1_RemoveListener_System_Action__0__" data-uid="SODD.Variables.ValueReference`1.RemoveListener(System.Action{`0})">
   RemoveListener(Action&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Events/GenericEvent.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/ValueReference.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Removes the specified listener from the event.</p>
+  <div class="markdown level1 summary"><p>Unregisters an action previously added to listen for value changes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -228,7 +254,7 @@ Class GenericEvent&lt;T&gt;  <a class="header-action link-secondary" title="View
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>listener</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
-    <dd><p>The listener to be removed.</p>
+    <dd><p>The action to remove.</p>
 </dd>
   </dl>
 

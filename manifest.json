@@ -105,10 +105,110 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Core.AudioMixerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Core.AudioMixerExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Core.CoroutineBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Core.CoroutineBuilder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Core.EnumerableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Core.EnumerableExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Core.GameObjectExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Core.GameObjectExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/SODD.Core.Logger.yml",
       "output": {
         ".html": {
           "relative_path": "api/SODD.Core.Logger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Core.NavMeshAgentExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Core.NavMeshAgentExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Core.PrimitiveTypeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Core.PrimitiveTypeExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Core.Scope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Core.Scope.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Core.TransformExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Core.TransformExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Core.Vector2Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Core.Vector2Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Core.Vector3Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Core.Vector3Extensions.html"
         }
       },
       "version": ""
@@ -189,6 +289,16 @@
       "output": {
         ".html": {
           "relative_path": "api/SODD.Events.IEvent-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Events.IListenableEvent-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Events.IListenableEvent-1.html"
         }
       },
       "version": ""
@@ -509,6 +619,16 @@
       "output": {
         ".html": {
           "relative_path": "api/SODD.Variables.StringVariable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Variables.ValueReference-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Variables.ValueReference-1.html"
         }
       },
       "version": ""

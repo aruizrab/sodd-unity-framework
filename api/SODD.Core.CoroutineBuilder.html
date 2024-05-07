@@ -1,0 +1,717 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CoroutineBuilder | SODD Framework | 1.1.0 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CoroutineBuilder | SODD Framework | 1.1.0 ">
+      
+      <meta name="description" content="Provides a flexible builder for constructing and managing custom coroutines.">
+      <link rel="icon" href="../manual/images/favicon.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      <meta name="docfx:disablenewtab" content="true">
+      
+      <meta name="docfx:docurl" content="https://github.com/aruizrab/sodd-unity-framework/new/main/apiSpec/new?filename=SODD_Core_CoroutineBuilder.md&amp;value=---%0Auid%3A%20SODD.Core.CoroutineBuilder%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../manual/images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SODD.Core.CoroutineBuilder">
+
+
+
+  <h1 id="SODD_Core_CoroutineBuilder" data-uid="SODD.Core.CoroutineBuilder" class="text-break">
+Class CoroutineBuilder  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/CoroutineBuilder.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SODD.html">SODD</a>.<a class="xref" href="SODD.Core.html">Core</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Provides a flexible builder for constructing and managing custom coroutines.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CoroutineBuilder : MonoBehaviour, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CoroutineBuilder</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+  <h2 id="SODD_Core_CoroutineBuilder_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+        The <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a> class allows developers to dynamically construct coroutines by chaining
+        various types of execution steps, such as invoking actions, waiting for seconds, or repeating steps.
+        This class simplifies complex coroutine creation and management, making it easy to customize behavior
+        at runtime without writing repetitive coroutine functions.
+    </p>
+<p>
+        It supports conditional waits, loops, and method invocation, providing a powerful tool for creating
+        sophisticated asynchronous behaviors.
+    </p>
+</div>
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SODD_Core_CoroutineBuilder_IsRunning_" data-uid="SODD.Core.CoroutineBuilder.IsRunning*"></a>
+
+  <h3 id="SODD_Core_CoroutineBuilder_IsRunning" data-uid="SODD.Core.CoroutineBuilder.IsRunning">
+  IsRunning
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/CoroutineBuilder.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the coroutine is currently running.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRunning { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SODD_Core_CoroutineBuilder_Append_" data-uid="SODD.Core.CoroutineBuilder.Append*"></a>
+
+  <h3 id="SODD_Core_CoroutineBuilder_Append_SODD_Core_CoroutineBuilder___" data-uid="SODD.Core.CoroutineBuilder.Append(SODD.Core.CoroutineBuilder[])">
+  Append(params CoroutineBuilder[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/CoroutineBuilder.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Appends the specified coroutines to the current <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoroutineBuilder Append(params CoroutineBuilder[] coroutines)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coroutines</code> <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a>[]</dt>
+    <dd><p>The coroutines to append.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a></dt>
+    <dd><p>The current <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>Thrown when one of the coroutines is currently running.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SODD_Core_CoroutineBuilder_Cancel_" data-uid="SODD.Core.CoroutineBuilder.Cancel*"></a>
+
+  <h3 id="SODD_Core_CoroutineBuilder_Cancel" data-uid="SODD.Core.CoroutineBuilder.Cancel">
+  Cancel()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/CoroutineBuilder.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Cancels the running coroutine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Cancel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SODD_Core_CoroutineBuilder_CancelOnDisable_" data-uid="SODD.Core.CoroutineBuilder.CancelOnDisable*"></a>
+
+  <h3 id="SODD_Core_CoroutineBuilder_CancelOnDisable_System_Boolean_" data-uid="SODD.Core.CoroutineBuilder.CancelOnDisable(System.Boolean)">
+  CancelOnDisable(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/CoroutineBuilder.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Configures whether the <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a> instance should be canceled when it gets disabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoroutineBuilder CancelOnDisable(bool condition = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the instance should be canceled; otherwise, false.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a></dt>
+    <dd><p>The current <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SODD_Core_CoroutineBuilder_Clone_" data-uid="SODD.Core.CoroutineBuilder.Clone*"></a>
+
+  <h3 id="SODD_Core_CoroutineBuilder_Clone" data-uid="SODD.Core.CoroutineBuilder.Clone">
+  Clone()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/CoroutineBuilder.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a shallow copy of the current <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>A shallow copy of the current <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SODD_Core_CoroutineBuilder_DestroyOnFinish_" data-uid="SODD.Core.CoroutineBuilder.DestroyOnFinish*"></a>
+
+  <h3 id="SODD_Core_CoroutineBuilder_DestroyOnFinish_System_Boolean_" data-uid="SODD.Core.CoroutineBuilder.DestroyOnFinish(System.Boolean)">
+  DestroyOnFinish(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/CoroutineBuilder.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Configures whether the <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a> instance should be destroyed when the coroutine finishes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoroutineBuilder DestroyOnFinish(bool condition = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the instance should be destroyed; otherwise, false.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a></dt>
+    <dd><p>The current <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SODD_Core_CoroutineBuilder_ForTimes_" data-uid="SODD.Core.CoroutineBuilder.ForTimes*"></a>
+
+  <h3 id="SODD_Core_CoroutineBuilder_ForTimes_System_Int32_" data-uid="SODD.Core.CoroutineBuilder.ForTimes(System.Int32)">
+  ForTimes(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/CoroutineBuilder.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an execution step to repeat the previous steps a specified number of times during the coroutine execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoroutineBuilder ForTimes(int times)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>times</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of times to repeat the previous steps.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a></dt>
+    <dd><p>The current <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SODD_Core_CoroutineBuilder_Invoke_" data-uid="SODD.Core.CoroutineBuilder.Invoke*"></a>
+
+  <h3 id="SODD_Core_CoroutineBuilder_Invoke_System_Action_" data-uid="SODD.Core.CoroutineBuilder.Invoke(System.Action)">
+  Invoke(Action)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/CoroutineBuilder.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an execution step to invoke the specified action during the coroutine execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoroutineBuilder Invoke(Action action)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd><p>The action to be invoked.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a></dt>
+    <dd><p>The current <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SODD_Core_CoroutineBuilder_Run_" data-uid="SODD.Core.CoroutineBuilder.Run*"></a>
+
+  <h3 id="SODD_Core_CoroutineBuilder_Run" data-uid="SODD.Core.CoroutineBuilder.Run">
+  Run()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/CoroutineBuilder.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Runs the configured coroutine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Run()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SODD_Core_CoroutineBuilder_WaitForEndOfFrame_" data-uid="SODD.Core.CoroutineBuilder.WaitForEndOfFrame*"></a>
+
+  <h3 id="SODD_Core_CoroutineBuilder_WaitForEndOfFrame" data-uid="SODD.Core.CoroutineBuilder.WaitForEndOfFrame">
+  WaitForEndOfFrame()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/CoroutineBuilder.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an execution step to wait for the end of the current frame during the coroutine execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoroutineBuilder WaitForEndOfFrame()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a></dt>
+    <dd><p>The current <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SODD_Core_CoroutineBuilder_WaitForFixedUpdate_" data-uid="SODD.Core.CoroutineBuilder.WaitForFixedUpdate*"></a>
+
+  <h3 id="SODD_Core_CoroutineBuilder_WaitForFixedUpdate" data-uid="SODD.Core.CoroutineBuilder.WaitForFixedUpdate">
+  WaitForFixedUpdate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/CoroutineBuilder.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an execution step to wait for the next fixed update during the coroutine execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoroutineBuilder WaitForFixedUpdate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a></dt>
+    <dd><p>The current <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SODD_Core_CoroutineBuilder_WaitForSeconds_" data-uid="SODD.Core.CoroutineBuilder.WaitForSeconds*"></a>
+
+  <h3 id="SODD_Core_CoroutineBuilder_WaitForSeconds_System_Single_" data-uid="SODD.Core.CoroutineBuilder.WaitForSeconds(System.Single)">
+  WaitForSeconds(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/CoroutineBuilder.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an execution step to wait for a specified number of seconds during the coroutine execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoroutineBuilder WaitForSeconds(float seconds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>seconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The number of seconds to wait.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a></dt>
+    <dd><p>The current <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SODD_Core_CoroutineBuilder_WaitUntil_" data-uid="SODD.Core.CoroutineBuilder.WaitUntil*"></a>
+
+  <h3 id="SODD_Core_CoroutineBuilder_WaitUntil_System_Func_System_Boolean__" data-uid="SODD.Core.CoroutineBuilder.WaitUntil(System.Func{System.Boolean})">
+  WaitUntil(Func&lt;bool&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/CoroutineBuilder.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an execution step to wait until the specified predicate is true during the coroutine execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoroutineBuilder WaitUntil(Func&lt;bool&gt; predicate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>predicate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>The predicate function to evaluate.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a></dt>
+    <dd><p>The current <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SODD_Core_CoroutineBuilder_WaitWhile_" data-uid="SODD.Core.CoroutineBuilder.WaitWhile*"></a>
+
+  <h3 id="SODD_Core_CoroutineBuilder_WaitWhile_System_Func_System_Boolean__" data-uid="SODD.Core.CoroutineBuilder.WaitWhile(System.Func{System.Boolean})">
+  WaitWhile(Func&lt;bool&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/CoroutineBuilder.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an execution step to wait while the specified predicate is false during the coroutine execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoroutineBuilder WaitWhile(Func&lt;bool&gt; predicate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>predicate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>The predicate function to evaluate.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a></dt>
+    <dd><p>The current <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SODD_Core_CoroutineBuilder_While_" data-uid="SODD.Core.CoroutineBuilder.While*"></a>
+
+  <h3 id="SODD_Core_CoroutineBuilder_While_System_Func_System_Boolean__" data-uid="SODD.Core.CoroutineBuilder.While(System.Func{System.Boolean})">
+  While(Func&lt;bool&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/CoroutineBuilder.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an execution step to wait while the specified predicate is true during the coroutine execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoroutineBuilder While(Func&lt;bool&gt; predicate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>predicate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>The predicate function to evaluate.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a></dt>
+    <dd><p>The current <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made by <a href="https://github.com/aruizrab" target="_blank">aruizrab</a> using <a href="https://dotnet.github.io/docfx" target="_blank">DocFX</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

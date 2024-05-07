@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class Event&lt;T&gt; | SODD Framework | 1.0.0 </title>
+      <title>Class Event&lt;T&gt; | SODD Framework | 1.1.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Event&lt;T&gt; | SODD Framework | 1.0.0 ">
+      <meta name="title" content="Class Event&lt;T&gt; | SODD Framework | 1.1.0 ">
       
       <meta name="description" content="Provides a generic base class for scriptable event implementations, enabling events to be defined with specific data types as payloads.">
       <link rel="icon" href="../manual/images/favicon.png">
@@ -103,7 +103,7 @@ data types as payloads.</p>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class Event&lt;T&gt; : ScriptableObject, IEvent&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class Event&lt;T&gt; : ScriptableObject, IEvent&lt;T&gt;, IListenableEvent&lt;T&gt;</code></pre>
   </div>
 
 
@@ -127,6 +127,7 @@ data types as payloads.</p>
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="SODD.Events.IEvent-1.html">IEvent</a>&lt;T&gt;</div>
+      <div><a class="xref" href="SODD.Events.IListenableEvent-1.html">IListenableEvent</a>&lt;T&gt;</div>
     </dd>
   </dl>
 
@@ -301,7 +302,7 @@ invoked.</p>
   <dl class="parameters">
     <dt><code>listener</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
     <dd><p>The listener to remove. It must be the same instance that was previously added with
-<a class="xref" href="SODD.Events.IEvent-1.html#SODD_Events_IEvent_1_AddListener_System_Action__0__">AddListener(Action&lt;T&gt;)</a>.</p>
+<a class="xref" href="SODD.Events.IListenableEvent-1.html#SODD_Events_IListenableEvent_1_AddListener_System_Action__0__">AddListener(Action&lt;T&gt;)</a>.</p>
 </dd>
   </dl>
 

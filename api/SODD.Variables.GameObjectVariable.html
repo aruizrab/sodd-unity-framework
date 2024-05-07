@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class GameObjectVariable | SODD Framework | 1.0.0 </title>
+      <title>Class GameObjectVariable | SODD Framework | 1.1.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class GameObjectVariable | SODD Framework | 1.0.0 ">
+      <meta name="title" content="Class GameObjectVariable | SODD Framework | 1.1.0 ">
       
       <meta name="description" content="A ScriptableObject representing a GameObject variable.">
       <link rel="icon" href="../manual/images/favicon.png">
@@ -102,7 +102,7 @@ Class GameObjectVariable  <a class="header-action link-secondary" title="View so
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GameObjectVariable : Variable&lt;GameObject&gt;, IVariable, IVariable&lt;GameObject&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class GameObjectVariable : Variable&lt;GameObject&gt;, IVariable, IVariable&lt;GameObject&gt;, IListenableEvent&lt;GameObject&gt;</code></pre>
   </div>
 
 
@@ -122,6 +122,7 @@ Class GameObjectVariable  <a class="header-action link-secondary" title="View so
     <dd>
       <div><a class="xref" href="SODD.Variables.IVariable.html">IVariable</a></div>
       <div><a class="xref" href="SODD.Variables.IVariable-1.html">IVariable</a>&lt;<span class="xref">GameObject</span>&gt;</div>
+      <div><a class="xref" href="SODD.Events.IListenableEvent-1.html">IListenableEvent</a>&lt;<span class="xref">GameObject</span>&gt;</div>
     </dd>
   </dl>
 
@@ -143,6 +144,12 @@ Class GameObjectVariable  <a class="header-action link-secondary" title="View so
     </div>
     <div>
       <a class="xref" href="SODD.Variables.Variable-1.html#SODD_Variables_Variable_1_HandleValueChange">Variable&lt;GameObject&gt;.HandleValueChange()</a>
+    </div>
+    <div>
+      <a class="xref" href="SODD.Variables.Variable-1.html#SODD_Variables_Variable_1_AddListener_System_Action__0__">Variable&lt;GameObject&gt;.AddListener(Action&lt;GameObject&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="SODD.Variables.Variable-1.html#SODD_Variables_Variable_1_RemoveListener_System_Action__0__">Variable&lt;GameObject&gt;.RemoveListener(Action&lt;GameObject&gt;)</a>
     </div>
   </dd></dl>
 

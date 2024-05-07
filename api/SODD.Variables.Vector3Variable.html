@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class Vector3Variable | SODD Framework | 1.0.0 </title>
+      <title>Class Vector3Variable | SODD Framework | 1.1.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Vector3Variable | SODD Framework | 1.0.0 ">
+      <meta name="title" content="Class Vector3Variable | SODD Framework | 1.1.0 ">
       
       <meta name="description" content="A ScriptableObject representing a Vector3 variable.">
       <link rel="icon" href="../manual/images/favicon.png">
@@ -102,7 +102,7 @@ Class Vector3Variable  <a class="header-action link-secondary" title="View sourc
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Vector3Variable : Variable&lt;Vector3&gt;, IVariable, IVariable&lt;Vector3&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class Vector3Variable : Variable&lt;Vector3&gt;, IVariable, IVariable&lt;Vector3&gt;, IListenableEvent&lt;Vector3&gt;</code></pre>
   </div>
 
 
@@ -122,6 +122,7 @@ Class Vector3Variable  <a class="header-action link-secondary" title="View sourc
     <dd>
       <div><a class="xref" href="SODD.Variables.IVariable.html">IVariable</a></div>
       <div><a class="xref" href="SODD.Variables.IVariable-1.html">IVariable</a>&lt;<span class="xref">Vector3</span>&gt;</div>
+      <div><a class="xref" href="SODD.Events.IListenableEvent-1.html">IListenableEvent</a>&lt;<span class="xref">Vector3</span>&gt;</div>
     </dd>
   </dl>
 
@@ -143,6 +144,12 @@ Class Vector3Variable  <a class="header-action link-secondary" title="View sourc
     </div>
     <div>
       <a class="xref" href="SODD.Variables.Variable-1.html#SODD_Variables_Variable_1_HandleValueChange">Variable&lt;Vector3&gt;.HandleValueChange()</a>
+    </div>
+    <div>
+      <a class="xref" href="SODD.Variables.Variable-1.html#SODD_Variables_Variable_1_AddListener_System_Action__0__">Variable&lt;Vector3&gt;.AddListener(Action&lt;Vector3&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="SODD.Variables.Variable-1.html#SODD_Variables_Variable_1_RemoveListener_System_Action__0__">Variable&lt;Vector3&gt;.RemoveListener(Action&lt;Vector3&gt;)</a>
     </div>
   </dd></dl>
 

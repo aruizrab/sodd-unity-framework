@@ -1,0 +1,1400 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class GameObjectExtensions | SODD Framework | 1.1.0 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GameObjectExtensions | SODD Framework | 1.1.0 ">
+      
+      <meta name="description" content="Extends GameObject type providing utility methods.">
+      <link rel="icon" href="../manual/images/favicon.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      <meta name="docfx:disablenewtab" content="true">
+      
+      <meta name="docfx:docurl" content="https://github.com/aruizrab/sodd-unity-framework/new/main/apiSpec/new?filename=SODD_Core_GameObjectExtensions.md&amp;value=---%0Auid%3A%20SODD.Core.GameObjectExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../manual/images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SODD.Core.GameObjectExtensions">
+
+
+
+  <h1 id="SODD_Core_GameObjectExtensions" data-uid="SODD.Core.GameObjectExtensions" class="text-break">
+Class GameObjectExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/GameObjectExtensions.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SODD.html">SODD</a>.<a class="xref" href="SODD.Core.html">Core</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Extends GameObject type providing utility methods.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class GameObjectExtensions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">GameObjectExtensions</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SODD_Core_GameObjectExtensions_Broadcast_" data-uid="SODD.Core.GameObjectExtensions.Broadcast*"></a>
+
+  <h3 id="SODD_Core_GameObjectExtensions_Broadcast__1_GameObject_System_Action___0__SODD_Core_Scope_" data-uid="SODD.Core.GameObjectExtensions.Broadcast``1(GameObject,System.Action{``0},SODD.Core.Scope)">
+  Broadcast&lt;T&gt;(GameObject, Action&lt;T&gt;, Scope)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/GameObjectExtensions.cs/#L365"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Executes the provided <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action&lt;T&gt;</a> on all components of type <code class="typeparamref">T</code> found on the specified <code class="paramref">gameObject</code>
+within the defined <code class="paramref">scope</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Broadcast&lt;T&gt;(this GameObject gameObject, Action&lt;T&gt; action, Scope scope = Scope.GameObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject from which the components are to be retrieved and the action is to be executed on each.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
+    <dd><p>The action to execute on each retrieved component. If no components are found, the action is not executed.</p>
+</dd>
+    <dt><code>scope</code> <a class="xref" href="SODD.Core.Scope.html">Scope</a></dt>
+    <dd><p>The <a class="xref" href="SODD.Core.Scope.html">Scope</a> defining where to search for the components. The default is <a class="xref" href="SODD.Core.Scope.html#SODD_Core_Scope_GameObject">GameObject</a>.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the components to retrieve and act upon.</p>
+</dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="SODD_Core_GameObjectExtensions_Broadcast__1_GameObject_System_Action___0__SODD_Core_Scope__examples">Examples</h4>
+  <p>The following example shows the use of <code>Broadcast</code> to disable all Collider components within and including children of a GameObject:</p>
+<pre><code class="lang-csharp">public class ExampleUsage : MonoBehaviour
+{
+    void Start()
+    {
+        gameObject.Broadcast&lt;Collider&gt;(collider =&gt; collider.enabled = false, Scope.Children);
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="SODD_Core_GameObjectExtensions_Broadcast__1_GameObject_System_Action___0__SODD_Core_Scope__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method facilitates the application of a single action to multiple components of the same type distributed throughout the specified scope.
+It is particularly useful for scenarios where a uniform operation needs to be applied to an array of components, such as enabling, disabling, or resetting component states.</p>
+</div>
+
+
+
+
+  <a id="SODD_Core_GameObjectExtensions_Coroutine_" data-uid="SODD.Core.GameObjectExtensions.Coroutine*"></a>
+
+  <h3 id="SODD_Core_GameObjectExtensions_Coroutine_GameObject_System_Boolean_System_Boolean_" data-uid="SODD.Core.GameObjectExtensions.Coroutine(GameObject,System.Boolean,System.Boolean)">
+  Coroutine(GameObject, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/GameObjectExtensions.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates and attaches a <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a> to this GameObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoroutineBuilder Coroutine(this GameObject gameObject, bool destroyOnFinish = true, bool cancelOnDisable = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject on which to create the <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a>.</p>
+</dd>
+    <dt><code>destroyOnFinish</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If set to true, the <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a> will be automatically destroyed when the coroutine execution
+completes.</p>
+</dd>
+    <dt><code>cancelOnDisable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If set to true, the coroutine execution will be automatically canceled if the GameObject is
+disabled.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a></dt>
+    <dd><p>A <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a> attached to this GameObject.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="SODD_Core_GameObjectExtensions_Coroutine_GameObject_System_Boolean_System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">// Create a coroutine that waits 2 seconds, then logs a message to the console
+gameObject.Coroutine()
+    .WaitForSeconds(2)
+    .Invoke(() =&gt; Debug.Log("2 seconds have passed"))
+    .Run();</code></pre>
+
+
+  <h4 class="section" id="SODD_Core_GameObjectExtensions_Coroutine_GameObject_System_Boolean_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method dynamically adds a new <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a> component to the specified
+GameObject. It is ideal for situations where
+the behavior of the GameObject needs to be extended with custom asynchronous routines that can be
+defined on-the-fly using method chaining.
+The <a class="xref" href="SODD.Core.CoroutineBuilder.html">CoroutineBuilder</a> supports various types of execution steps like delays, loops, and
+condition-based continuations, making it versatile for complex asynchronous behaviors.</p>
+</div>
+
+
+
+
+  <a id="SODD_Core_GameObjectExtensions_DirectionFrom_" data-uid="SODD.Core.GameObjectExtensions.DirectionFrom*"></a>
+
+  <h3 id="SODD_Core_GameObjectExtensions_DirectionFrom_GameObject_GameObject_" data-uid="SODD.Core.GameObjectExtensions.DirectionFrom(GameObject,GameObject)">
+  DirectionFrom(GameObject, GameObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/GameObjectExtensions.cs/#L579"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the direction vector from the position of the specified GameObject to the position of the GameObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 DirectionFrom(this GameObject gameObject, GameObject other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject to calculate the direction vector to.</p>
+</dd>
+    <dt><code>other</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The source GameObject whose position is the source of the direction vector.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd><p>A Vector3 representing the direction vector from the position of the specified GameObject to the position of the
+GameObject.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when the specified GameObject is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SODD_Core_GameObjectExtensions_DirectionFrom_" data-uid="SODD.Core.GameObjectExtensions.DirectionFrom*"></a>
+
+  <h3 id="SODD_Core_GameObjectExtensions_DirectionFrom_GameObject_Transform_" data-uid="SODD.Core.GameObjectExtensions.DirectionFrom(GameObject,Transform)">
+  DirectionFrom(GameObject, Transform)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/GameObjectExtensions.cs/#L563"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the direction vector from the specified Transform to the position of the GameObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 DirectionFrom(this GameObject gameObject, Transform transform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject to calculate the direction vector to.</p>
+</dd>
+    <dt><code>transform</code> <span class="xref">Transform</span></dt>
+    <dd><p>The Transform whose position is the source of the direction vector.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd><p>A Vector3 representing the direction vector from the specified Transform to the position of the GameObject.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when the specified Transform is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SODD_Core_GameObjectExtensions_DirectionFrom_" data-uid="SODD.Core.GameObjectExtensions.DirectionFrom*"></a>
+
+  <h3 id="SODD_Core_GameObjectExtensions_DirectionFrom_GameObject_Vector3_" data-uid="SODD.Core.GameObjectExtensions.DirectionFrom(GameObject,Vector3)">
+  DirectionFrom(GameObject, Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/GameObjectExtensions.cs/#L549"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the direction vector from the specified point to the position of the GameObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 DirectionFrom(this GameObject gameObject, Vector3 point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject to calculate the direction vector to.</p>
+</dd>
+    <dt><code>point</code> <span class="xref">Vector3</span></dt>
+    <dd><p>The source point from which the direction vector is calculated.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd><p>A Vector3 representing the direction vector from the specified point to the position of the GameObject.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SODD_Core_GameObjectExtensions_DirectionTo_" data-uid="SODD.Core.GameObjectExtensions.DirectionTo*"></a>
+
+  <h3 id="SODD_Core_GameObjectExtensions_DirectionTo_GameObject_GameObject_" data-uid="SODD.Core.GameObjectExtensions.DirectionTo(GameObject,GameObject)">
+  DirectionTo(GameObject, GameObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/GameObjectExtensions.cs/#L535"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the direction vector from the position of the GameObject to the position of the specified GameObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 DirectionTo(this GameObject gameObject, GameObject other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject to calculate the direction vector from.</p>
+</dd>
+    <dt><code>other</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The target GameObject whose position is the target of the direction vector.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd><p>A Vector3 representing the direction vector from the position of the GameObject to the position of the specified
+GameObject.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when the specified GameObject is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SODD_Core_GameObjectExtensions_DirectionTo_" data-uid="SODD.Core.GameObjectExtensions.DirectionTo*"></a>
+
+  <h3 id="SODD_Core_GameObjectExtensions_DirectionTo_GameObject_Transform_" data-uid="SODD.Core.GameObjectExtensions.DirectionTo(GameObject,Transform)">
+  DirectionTo(GameObject, Transform)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/GameObjectExtensions.cs/#L519"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the direction vector from the position of the GameObject to the position of the specified Transform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 DirectionTo(this GameObject gameObject, Transform transform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject to calculate the direction vector from.</p>
+</dd>
+    <dt><code>transform</code> <span class="xref">Transform</span></dt>
+    <dd><p>The Transform whose position is the target of the direction vector.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd><p>A Vector3 representing the direction vector from the position of the GameObject to the position of the specified
+Transform.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when the specified Transform is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SODD_Core_GameObjectExtensions_DirectionTo_" data-uid="SODD.Core.GameObjectExtensions.DirectionTo*"></a>
+
+  <h3 id="SODD_Core_GameObjectExtensions_DirectionTo_GameObject_Vector3_" data-uid="SODD.Core.GameObjectExtensions.DirectionTo(GameObject,Vector3)">
+  DirectionTo(GameObject, Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/GameObjectExtensions.cs/#L504"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the direction vector from the position of the GameObject to the specified point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 DirectionTo(this GameObject gameObject, Vector3 point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject to calculate the direction vector from.</p>
+</dd>
+    <dt><code>point</code> <span class="xref">Vector3</span></dt>
+    <dd><p>The target point to which the direction vector is calculated.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd><p>A Vector3 representing the direction vector from the position of the GameObject to the specified point.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SODD_Core_GameObjectExtensions_DistanceTo_" data-uid="SODD.Core.GameObjectExtensions.DistanceTo*"></a>
+
+  <h3 id="SODD_Core_GameObjectExtensions_DistanceTo_GameObject_GameObject_" data-uid="SODD.Core.GameObjectExtensions.DistanceTo(GameObject,GameObject)">
+  DistanceTo(GameObject, GameObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/GameObjectExtensions.cs/#L622"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the distance between the position of the GameObject and the position of the specified GameObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float DistanceTo(this GameObject gameObject, GameObject other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject to calculate the distance to.</p>
+</dd>
+    <dt><code>other</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The target GameObject whose position is the target of the distance calculation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The distance between the position of the GameObject and the position of the specified GameObject.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when the specified GameObject is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SODD_Core_GameObjectExtensions_DistanceTo_" data-uid="SODD.Core.GameObjectExtensions.DistanceTo*"></a>
+
+  <h3 id="SODD_Core_GameObjectExtensions_DistanceTo_GameObject_Transform_" data-uid="SODD.Core.GameObjectExtensions.DistanceTo(GameObject,Transform)">
+  DistanceTo(GameObject, Transform)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/GameObjectExtensions.cs/#L607"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the distance between the position of the GameObject and the position of the specified Transform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float DistanceTo(this GameObject gameObject, Transform transform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject to calculate the distance to.</p>
+</dd>
+    <dt><code>transform</code> <span class="xref">Transform</span></dt>
+    <dd><p>The Transform whose position is the target of the distance calculation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The distance between the position of the GameObject and the position of the specified Transform.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when the specified Transform is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SODD_Core_GameObjectExtensions_DistanceTo_" data-uid="SODD.Core.GameObjectExtensions.DistanceTo*"></a>
+
+  <h3 id="SODD_Core_GameObjectExtensions_DistanceTo_GameObject_Vector3_" data-uid="SODD.Core.GameObjectExtensions.DistanceTo(GameObject,Vector3)">
+  DistanceTo(GameObject, Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/GameObjectExtensions.cs/#L593"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the distance between the position of the GameObject and the specified point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float DistanceTo(this GameObject gameObject, Vector3 point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject to calculate the distance to.</p>
+</dd>
+    <dt><code>point</code> <span class="xref">Vector3</span></dt>
+    <dd><p>The target point whose distance is calculated from the GameObject's position.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The distance between the position of the GameObject and the specified point.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SODD_Core_GameObjectExtensions_GetComponent_" data-uid="SODD.Core.GameObjectExtensions.GetComponent*"></a>
+
+  <h3 id="SODD_Core_GameObjectExtensions_GetComponent__1_GameObject_SODD_Core_Scope_" data-uid="SODD.Core.GameObjectExtensions.GetComponent``1(GameObject,SODD.Core.Scope)">
+  GetComponent&lt;T&gt;(GameObject, Scope)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/GameObjectExtensions.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a component of type <code class="typeparamref">T</code> from the specified GameObject according to
+the provided <code class="paramref">scope</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T GetComponent&lt;T&gt;(this GameObject gameObject, Scope scope = Scope.GameObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject from which the component is to be retrieved.</p>
+</dd>
+    <dt><code>scope</code> <a class="xref" href="SODD.Core.Scope.html">Scope</a></dt>
+    <dd><p>The scope of the search for the component, which can be limited to the GameObject, its children,
+its parent, or both its parent and children. The default value is <a class="xref" href="SODD.Core.Scope.html#SODD_Core_Scope_GameObject">GameObject</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>The component of type <code class="typeparamref">T</code> found within the specified <code class="paramref">scope</code> or <code>null</code>
+if no such component exists.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the component to retrieve.</p>
+</dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="SODD_Core_GameObjectExtensions_GetComponent__1_GameObject_SODD_Core_Scope__examples">Examples</h4>
+  <pre><code class="lang-csharp">// Retrieve a Rigidbody component only from the GameObject itself
+Rigidbody rb = gameObject.GetComponent&lt;Rigidbody&gt;();
+
+// Retrieve a Rigidbody component from the children
+Rigidbody rbChild = gameObject.GetComponent&lt;Rigidbody&gt;(Scope.Children);
+
+// Retrieve a Rigidbody component from the parent or children
+Rigidbody rbFamily = gameObject.GetComponent&lt;Rigidbody&gt;(Scope.ParentsAndChildren);</code></pre>
+<pre><code>This example demonstrates how to retrieve a Rigidbody component from a GameObject with different scopes of search.
+</code></pre>
+
+
+  <h4 class="section" id="SODD_Core_GameObjectExtensions_GetComponent__1_GameObject_SODD_Core_Scope__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method allows for a flexible component search by specifying a <code class="paramref">scope</code> for the search area:</p>
+<ul><li><code>GameObject</code>: Searches only on the given GameObject.</li><li><code>Children</code>: Searches all children of the GameObject, not including itself.</li><li><code>Parents</code>: Searches the parent objects of the GameObject, moving up the hierarchy.</li><li><code>ParentsAndChildren</code>: First searches up the parent chain, and if no component is found,
+            searches down through the children.
+        </li></ul>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>Thrown if the <code class="paramref">scope</code> is not one of the enumerated
+values.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SODD_Core_GameObjectExtensions_GetComponents_" data-uid="SODD.Core.GameObjectExtensions.GetComponents*"></a>
+
+  <h3 id="SODD_Core_GameObjectExtensions_GetComponents__1_GameObject_SODD_Core_Scope_" data-uid="SODD.Core.GameObjectExtensions.GetComponents``1(GameObject,SODD.Core.Scope)">
+  GetComponents&lt;T&gt;(GameObject, Scope)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/GameObjectExtensions.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves all components of type <code class="typeparamref">T</code> from the specified GameObject according
+to the provided <code class="paramref">scope</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] GetComponents&lt;T&gt;(this GameObject gameObject, Scope scope = Scope.GameObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject from which the components are to be retrieved.</p>
+</dd>
+    <dt><code>scope</code> <a class="xref" href="SODD.Core.Scope.html">Scope</a></dt>
+    <dd><p>The scope of the search for the components, which can be limited to the GameObject, its children,
+its parent, or both its parent and children. The default is <a class="xref" href="SODD.Core.Scope.html#SODD_Core_Scope_GameObject">GameObject</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>T[]</dt>
+    <dd><p>An array of components of type <code class="typeparamref">T</code> found within the specified <code class="paramref">scope</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the components to retrieve.</p>
+</dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="SODD_Core_GameObjectExtensions_GetComponents__1_GameObject_SODD_Core_Scope__examples">Examples</h4>
+  <pre><code class="lang-csharp">// Retrieve all Rigidbody components only from the GameObject itself
+Rigidbody[] rigidbodies = gameObject.GetComponents&lt;Rigidbody&gt;();
+
+// Retrieve all Rigidbody components from the children
+Rigidbody[] childRigidbodies = gameObject.GetComponents&lt;Rigidbody&gt;(Scope.Children);
+
+// Retrieve all unique Rigidbody components from both the parent and children
+Rigidbody[] familyRigidbodies = gameObject.GetComponents&lt;Rigidbody&gt;(Scope.ParentsAndChildren);</code></pre>
+<p>
+        This example demonstrates how to retrieve Rigidbody components from a GameObject with different scopes of
+        search.
+    </p>
+
+
+  <h4 class="section" id="SODD_Core_GameObjectExtensions_GetComponents__1_GameObject_SODD_Core_Scope__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method expands the capabilities of the standard GameObject.GetComponent&lt;T&gt; method by allowing
+the search
+for components to be scoped more broadly than just the current GameObject. Depending on the
+<code class="paramref">scope</code> parameter,
+components can be retrieved from:</p>
+<ul><li>The GameObject itself (<a class="xref" href="SODD.Core.Scope.html#SODD_Core_Scope_GameObject">GameObject</a>).</li><li>All direct and indirect children of the GameObject (<a class="xref" href="SODD.Core.Scope.html#SODD_Core_Scope_Children">Children</a>).</li><li>The parent and all higher ancestors of the GameObject (<a class="xref" href="SODD.Core.Scope.html#SODD_Core_Scope_Parents">Parents</a>).</li><li>
+            Both the parent hierarchy and the children hierarchy (<a class="xref" href="SODD.Core.Scope.html#SODD_Core_Scope_ParentsAndChildren">ParentsAndChildren</a>
+            ), ensuring a unique set of components by removing duplicates.
+        </li></ul>
+This method is particularly useful for complex GameObject hierarchies where a single GameObject may interact with
+multiple related components spread across different levels of the hierarchy.
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>Thrown if the <code class="paramref">scope</code> is not one of the enumerated
+values.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SODD_Core_GameObjectExtensions_IsInLayerMask_" data-uid="SODD.Core.GameObjectExtensions.IsInLayerMask*"></a>
+
+  <h3 id="SODD_Core_GameObjectExtensions_IsInLayerMask_GameObject_LayerMask_" data-uid="SODD.Core.GameObjectExtensions.IsInLayerMask(GameObject,LayerMask)">
+  IsInLayerMask(GameObject, LayerMask)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/GameObjectExtensions.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the GameObject is part of the specified LayerMask.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsInLayerMask(this GameObject gameObject, LayerMask layerMask)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject to test.</p>
+</dd>
+    <dt><code>layerMask</code> <span class="xref">LayerMask</span></dt>
+    <dd><p>The LayerMask to check against.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the gameObject's layer is included in the layerMask; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="SODD_Core_GameObjectExtensions_IsInLayerMask_GameObject_LayerMask__examples">Examples</h4>
+  <p>This example demonstrates how to check if a GameObject named &quot;Player&quot; is in a LayerMask defined for enemies:</p>
+<pre><code class="lang-csharp">GameObject player = GameObject.Find("Player");
+LayerMask enemyLayerMask = LayerMask.GetMask("Enemy");
+
+bool isPlayerInEnemyLayer = player.IsInLayerMask(enemyLayerMask);
+
+if (isPlayerInEnemyLayer)
+{
+    Debug.Log("Player is in the Enemy Layer.");
+}
+else
+{
+    Debug.Log("Player is not in the Enemy Layer.");
+}</code></pre>
+
+
+  <h4 class="section" id="SODD_Core_GameObjectExtensions_IsInLayerMask_GameObject_LayerMask__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method checks if the layer to which the gameObject belongs is included in the specified layerMask.
+It uses bitwise operations to compare the gameObject's layer with the layerMask.</p>
+</div>
+
+
+
+
+  <a id="SODD_Core_GameObjectExtensions_Send_" data-uid="SODD.Core.GameObjectExtensions.Send*"></a>
+
+  <h3 id="SODD_Core_GameObjectExtensions_Send__1_GameObject_System_Action___0__SODD_Core_Scope_" data-uid="SODD.Core.GameObjectExtensions.Send``1(GameObject,System.Action{``0},SODD.Core.Scope)">
+  Send&lt;T&gt;(GameObject, Action&lt;T&gt;, Scope)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/GameObjectExtensions.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Executes the provided <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action&lt;T&gt;</a> on the first <code class="typeparamref">T</code> component found on the
+specified <code class="paramref">gameObject</code>
+within the defined <code class="paramref">scope</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Send&lt;T&gt;(this GameObject gameObject, Action&lt;T&gt; action, Scope scope = Scope.GameObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject from which the component is to be retrieved and the action is to be executed.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
+    <dd><p>The action to execute on the retrieved component. If the component is not found, the action is not
+executed.</p>
+</dd>
+    <dt><code>scope</code> <a class="xref" href="SODD.Core.Scope.html">Scope</a></dt>
+    <dd><p>The <a class="xref" href="SODD.Core.Scope.html">Scope</a> defining where to search for the component. The default scope is
+<a class="xref" href="SODD.Core.Scope.html#SODD_Core_Scope_GameObject">GameObject</a>.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the component to retrieve and act upon.</p>
+</dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="SODD_Core_GameObjectExtensions_Send__1_GameObject_System_Action___0__SODD_Core_Scope__examples">Examples</h4>
+  <p>The following example shows the use of <code>Send</code> to apply damage to a damageable component upon projectile
+impact:</p>
+<pre><code class="lang-csharp">public class Projectile : MonoBehaviour
+{
+    public float damage;
+    public LayerMask targetLayers;
+    public Event&lt;Vector3&gt; onProjectileImpact;
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.IsInLayerMask(targetLayers))
+        {
+            other.gameObject.Send&lt;IDamageable&gt;(damageable =&gt; damageable.ReceiveDamage(damage));
+            onProjectileImpact.Invoke(transform.position);
+            Destroy(gameObject);
+        }
+    }
+}</code></pre>
+<p>This example shows how the <code>Send</code> method is used within the <code>Projectile</code> class to find and interact with
+an <code>IDamageable</code> component on a collision object,
+applying damage and triggering an event upon impact.</p>
+
+
+  <h4 class="section" id="SODD_Core_GameObjectExtensions_Send__1_GameObject_System_Action___0__SODD_Core_Scope__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+        This method offers a robust and more efficient alternative to Unity's <code>SendMessage</code>, which relies on
+        string method names and lacks type safety. By directly invoking a delegate on the component,
+        <code>Send</code> avoids the overhead and errors associated with string-based method invocation.
+    </p>
+<p>
+        This method attempts to find a component of type <code class="typeparamref">T</code> on the
+        <code class="paramref">gameObject</code>
+        according to the specified <code class="paramref">scope</code>.
+        If the component is found, the provided <code class="paramref">action</code> is executed with the component as its
+        argument.
+        If no such component is found, or if <code class="paramref">action</code>
+        is null, no action is executed.
+    </p>
+<p>
+        This method is useful for applying operations to components when the exact presence of the component is not
+        guaranteed, or when the operation should only be applied conditionally
+        based on the presence of the component.
+    </p>
+</div>
+
+
+
+
+  <a id="SODD_Core_GameObjectExtensions_TryGetComponent_" data-uid="SODD.Core.GameObjectExtensions.TryGetComponent*"></a>
+
+  <h3 id="SODD_Core_GameObjectExtensions_TryGetComponent__1_GameObject___0__SODD_Core_Scope_" data-uid="SODD.Core.GameObjectExtensions.TryGetComponent``1(GameObject,``0@,SODD.Core.Scope)">
+  TryGetComponent&lt;T&gt;(GameObject, out T, Scope)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/GameObjectExtensions.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>W
+Tries to retrieve a component of type <code class="typeparamref">T</code> from the specified <code class="paramref">gameObject</code>
+according to the provided <code class="paramref">scope</code>, and outputs the result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetComponent&lt;T&gt;(this GameObject gameObject, out T component, Scope scope = Scope.GameObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject from which to retrieve the component.</p>
+</dd>
+    <dt><code>component</code> <span class="xref">T</span></dt>
+    <dd><p>When this method returns, contains the component of type <code class="typeparamref">T</code> if found,
+otherwise null. This parameter is passed uninitialized.</p>
+</dd>
+    <dt><code>scope</code> <a class="xref" href="SODD.Core.Scope.html">Scope</a></dt>
+    <dd><p>The <a class="xref" href="SODD.Core.Scope.html">Scope</a> within which to search for the component. The default is
+<a class="xref" href="SODD.Core.Scope.html#SODD_Core_Scope_GameObject">GameObject</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if a component of type <code class="typeparamref">T</code> is found; otherwise,
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the component to retrieve.</p>
+</dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="SODD_Core_GameObjectExtensions_TryGetComponent__1_GameObject___0__SODD_Core_Scope__examples">Examples</h4>
+  <p>The following example demonstrates how to use the <a class="xref" href="SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_TryGetComponent__1_GameObject___0__SODD_Core_Scope_">TryGetComponent&lt;T&gt;(GameObject, out T, Scope)</a> method to attempt to retrieve a
+component of type <code>MeshRenderer</code> from a game object.</p>
+<pre><code class="lang-csharp">MeshRenderer renderer;
+
+if (gameObject.TryGetComponent&lt;MeshRenderer&gt;(out renderer))
+{
+    Console.WriteLine("Component found!");
+}
+else
+{
+    Console.WriteLine("Component not found.");
+}</code></pre>
+
+
+  <h4 class="section" id="SODD_Core_GameObjectExtensions_TryGetComponent__1_GameObject___0__SODD_Core_Scope__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method extends GameObject and utilizes GameObject.GetComponent&lt;T&gt; to attempt to
+retrieve a component
+of the specified type T. If the component exists within the given scope on the GameObject,
+it is assigned to the output parameter 'component', and the method returns true. If no such component
+is found, the method returns false.</p>
+</div>
+
+
+
+
+  <a id="SODD_Core_GameObjectExtensions_VectorFrom_" data-uid="SODD.Core.GameObjectExtensions.VectorFrom*"></a>
+
+  <h3 id="SODD_Core_GameObjectExtensions_VectorFrom_GameObject_GameObject_" data-uid="SODD.Core.GameObjectExtensions.VectorFrom(GameObject,GameObject)">
+  VectorFrom(GameObject, GameObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/GameObjectExtensions.cs/#L490"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the direction vector from the position of the specified GameObject to the position of the GameObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 VectorFrom(this GameObject gameObject, GameObject other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject to calculate the direction vector to.</p>
+</dd>
+    <dt><code>other</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The source GameObject whose position is the source of the direction vector.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd><p>A Vector3 representing the direction vector from the position of the specified GameObject to the position of the
+GameObject.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="SODD_Core_GameObjectExtensions_VectorFrom_GameObject_GameObject__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method calculates the direction vector from the position of the specified GameObject to the position of the
+GameObject.
+It uses the position of the specified GameObject as the starting point and the GameObject's current position as the
+target.
+The resulting direction vector points from the position of the specified GameObject towards the position of the
+GameObject.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when the specified GameObject is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SODD_Core_GameObjectExtensions_VectorFrom_" data-uid="SODD.Core.GameObjectExtensions.VectorFrom*"></a>
+
+  <h3 id="SODD_Core_GameObjectExtensions_VectorFrom_GameObject_Transform_" data-uid="SODD.Core.GameObjectExtensions.VectorFrom(GameObject,Transform)">
+  VectorFrom(GameObject, Transform)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/GameObjectExtensions.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the direction vector from the specified Transform to the position of the GameObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 VectorFrom(this GameObject gameObject, Transform transform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject to calculate the direction vector to.</p>
+</dd>
+    <dt><code>transform</code> <span class="xref">Transform</span></dt>
+    <dd><p>The Transform whose position is the source of the direction vector.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd><p>A Vector3 representing the direction vector from the specified Transform to the position of the GameObject.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="SODD_Core_GameObjectExtensions_VectorFrom_GameObject_Transform__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method calculates the direction vector from the specified Transform to the position of the GameObject.
+It uses the Transform's position as the starting point and the GameObject's current position as the target.
+The resulting direction vector points from the specified Transform towards the position of the GameObject.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when the specified Transform is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SODD_Core_GameObjectExtensions_VectorFrom_" data-uid="SODD.Core.GameObjectExtensions.VectorFrom*"></a>
+
+  <h3 id="SODD_Core_GameObjectExtensions_VectorFrom_GameObject_Vector3_" data-uid="SODD.Core.GameObjectExtensions.VectorFrom(GameObject,Vector3)">
+  VectorFrom(GameObject, Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/GameObjectExtensions.cs/#L447"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the direction vector from the specified point to the position of the GameObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 VectorFrom(this GameObject gameObject, Vector3 point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject to calculate the direction vector to.</p>
+</dd>
+    <dt><code>point</code> <span class="xref">Vector3</span></dt>
+    <dd><p>The source point from which the direction vector is calculated.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd><p>A Vector3 representing the direction vector from the specified point to the position of the GameObject.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="SODD_Core_GameObjectExtensions_VectorFrom_GameObject_Vector3__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method calculates the direction vector from the specified point to the position of the GameObject.
+It uses the specified point as the starting point and the GameObject's current position as the target.
+The resulting direction vector points from the specified point towards the position of the GameObject.</p>
+</div>
+
+
+
+
+  <a id="SODD_Core_GameObjectExtensions_VectorTo_" data-uid="SODD.Core.GameObjectExtensions.VectorTo*"></a>
+
+  <h3 id="SODD_Core_GameObjectExtensions_VectorTo_GameObject_GameObject_" data-uid="SODD.Core.GameObjectExtensions.VectorTo(GameObject,GameObject)">
+  VectorTo(GameObject, GameObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/GameObjectExtensions.cs/#L428"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the direction vector from the position of the GameObject to the position of the specified GameObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 VectorTo(this GameObject gameObject, GameObject other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject to calculate the direction vector from.</p>
+</dd>
+    <dt><code>other</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The target GameObject whose position is the target of the direction vector.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd><p>A Vector3 representing the direction vector from the position of the GameObject to the position of the specified
+GameObject.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="SODD_Core_GameObjectExtensions_VectorTo_GameObject_GameObject__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method calculates the direction vector from the position of the GameObject to the position of the specified
+GameObject.
+It uses the GameObject's current position as the starting point and the position of the specified GameObject as the
+target.
+The resulting direction vector points from the GameObject towards the position of the specified GameObject.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when the specified GameObject is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SODD_Core_GameObjectExtensions_VectorTo_" data-uid="SODD.Core.GameObjectExtensions.VectorTo*"></a>
+
+  <h3 id="SODD_Core_GameObjectExtensions_VectorTo_GameObject_Transform_" data-uid="SODD.Core.GameObjectExtensions.VectorTo(GameObject,Transform)">
+  VectorTo(GameObject, Transform)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/GameObjectExtensions.cs/#L405"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the direction vector from the GameObject's position to the position of the specified Transform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 VectorTo(this GameObject gameObject, Transform transform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject to calculate the vector from.</p>
+</dd>
+    <dt><code>transform</code> <span class="xref">Transform</span></dt>
+    <dd><p>The Transform whose position is the target of the direction vector.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd><p>A Vector3 representing the direction vector from the GameObject's position to the position of the specified
+Transform.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="SODD_Core_GameObjectExtensions_VectorTo_GameObject_Transform__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method calculates the direction vector from the GameObject's position to the position of the specified
+Transform.
+It uses the GameObject's current position as the starting point and the position of the specified Transform as the
+target.
+The resulting direction vector points from the GameObject towards the position of the specified Transform.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when the specified Transform is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SODD_Core_GameObjectExtensions_VectorTo_" data-uid="SODD.Core.GameObjectExtensions.VectorTo*"></a>
+
+  <h3 id="SODD_Core_GameObjectExtensions_VectorTo_GameObject_Vector3_" data-uid="SODD.Core.GameObjectExtensions.VectorTo(GameObject,Vector3)">
+  VectorTo(GameObject, Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/GameObjectExtensions.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the direction vector from the GameObject's position to the specified point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 VectorTo(this GameObject gameObject, Vector3 point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject to calculate the vector from.</p>
+</dd>
+    <dt><code>point</code> <span class="xref">Vector3</span></dt>
+    <dd><p>The target point to which the direction vector is calculated.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd><p>A Vector3 representing the direction vector from the GameObject's position to the specified point.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="SODD_Core_GameObjectExtensions_VectorTo_GameObject_Vector3__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method calculates the direction vector from the GameObject's position to the specified point.
+It uses the GameObject's current position as the starting point and the specified point as the target.
+The resulting direction vector points from the GameObject towards the specified point.</p>
+</div>
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made by <a href="https://github.com/aruizrab" target="_blank">aruizrab</a> using <a href="https://dotnet.github.io/docfx" target="_blank">DocFX</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
