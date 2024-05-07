@@ -1,3 +1,22 @@
+# [1.2.0](https://github.com/aruizrab/sodd-unity-framework/compare/v1.1.0...v1.2.0) (2024-05-07)
+
+
+### Features
+
+* add coroutine builder ([647f3b3](https://github.com/aruizrab/sodd-unity-framework/commit/647f3b34460ed85bc90706ce1e4a1d26410f8b12))
+* **extensions:** add AudioMixer extensions ([481c814](https://github.com/aruizrab/sodd-unity-framework/commit/481c8147ad03ece9323f3cfa4873bba118b66bb7))
+* **extensions:** add GameObject extension methods for retrieving components ([2c1c720](https://github.com/aruizrab/sodd-unity-framework/commit/2c1c72008f4b27fe56ccb37eb9233c3c39193ce5))
+* **extensions:** add GameObject extension methods for sending messages ([4ac7eac](https://github.com/aruizrab/sodd-unity-framework/commit/4ac7eace6541ea035ace555c67e58c57b66c13f3))
+* **extensions:** add GameObject extensions for vector operations ([27fc44f](https://github.com/aruizrab/sodd-unity-framework/commit/27fc44f6537fec26e84b0f410c54dace0af6d124))
+* **extensions:** add IEnumerable<T> extensions ([a060d60](https://github.com/aruizrab/sodd-unity-framework/commit/a060d602321d179633bdcc9bdcf9cd612647e479))
+* **extensions:** add IsInLayerMask extension method for GameObject type ([88d98e0](https://github.com/aruizrab/sodd-unity-framework/commit/88d98e0d9a20fbc181b8fbe70ce39c73063b5cda))
+* **extensions:** add NavMeshAgent extensions ([5abe4a0](https://github.com/aruizrab/sodd-unity-framework/commit/5abe4a00dec18c2d33525fc624f7dd836b402178))
+* **extensions:** add primitive type extensions ([6429033](https://github.com/aruizrab/sodd-unity-framework/commit/6429033558c501d23cd9c569ce91fc1485c9cea9))
+* **extensions:** add Transform extensions for vector operations ([9c647c5](https://github.com/aruizrab/sodd-unity-framework/commit/9c647c5569eef250b418ddd6bd4d9f91add337de))
+* **extensions:** add Vector2 extensions for vector operations ([5d135f3](https://github.com/aruizrab/sodd-unity-framework/commit/5d135f34375a05c54035705b7e406b96c6ab83fb))
+* **extensions:** add Vector3 extensions for vector operations ([4585ba3](https://github.com/aruizrab/sodd-unity-framework/commit/4585ba3dab74b5e15c176a331e08675e105c813d))
+* **variables:** added value reference ([034ada8](https://github.com/aruizrab/sodd-unity-framework/commit/034ada884b5ad7b1cbc216bf6dcf478469a983c6))
+
 # [1.1.0](https://github.com/aruizrab/sodd-unity-framework/compare/v1.0.0...v1.1.0) (2024-04-15)
 
 
