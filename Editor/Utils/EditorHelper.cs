@@ -1,6 +1,9 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
+using System.Reflection;
 using UnityEditor;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace SODD.Editor.Utils
 {
@@ -9,6 +12,9 @@ namespace SODD.Editor.Utils
     /// </summary>
     internal static class EditorHelper
     {
+        private static readonly BindingFlags PropertyBindingFlags =
+            BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static;
+
         /// <summary>
         ///     Creates an instance of a ScriptableObject of type T and saves it as an asset in the Unity project.
         /// </summary>
@@ -49,6 +55,19 @@ namespace SODD.Editor.Utils
             GameObjectUtility.SetParentAndAlign(obj, parent);
             Undo.RegisterCreatedObjectUndo(obj, "Create " + obj.name);
             Selection.activeObject = obj;
+        }
+
+        public static object GetValue(SerializedProperty property, string name)
+        {
+            var path = property.propertyPath.Contains(".")
+                ? Path.ChangeExtension(property.propertyPath, name)
+                : name;
+            var serializedProperty = property.serializedObject.FindProperty(path)
+                                     ?? throw new Exception($"Cannot find {path}.");
+            var targetObject = serializedProperty.serializedObject.targetObject;
+            var field = targetObject.GetType().GetField(serializedProperty.propertyPath, PropertyBindingFlags)
+                        ?? throw new Exception($"Cannot get field {serializedProperty.propertyPath}.");
+            return field.GetValue(targetObject);
         }
     }
 }
