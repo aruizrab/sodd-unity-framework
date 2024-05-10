@@ -36,7 +36,7 @@ namespace SODD.Observers
         }
 
         [Serializable]
-        private struct ToStringContainer
+        private class ToStringContainer
         {
             public ToStringStrategy toStringStrategy;
             public UnityEvent<string> onValueChangedAsString;
