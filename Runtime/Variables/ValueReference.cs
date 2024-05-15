@@ -91,6 +91,8 @@ namespace SODD.Variables
             }
         }
 
+        public string Id { get; }
+
         private void HandleValueChange()
         {
             _onValueChanged?.Invoke(field);
