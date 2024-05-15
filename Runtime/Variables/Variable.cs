@@ -43,6 +43,9 @@ namespace SODD.Variables
     /// </example>
     public abstract class Variable<T> : ScriptableObject, IVariable, IVariable<T>, IListenableEvent<T>
     {
+        [SerializeField] [Disabled] [Tooltip("Variable's unique identifier.")]
+        private string id;
+        
         [SerializeField] 
         [OnValueChanged("HandleValueChange")]
         protected T value;
@@ -60,6 +63,11 @@ namespace SODD.Variables
         /// </summary>
         protected readonly IEvent<T> OnValueChanged = new GenericEvent<T>();
 
+        /// <summary>
+        ///     Gets the variable's unique identifier.
+        /// </summary>
+        public string Id => id;
+        
         object IVariable.Value
         {
             get => Value;
@@ -113,5 +121,14 @@ namespace SODD.Variables
         {
             OnValueChanged.RemoveListener(listener);
         }
+        
+#if UNITY_EDITOR
+        private void OnValidate()
+        {
+            if (!string.IsNullOrEmpty(id)) return;
+            id = GUID.Generate().ToString();
+            EditorUtility.SetDirty(this);
+        }
+#endif
     }
 }

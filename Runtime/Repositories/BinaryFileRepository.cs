@@ -78,5 +78,11 @@ namespace SODD.Repositories
         {
             File.Delete($"{Application.persistentDataPath}/{filename}.bin");
         }
+
+        /// <inheritdoc />
+        public override bool Exists()
+        {
+            return File.Exists($"{Application.persistentDataPath}/{filename}.bin");
+        }
     }
 }

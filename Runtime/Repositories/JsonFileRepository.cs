@@ -45,6 +45,9 @@ namespace SODD.Repositories
         {
             var path = $"{Application.persistentDataPath}/{filename}.json";
             var json = JsonUtility.ToJson(t);
+
+            Debug.Log(t);
+            Debug.Log(json);
             
             File.WriteAllText(path, json);
         }
@@ -75,6 +78,12 @@ namespace SODD.Repositories
         public override void Delete()
         {
             File.Delete($"{Application.persistentDataPath}/{filename}.json");
+        }
+
+        /// <inheritdoc />
+        public override bool Exists()
+        {
+            return File.Exists($"{Application.persistentDataPath}/{filename}.json");
         }
     }
 }

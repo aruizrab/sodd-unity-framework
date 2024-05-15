@@ -1,13 +1,12 @@
 ﻿namespace SODD.Repositories
 {
     /// <summary>
-    ///     Defines a generic repository interface for managing persistent data.
+    /// Defines a generic repository interface for managing persistent data.
     /// </summary>
-    /// <typeparam name="T">The type of data the repository will manage.</typeparam>
+    /// <typeparam name="T">The type of data the repository manages.</typeparam>
     /// <remarks>
-    ///     This interface provides a basic framework for implementing CRUD (Create, Read, Update, Delete) operations on data
-    ///     of type <typeparamref name="T" />.
-    ///     Implementations of this interface should handle specifics of data storage, retrieval, and deletion.
+    /// This interface provides a framework for implementing CRUD (Create, Read, Update, Delete) operations on data
+    /// of type <typeparamref name="T" />. Implementations should encapsulate the specifics of data storage, retrieval, and deletion.
     /// </remarks>
     public interface IRepository<T>
     {
@@ -27,5 +26,11 @@
         ///     Deletes the entity of type <typeparamref name="T" /> from the repository.
         /// </summary>
         void Delete();
+        
+        /// <summary>
+        ///     Determines whether the repository exists.
+        /// </summary>
+        /// <returns><c>true</c> if the repository exists; otherwise, <c>false</c>.</returns>
+        bool Exists();
     }
 }

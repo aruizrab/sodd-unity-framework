@@ -3,12 +3,12 @@
 namespace SODD.Repositories
 {
     /// <summary>
-    /// Provides a base implementation of the <see cref="IRepository{T}"/> for file-based data storage.
+    /// Provides a base implementation of <see cref="IRepository{T}" /> for file-based data storage.
     /// </summary>
     /// <typeparam name="T">The type of data managed by the repository.</typeparam>
     /// <remarks>
     /// This abstract class lays the foundation for creating file-based repositories that can save, load, and delete
-    /// data of type <typeparamref name="T"/>. It requires a filename to be specified for the underlying storage mechanism.
+    /// data of type <typeparamref name="T"/>. Implementations require a filename for the underlying storage mechanism.
     /// </remarks>
     public abstract class FileRepository<T> : IRepository<T>
     {
@@ -51,5 +51,8 @@ namespace SODD.Repositories
         
         /// <inheritdoc />
         public abstract void Delete();
+
+        /// <inheritdoc />
+        public abstract bool Exists();
     }
 }

@@ -228,5 +228,12 @@ namespace SODD
                 public const string Vector3 = Path + DataTypes.Vector3;
             }
         }
+        
+        public static class Repositories
+        {
+            public const string Path = Root + "Repositories/";
+
+            public const string VariableRepository = Path + "Variable Repository";
+        }
     }
 }
