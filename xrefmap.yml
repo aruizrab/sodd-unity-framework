@@ -7,6 +7,210 @@ references:
   commentId: N:SODD.Attributes
   fullName: SODD.Attributes
   nameWithType: SODD.Attributes
+- uid: SODD.Attributes.CollapsibleAttribute
+  name: CollapsibleAttribute
+  href: api/SODD.Attributes.CollapsibleAttribute.html
+  commentId: T:SODD.Attributes.CollapsibleAttribute
+  fullName: SODD.Attributes.CollapsibleAttribute
+  nameWithType: CollapsibleAttribute
+- uid: SODD.Attributes.CollapsibleAttribute.#ctor(System.String)
+  name: CollapsibleAttribute(string)
+  href: api/SODD.Attributes.CollapsibleAttribute.html#SODD_Attributes_CollapsibleAttribute__ctor_System_String_
+  commentId: M:SODD.Attributes.CollapsibleAttribute.#ctor(System.String)
+  name.vb: New(String)
+  fullName: SODD.Attributes.CollapsibleAttribute.CollapsibleAttribute(string)
+  fullName.vb: SODD.Attributes.CollapsibleAttribute.New(String)
+  nameWithType: CollapsibleAttribute.CollapsibleAttribute(string)
+  nameWithType.vb: CollapsibleAttribute.New(String)
+- uid: SODD.Attributes.CollapsibleAttribute.#ctor*
+  name: CollapsibleAttribute
+  href: api/SODD.Attributes.CollapsibleAttribute.html#SODD_Attributes_CollapsibleAttribute__ctor_
+  commentId: Overload:SODD.Attributes.CollapsibleAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: SODD.Attributes.CollapsibleAttribute.CollapsibleAttribute
+  fullName.vb: SODD.Attributes.CollapsibleAttribute.New
+  nameWithType: CollapsibleAttribute.CollapsibleAttribute
+  nameWithType.vb: CollapsibleAttribute.New
+- uid: SODD.Attributes.CollapsibleAttribute.Label
+  name: Label
+  href: api/SODD.Attributes.CollapsibleAttribute.html#SODD_Attributes_CollapsibleAttribute_Label
+  commentId: P:SODD.Attributes.CollapsibleAttribute.Label
+  fullName: SODD.Attributes.CollapsibleAttribute.Label
+  nameWithType: CollapsibleAttribute.Label
+- uid: SODD.Attributes.CollapsibleAttribute.Label*
+  name: Label
+  href: api/SODD.Attributes.CollapsibleAttribute.html#SODD_Attributes_CollapsibleAttribute_Label_
+  commentId: Overload:SODD.Attributes.CollapsibleAttribute.Label
+  isSpec: "True"
+  fullName: SODD.Attributes.CollapsibleAttribute.Label
+  nameWithType: CollapsibleAttribute.Label
+- uid: SODD.Attributes.DisableIfAttribute
+  name: DisableIfAttribute
+  href: api/SODD.Attributes.DisableIfAttribute.html
+  commentId: T:SODD.Attributes.DisableIfAttribute
+  fullName: SODD.Attributes.DisableIfAttribute
+  nameWithType: DisableIfAttribute
+- uid: SODD.Attributes.DisableIfAttribute.#ctor(System.String,System.Object,SODD.Core.Comparison)
+  name: DisableIfAttribute(string, object, Comparison)
+  href: api/SODD.Attributes.DisableIfAttribute.html#SODD_Attributes_DisableIfAttribute__ctor_System_String_System_Object_SODD_Core_Comparison_
+  commentId: M:SODD.Attributes.DisableIfAttribute.#ctor(System.String,System.Object,SODD.Core.Comparison)
+  name.vb: New(String, Object, Comparison)
+  fullName: SODD.Attributes.DisableIfAttribute.DisableIfAttribute(string, object, SODD.Core.Comparison)
+  fullName.vb: SODD.Attributes.DisableIfAttribute.New(String, Object, SODD.Core.Comparison)
+  nameWithType: DisableIfAttribute.DisableIfAttribute(string, object, Comparison)
+  nameWithType.vb: DisableIfAttribute.New(String, Object, Comparison)
+- uid: SODD.Attributes.DisableIfAttribute.#ctor*
+  name: DisableIfAttribute
+  href: api/SODD.Attributes.DisableIfAttribute.html#SODD_Attributes_DisableIfAttribute__ctor_
+  commentId: Overload:SODD.Attributes.DisableIfAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: SODD.Attributes.DisableIfAttribute.DisableIfAttribute
+  fullName.vb: SODD.Attributes.DisableIfAttribute.New
+  nameWithType: DisableIfAttribute.DisableIfAttribute
+  nameWithType.vb: DisableIfAttribute.New
+- uid: SODD.Attributes.DisableIfAttribute.Comparison
+  name: Comparison
+  href: api/SODD.Attributes.DisableIfAttribute.html#SODD_Attributes_DisableIfAttribute_Comparison
+  commentId: F:SODD.Attributes.DisableIfAttribute.Comparison
+  fullName: SODD.Attributes.DisableIfAttribute.Comparison
+  nameWithType: DisableIfAttribute.Comparison
+- uid: SODD.Attributes.DisableIfAttribute.Name
+  name: Name
+  href: api/SODD.Attributes.DisableIfAttribute.html#SODD_Attributes_DisableIfAttribute_Name
+  commentId: F:SODD.Attributes.DisableIfAttribute.Name
+  fullName: SODD.Attributes.DisableIfAttribute.Name
+  nameWithType: DisableIfAttribute.Name
+- uid: SODD.Attributes.DisableIfAttribute.Value
+  name: Value
+  href: api/SODD.Attributes.DisableIfAttribute.html#SODD_Attributes_DisableIfAttribute_Value
+  commentId: F:SODD.Attributes.DisableIfAttribute.Value
+  fullName: SODD.Attributes.DisableIfAttribute.Value
+  nameWithType: DisableIfAttribute.Value
+- uid: SODD.Attributes.DisableIfMatchAttribute
+  name: DisableIfMatchAttribute
+  href: api/SODD.Attributes.DisableIfMatchAttribute.html
+  commentId: T:SODD.Attributes.DisableIfMatchAttribute
+  fullName: SODD.Attributes.DisableIfMatchAttribute
+  nameWithType: DisableIfMatchAttribute
+- uid: SODD.Attributes.DisableIfMatchAttribute.#ctor(System.String,System.Object[])
+  name: DisableIfMatchAttribute(string, params object[])
+  href: api/SODD.Attributes.DisableIfMatchAttribute.html#SODD_Attributes_DisableIfMatchAttribute__ctor_System_String_System_Object___
+  commentId: M:SODD.Attributes.DisableIfMatchAttribute.#ctor(System.String,System.Object[])
+  name.vb: New(String, ParamArray Object())
+  fullName: SODD.Attributes.DisableIfMatchAttribute.DisableIfMatchAttribute(string, params object[])
+  fullName.vb: SODD.Attributes.DisableIfMatchAttribute.New(String, ParamArray Object())
+  nameWithType: DisableIfMatchAttribute.DisableIfMatchAttribute(string, params object[])
+  nameWithType.vb: DisableIfMatchAttribute.New(String, ParamArray Object())
+- uid: SODD.Attributes.DisableIfMatchAttribute.#ctor*
+  name: DisableIfMatchAttribute
+  href: api/SODD.Attributes.DisableIfMatchAttribute.html#SODD_Attributes_DisableIfMatchAttribute__ctor_
+  commentId: Overload:SODD.Attributes.DisableIfMatchAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: SODD.Attributes.DisableIfMatchAttribute.DisableIfMatchAttribute
+  fullName.vb: SODD.Attributes.DisableIfMatchAttribute.New
+  nameWithType: DisableIfMatchAttribute.DisableIfMatchAttribute
+  nameWithType.vb: DisableIfMatchAttribute.New
+- uid: SODD.Attributes.DisableIfMatchAttribute.Name
+  name: Name
+  href: api/SODD.Attributes.DisableIfMatchAttribute.html#SODD_Attributes_DisableIfMatchAttribute_Name
+  commentId: F:SODD.Attributes.DisableIfMatchAttribute.Name
+  fullName: SODD.Attributes.DisableIfMatchAttribute.Name
+  nameWithType: DisableIfMatchAttribute.Name
+- uid: SODD.Attributes.DisableIfMatchAttribute.Values
+  name: Values
+  href: api/SODD.Attributes.DisableIfMatchAttribute.html#SODD_Attributes_DisableIfMatchAttribute_Values
+  commentId: F:SODD.Attributes.DisableIfMatchAttribute.Values
+  fullName: SODD.Attributes.DisableIfMatchAttribute.Values
+  nameWithType: DisableIfMatchAttribute.Values
+- uid: SODD.Attributes.DisabledAttribute
+  name: DisabledAttribute
+  href: api/SODD.Attributes.DisabledAttribute.html
+  commentId: T:SODD.Attributes.DisabledAttribute
+  fullName: SODD.Attributes.DisabledAttribute
+  nameWithType: DisabledAttribute
+- uid: SODD.Attributes.HideIfAttribute
+  name: HideIfAttribute
+  href: api/SODD.Attributes.HideIfAttribute.html
+  commentId: T:SODD.Attributes.HideIfAttribute
+  fullName: SODD.Attributes.HideIfAttribute
+  nameWithType: HideIfAttribute
+- uid: SODD.Attributes.HideIfAttribute.#ctor(System.String,System.Object,SODD.Core.Comparison)
+  name: HideIfAttribute(string, object, Comparison)
+  href: api/SODD.Attributes.HideIfAttribute.html#SODD_Attributes_HideIfAttribute__ctor_System_String_System_Object_SODD_Core_Comparison_
+  commentId: M:SODD.Attributes.HideIfAttribute.#ctor(System.String,System.Object,SODD.Core.Comparison)
+  name.vb: New(String, Object, Comparison)
+  fullName: SODD.Attributes.HideIfAttribute.HideIfAttribute(string, object, SODD.Core.Comparison)
+  fullName.vb: SODD.Attributes.HideIfAttribute.New(String, Object, SODD.Core.Comparison)
+  nameWithType: HideIfAttribute.HideIfAttribute(string, object, Comparison)
+  nameWithType.vb: HideIfAttribute.New(String, Object, Comparison)
+- uid: SODD.Attributes.HideIfAttribute.#ctor*
+  name: HideIfAttribute
+  href: api/SODD.Attributes.HideIfAttribute.html#SODD_Attributes_HideIfAttribute__ctor_
+  commentId: Overload:SODD.Attributes.HideIfAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: SODD.Attributes.HideIfAttribute.HideIfAttribute
+  fullName.vb: SODD.Attributes.HideIfAttribute.New
+  nameWithType: HideIfAttribute.HideIfAttribute
+  nameWithType.vb: HideIfAttribute.New
+- uid: SODD.Attributes.HideIfAttribute.Comparison
+  name: Comparison
+  href: api/SODD.Attributes.HideIfAttribute.html#SODD_Attributes_HideIfAttribute_Comparison
+  commentId: F:SODD.Attributes.HideIfAttribute.Comparison
+  fullName: SODD.Attributes.HideIfAttribute.Comparison
+  nameWithType: HideIfAttribute.Comparison
+- uid: SODD.Attributes.HideIfAttribute.Name
+  name: Name
+  href: api/SODD.Attributes.HideIfAttribute.html#SODD_Attributes_HideIfAttribute_Name
+  commentId: F:SODD.Attributes.HideIfAttribute.Name
+  fullName: SODD.Attributes.HideIfAttribute.Name
+  nameWithType: HideIfAttribute.Name
+- uid: SODD.Attributes.HideIfAttribute.Value
+  name: Value
+  href: api/SODD.Attributes.HideIfAttribute.html#SODD_Attributes_HideIfAttribute_Value
+  commentId: F:SODD.Attributes.HideIfAttribute.Value
+  fullName: SODD.Attributes.HideIfAttribute.Value
+  nameWithType: HideIfAttribute.Value
+- uid: SODD.Attributes.HideIfMatchAttribute
+  name: HideIfMatchAttribute
+  href: api/SODD.Attributes.HideIfMatchAttribute.html
+  commentId: T:SODD.Attributes.HideIfMatchAttribute
+  fullName: SODD.Attributes.HideIfMatchAttribute
+  nameWithType: HideIfMatchAttribute
+- uid: SODD.Attributes.HideIfMatchAttribute.#ctor(System.String,System.Object[])
+  name: HideIfMatchAttribute(string, params object[])
+  href: api/SODD.Attributes.HideIfMatchAttribute.html#SODD_Attributes_HideIfMatchAttribute__ctor_System_String_System_Object___
+  commentId: M:SODD.Attributes.HideIfMatchAttribute.#ctor(System.String,System.Object[])
+  name.vb: New(String, ParamArray Object())
+  fullName: SODD.Attributes.HideIfMatchAttribute.HideIfMatchAttribute(string, params object[])
+  fullName.vb: SODD.Attributes.HideIfMatchAttribute.New(String, ParamArray Object())
+  nameWithType: HideIfMatchAttribute.HideIfMatchAttribute(string, params object[])
+  nameWithType.vb: HideIfMatchAttribute.New(String, ParamArray Object())
+- uid: SODD.Attributes.HideIfMatchAttribute.#ctor*
+  name: HideIfMatchAttribute
+  href: api/SODD.Attributes.HideIfMatchAttribute.html#SODD_Attributes_HideIfMatchAttribute__ctor_
+  commentId: Overload:SODD.Attributes.HideIfMatchAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: SODD.Attributes.HideIfMatchAttribute.HideIfMatchAttribute
+  fullName.vb: SODD.Attributes.HideIfMatchAttribute.New
+  nameWithType: HideIfMatchAttribute.HideIfMatchAttribute
+  nameWithType.vb: HideIfMatchAttribute.New
+- uid: SODD.Attributes.HideIfMatchAttribute.Name
+  name: Name
+  href: api/SODD.Attributes.HideIfMatchAttribute.html#SODD_Attributes_HideIfMatchAttribute_Name
+  commentId: F:SODD.Attributes.HideIfMatchAttribute.Name
+  fullName: SODD.Attributes.HideIfMatchAttribute.Name
+  nameWithType: HideIfMatchAttribute.Name
+- uid: SODD.Attributes.HideIfMatchAttribute.Values
+  name: Values
+  href: api/SODD.Attributes.HideIfMatchAttribute.html#SODD_Attributes_HideIfMatchAttribute_Values
+  commentId: F:SODD.Attributes.HideIfMatchAttribute.Values
+  fullName: SODD.Attributes.HideIfMatchAttribute.Values
+  nameWithType: HideIfMatchAttribute.Values
 - uid: SODD.Attributes.OnValueChangedAttribute
   name: OnValueChangedAttribute
   href: api/SODD.Attributes.OnValueChangedAttribute.html
@@ -38,6 +242,86 @@ references:
   commentId: F:SODD.Attributes.OnValueChangedAttribute.MethodName
   fullName: SODD.Attributes.OnValueChangedAttribute.MethodName
   nameWithType: OnValueChangedAttribute.MethodName
+- uid: SODD.Attributes.ShowIfAttribute
+  name: ShowIfAttribute
+  href: api/SODD.Attributes.ShowIfAttribute.html
+  commentId: T:SODD.Attributes.ShowIfAttribute
+  fullName: SODD.Attributes.ShowIfAttribute
+  nameWithType: ShowIfAttribute
+- uid: SODD.Attributes.ShowIfAttribute.#ctor(System.String,System.Object,SODD.Core.Comparison)
+  name: ShowIfAttribute(string, object, Comparison)
+  href: api/SODD.Attributes.ShowIfAttribute.html#SODD_Attributes_ShowIfAttribute__ctor_System_String_System_Object_SODD_Core_Comparison_
+  commentId: M:SODD.Attributes.ShowIfAttribute.#ctor(System.String,System.Object,SODD.Core.Comparison)
+  name.vb: New(String, Object, Comparison)
+  fullName: SODD.Attributes.ShowIfAttribute.ShowIfAttribute(string, object, SODD.Core.Comparison)
+  fullName.vb: SODD.Attributes.ShowIfAttribute.New(String, Object, SODD.Core.Comparison)
+  nameWithType: ShowIfAttribute.ShowIfAttribute(string, object, Comparison)
+  nameWithType.vb: ShowIfAttribute.New(String, Object, Comparison)
+- uid: SODD.Attributes.ShowIfAttribute.#ctor*
+  name: ShowIfAttribute
+  href: api/SODD.Attributes.ShowIfAttribute.html#SODD_Attributes_ShowIfAttribute__ctor_
+  commentId: Overload:SODD.Attributes.ShowIfAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: SODD.Attributes.ShowIfAttribute.ShowIfAttribute
+  fullName.vb: SODD.Attributes.ShowIfAttribute.New
+  nameWithType: ShowIfAttribute.ShowIfAttribute
+  nameWithType.vb: ShowIfAttribute.New
+- uid: SODD.Attributes.ShowIfAttribute.Comparison
+  name: Comparison
+  href: api/SODD.Attributes.ShowIfAttribute.html#SODD_Attributes_ShowIfAttribute_Comparison
+  commentId: F:SODD.Attributes.ShowIfAttribute.Comparison
+  fullName: SODD.Attributes.ShowIfAttribute.Comparison
+  nameWithType: ShowIfAttribute.Comparison
+- uid: SODD.Attributes.ShowIfAttribute.Name
+  name: Name
+  href: api/SODD.Attributes.ShowIfAttribute.html#SODD_Attributes_ShowIfAttribute_Name
+  commentId: F:SODD.Attributes.ShowIfAttribute.Name
+  fullName: SODD.Attributes.ShowIfAttribute.Name
+  nameWithType: ShowIfAttribute.Name
+- uid: SODD.Attributes.ShowIfAttribute.Value
+  name: Value
+  href: api/SODD.Attributes.ShowIfAttribute.html#SODD_Attributes_ShowIfAttribute_Value
+  commentId: F:SODD.Attributes.ShowIfAttribute.Value
+  fullName: SODD.Attributes.ShowIfAttribute.Value
+  nameWithType: ShowIfAttribute.Value
+- uid: SODD.Attributes.ShowIfMatchAttribute
+  name: ShowIfMatchAttribute
+  href: api/SODD.Attributes.ShowIfMatchAttribute.html
+  commentId: T:SODD.Attributes.ShowIfMatchAttribute
+  fullName: SODD.Attributes.ShowIfMatchAttribute
+  nameWithType: ShowIfMatchAttribute
+- uid: SODD.Attributes.ShowIfMatchAttribute.#ctor(System.String,System.Object[])
+  name: ShowIfMatchAttribute(string, params object[])
+  href: api/SODD.Attributes.ShowIfMatchAttribute.html#SODD_Attributes_ShowIfMatchAttribute__ctor_System_String_System_Object___
+  commentId: M:SODD.Attributes.ShowIfMatchAttribute.#ctor(System.String,System.Object[])
+  name.vb: New(String, ParamArray Object())
+  fullName: SODD.Attributes.ShowIfMatchAttribute.ShowIfMatchAttribute(string, params object[])
+  fullName.vb: SODD.Attributes.ShowIfMatchAttribute.New(String, ParamArray Object())
+  nameWithType: ShowIfMatchAttribute.ShowIfMatchAttribute(string, params object[])
+  nameWithType.vb: ShowIfMatchAttribute.New(String, ParamArray Object())
+- uid: SODD.Attributes.ShowIfMatchAttribute.#ctor*
+  name: ShowIfMatchAttribute
+  href: api/SODD.Attributes.ShowIfMatchAttribute.html#SODD_Attributes_ShowIfMatchAttribute__ctor_
+  commentId: Overload:SODD.Attributes.ShowIfMatchAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: SODD.Attributes.ShowIfMatchAttribute.ShowIfMatchAttribute
+  fullName.vb: SODD.Attributes.ShowIfMatchAttribute.New
+  nameWithType: ShowIfMatchAttribute.ShowIfMatchAttribute
+  nameWithType.vb: ShowIfMatchAttribute.New
+- uid: SODD.Attributes.ShowIfMatchAttribute.Name
+  name: Name
+  href: api/SODD.Attributes.ShowIfMatchAttribute.html#SODD_Attributes_ShowIfMatchAttribute_Name
+  commentId: F:SODD.Attributes.ShowIfMatchAttribute.Name
+  fullName: SODD.Attributes.ShowIfMatchAttribute.Name
+  nameWithType: ShowIfMatchAttribute.Name
+- uid: SODD.Attributes.ShowIfMatchAttribute.Values
+  name: Values
+  href: api/SODD.Attributes.ShowIfMatchAttribute.html#SODD_Attributes_ShowIfMatchAttribute_Values
+  commentId: F:SODD.Attributes.ShowIfMatchAttribute.Values
+  fullName: SODD.Attributes.ShowIfMatchAttribute.Values
+  nameWithType: ShowIfMatchAttribute.Values
 - uid: SODD.Collections
   name: SODD.Collections
   href: api/SODD.Collections.html
@@ -369,6 +653,70 @@ references:
   isSpec: "True"
   fullName: SODD.Core.AudioMixerExtensions.SetVolume
   nameWithType: AudioMixerExtensions.SetVolume
+- uid: SODD.Core.Comparison
+  name: Comparison
+  href: api/SODD.Core.Comparison.html
+  commentId: T:SODD.Core.Comparison
+  fullName: SODD.Core.Comparison
+  nameWithType: Comparison
+- uid: SODD.Core.Comparison.BiggerEqualsThan
+  name: BiggerEqualsThan
+  href: api/SODD.Core.Comparison.html#SODD_Core_Comparison_BiggerEqualsThan
+  commentId: F:SODD.Core.Comparison.BiggerEqualsThan
+  fullName: SODD.Core.Comparison.BiggerEqualsThan
+  nameWithType: Comparison.BiggerEqualsThan
+- uid: SODD.Core.Comparison.BiggerThan
+  name: BiggerThan
+  href: api/SODD.Core.Comparison.html#SODD_Core_Comparison_BiggerThan
+  commentId: F:SODD.Core.Comparison.BiggerThan
+  fullName: SODD.Core.Comparison.BiggerThan
+  nameWithType: Comparison.BiggerThan
+- uid: SODD.Core.Comparison.Equals
+  name: Equals
+  href: api/SODD.Core.Comparison.html#SODD_Core_Comparison_Equals
+  commentId: F:SODD.Core.Comparison.Equals
+  fullName: SODD.Core.Comparison.Equals
+  nameWithType: Comparison.Equals
+- uid: SODD.Core.Comparison.LessEqualsThan
+  name: LessEqualsThan
+  href: api/SODD.Core.Comparison.html#SODD_Core_Comparison_LessEqualsThan
+  commentId: F:SODD.Core.Comparison.LessEqualsThan
+  fullName: SODD.Core.Comparison.LessEqualsThan
+  nameWithType: Comparison.LessEqualsThan
+- uid: SODD.Core.Comparison.LessThan
+  name: LessThan
+  href: api/SODD.Core.Comparison.html#SODD_Core_Comparison_LessThan
+  commentId: F:SODD.Core.Comparison.LessThan
+  fullName: SODD.Core.Comparison.LessThan
+  nameWithType: Comparison.LessThan
+- uid: SODD.Core.Comparison.NotEquals
+  name: NotEquals
+  href: api/SODD.Core.Comparison.html#SODD_Core_Comparison_NotEquals
+  commentId: F:SODD.Core.Comparison.NotEquals
+  fullName: SODD.Core.Comparison.NotEquals
+  nameWithType: Comparison.NotEquals
+- uid: SODD.Core.ComparisonExtensions
+  name: ComparisonExtensions
+  href: api/SODD.Core.ComparisonExtensions.html
+  commentId: T:SODD.Core.ComparisonExtensions
+  fullName: SODD.Core.ComparisonExtensions
+  nameWithType: ComparisonExtensions
+- uid: SODD.Core.ComparisonExtensions.Evaluate(SODD.Core.Comparison,System.Object,System.Object)
+  name: Evaluate(Comparison, object, object)
+  href: api/SODD.Core.ComparisonExtensions.html#SODD_Core_ComparisonExtensions_Evaluate_SODD_Core_Comparison_System_Object_System_Object_
+  commentId: M:SODD.Core.ComparisonExtensions.Evaluate(SODD.Core.Comparison,System.Object,System.Object)
+  name.vb: Evaluate(Comparison, Object, Object)
+  fullName: SODD.Core.ComparisonExtensions.Evaluate(SODD.Core.Comparison, object, object)
+  fullName.vb: SODD.Core.ComparisonExtensions.Evaluate(SODD.Core.Comparison, Object, Object)
+  nameWithType: ComparisonExtensions.Evaluate(Comparison, object, object)
+  nameWithType.vb: ComparisonExtensions.Evaluate(Comparison, Object, Object)
+- uid: SODD.Core.ComparisonExtensions.Evaluate*
+  name: Evaluate
+  href: api/SODD.Core.ComparisonExtensions.html#SODD_Core_ComparisonExtensions_Evaluate_
+  commentId: Overload:SODD.Core.ComparisonExtensions.Evaluate
+  isSpec: "True"
+  fullName: SODD.Core.ComparisonExtensions.Evaluate
+  nameWithType: ComparisonExtensions.Evaluate
 - uid: SODD.Core.CoroutineBuilder
   name: CoroutineBuilder
   href: api/SODD.Core.CoroutineBuilder.html
@@ -1010,6 +1358,30 @@ references:
   commentId: F:SODD.Core.Scope.ParentsAndChildren
   fullName: SODD.Core.Scope.ParentsAndChildren
   nameWithType: Scope.ParentsAndChildren
+- uid: SODD.Core.ToStringStrategy
+  name: ToStringStrategy
+  href: api/SODD.Core.ToStringStrategy.html
+  commentId: T:SODD.Core.ToStringStrategy
+  fullName: SODD.Core.ToStringStrategy
+  nameWithType: ToStringStrategy
+- uid: SODD.Core.ToStringStrategy.Capitalized
+  name: Capitalized
+  href: api/SODD.Core.ToStringStrategy.html#SODD_Core_ToStringStrategy_Capitalized
+  commentId: F:SODD.Core.ToStringStrategy.Capitalized
+  fullName: SODD.Core.ToStringStrategy.Capitalized
+  nameWithType: ToStringStrategy.Capitalized
+- uid: SODD.Core.ToStringStrategy.Lowercase
+  name: Lowercase
+  href: api/SODD.Core.ToStringStrategy.html#SODD_Core_ToStringStrategy_Lowercase
+  commentId: F:SODD.Core.ToStringStrategy.Lowercase
+  fullName: SODD.Core.ToStringStrategy.Lowercase
+  nameWithType: ToStringStrategy.Lowercase
+- uid: SODD.Core.ToStringStrategy.Uppercase
+  name: Uppercase
+  href: api/SODD.Core.ToStringStrategy.html#SODD_Core_ToStringStrategy_Uppercase
+  commentId: F:SODD.Core.ToStringStrategy.Uppercase
+  fullName: SODD.Core.ToStringStrategy.Uppercase
+  nameWithType: ToStringStrategy.Uppercase
 - uid: SODD.Core.TransformExtensions
   name: TransformExtensions
   href: api/SODD.Core.TransformExtensions.html
@@ -1997,6 +2369,634 @@ references:
   commentId: T:SODD.Listeners.VoidEventListener
   fullName: SODD.Listeners.VoidEventListener
   nameWithType: VoidEventListener
+- uid: SODD.Observers
+  name: SODD.Observers
+  href: api/SODD.Observers.html
+  commentId: N:SODD.Observers
+  fullName: SODD.Observers
+  nameWithType: SODD.Observers
+- uid: SODD.Observers.BoolVariableObserver
+  name: BoolVariableObserver
+  href: api/SODD.Observers.BoolVariableObserver.html
+  commentId: T:SODD.Observers.BoolVariableObserver
+  fullName: SODD.Observers.BoolVariableObserver
+  nameWithType: BoolVariableObserver
+- uid: SODD.Observers.BoolVariableObserver.OnVariableValueChanged(System.Boolean)
+  name: OnVariableValueChanged(bool)
+  href: api/SODD.Observers.BoolVariableObserver.html#SODD_Observers_BoolVariableObserver_OnVariableValueChanged_System_Boolean_
+  commentId: M:SODD.Observers.BoolVariableObserver.OnVariableValueChanged(System.Boolean)
+  name.vb: OnVariableValueChanged(Boolean)
+  fullName: SODD.Observers.BoolVariableObserver.OnVariableValueChanged(bool)
+  fullName.vb: SODD.Observers.BoolVariableObserver.OnVariableValueChanged(Boolean)
+  nameWithType: BoolVariableObserver.OnVariableValueChanged(bool)
+  nameWithType.vb: BoolVariableObserver.OnVariableValueChanged(Boolean)
+- uid: SODD.Observers.BoolVariableObserver.OnVariableValueChanged*
+  name: OnVariableValueChanged
+  href: api/SODD.Observers.BoolVariableObserver.html#SODD_Observers_BoolVariableObserver_OnVariableValueChanged_
+  commentId: Overload:SODD.Observers.BoolVariableObserver.OnVariableValueChanged
+  isSpec: "True"
+  fullName: SODD.Observers.BoolVariableObserver.OnVariableValueChanged
+  nameWithType: BoolVariableObserver.OnVariableValueChanged
+- uid: SODD.Observers.FloatVariableObserver
+  name: FloatVariableObserver
+  href: api/SODD.Observers.FloatVariableObserver.html
+  commentId: T:SODD.Observers.FloatVariableObserver
+  fullName: SODD.Observers.FloatVariableObserver
+  nameWithType: FloatVariableObserver
+- uid: SODD.Observers.FloatVariableObserver.OnVariableValueChanged(System.Single)
+  name: OnVariableValueChanged(float)
+  href: api/SODD.Observers.FloatVariableObserver.html#SODD_Observers_FloatVariableObserver_OnVariableValueChanged_System_Single_
+  commentId: M:SODD.Observers.FloatVariableObserver.OnVariableValueChanged(System.Single)
+  name.vb: OnVariableValueChanged(Single)
+  fullName: SODD.Observers.FloatVariableObserver.OnVariableValueChanged(float)
+  fullName.vb: SODD.Observers.FloatVariableObserver.OnVariableValueChanged(Single)
+  nameWithType: FloatVariableObserver.OnVariableValueChanged(float)
+  nameWithType.vb: FloatVariableObserver.OnVariableValueChanged(Single)
+- uid: SODD.Observers.FloatVariableObserver.OnVariableValueChanged*
+  name: OnVariableValueChanged
+  href: api/SODD.Observers.FloatVariableObserver.html#SODD_Observers_FloatVariableObserver_OnVariableValueChanged_
+  commentId: Overload:SODD.Observers.FloatVariableObserver.OnVariableValueChanged
+  isSpec: "True"
+  fullName: SODD.Observers.FloatVariableObserver.OnVariableValueChanged
+  nameWithType: FloatVariableObserver.OnVariableValueChanged
+- uid: SODD.Observers.IntVariableObserver
+  name: IntVariableObserver
+  href: api/SODD.Observers.IntVariableObserver.html
+  commentId: T:SODD.Observers.IntVariableObserver
+  fullName: SODD.Observers.IntVariableObserver
+  nameWithType: IntVariableObserver
+- uid: SODD.Observers.IntVariableObserver.OnVariableValueChanged(System.Int32)
+  name: OnVariableValueChanged(int)
+  href: api/SODD.Observers.IntVariableObserver.html#SODD_Observers_IntVariableObserver_OnVariableValueChanged_System_Int32_
+  commentId: M:SODD.Observers.IntVariableObserver.OnVariableValueChanged(System.Int32)
+  name.vb: OnVariableValueChanged(Integer)
+  fullName: SODD.Observers.IntVariableObserver.OnVariableValueChanged(int)
+  fullName.vb: SODD.Observers.IntVariableObserver.OnVariableValueChanged(Integer)
+  nameWithType: IntVariableObserver.OnVariableValueChanged(int)
+  nameWithType.vb: IntVariableObserver.OnVariableValueChanged(Integer)
+- uid: SODD.Observers.IntVariableObserver.OnVariableValueChanged*
+  name: OnVariableValueChanged
+  href: api/SODD.Observers.IntVariableObserver.html#SODD_Observers_IntVariableObserver_OnVariableValueChanged_
+  commentId: Overload:SODD.Observers.IntVariableObserver.OnVariableValueChanged
+  isSpec: "True"
+  fullName: SODD.Observers.IntVariableObserver.OnVariableValueChanged
+  nameWithType: IntVariableObserver.OnVariableValueChanged
+- uid: SODD.Observers.IntVariableObserver.onValueChangedAsString
+  name: onValueChangedAsString
+  href: api/SODD.Observers.IntVariableObserver.html#SODD_Observers_IntVariableObserver_onValueChangedAsString
+  commentId: F:SODD.Observers.IntVariableObserver.onValueChangedAsString
+  fullName: SODD.Observers.IntVariableObserver.onValueChangedAsString
+  nameWithType: IntVariableObserver.onValueChangedAsString
+- uid: SODD.Observers.StringVariableObserver
+  name: StringVariableObserver
+  href: api/SODD.Observers.StringVariableObserver.html
+  commentId: T:SODD.Observers.StringVariableObserver
+  fullName: SODD.Observers.StringVariableObserver
+  nameWithType: StringVariableObserver
+- uid: SODD.Observers.VariableObserver`1
+  name: VariableObserver<T>
+  href: api/SODD.Observers.VariableObserver-1.html
+  commentId: T:SODD.Observers.VariableObserver`1
+  name.vb: VariableObserver(Of T)
+  fullName: SODD.Observers.VariableObserver<T>
+  fullName.vb: SODD.Observers.VariableObserver(Of T)
+  nameWithType: VariableObserver<T>
+  nameWithType.vb: VariableObserver(Of T)
+- uid: SODD.Observers.VariableObserver`1.OnVariableValueChanged(`0)
+  name: OnVariableValueChanged(T)
+  href: api/SODD.Observers.VariableObserver-1.html#SODD_Observers_VariableObserver_1_OnVariableValueChanged__0_
+  commentId: M:SODD.Observers.VariableObserver`1.OnVariableValueChanged(`0)
+  fullName: SODD.Observers.VariableObserver<T>.OnVariableValueChanged(T)
+  fullName.vb: SODD.Observers.VariableObserver(Of T).OnVariableValueChanged(T)
+  nameWithType: VariableObserver<T>.OnVariableValueChanged(T)
+  nameWithType.vb: VariableObserver(Of T).OnVariableValueChanged(T)
+- uid: SODD.Observers.VariableObserver`1.OnVariableValueChanged*
+  name: OnVariableValueChanged
+  href: api/SODD.Observers.VariableObserver-1.html#SODD_Observers_VariableObserver_1_OnVariableValueChanged_
+  commentId: Overload:SODD.Observers.VariableObserver`1.OnVariableValueChanged
+  isSpec: "True"
+  fullName: SODD.Observers.VariableObserver<T>.OnVariableValueChanged
+  fullName.vb: SODD.Observers.VariableObserver(Of T).OnVariableValueChanged
+  nameWithType: VariableObserver<T>.OnVariableValueChanged
+  nameWithType.vb: VariableObserver(Of T).OnVariableValueChanged
+- uid: SODD.Observers.Vector2VariableObserver
+  name: Vector2VariableObserver
+  href: api/SODD.Observers.Vector2VariableObserver.html
+  commentId: T:SODD.Observers.Vector2VariableObserver
+  fullName: SODD.Observers.Vector2VariableObserver
+  nameWithType: Vector2VariableObserver
+- uid: SODD.Observers.Vector2VariableObserver.OnVariableValueChanged(Vector2)
+  name: OnVariableValueChanged(Vector2)
+  href: api/SODD.Observers.Vector2VariableObserver.html#SODD_Observers_Vector2VariableObserver_OnVariableValueChanged_Vector2_
+  commentId: M:SODD.Observers.Vector2VariableObserver.OnVariableValueChanged(Vector2)
+  fullName: SODD.Observers.Vector2VariableObserver.OnVariableValueChanged(Vector2)
+  nameWithType: Vector2VariableObserver.OnVariableValueChanged(Vector2)
+- uid: SODD.Observers.Vector2VariableObserver.OnVariableValueChanged*
+  name: OnVariableValueChanged
+  href: api/SODD.Observers.Vector2VariableObserver.html#SODD_Observers_Vector2VariableObserver_OnVariableValueChanged_
+  commentId: Overload:SODD.Observers.Vector2VariableObserver.OnVariableValueChanged
+  isSpec: "True"
+  fullName: SODD.Observers.Vector2VariableObserver.OnVariableValueChanged
+  nameWithType: Vector2VariableObserver.OnVariableValueChanged
+- uid: SODD.Observers.Vector2VariableObserver.onValueChangedAsString
+  name: onValueChangedAsString
+  href: api/SODD.Observers.Vector2VariableObserver.html#SODD_Observers_Vector2VariableObserver_onValueChangedAsString
+  commentId: F:SODD.Observers.Vector2VariableObserver.onValueChangedAsString
+  fullName: SODD.Observers.Vector2VariableObserver.onValueChangedAsString
+  nameWithType: Vector2VariableObserver.onValueChangedAsString
+- uid: SODD.Observers.Vector3VariableObserver
+  name: Vector3VariableObserver
+  href: api/SODD.Observers.Vector3VariableObserver.html
+  commentId: T:SODD.Observers.Vector3VariableObserver
+  fullName: SODD.Observers.Vector3VariableObserver
+  nameWithType: Vector3VariableObserver
+- uid: SODD.Observers.Vector3VariableObserver.OnVariableValueChanged(Vector3)
+  name: OnVariableValueChanged(Vector3)
+  href: api/SODD.Observers.Vector3VariableObserver.html#SODD_Observers_Vector3VariableObserver_OnVariableValueChanged_Vector3_
+  commentId: M:SODD.Observers.Vector3VariableObserver.OnVariableValueChanged(Vector3)
+  fullName: SODD.Observers.Vector3VariableObserver.OnVariableValueChanged(Vector3)
+  nameWithType: Vector3VariableObserver.OnVariableValueChanged(Vector3)
+- uid: SODD.Observers.Vector3VariableObserver.OnVariableValueChanged*
+  name: OnVariableValueChanged
+  href: api/SODD.Observers.Vector3VariableObserver.html#SODD_Observers_Vector3VariableObserver_OnVariableValueChanged_
+  commentId: Overload:SODD.Observers.Vector3VariableObserver.OnVariableValueChanged
+  isSpec: "True"
+  fullName: SODD.Observers.Vector3VariableObserver.OnVariableValueChanged
+  nameWithType: Vector3VariableObserver.OnVariableValueChanged
+- uid: SODD.Observers.Vector3VariableObserver.onValueChangedAsString
+  name: onValueChangedAsString
+  href: api/SODD.Observers.Vector3VariableObserver.html#SODD_Observers_Vector3VariableObserver_onValueChangedAsString
+  commentId: F:SODD.Observers.Vector3VariableObserver.onValueChangedAsString
+  fullName: SODD.Observers.Vector3VariableObserver.onValueChangedAsString
+  nameWithType: Vector3VariableObserver.onValueChangedAsString
+- uid: SODD.Repositories
+  name: SODD.Repositories
+  href: api/SODD.Repositories.html
+  commentId: N:SODD.Repositories
+  fullName: SODD.Repositories
+  nameWithType: SODD.Repositories
+- uid: SODD.Repositories.BinaryFileRepository`1
+  name: BinaryFileRepository<T>
+  href: api/SODD.Repositories.BinaryFileRepository-1.html
+  commentId: T:SODD.Repositories.BinaryFileRepository`1
+  name.vb: BinaryFileRepository(Of T)
+  fullName: SODD.Repositories.BinaryFileRepository<T>
+  fullName.vb: SODD.Repositories.BinaryFileRepository(Of T)
+  nameWithType: BinaryFileRepository<T>
+  nameWithType.vb: BinaryFileRepository(Of T)
+- uid: SODD.Repositories.BinaryFileRepository`1.#ctor
+  name: BinaryFileRepository()
+  href: api/SODD.Repositories.BinaryFileRepository-1.html#SODD_Repositories_BinaryFileRepository_1__ctor
+  commentId: M:SODD.Repositories.BinaryFileRepository`1.#ctor
+  name.vb: New()
+  fullName: SODD.Repositories.BinaryFileRepository<T>.BinaryFileRepository()
+  fullName.vb: SODD.Repositories.BinaryFileRepository(Of T).New()
+  nameWithType: BinaryFileRepository<T>.BinaryFileRepository()
+  nameWithType.vb: BinaryFileRepository(Of T).New()
+- uid: SODD.Repositories.BinaryFileRepository`1.#ctor(System.String)
+  name: BinaryFileRepository(string)
+  href: api/SODD.Repositories.BinaryFileRepository-1.html#SODD_Repositories_BinaryFileRepository_1__ctor_System_String_
+  commentId: M:SODD.Repositories.BinaryFileRepository`1.#ctor(System.String)
+  name.vb: New(String)
+  fullName: SODD.Repositories.BinaryFileRepository<T>.BinaryFileRepository(string)
+  fullName.vb: SODD.Repositories.BinaryFileRepository(Of T).New(String)
+  nameWithType: BinaryFileRepository<T>.BinaryFileRepository(string)
+  nameWithType.vb: BinaryFileRepository(Of T).New(String)
+- uid: SODD.Repositories.BinaryFileRepository`1.#ctor*
+  name: BinaryFileRepository
+  href: api/SODD.Repositories.BinaryFileRepository-1.html#SODD_Repositories_BinaryFileRepository_1__ctor_
+  commentId: Overload:SODD.Repositories.BinaryFileRepository`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: SODD.Repositories.BinaryFileRepository<T>.BinaryFileRepository
+  fullName.vb: SODD.Repositories.BinaryFileRepository(Of T).New
+  nameWithType: BinaryFileRepository<T>.BinaryFileRepository
+  nameWithType.vb: BinaryFileRepository(Of T).New
+- uid: SODD.Repositories.BinaryFileRepository`1.Delete
+  name: Delete()
+  href: api/SODD.Repositories.BinaryFileRepository-1.html#SODD_Repositories_BinaryFileRepository_1_Delete
+  commentId: M:SODD.Repositories.BinaryFileRepository`1.Delete
+  fullName: SODD.Repositories.BinaryFileRepository<T>.Delete()
+  fullName.vb: SODD.Repositories.BinaryFileRepository(Of T).Delete()
+  nameWithType: BinaryFileRepository<T>.Delete()
+  nameWithType.vb: BinaryFileRepository(Of T).Delete()
+- uid: SODD.Repositories.BinaryFileRepository`1.Delete*
+  name: Delete
+  href: api/SODD.Repositories.BinaryFileRepository-1.html#SODD_Repositories_BinaryFileRepository_1_Delete_
+  commentId: Overload:SODD.Repositories.BinaryFileRepository`1.Delete
+  isSpec: "True"
+  fullName: SODD.Repositories.BinaryFileRepository<T>.Delete
+  fullName.vb: SODD.Repositories.BinaryFileRepository(Of T).Delete
+  nameWithType: BinaryFileRepository<T>.Delete
+  nameWithType.vb: BinaryFileRepository(Of T).Delete
+- uid: SODD.Repositories.BinaryFileRepository`1.Exists
+  name: Exists()
+  href: api/SODD.Repositories.BinaryFileRepository-1.html#SODD_Repositories_BinaryFileRepository_1_Exists
+  commentId: M:SODD.Repositories.BinaryFileRepository`1.Exists
+  fullName: SODD.Repositories.BinaryFileRepository<T>.Exists()
+  fullName.vb: SODD.Repositories.BinaryFileRepository(Of T).Exists()
+  nameWithType: BinaryFileRepository<T>.Exists()
+  nameWithType.vb: BinaryFileRepository(Of T).Exists()
+- uid: SODD.Repositories.BinaryFileRepository`1.Exists*
+  name: Exists
+  href: api/SODD.Repositories.BinaryFileRepository-1.html#SODD_Repositories_BinaryFileRepository_1_Exists_
+  commentId: Overload:SODD.Repositories.BinaryFileRepository`1.Exists
+  isSpec: "True"
+  fullName: SODD.Repositories.BinaryFileRepository<T>.Exists
+  fullName.vb: SODD.Repositories.BinaryFileRepository(Of T).Exists
+  nameWithType: BinaryFileRepository<T>.Exists
+  nameWithType.vb: BinaryFileRepository(Of T).Exists
+- uid: SODD.Repositories.BinaryFileRepository`1.Load
+  name: Load()
+  href: api/SODD.Repositories.BinaryFileRepository-1.html#SODD_Repositories_BinaryFileRepository_1_Load
+  commentId: M:SODD.Repositories.BinaryFileRepository`1.Load
+  fullName: SODD.Repositories.BinaryFileRepository<T>.Load()
+  fullName.vb: SODD.Repositories.BinaryFileRepository(Of T).Load()
+  nameWithType: BinaryFileRepository<T>.Load()
+  nameWithType.vb: BinaryFileRepository(Of T).Load()
+- uid: SODD.Repositories.BinaryFileRepository`1.Load*
+  name: Load
+  href: api/SODD.Repositories.BinaryFileRepository-1.html#SODD_Repositories_BinaryFileRepository_1_Load_
+  commentId: Overload:SODD.Repositories.BinaryFileRepository`1.Load
+  isSpec: "True"
+  fullName: SODD.Repositories.BinaryFileRepository<T>.Load
+  fullName.vb: SODD.Repositories.BinaryFileRepository(Of T).Load
+  nameWithType: BinaryFileRepository<T>.Load
+  nameWithType.vb: BinaryFileRepository(Of T).Load
+- uid: SODD.Repositories.BinaryFileRepository`1.Save(`0)
+  name: Save(T)
+  href: api/SODD.Repositories.BinaryFileRepository-1.html#SODD_Repositories_BinaryFileRepository_1_Save__0_
+  commentId: M:SODD.Repositories.BinaryFileRepository`1.Save(`0)
+  fullName: SODD.Repositories.BinaryFileRepository<T>.Save(T)
+  fullName.vb: SODD.Repositories.BinaryFileRepository(Of T).Save(T)
+  nameWithType: BinaryFileRepository<T>.Save(T)
+  nameWithType.vb: BinaryFileRepository(Of T).Save(T)
+- uid: SODD.Repositories.BinaryFileRepository`1.Save*
+  name: Save
+  href: api/SODD.Repositories.BinaryFileRepository-1.html#SODD_Repositories_BinaryFileRepository_1_Save_
+  commentId: Overload:SODD.Repositories.BinaryFileRepository`1.Save
+  isSpec: "True"
+  fullName: SODD.Repositories.BinaryFileRepository<T>.Save
+  fullName.vb: SODD.Repositories.BinaryFileRepository(Of T).Save
+  nameWithType: BinaryFileRepository<T>.Save
+  nameWithType.vb: BinaryFileRepository(Of T).Save
+- uid: SODD.Repositories.FileRepository`1
+  name: FileRepository<T>
+  href: api/SODD.Repositories.FileRepository-1.html
+  commentId: T:SODD.Repositories.FileRepository`1
+  name.vb: FileRepository(Of T)
+  fullName: SODD.Repositories.FileRepository<T>
+  fullName.vb: SODD.Repositories.FileRepository(Of T)
+  nameWithType: FileRepository<T>
+  nameWithType.vb: FileRepository(Of T)
+- uid: SODD.Repositories.FileRepository`1.#ctor
+  name: FileRepository()
+  href: api/SODD.Repositories.FileRepository-1.html#SODD_Repositories_FileRepository_1__ctor
+  commentId: M:SODD.Repositories.FileRepository`1.#ctor
+  name.vb: New()
+  fullName: SODD.Repositories.FileRepository<T>.FileRepository()
+  fullName.vb: SODD.Repositories.FileRepository(Of T).New()
+  nameWithType: FileRepository<T>.FileRepository()
+  nameWithType.vb: FileRepository(Of T).New()
+- uid: SODD.Repositories.FileRepository`1.#ctor(System.String)
+  name: FileRepository(string)
+  href: api/SODD.Repositories.FileRepository-1.html#SODD_Repositories_FileRepository_1__ctor_System_String_
+  commentId: M:SODD.Repositories.FileRepository`1.#ctor(System.String)
+  name.vb: New(String)
+  fullName: SODD.Repositories.FileRepository<T>.FileRepository(string)
+  fullName.vb: SODD.Repositories.FileRepository(Of T).New(String)
+  nameWithType: FileRepository<T>.FileRepository(string)
+  nameWithType.vb: FileRepository(Of T).New(String)
+- uid: SODD.Repositories.FileRepository`1.#ctor*
+  name: FileRepository
+  href: api/SODD.Repositories.FileRepository-1.html#SODD_Repositories_FileRepository_1__ctor_
+  commentId: Overload:SODD.Repositories.FileRepository`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: SODD.Repositories.FileRepository<T>.FileRepository
+  fullName.vb: SODD.Repositories.FileRepository(Of T).New
+  nameWithType: FileRepository<T>.FileRepository
+  nameWithType.vb: FileRepository(Of T).New
+- uid: SODD.Repositories.FileRepository`1.Delete
+  name: Delete()
+  href: api/SODD.Repositories.FileRepository-1.html#SODD_Repositories_FileRepository_1_Delete
+  commentId: M:SODD.Repositories.FileRepository`1.Delete
+  fullName: SODD.Repositories.FileRepository<T>.Delete()
+  fullName.vb: SODD.Repositories.FileRepository(Of T).Delete()
+  nameWithType: FileRepository<T>.Delete()
+  nameWithType.vb: FileRepository(Of T).Delete()
+- uid: SODD.Repositories.FileRepository`1.Delete*
+  name: Delete
+  href: api/SODD.Repositories.FileRepository-1.html#SODD_Repositories_FileRepository_1_Delete_
+  commentId: Overload:SODD.Repositories.FileRepository`1.Delete
+  isSpec: "True"
+  fullName: SODD.Repositories.FileRepository<T>.Delete
+  fullName.vb: SODD.Repositories.FileRepository(Of T).Delete
+  nameWithType: FileRepository<T>.Delete
+  nameWithType.vb: FileRepository(Of T).Delete
+- uid: SODD.Repositories.FileRepository`1.Exists
+  name: Exists()
+  href: api/SODD.Repositories.FileRepository-1.html#SODD_Repositories_FileRepository_1_Exists
+  commentId: M:SODD.Repositories.FileRepository`1.Exists
+  fullName: SODD.Repositories.FileRepository<T>.Exists()
+  fullName.vb: SODD.Repositories.FileRepository(Of T).Exists()
+  nameWithType: FileRepository<T>.Exists()
+  nameWithType.vb: FileRepository(Of T).Exists()
+- uid: SODD.Repositories.FileRepository`1.Exists*
+  name: Exists
+  href: api/SODD.Repositories.FileRepository-1.html#SODD_Repositories_FileRepository_1_Exists_
+  commentId: Overload:SODD.Repositories.FileRepository`1.Exists
+  isSpec: "True"
+  fullName: SODD.Repositories.FileRepository<T>.Exists
+  fullName.vb: SODD.Repositories.FileRepository(Of T).Exists
+  nameWithType: FileRepository<T>.Exists
+  nameWithType.vb: FileRepository(Of T).Exists
+- uid: SODD.Repositories.FileRepository`1.Filename
+  name: Filename
+  href: api/SODD.Repositories.FileRepository-1.html#SODD_Repositories_FileRepository_1_Filename
+  commentId: P:SODD.Repositories.FileRepository`1.Filename
+  fullName: SODD.Repositories.FileRepository<T>.Filename
+  fullName.vb: SODD.Repositories.FileRepository(Of T).Filename
+  nameWithType: FileRepository<T>.Filename
+  nameWithType.vb: FileRepository(Of T).Filename
+- uid: SODD.Repositories.FileRepository`1.Filename*
+  name: Filename
+  href: api/SODD.Repositories.FileRepository-1.html#SODD_Repositories_FileRepository_1_Filename_
+  commentId: Overload:SODD.Repositories.FileRepository`1.Filename
+  isSpec: "True"
+  fullName: SODD.Repositories.FileRepository<T>.Filename
+  fullName.vb: SODD.Repositories.FileRepository(Of T).Filename
+  nameWithType: FileRepository<T>.Filename
+  nameWithType.vb: FileRepository(Of T).Filename
+- uid: SODD.Repositories.FileRepository`1.Load
+  name: Load()
+  href: api/SODD.Repositories.FileRepository-1.html#SODD_Repositories_FileRepository_1_Load
+  commentId: M:SODD.Repositories.FileRepository`1.Load
+  fullName: SODD.Repositories.FileRepository<T>.Load()
+  fullName.vb: SODD.Repositories.FileRepository(Of T).Load()
+  nameWithType: FileRepository<T>.Load()
+  nameWithType.vb: FileRepository(Of T).Load()
+- uid: SODD.Repositories.FileRepository`1.Load*
+  name: Load
+  href: api/SODD.Repositories.FileRepository-1.html#SODD_Repositories_FileRepository_1_Load_
+  commentId: Overload:SODD.Repositories.FileRepository`1.Load
+  isSpec: "True"
+  fullName: SODD.Repositories.FileRepository<T>.Load
+  fullName.vb: SODD.Repositories.FileRepository(Of T).Load
+  nameWithType: FileRepository<T>.Load
+  nameWithType.vb: FileRepository(Of T).Load
+- uid: SODD.Repositories.FileRepository`1.Save(`0)
+  name: Save(T)
+  href: api/SODD.Repositories.FileRepository-1.html#SODD_Repositories_FileRepository_1_Save__0_
+  commentId: M:SODD.Repositories.FileRepository`1.Save(`0)
+  fullName: SODD.Repositories.FileRepository<T>.Save(T)
+  fullName.vb: SODD.Repositories.FileRepository(Of T).Save(T)
+  nameWithType: FileRepository<T>.Save(T)
+  nameWithType.vb: FileRepository(Of T).Save(T)
+- uid: SODD.Repositories.FileRepository`1.Save*
+  name: Save
+  href: api/SODD.Repositories.FileRepository-1.html#SODD_Repositories_FileRepository_1_Save_
+  commentId: Overload:SODD.Repositories.FileRepository`1.Save
+  isSpec: "True"
+  fullName: SODD.Repositories.FileRepository<T>.Save
+  fullName.vb: SODD.Repositories.FileRepository(Of T).Save
+  nameWithType: FileRepository<T>.Save
+  nameWithType.vb: FileRepository(Of T).Save
+- uid: SODD.Repositories.FileRepository`1.filename
+  name: filename
+  href: api/SODD.Repositories.FileRepository-1.html#SODD_Repositories_FileRepository_1_filename
+  commentId: F:SODD.Repositories.FileRepository`1.filename
+  fullName: SODD.Repositories.FileRepository<T>.filename
+  fullName.vb: SODD.Repositories.FileRepository(Of T).filename
+  nameWithType: FileRepository<T>.filename
+  nameWithType.vb: FileRepository(Of T).filename
+- uid: SODD.Repositories.IRepository`1
+  name: IRepository<T>
+  href: api/SODD.Repositories.IRepository-1.html
+  commentId: T:SODD.Repositories.IRepository`1
+  name.vb: IRepository(Of T)
+  fullName: SODD.Repositories.IRepository<T>
+  fullName.vb: SODD.Repositories.IRepository(Of T)
+  nameWithType: IRepository<T>
+  nameWithType.vb: IRepository(Of T)
+- uid: SODD.Repositories.IRepository`1.Delete
+  name: Delete()
+  href: api/SODD.Repositories.IRepository-1.html#SODD_Repositories_IRepository_1_Delete
+  commentId: M:SODD.Repositories.IRepository`1.Delete
+  fullName: SODD.Repositories.IRepository<T>.Delete()
+  fullName.vb: SODD.Repositories.IRepository(Of T).Delete()
+  nameWithType: IRepository<T>.Delete()
+  nameWithType.vb: IRepository(Of T).Delete()
+- uid: SODD.Repositories.IRepository`1.Delete*
+  name: Delete
+  href: api/SODD.Repositories.IRepository-1.html#SODD_Repositories_IRepository_1_Delete_
+  commentId: Overload:SODD.Repositories.IRepository`1.Delete
+  isSpec: "True"
+  fullName: SODD.Repositories.IRepository<T>.Delete
+  fullName.vb: SODD.Repositories.IRepository(Of T).Delete
+  nameWithType: IRepository<T>.Delete
+  nameWithType.vb: IRepository(Of T).Delete
+- uid: SODD.Repositories.IRepository`1.Exists
+  name: Exists()
+  href: api/SODD.Repositories.IRepository-1.html#SODD_Repositories_IRepository_1_Exists
+  commentId: M:SODD.Repositories.IRepository`1.Exists
+  fullName: SODD.Repositories.IRepository<T>.Exists()
+  fullName.vb: SODD.Repositories.IRepository(Of T).Exists()
+  nameWithType: IRepository<T>.Exists()
+  nameWithType.vb: IRepository(Of T).Exists()
+- uid: SODD.Repositories.IRepository`1.Exists*
+  name: Exists
+  href: api/SODD.Repositories.IRepository-1.html#SODD_Repositories_IRepository_1_Exists_
+  commentId: Overload:SODD.Repositories.IRepository`1.Exists
+  isSpec: "True"
+  fullName: SODD.Repositories.IRepository<T>.Exists
+  fullName.vb: SODD.Repositories.IRepository(Of T).Exists
+  nameWithType: IRepository<T>.Exists
+  nameWithType.vb: IRepository(Of T).Exists
+- uid: SODD.Repositories.IRepository`1.Load
+  name: Load()
+  href: api/SODD.Repositories.IRepository-1.html#SODD_Repositories_IRepository_1_Load
+  commentId: M:SODD.Repositories.IRepository`1.Load
+  fullName: SODD.Repositories.IRepository<T>.Load()
+  fullName.vb: SODD.Repositories.IRepository(Of T).Load()
+  nameWithType: IRepository<T>.Load()
+  nameWithType.vb: IRepository(Of T).Load()
+- uid: SODD.Repositories.IRepository`1.Load*
+  name: Load
+  href: api/SODD.Repositories.IRepository-1.html#SODD_Repositories_IRepository_1_Load_
+  commentId: Overload:SODD.Repositories.IRepository`1.Load
+  isSpec: "True"
+  fullName: SODD.Repositories.IRepository<T>.Load
+  fullName.vb: SODD.Repositories.IRepository(Of T).Load
+  nameWithType: IRepository<T>.Load
+  nameWithType.vb: IRepository(Of T).Load
+- uid: SODD.Repositories.IRepository`1.Save(`0)
+  name: Save(T)
+  href: api/SODD.Repositories.IRepository-1.html#SODD_Repositories_IRepository_1_Save__0_
+  commentId: M:SODD.Repositories.IRepository`1.Save(`0)
+  fullName: SODD.Repositories.IRepository<T>.Save(T)
+  fullName.vb: SODD.Repositories.IRepository(Of T).Save(T)
+  nameWithType: IRepository<T>.Save(T)
+  nameWithType.vb: IRepository(Of T).Save(T)
+- uid: SODD.Repositories.IRepository`1.Save*
+  name: Save
+  href: api/SODD.Repositories.IRepository-1.html#SODD_Repositories_IRepository_1_Save_
+  commentId: Overload:SODD.Repositories.IRepository`1.Save
+  isSpec: "True"
+  fullName: SODD.Repositories.IRepository<T>.Save
+  fullName.vb: SODD.Repositories.IRepository(Of T).Save
+  nameWithType: IRepository<T>.Save
+  nameWithType.vb: IRepository(Of T).Save
+- uid: SODD.Repositories.JsonFileRepository`1
+  name: JsonFileRepository<T>
+  href: api/SODD.Repositories.JsonFileRepository-1.html
+  commentId: T:SODD.Repositories.JsonFileRepository`1
+  name.vb: JsonFileRepository(Of T)
+  fullName: SODD.Repositories.JsonFileRepository<T>
+  fullName.vb: SODD.Repositories.JsonFileRepository(Of T)
+  nameWithType: JsonFileRepository<T>
+  nameWithType.vb: JsonFileRepository(Of T)
+- uid: SODD.Repositories.JsonFileRepository`1.#ctor
+  name: JsonFileRepository()
+  href: api/SODD.Repositories.JsonFileRepository-1.html#SODD_Repositories_JsonFileRepository_1__ctor
+  commentId: M:SODD.Repositories.JsonFileRepository`1.#ctor
+  name.vb: New()
+  fullName: SODD.Repositories.JsonFileRepository<T>.JsonFileRepository()
+  fullName.vb: SODD.Repositories.JsonFileRepository(Of T).New()
+  nameWithType: JsonFileRepository<T>.JsonFileRepository()
+  nameWithType.vb: JsonFileRepository(Of T).New()
+- uid: SODD.Repositories.JsonFileRepository`1.#ctor(System.String)
+  name: JsonFileRepository(string)
+  href: api/SODD.Repositories.JsonFileRepository-1.html#SODD_Repositories_JsonFileRepository_1__ctor_System_String_
+  commentId: M:SODD.Repositories.JsonFileRepository`1.#ctor(System.String)
+  name.vb: New(String)
+  fullName: SODD.Repositories.JsonFileRepository<T>.JsonFileRepository(string)
+  fullName.vb: SODD.Repositories.JsonFileRepository(Of T).New(String)
+  nameWithType: JsonFileRepository<T>.JsonFileRepository(string)
+  nameWithType.vb: JsonFileRepository(Of T).New(String)
+- uid: SODD.Repositories.JsonFileRepository`1.#ctor*
+  name: JsonFileRepository
+  href: api/SODD.Repositories.JsonFileRepository-1.html#SODD_Repositories_JsonFileRepository_1__ctor_
+  commentId: Overload:SODD.Repositories.JsonFileRepository`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: SODD.Repositories.JsonFileRepository<T>.JsonFileRepository
+  fullName.vb: SODD.Repositories.JsonFileRepository(Of T).New
+  nameWithType: JsonFileRepository<T>.JsonFileRepository
+  nameWithType.vb: JsonFileRepository(Of T).New
+- uid: SODD.Repositories.JsonFileRepository`1.Delete
+  name: Delete()
+  href: api/SODD.Repositories.JsonFileRepository-1.html#SODD_Repositories_JsonFileRepository_1_Delete
+  commentId: M:SODD.Repositories.JsonFileRepository`1.Delete
+  fullName: SODD.Repositories.JsonFileRepository<T>.Delete()
+  fullName.vb: SODD.Repositories.JsonFileRepository(Of T).Delete()
+  nameWithType: JsonFileRepository<T>.Delete()
+  nameWithType.vb: JsonFileRepository(Of T).Delete()
+- uid: SODD.Repositories.JsonFileRepository`1.Delete*
+  name: Delete
+  href: api/SODD.Repositories.JsonFileRepository-1.html#SODD_Repositories_JsonFileRepository_1_Delete_
+  commentId: Overload:SODD.Repositories.JsonFileRepository`1.Delete
+  isSpec: "True"
+  fullName: SODD.Repositories.JsonFileRepository<T>.Delete
+  fullName.vb: SODD.Repositories.JsonFileRepository(Of T).Delete
+  nameWithType: JsonFileRepository<T>.Delete
+  nameWithType.vb: JsonFileRepository(Of T).Delete
+- uid: SODD.Repositories.JsonFileRepository`1.Exists
+  name: Exists()
+  href: api/SODD.Repositories.JsonFileRepository-1.html#SODD_Repositories_JsonFileRepository_1_Exists
+  commentId: M:SODD.Repositories.JsonFileRepository`1.Exists
+  fullName: SODD.Repositories.JsonFileRepository<T>.Exists()
+  fullName.vb: SODD.Repositories.JsonFileRepository(Of T).Exists()
+  nameWithType: JsonFileRepository<T>.Exists()
+  nameWithType.vb: JsonFileRepository(Of T).Exists()
+- uid: SODD.Repositories.JsonFileRepository`1.Exists*
+  name: Exists
+  href: api/SODD.Repositories.JsonFileRepository-1.html#SODD_Repositories_JsonFileRepository_1_Exists_
+  commentId: Overload:SODD.Repositories.JsonFileRepository`1.Exists
+  isSpec: "True"
+  fullName: SODD.Repositories.JsonFileRepository<T>.Exists
+  fullName.vb: SODD.Repositories.JsonFileRepository(Of T).Exists
+  nameWithType: JsonFileRepository<T>.Exists
+  nameWithType.vb: JsonFileRepository(Of T).Exists
+- uid: SODD.Repositories.JsonFileRepository`1.Load
+  name: Load()
+  href: api/SODD.Repositories.JsonFileRepository-1.html#SODD_Repositories_JsonFileRepository_1_Load
+  commentId: M:SODD.Repositories.JsonFileRepository`1.Load
+  fullName: SODD.Repositories.JsonFileRepository<T>.Load()
+  fullName.vb: SODD.Repositories.JsonFileRepository(Of T).Load()
+  nameWithType: JsonFileRepository<T>.Load()
+  nameWithType.vb: JsonFileRepository(Of T).Load()
+- uid: SODD.Repositories.JsonFileRepository`1.Load*
+  name: Load
+  href: api/SODD.Repositories.JsonFileRepository-1.html#SODD_Repositories_JsonFileRepository_1_Load_
+  commentId: Overload:SODD.Repositories.JsonFileRepository`1.Load
+  isSpec: "True"
+  fullName: SODD.Repositories.JsonFileRepository<T>.Load
+  fullName.vb: SODD.Repositories.JsonFileRepository(Of T).Load
+  nameWithType: JsonFileRepository<T>.Load
+  nameWithType.vb: JsonFileRepository(Of T).Load
+- uid: SODD.Repositories.JsonFileRepository`1.Save(`0)
+  name: Save(T)
+  href: api/SODD.Repositories.JsonFileRepository-1.html#SODD_Repositories_JsonFileRepository_1_Save__0_
+  commentId: M:SODD.Repositories.JsonFileRepository`1.Save(`0)
+  fullName: SODD.Repositories.JsonFileRepository<T>.Save(T)
+  fullName.vb: SODD.Repositories.JsonFileRepository(Of T).Save(T)
+  nameWithType: JsonFileRepository<T>.Save(T)
+  nameWithType.vb: JsonFileRepository(Of T).Save(T)
+- uid: SODD.Repositories.JsonFileRepository`1.Save*
+  name: Save
+  href: api/SODD.Repositories.JsonFileRepository-1.html#SODD_Repositories_JsonFileRepository_1_Save_
+  commentId: Overload:SODD.Repositories.JsonFileRepository`1.Save
+  isSpec: "True"
+  fullName: SODD.Repositories.JsonFileRepository<T>.Save
+  fullName.vb: SODD.Repositories.JsonFileRepository(Of T).Save
+  nameWithType: JsonFileRepository<T>.Save
+  nameWithType.vb: JsonFileRepository(Of T).Save
+- uid: SODD.Repositories.VariableRepository
+  name: VariableRepository
+  href: api/SODD.Repositories.VariableRepository.html
+  commentId: T:SODD.Repositories.VariableRepository
+  fullName: SODD.Repositories.VariableRepository
+  nameWithType: VariableRepository
+- uid: SODD.Repositories.VariableRepository.Delete
+  name: Delete()
+  href: api/SODD.Repositories.VariableRepository.html#SODD_Repositories_VariableRepository_Delete
+  commentId: M:SODD.Repositories.VariableRepository.Delete
+  fullName: SODD.Repositories.VariableRepository.Delete()
+  nameWithType: VariableRepository.Delete()
+- uid: SODD.Repositories.VariableRepository.Delete*
+  name: Delete
+  href: api/SODD.Repositories.VariableRepository.html#SODD_Repositories_VariableRepository_Delete_
+  commentId: Overload:SODD.Repositories.VariableRepository.Delete
+  isSpec: "True"
+  fullName: SODD.Repositories.VariableRepository.Delete
+  nameWithType: VariableRepository.Delete
+- uid: SODD.Repositories.VariableRepository.Load
+  name: Load()
+  href: api/SODD.Repositories.VariableRepository.html#SODD_Repositories_VariableRepository_Load
+  commentId: M:SODD.Repositories.VariableRepository.Load
+  fullName: SODD.Repositories.VariableRepository.Load()
+  nameWithType: VariableRepository.Load()
+- uid: SODD.Repositories.VariableRepository.Load*
+  name: Load
+  href: api/SODD.Repositories.VariableRepository.html#SODD_Repositories_VariableRepository_Load_
+  commentId: Overload:SODD.Repositories.VariableRepository.Load
+  isSpec: "True"
+  fullName: SODD.Repositories.VariableRepository.Load
+  nameWithType: VariableRepository.Load
+- uid: SODD.Repositories.VariableRepository.Save
+  name: Save()
+  href: api/SODD.Repositories.VariableRepository.html#SODD_Repositories_VariableRepository_Save
+  commentId: M:SODD.Repositories.VariableRepository.Save
+  fullName: SODD.Repositories.VariableRepository.Save()
+  nameWithType: VariableRepository.Save()
+- uid: SODD.Repositories.VariableRepository.Save*
+  name: Save
+  href: api/SODD.Repositories.VariableRepository.html#SODD_Repositories_VariableRepository_Save_
+  commentId: Overload:SODD.Repositories.VariableRepository.Save
+  isSpec: "True"
+  fullName: SODD.Repositories.VariableRepository.Save
+  nameWithType: VariableRepository.Save
 - uid: SODD.Variables
   name: SODD.Variables
   href: api/SODD.Variables.html
@@ -2027,6 +3027,19 @@ references:
   commentId: T:SODD.Variables.IVariable
   fullName: SODD.Variables.IVariable
   nameWithType: IVariable
+- uid: SODD.Variables.IVariable.Id
+  name: Id
+  href: api/SODD.Variables.IVariable.html#SODD_Variables_IVariable_Id
+  commentId: P:SODD.Variables.IVariable.Id
+  fullName: SODD.Variables.IVariable.Id
+  nameWithType: IVariable.Id
+- uid: SODD.Variables.IVariable.Id*
+  name: Id
+  href: api/SODD.Variables.IVariable.html#SODD_Variables_IVariable_Id_
+  commentId: Overload:SODD.Variables.IVariable.Id
+  isSpec: "True"
+  fullName: SODD.Variables.IVariable.Id
+  nameWithType: IVariable.Id
 - uid: SODD.Variables.IVariable.Value
   name: Value
   href: api/SODD.Variables.IVariable.html#SODD_Variables_IVariable_Value
@@ -2049,6 +3062,23 @@ references:
   fullName.vb: SODD.Variables.IVariable(Of T)
   nameWithType: IVariable<T>
   nameWithType.vb: IVariable(Of T)
+- uid: SODD.Variables.IVariable`1.Id
+  name: Id
+  href: api/SODD.Variables.IVariable-1.html#SODD_Variables_IVariable_1_Id
+  commentId: P:SODD.Variables.IVariable`1.Id
+  fullName: SODD.Variables.IVariable<T>.Id
+  fullName.vb: SODD.Variables.IVariable(Of T).Id
+  nameWithType: IVariable<T>.Id
+  nameWithType.vb: IVariable(Of T).Id
+- uid: SODD.Variables.IVariable`1.Id*
+  name: Id
+  href: api/SODD.Variables.IVariable-1.html#SODD_Variables_IVariable_1_Id_
+  commentId: Overload:SODD.Variables.IVariable`1.Id
+  isSpec: "True"
+  fullName: SODD.Variables.IVariable<T>.Id
+  fullName.vb: SODD.Variables.IVariable(Of T).Id
+  nameWithType: IVariable<T>.Id
+  nameWithType.vb: IVariable(Of T).Id
 - uid: SODD.Variables.IVariable`1.Value
   name: Value
   href: api/SODD.Variables.IVariable-1.html#SODD_Variables_IVariable_1_Value
@@ -2111,6 +3141,23 @@ references:
   fullName.vb: SODD.Variables.ValueReference(Of T).AddListener
   nameWithType: ValueReference<T>.AddListener
   nameWithType.vb: ValueReference(Of T).AddListener
+- uid: SODD.Variables.ValueReference`1.Id
+  name: Id
+  href: api/SODD.Variables.ValueReference-1.html#SODD_Variables_ValueReference_1_Id
+  commentId: P:SODD.Variables.ValueReference`1.Id
+  fullName: SODD.Variables.ValueReference<T>.Id
+  fullName.vb: SODD.Variables.ValueReference(Of T).Id
+  nameWithType: ValueReference<T>.Id
+  nameWithType.vb: ValueReference(Of T).Id
+- uid: SODD.Variables.ValueReference`1.Id*
+  name: Id
+  href: api/SODD.Variables.ValueReference-1.html#SODD_Variables_ValueReference_1_Id_
+  commentId: Overload:SODD.Variables.ValueReference`1.Id
+  isSpec: "True"
+  fullName: SODD.Variables.ValueReference<T>.Id
+  fullName.vb: SODD.Variables.ValueReference(Of T).Id
+  nameWithType: ValueReference<T>.Id
+  nameWithType.vb: ValueReference(Of T).Id
 - uid: SODD.Variables.ValueReference`1.RemoveListener(System.Action{`0})
   name: RemoveListener(Action<T>)
   href: api/SODD.Variables.ValueReference-1.html#SODD_Variables_ValueReference_1_RemoveListener_System_Action__0__
@@ -2190,6 +3237,23 @@ references:
   fullName.vb: SODD.Variables.Variable(Of T).HandleValueChange
   nameWithType: Variable<T>.HandleValueChange
   nameWithType.vb: Variable(Of T).HandleValueChange
+- uid: SODD.Variables.Variable`1.Id
+  name: Id
+  href: api/SODD.Variables.Variable-1.html#SODD_Variables_Variable_1_Id
+  commentId: P:SODD.Variables.Variable`1.Id
+  fullName: SODD.Variables.Variable<T>.Id
+  fullName.vb: SODD.Variables.Variable(Of T).Id
+  nameWithType: Variable<T>.Id
+  nameWithType.vb: Variable(Of T).Id
+- uid: SODD.Variables.Variable`1.Id*
+  name: Id
+  href: api/SODD.Variables.Variable-1.html#SODD_Variables_Variable_1_Id_
+  commentId: Overload:SODD.Variables.Variable`1.Id
+  isSpec: "True"
+  fullName: SODD.Variables.Variable<T>.Id
+  fullName.vb: SODD.Variables.Variable(Of T).Id
+  nameWithType: Variable<T>.Id
+  nameWithType.vb: Variable(Of T).Id
 - uid: SODD.Variables.Variable`1.OnValueChanged
   name: OnValueChanged
   href: api/SODD.Variables.Variable-1.html#SODD_Variables_Variable_1_OnValueChanged

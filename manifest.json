@@ -15,10 +15,90 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Attributes.CollapsibleAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Attributes.CollapsibleAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Attributes.DisableIfAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Attributes.DisableIfAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Attributes.DisableIfMatchAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Attributes.DisableIfMatchAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Attributes.DisabledAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Attributes.DisabledAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Attributes.HideIfAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Attributes.HideIfAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Attributes.HideIfMatchAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Attributes.HideIfMatchAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/SODD.Attributes.OnValueChangedAttribute.yml",
       "output": {
         ".html": {
           "relative_path": "api/SODD.Attributes.OnValueChangedAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Attributes.ShowIfAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Attributes.ShowIfAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Attributes.ShowIfMatchAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Attributes.ShowIfMatchAttribute.html"
         }
       },
       "version": ""
@@ -115,6 +195,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Core.Comparison.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Core.Comparison.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Core.ComparisonExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Core.ComparisonExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/SODD.Core.CoroutineBuilder.yml",
       "output": {
         ".html": {
@@ -179,6 +279,16 @@
       "output": {
         ".html": {
           "relative_path": "api/SODD.Core.Scope.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Core.ToStringStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Core.ToStringStrategy.html"
         }
       },
       "version": ""
@@ -539,6 +649,146 @@
       "output": {
         ".html": {
           "relative_path": "api/SODD.Listeners.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Observers.BoolVariableObserver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Observers.BoolVariableObserver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Observers.FloatVariableObserver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Observers.FloatVariableObserver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Observers.IntVariableObserver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Observers.IntVariableObserver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Observers.StringVariableObserver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Observers.StringVariableObserver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Observers.VariableObserver-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Observers.VariableObserver-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Observers.Vector2VariableObserver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Observers.Vector2VariableObserver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Observers.Vector3VariableObserver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Observers.Vector3VariableObserver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Observers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Observers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Repositories.BinaryFileRepository-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Repositories.BinaryFileRepository-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Repositories.FileRepository-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Repositories.FileRepository-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Repositories.IRepository-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Repositories.IRepository-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Repositories.JsonFileRepository-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Repositories.JsonFileRepository-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Repositories.VariableRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Repositories.VariableRepository.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Repositories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Repositories.html"
         }
       },
       "version": ""

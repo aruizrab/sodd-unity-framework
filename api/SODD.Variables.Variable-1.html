@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class Variable&lt;T&gt; | SODD Framework | 1.1.0 </title>
+      <title>Class Variable&lt;T&gt; | SODD Framework | 1.2.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Variable&lt;T&gt; | SODD Framework | 1.1.0 ">
+      <meta name="title" content="Class Variable&lt;T&gt; | SODD Framework | 1.2.0 ">
       
       <meta name="description" content="Represents an abstract variable of type T.">
       <link rel="icon" href="../manual/images/favicon.png">
@@ -182,7 +182,7 @@ public class IntVariable : Variable&lt;int&gt; {}</code></pre>
 
   <h3 id="SODD_Variables_Variable_1_OnValueChanged" data-uid="SODD.Variables.Variable`1.OnValueChanged">
   OnValueChanged
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/Variable.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/Variable.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>An event that is triggered whenever the value of the variable changes.</p>
@@ -213,7 +213,7 @@ public class IntVariable : Variable&lt;int&gt; {}</code></pre>
 
   <h3 id="SODD_Variables_Variable_1_readOnly" data-uid="SODD.Variables.Variable`1.readOnly">
   readOnly
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/Variable.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/Variable.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -243,7 +243,7 @@ public class IntVariable : Variable&lt;int&gt; {}</code></pre>
 
   <h3 id="SODD_Variables_Variable_1_value" data-uid="SODD.Variables.Variable`1.value">
   value
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/Variable.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/Variable.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -275,11 +275,43 @@ protected T value</code></pre>
 </h2>
 
 
+  <a id="SODD_Variables_Variable_1_Id_" data-uid="SODD.Variables.Variable`1.Id*"></a>
+
+  <h3 id="SODD_Variables_Variable_1_Id" data-uid="SODD.Variables.Variable`1.Id">
+  Id
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/Variable.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the variable's unique identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Id { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="SODD_Variables_Variable_1_Value_" data-uid="SODD.Variables.Variable`1.Value*"></a>
 
   <h3 id="SODD_Variables_Variable_1_Value" data-uid="SODD.Variables.Variable`1.Value">
   Value
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/Variable.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/Variable.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the value of the variable.</p>
@@ -316,7 +348,7 @@ protected T value</code></pre>
 
   <h3 id="SODD_Variables_Variable_1_AddListener_System_Action__0__" data-uid="SODD.Variables.Variable`1.AddListener(System.Action{`0})">
   AddListener(Action&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/Variable.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/Variable.cs/#L111"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Registers an action to be called when the variable's value changes.</p>
@@ -349,7 +381,7 @@ protected T value</code></pre>
 
   <h3 id="SODD_Variables_Variable_1_HandleValueChange" data-uid="SODD.Variables.Variable`1.HandleValueChange">
   HandleValueChange()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/Variable.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/Variable.cs/#L98"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Invokes the OnValueChanged event and can log the change if debugging is enabled.</p>
@@ -376,7 +408,7 @@ protected T value</code></pre>
 
   <h3 id="SODD_Variables_Variable_1_RemoveListener_System_Action__0__" data-uid="SODD.Variables.Variable`1.RemoveListener(System.Action{`0})">
   RemoveListener(Action&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/Variable.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Variables/Variable.cs/#L120"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unregisters an action previously added to listen for value changes.</p>
