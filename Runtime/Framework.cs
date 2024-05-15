@@ -148,6 +148,47 @@ namespace SODD
             public const string Object = Path + DataTypes.Object;
         }
         
+        public static class VariableObservers
+        {
+            public const string Name = "Variable Observer";
+            public const string Path = Root + "Variable Observers/";
+            
+            public const string Void = Path + DataTypes.Void;
+            public const string Bool = Path + DataTypes.Bool;
+            public const string Float = Path + DataTypes.Float;
+            public const string Int = Path + DataTypes.Int;
+            public const string String = Path + DataTypes.String;
+            public const string Enum = Path + DataTypes.Enum;
+            public const string List = Path + DataTypes.List;
+            public const string Dictionary = Path + DataTypes.Dictionary;
+            public const string Vector2 = Path + DataTypes.Vector2;
+            public const string Vector3 = Path + DataTypes.Vector3;
+            public const string Color = Path + DataTypes.Color;
+            public const string LayerMask = Path + DataTypes.LayerMask;
+            public const string AudioClip = Path + DataTypes.AudioClip;
+            public const string GameObject = Path + DataTypes.GameObject;
+            public const string ScriptableObject = Path + DataTypes.ScriptableObject;
+            public const string Component = Path + DataTypes.Component;
+            public const string Object = Path + DataTypes.Object;
+
+            public const string VoidVariableObserver = Path + DataTypes.Void + Name;
+            public const string BoolVariableObserver = Path + DataTypes.Bool + Name;
+            public const string FloatVariableObserver = Path + DataTypes.Float + Name;
+            public const string IntVariableObserver = Path + DataTypes.Int + Name;
+            public const string StringVariableObserver = Path + DataTypes.String + Name;
+            public const string EnumVariableObserver = Path + DataTypes.Enum + Name;
+            public const string ListVariableObserver = Path + DataTypes.List + Name;
+            public const string DictionaryVariableObserver = Path + DataTypes.Dictionary + Name;
+            public const string Vector2VariableObserver = Path + DataTypes.Vector2 + Name;
+            public const string Vector3VariableObserver = Path + DataTypes.Vector3 + Name;
+            public const string ColorVariableObserver = Path + DataTypes.Color + Name;
+            public const string LayerMaskVariableObserver = Path + DataTypes.LayerMask + Name;
+            public const string AudioClipVariableObserver = Path + DataTypes.AudioClip + Name;
+            public const string GameObjectVariableObserver = Path + DataTypes.GameObject + Name;
+            public const string ComponentVariableObserver = Path + DataTypes.Component + Name;
+            public const string ObjectVariableObserver = Path + DataTypes.Object + Name;
+        }
+        
         public static class Collections
         {
             public const string Path = Root + "Collections/";
@@ -186,6 +227,13 @@ namespace SODD
                 public const string Vector2 = Path + DataTypes.Vector2;
                 public const string Vector3 = Path + DataTypes.Vector3;
             }
+        }
+        
+        public static class Repositories
+        {
+            public const string Path = Root + "Repositories/";
+
+            public const string VariableRepository = Path + "Variable Repository";
         }
     }
 }

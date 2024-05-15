@@ -18,6 +18,7 @@
         ///     The value of the variable, stored as an object.
         /// </value>
         object Value { get; set; }
+        string Id { get; }
     }
 
     /// <summary>
@@ -38,5 +39,6 @@
         ///     The value of the variable, of type T.
         /// </value>
         T Value { get; set; }
+        string Id { get; }
     }
 }
