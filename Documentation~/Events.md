@@ -30,7 +30,7 @@ In practical terms, an event could signify a change in the player’s health, th
 completion of a level, or an enemy encounter. These Scriptable Events act then as
 broadcasters, sending out signals when certain conditions in the game are met.
 
-![](img1.PNG)
+![](images/GroupOfEvents.png)
 
 ## How It Works
 
@@ -81,20 +81,20 @@ First, we need to create a Scriptable Event that will signal when the player's s
 1. Right-click in the Project window of Unity.
 2. Navigate to `Create > SODD > Events > Int`.
 
-![](img2.PNG)
+![](images/CreateEvent.png)
 
 3. Name the newly created event `IncrementPlayerScoreEvent`.
 
 This Scriptable Event will now be used to notify the system whenever the player's score needs to be increased.
 
-![](img3.png)
+![](images/Event.png)
 
 In the inspector window of the newly created `IncrementPlayerScoreEvent`, you can specify the payload, enable the debug
 mode by checking the corresponding toggle, and invoke the event using the provided button.
 By doing so, you will see a new entry in the Unity Console, which should detail the event type, the instance name, the
 payload value, and a clickable link directing to the asset that triggered the event.
 
-![img.png](img.png)
+![img.png](images/DebugEvent.png)
 
 ### Step 2: Creating the ScoreManager Script
 
@@ -140,7 +140,7 @@ Once the script is created:
 2. Attach the new `ScoreManager` script to this GameObject.
 3. Add the reference to the `IncrementPlayerScoreEvent` scriptable event in the `ScoreManager` script.
 
-![](img4.PNG)
+![](images/ScoreManager.png)
 
 At this point, if you start the game and invoke `IncrementPlayerScoreEvent` by clicking the `Invoke` button on the
 inspector, you should see the score being updated in your UI component referenced by the `ScoreManager`.
@@ -175,7 +175,7 @@ public class Coin : MonoBehaviour
 2. Attach the new `Coin` script.
 3. Add the reference to the `IncrementPlayerScoreEvent` scriptable event in the `Coin` script.
 
-![img_1.png](img_1.png)
+![img_1.png](images/CoinScript.png)
 
 ### Step 4: Testing the Setup
 

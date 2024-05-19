@@ -6,7 +6,6 @@
 - [Concept](#concept)
 - [How It Works](#how-it-works)
 - [Implementations in the Framework](#implementations-in-the-framework)
-- [Practical Example](#practical-example)
 
 </details>
 
