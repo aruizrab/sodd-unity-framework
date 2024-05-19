@@ -24,7 +24,7 @@ easily modify game parameters.
 In practical terms, Scriptable Variables can be used to store any value, such as game configuration, player settings,
 game state, etc.
 
-![img.png](img.png)
+![img.png](images/GroupOfVariables.png)
 
 ## How It Works
 
@@ -50,7 +50,7 @@ game state, etc.
 > In the Unity Editor, the values of Scriptable Variables (like any other ScriptableObject implementation) are persisted
 > across play sessions. However, in the final build, these values are reset to their original state
 > when the game is closed. **To ensure the persistence of Scriptable Variable values across play sessions in the final
-> build, use the [VariableRepository]().**
+> build, use the [VariableRepository](https://aruizrab.github.io/sodd-unity-framework/api/SODD.Repositories.VariableRepository.html).**
 
 ## Implementations in the Framework
 
@@ -160,7 +160,7 @@ We need a way to trigger changes to the player's health. For this example, let's
 enemies and heal by collecting health packs.
 
 > [!NOTE]  
-> We are using the new [Send]() method provided by the SODD framework to trigger health changes.
+> We are using the new [Send](https://aruizrab.github.io/sodd-unity-framework/api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_Send__1_GameObject_System_Action___0__SODD_Core_Scope_) method provided by the SODD framework to trigger health changes.
 
 Here’s the code for the DamageDealer script:
 
