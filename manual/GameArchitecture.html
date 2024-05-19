@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Solution: Game Architecture with ScriptableObjects | SODD Framework | 2.0.2 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Solution: Game Architecture with ScriptableObjects | SODD Framework | 2.0.2 ">
+      
+      
+      <link rel="icon" href="../manual/images/favicon.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      <meta name="docfx:disablenewtab" content="true">
+      
+      <meta name="docfx:docurl" content="https://github.com/aruizrab/sodd-unity-framework/blob/main/Documentation~/manual/GameArchitecture.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="landing" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../manual/images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="solution-game-architecture-with-scriptableobjects">Solution: Game Architecture with ScriptableObjects</h1>
+
+<p>Ryan Hipple's solution to common problems encountered in Unity game development revolves around the innovative use of
+ScriptableObjects. By leveraging ScriptableObjects, developers can create a more modular, editable, and debuggable game
+architecture. This approach addresses key issues such as rigid dependencies, inflexible systems, and debugging
+challenges. Central to this methodology are three core principles of game engineering: modularity, editability, and
+debuggability.</p>
+<details>
+<summary>Table of Contents</summary>
+<ul>
+<li><a href="#the-three-principles-of-game-engineering">The Three Principles of Game Engineering</a>
+<ul>
+<li><a href="#modularity">Modularity</a></li>
+<li><a href="#editability">Editability</a></li>
+<li><a href="#debuggability">Debuggability</a></li>
+</ul>
+</li>
+<li><a href="#replacing-singletons">Replacing Singletons</a>
+<ul>
+<li><a href="#modularizing-data-with-scriptableobjects">Modularizing Data with ScriptableObjects</a></li>
+<li><a href="#runtime-sets">Runtime Sets</a></li>
+<li><a href="#dependency-injection-principles">Dependency Injection Principles</a></li>
+</ul>
+</li>
+<li><a href="#enhancing-event-systems">Enhancing Event Systems</a></li>
+<li><a href="#replacing-enums">Replacing Enums</a></li>
+<li><a href="#improving-scene-management">Improving Scene Management</a></li>
+<li><a href="#debugging-enhancements">Debugging Enhancements</a></li>
+<li><a href="#data-driven-design">Data-Driven Design</a></li>
+<li><a href="#single-responsibility-principle">Single Responsibility Principle</a></li>
+</ul>
+</details>
+<h2 id="the-three-principles-of-game-engineering">The Three Principles of Game Engineering</h2>
+<h3 id="modularity">Modularity</h3>
+<p>The first principle, modularity, states that game systems should be designed as separate and interchangeable modules,
+components, or units. Each module performs a distinct function and operates independently of the others. Modularity
+offers several benefits:</p>
+<ul>
+<li><strong>Reduced Interdependencies</strong>: By ensuring modules are self-contained, changes in one module have minimal impact on
+others, reducing the risk of a change causing a cascade of issues across the game.</li>
+<li><strong>Reusability</strong>: Modular components can be reused across different parts of a game or even in different projects,
+saving development time and resources.</li>
+<li><strong>Flexible Design</strong>: Modularity allows developers to assemble and reassemble components in various configurations,
+aiding in experimentation and innovation in game design.</li>
+</ul>
+<h3 id="editability">Editability</h3>
+<p>The second principle, editability, states that game systems and data should be easily modified without requiring
+modifications to the source code. This principle is particularly important for enabling designers and other team members
+to tweak game elements without needing programming expertise.</p>
+<ul>
+<li><strong>Data-Driven Design</strong>: This approach involves separating data from the logic of the game, allowing non-programmers to
+edit data directly.</li>
+<li><strong>Inspector-Friendly Tools</strong>: In Unity, making systems editable often involves leveraging the Inspector window to
+create user-friendly interfaces for modifying game data.</li>
+<li><strong>Runtime Changes</strong>: Allowing changes to game data at runtime aids in rapid prototyping and balancing, as adjustments
+can be made while the game is running, and their effects immediately observed.</li>
+</ul>
+<h3 id="debuggability">Debuggability</h3>
+<p>The third principle, debuggability, advocates for the ease with which a game can be debugged or tested for errors. A
+well-designed game architecture should facilitate easy identification and fixing of bugs.</p>
+<ul>
+<li><strong>Isolation of Issues</strong>: Modular design helps in isolating bugs to specific components, making it easier to identify
+the source of a problem.</li>
+<li><strong>Readable and Traceable</strong>: The system should be transparent enough so that the flow of data and events can be easily
+followed and understood by the developers.</li>
+<li><strong>Tools and Visualizations</strong>: Implementing tools that visualize the game’s operations, such as showing event triggers
+or data changes in real-time, can significantly aid in debugging.</li>
+</ul>
+<h2 id="replacing-singletons">Replacing Singletons</h2>
+<h3 id="modularizing-data-with-scriptableobjects">Modularizing Data with ScriptableObjects</h3>
+<p>One of the primary issues with Singletons is their tendency to create rigid and tightly coupled systems. Hipple's
+approach involves using ScriptableObjects to modularize data, eliminating the need for Singletons. ScriptableObjects
+allow data to be shared across multiple systems without creating direct dependencies. For instance, instead of a
+Singleton managing player health, a ScriptableObject can store the health data. This data can then be referenced by any
+system that needs it, such as the UI or enemy AI, without creating tight couplings.</p>
+<h3 id="runtime-sets">Runtime Sets</h3>
+<p>To manage lists of objects dynamically, Hipple introduces the concept of Runtime Sets. A Runtime Set is a
+ScriptableObject that maintains a list of objects at runtime. Objects can register themselves with these sets when they
+are instantiated and deregister when they are destroyed. This approach eliminates the need for Singleton managers to
+keep track of objects, thereby reducing dependency issues and race conditions. For example, an EnemyRuntimeSet can track
+all active enemies in the game, making it easy for various systems to access the list without relying on a Singleton.</p>
+<h3 id="dependency-injection-principles">Dependency Injection Principles</h3>
+<p>Hipple emphasizes the use of dependency injection principles to further decouple systems. In Unity, this can be achieved
+through the inspector, which acts as a dependency injector. Components can be assigned their dependencies via the
+inspector, reducing the need for hard-coded references and enabling easy substitution of different implementations. This
+method enhances modularity and makes testing and extending systems simpler.</p>
+<h2 id="enhancing-event-systems">Enhancing Event Systems</h2>
+<p>Unity’s built-in event system (UnityEvent) has several limitations, such as rigid bindings and performance overheads due
+to garbage collection. Hipple suggests creating a custom event system using ScriptableObjects. In this system,
+ScriptableObjects represent events, and listeners register with these events to receive notifications. This decouples
+event producers from consumers, allowing for more flexible and maintainable event handling. New listeners can be added
+or removed without modifying the event source, and events can be raised without knowing which objects will respond.</p>
+<h2 id="replacing-enums">Replacing Enums</h2>
+<p>Hipple suggests using Scriptable Objects to represent enumerated types instead of traditional enums. Each possible value
+is a Scriptable Object, which can hold additional data and behavior, allowing for dynamic modification of the set of
+values.
+For example, instead of using an enum for different weapon types (e.g., Sword, Bow, Magic), create a Scriptable Object
+for each weapon type. These Scriptable Objects can contain additional data like damage values, range, and special
+effects. This approach allows for adding new weapons without changing the codebase and avoids serialization issues.</p>
+<h2 id="improving-scene-management">Improving Scene Management</h2>
+<p>To ensure that each scene loads as a clean slate, Hipple advocates minimizing the use of <code>DontDestroyOnLoad</code> objects.
+Instead, persistent data should be managed through ScriptableObjects. This approach prevents unwanted data from carrying
+over between scenes and ensures that each scene starts with a controlled and predictable state. By using
+ScriptableObjects to manage persistent data, developers can maintain a modular and flexible scene structure.</p>
+<h2 id="debugging-enhancements">Debugging Enhancements</h2>
+<p>Hipple highlights the importance of integrating debugging tools into the Unity Inspector. By exposing runtime states and
+allowing events to be raised directly from the Inspector, developers can diagnose and fix issues more efficiently. This
+method makes debugging more intuitive and less time-consuming, providing immediate feedback on the game's state and
+interactions.</p>
+<h2 id="data-driven-design">Data-Driven Design</h2>
+<p>Hipple’s approach strongly favors data-driven design, where game systems are configured through data rather than
+hard-coded logic. ScriptableObjects play a central role in this design philosophy by storing configurations, variables,
+and references. This method allows for more flexible and dynamic game behavior, as changes can be made through data
+adjustments without altering the underlying code.</p>
+<h2 id="single-responsibility-principle">Single Responsibility Principle</h2>
+<p>Adhering to the single responsibility principle is crucial in Hipple’s architecture. Each component or system in the
+game should have a well-defined responsibility. This principle makes the system more modular, easier to manage, and
+simpler to extend. Components can be developed, tested, and debugged in isolation, reducing overall system complexity.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Documentation~/manual/GameArchitecture.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made by <a href="https://github.com/aruizrab" target="_blank">aruizrab</a> using <a href="https://dotnet.github.io/docfx" target="_blank">DocFX</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

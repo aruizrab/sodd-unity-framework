@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Scriptable Variables | SODD Framework | 2.0.2 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Scriptable Variables | SODD Framework | 2.0.2 ">
+      
+      
+      <link rel="icon" href="../manual/images/favicon.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      <meta name="docfx:disablenewtab" content="true">
+      
+      <meta name="docfx:docurl" content="https://github.com/aruizrab/sodd-unity-framework/blob/main/Documentation~/manual/Variables.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="landing" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../manual/images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="scriptable-variables">Scriptable Variables</h1>
+
+<details>
+<summary>Table of Contents</summary>
+<ul>
+<li><a href="#concept">Concept</a></li>
+<li><a href="#how-it-works">How It Works</a></li>
+<li><a href="#implementations-in-the-framework">Implementations in the Framework</a></li>
+<li><a href="#practical-example">Practical Example</a></li>
+</ul>
+</details>
+<h2 id="concept">Concept</h2>
+<p>A Scriptable Variable consists in a Scriptable Object that encapsulates a single value of a specific data type, such as
+integers, floats or strings. These modular data containers can then be shared and referenced across
+diverse systems within the game without said systems depending and relying on each other to retrieve and modify the game
+state, reducing direct dependencies and enhancing flexibility.</p>
+<p>Additionally, the values of Scriptable Variables are exposed in the Inspector, allowing to see and manipulate them
+easily. This empowers both developers and designers, particularly those without extensive programming backgrounds, to
+easily modify game parameters.</p>
+<p>In practical terms, Scriptable Variables can be used to store any value, such as game configuration, player settings,
+game state, etc.</p>
+<p><img src="images/GroupOfVariables.png" alt="img.png"></p>
+<h2 id="how-it-works">How It Works</h2>
+<ul>
+<li><strong>Variable Creation</strong>: Scriptable Variables are created as ScriptableObject assets. These assets are designed to hold
+specific data types, such as integers, floats, strings, booleans, etc. There are two ways to create these variables:
+<ul>
+<li>From the <strong>Create menu</strong>: Right-click in the Project window, navigate to <code>Create &gt; SODD &gt; Variables</code>, and select
+the
+desired event type (e.g., <code>IntVariable</code>).</li>
+<li>From the <strong>SODD menu</strong>: In the main menu, go to <code>Tools &gt; SODD &gt; Varaibles</code>, and choose the desired variable type
+from
+the provided options.</li>
+</ul>
+</li>
+<li><strong>Data Access and Modification</strong>: Components can reference these variables to get or set their values. If a component
+modifies a value, other components referencing the same variable will see the changes when reading the value.</li>
+<li><strong>Value Observers</strong>: Components can register as listeners for value changes in Scriptable Variables. This allows for
+automatic updates when the variable's value changes, promoting a reactive architecture.</li>
+<li><strong>Value Change Debugging</strong>: Scriptable Variables have a built-in debug option that logs value changes to the console.</li>
+<li><strong>Inspector Integration</strong>: Values of Scriptable Variables can be viewed and modified directly in the Unity Inspector,
+making it easier to debug and test changes during development.</li>
+<li><strong>Persistence</strong>: Scriptable Variables can maintain their values across different scenes and play sessions, supporting
+persistent game states and smoother development workflows.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>In the Unity Editor, the values of Scriptable Variables (like any other ScriptableObject implementation) are persisted
+across play sessions. However, in the final build, these values are reset to their original state
+when the game is closed. <strong>To ensure the persistence of Scriptable Variable values across play sessions in the final
+build, use the <a href="https://aruizrab.github.io/sodd-unity-framework/api/SODD.Repositories.VariableRepository.html">VariableRepository</a>.</strong></p>
+</div>
+<h2 id="implementations-in-the-framework">Implementations in the Framework</h2>
+<p>The SODD Framework offers several implementations of Scriptable Variables to cover various data types and use cases.
+Below is a table detailing the core variable types included in the framework:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Variable Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Int Variable</strong></td>
+<td>A ScriptableObject that holds an integer value.</td>
+</tr>
+<tr>
+<td><strong>Float Variable</strong></td>
+<td>A ScriptableObject that holds a float value.</td>
+</tr>
+<tr>
+<td><strong>String Variable</strong></td>
+<td>A ScriptableObject that holds a string value.</td>
+</tr>
+<tr>
+<td><strong>Bool Variable</strong></td>
+<td>A ScriptableObject that holds a boolean value.</td>
+</tr>
+<tr>
+<td><strong>Vector2 Variable</strong></td>
+<td>A ScriptableObject that holds a 2D vector value.</td>
+</tr>
+<tr>
+<td><strong>Vector3 Variable</strong></td>
+<td>A ScriptableObject that holds a 3D vector value.</td>
+</tr>
+<tr>
+<td><strong>GameObject Variable</strong></td>
+<td>A ScriptableObject that holds a GameObject reference.</td>
+</tr>
+<tr>
+<td><strong>LayerMask Variable</strong></td>
+<td>A ScriptableObject that holds a LayerMask value.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="practical-example">Practical Example</h2>
+<p>Let's walk through a practical example of managing a player's health using a <code>FloatVariable</code>.</p>
+<h3 id="step-1-creating-the-scriptable-variable">Step 1: Creating the Scriptable Variable</h3>
+<p>First, we need to create a Scriptable Variable that will store the player's health.</p>
+<ol>
+<li>Right-click in the Project window of Unity.</li>
+<li>Navigate to <code>Create &gt; SODD &gt; Variables &gt; Float</code>.</li>
+<li>Name the newly created event <code>PlayerHealth</code>.</li>
+</ol>
+<p>This Scriptable Variable will now hold the player's health value and can be accessed by various game components.</p>
+<h3 id="step-2-creating-the-health-manager-script">Step 2: Creating the Health Manager Script</h3>
+<p>Next, we'll create a script that handles increasing and decreasing the player's health when the player takes damage or
+heals. This script will reference the <code>PlayerHealth</code> variable directly.</p>
+<p>Here’s the code for the <code>PlayerHealthManager</code> script:</p>
+<pre><code class="lang-csharp">using UnityEngine;
+using SODD.Variables;
+
+public class PlayerHealthManager : MonoBehaviour
+{
+    public Variable&lt;float&gt; playerHealth; // Reference to the Scriptable Variable
+
+    public void TakeDamage(float damage)
+    {
+        playerHealth.Value -= damage; // Decrease the player's health
+    }
+
+    public void Heal(float amount)
+    {
+        playerHealth.Value += amount; // Increase the player's health
+    }
+}
+</code></pre>
+<p>Once the script is created:</p>
+<ol>
+<li>Create a new GameObject in the scene (e.g., <code>Player</code>).</li>
+<li>Attach the new <code>PlayerHealthManager</code> script to this GameObject.</li>
+<li>Add the reference to the <code>PlayerHealth</code> Scriptable Variable in the <code>PlayerHealthManager</code> script.</li>
+</ol>
+<h3 id="step-3-creating-the-health-display-script">Step 3: Creating the Health Display Script</h3>
+<p>We will create another script dedicated to displaying the health value on the screen. This script will also reference
+the <code>PlayerHealth</code> variable but will not interact directly with the health management logic.</p>
+<p>Here’s the code for the <code>HealthDisplay </code> script:</p>
+<pre><code class="lang-csharp">using UnityEngine;
+using TMPro;
+using SODD.Variables;
+
+public class HealthDisplay : MonoBehaviour
+{
+    public Variable&lt;float&gt; playerHealth; // Reference to the Scriptable Variable
+    public TMP_Text healthText; // Reference to the UI text component that displays the health
+
+    private void OnEnable()
+    {
+        playerHealth.AddListener(UpdateHealthDisplay); // Subscribe to value changes
+        UpdateHealthDisplay(playerHealth.Value); // Initialize the health display with the current health value
+    }
+
+    private void OnDisable()
+    {
+        playerHealth.RemoveListener(UpdateHealthDisplay); // Unsubscribe from value changes
+    }
+
+    private void UpdateHealthDisplay(float value)
+    {
+        healthText.text = value.ToString(); // Update the health display text
+    }
+}
+</code></pre>
+<ol>
+<li>Create a new GameObject in the scene (e.g., <code>UI</code>).</li>
+<li>Attach the new <code>HealthDisplay</code> script.</li>
+<li>Add the reference to the <code>PlayerHealth</code> scriptable event in the <code>HealthDisplay</code> script.</li>
+</ol>
+<h3 id="step-4-triggering-health-changes">Step 4: Triggering Health Changes</h3>
+<p>We need a way to trigger changes to the player's health. For this example, let's assume the player can take damage from
+enemies and heal by collecting health packs.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>We are using the new <a href="https://aruizrab.github.io/sodd-unity-framework/api/SODD.Core.GameObjectExtensions.html#SODD_Core_GameObjectExtensions_Send__1_GameObject_System_Action___0__SODD_Core_Scope_">Send</a> method provided by the SODD framework to trigger health changes.</p>
+</div>
+<p>Here’s the code for the DamageDealer script:</p>
+<pre><code class="lang-csharp">using UnityEngine;
+using SODD.Core;
+
+public class DamageDealer : MonoBehaviour
+{
+    public float damageAmount = 10f; // Amount of damage to deal
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag(&quot;Player&quot;)) // Check if the collider belongs to the player
+        {
+            collision.gameObject.Send&lt;PlayerHealthManager&gt;(manager =&gt; manager.TakeDamage(damageAmount)); // Use Send method to deal damage to the player
+        }
+    }
+}
+</code></pre>
+<p>Here’s the code for the HealthPack script:</p>
+<pre><code class="lang-csharp">using UnityEngine;
+using SODD.Core;
+
+public class HealthPack : MonoBehaviour
+{
+    public float healAmount = 20f; // Amount of health to restore
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag(&quot;Player&quot;)) // Check if the collider belongs to the player
+        {
+            collision.gameObject.Send&lt;PlayerHealthManager&gt;(manager =&gt; manager.Heal(healAmount)); // Use Send method to heal the player
+            Destroy(gameObject); // Destroy the health pack
+        }
+    }
+}
+</code></pre>
+<h3 id="step-6-testing-the-setup">Step 6: Testing the Setup</h3>
+<p>Now, let's test the setup to ensure everything works as expected.</p>
+<ol>
+<li>Run the game in the Unity Editor.</li>
+<li>When the player collides with a DamageDealer, the PlayerHealth value decreases.</li>
+<li>When the player collides with a HealthPack, the PlayerHealth value increases.</li>
+<li>Observe the health value updating in the UI as the player takes damage or collects health packs.</li>
+<li>Modify the health value directly in the Inspector during play mode to test the dynamic updating of the health
+display.</li>
+</ol>
+<h3 id="conclusion">Conclusion</h3>
+<p>By using Scriptable Variables, we have successfully decoupled health management from health display, ensuring that
+the <code>PlayerHealthManager</code> handles health changes while the <code>HealthDisplay</code> script updates the UI independently.
+This decoupling enhances modularity, allowing each script to be modified, replaced, or reused without impacting others.
+New game logic regarding player health, such as effects when taking damage or healing, or restarting the level when
+health decreases to zero, can be added by creating new scripts that reference the variable without modifying existing
+scripts.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Documentation~/manual/Variables.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made by <a href="https://github.com/aruizrab" target="_blank">aruizrab</a> using <a href="https://dotnet.github.io/docfx" target="_blank">DocFX</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

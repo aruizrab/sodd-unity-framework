@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Problem: Common Scripting Challenges in Unity | SODD Framework | 2.0.2 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Problem: Common Scripting Challenges in Unity | SODD Framework | 2.0.2 ">
+      
+      
+      <link rel="icon" href="../manual/images/favicon.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      <meta name="docfx:disablenewtab" content="true">
+      
+      <meta name="docfx:docurl" content="https://github.com/aruizrab/sodd-unity-framework/blob/main/Documentation~/manual/Problems.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="landing" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../manual/images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="problem-common-scripting-challenges-in-unity">Problem: Common Scripting Challenges in Unity</h1>
+
+<details>
+  <summary>Table of Contents</summary>
+<ul>
+<li><a href="#singleton-problems">Singleton Problems</a>
+<ul>
+<li><a href="#rigid-connections">Rigid Connections</a></li>
+<li><a href="#loss-of-polymorphism">Loss of Polymorphism</a></li>
+<li><a href="#testing-difficulties">Testing Difficulties</a></li>
+<li><a href="#dependency-nightmares">Dependency Nightmares</a></li>
+<li><a href="#global-state">Global State</a></li>
+<li><a href="#single-instance-limitation">Single Instance Limitation</a></li>
+</ul>
+</li>
+<li><a href="#challenges-with-traditional-event-systems">Challenges with Traditional Event Systems</a>
+<ul>
+<li><a href="#unity-event-limitations">Unity Event Limitations</a></li>
+<li><a href="#hard-references">Hard References</a></li>
+</ul>
+</li>
+<li><a href="#issues-with-enums">Issues with Enums</a>
+<ul>
+<li><a href="#code-driven">Code-Driven</a></li>
+<li><a href="#difficult-to-reorder-or-remove">Difficult to Reorder or Remove</a></li>
+<li><a href="#no-additional-data">No Additional Data</a></li>
+</ul>
+</li>
+<li><a href="#scene-management-problems">Scene Management Problems</a>
+<ul>
+<li><a href="#transient-data-management">Transient Data Management</a></li>
+<li><a href="#clean-slate-scenes">Clean Slate Scenes</a></li>
+<li><a href="#debugging-issues">Debugging Issues</a></li>
+</ul>
+</li>
+<li><a href="#general-architectural-challenges">General Architectural Challenges</a>
+<ul>
+<li><a href="#maintaining-flexibility-and-extensibility">Maintaining Flexibility and Extensibility</a></li>
+<li><a href="#performance-overheads">Performance Overheads</a></li>
+<li><a href="#design-and-code-separation">Design and Code Separation</a></li>
+</ul>
+</li>
+</ul>
+</details>
+<h2 id="singleton-problems">Singleton Problems</h2>
+<h3 id="rigid-connections">Rigid Connections</h3>
+<p>One of the significant issues with Singletons in Unity is the creation of rigid connections between different systems.
+When systems are tightly coupled, modifying or extending one part of the system necessitates changes in others, which
+reduces flexibility and can introduce new bugs. This tight coupling means that components cannot easily be reused or
+reconfigured without affecting other parts of the game, leading to a more fragile and less maintainable codebase.</p>
+<h3 id="loss-of-polymorphism">Loss of Polymorphism</h3>
+<p>Singletons undermine the object-oriented principle of polymorphism, which is the ability to substitute objects of
+different types through a common interface. When a system relies on a single instance of a class (a Singleton), it
+becomes difficult to replace that instance with a different implementation. This limitation makes it harder to create
+variants of systems for testing or to provide alternative behaviors, thus reducing the overall flexibility of the
+architecture.</p>
+<h3 id="testing-difficulties">Testing Difficulties</h3>
+<p>The hidden dependencies introduced by Singletons pose significant challenges for unit testing. Since Singletons are
+globally accessible and maintain state, tests can become interdependent, leading to flaky or unreliable tests. Isolating
+a single component for testing is challenging when it depends on the global state maintained by Singletons, making it
+harder to identify the source of a failure.</p>
+<h3 id="dependency-nightmares">Dependency Nightmares</h3>
+<p>As the number of Singletons in a project increases, managing the dependencies between them becomes increasingly complex.
+This complexity often leads to race conditions, where the order of initialization and access to these Singletons can
+cause unpredictable behavior. These dependency issues make the system more error-prone and harder to debug.</p>
+<h3 id="global-state">Global State</h3>
+<p>Singletons typically maintain state across different scenes, which can lead to unintended side effects. For example, if
+a Singleton retains data that should be reset between scenes, it can cause bugs that are difficult to track down. This
+persistent state breaks the clean slate principle, where each scene should start with a known and controlled state.</p>
+<h3 id="single-instance-limitation">Single Instance Limitation</h3>
+<p>By design, a Singleton pattern limits the system to a single instance of a class. This restriction can become
+problematic if the game's requirements evolve to support multiple instances of a system. For instance, a game might
+initially have a single player, but later need to support multiple players or sessions. Revisiting and refactoring the
+code to remove the Singleton limitation can be time-consuming and error-prone.</p>
+<h2 id="challenges-with-traditional-event-systems">Challenges with Traditional Event Systems</h2>
+<h3 id="unity-event-limitations">Unity Event Limitations</h3>
+<p>Unity’s built-in event system, UnityEvent, has several limitations. It relies on serialized function calls, which means
+the exact function to be called must be specified at design time. This approach is rigid and does not support dynamic
+binding or more complex event handling scenarios. Furthermore, UnityEvent can introduce garbage collection issues due to
+the way it resolves and invokes functions using reflection, which can impact performance, especially in
+performance-critical applications like games.</p>
+<h3 id="hard-references">Hard References</h3>
+<p>UnityEvents create hard references between components, leading to maintenance difficulties and reduced modularity. Each
+event binding is a direct link from the event source to the event handler, making it challenging to refactor or extend
+the system. This tight coupling hinders the ability to decouple systems and create more modular and reusable components.</p>
+<h2 id="issues-with-enums">Issues with Enums</h2>
+<h3 id="code-driven">Code-Driven</h3>
+<p>Enums in Unity are defined in code, which makes them less flexible and harder to modify. Adding, removing, or reordering
+enum values requires changes in the codebase and recompilation, which can be cumbersome and error-prone, especially in
+large projects.</p>
+<h3 id="difficult-to-reorder-or-remove">Difficult to Reorder or Remove</h3>
+<p>When enums are serialized, their values are stored based on their index positions. Changing the order or removing enum
+values can break the serialized data, causing runtime errors and inconsistencies. This limitation makes maintaining and
+evolving the game’s data structures more challenging over time.</p>
+<h3 id="no-additional-data">No Additional Data</h3>
+<p>Enums cannot hold additional data, which limits their utility. Often, developers end up creating additional lookup
+tables or data structures to associate more data with each enum value. This extra complexity adds overhead and increases
+the risk of synchronization issues between the enum and the associated data.</p>
+<h2 id="scene-management-problems">Scene Management Problems</h2>
+<h3 id="transient-data-management">Transient Data Management</h3>
+<p>Managing transient data across scenes can be complex, particularly when using DontDestroyOnLoad objects. These objects
+persist across scene loads, which can clutter the global namespace and lead to bugs due to unintended interactions
+between persistent and transient data. Ensuring that only the necessary data persists while keeping the scene-specific
+data isolated is a delicate balance.</p>
+<h3 id="clean-slate-scenes">Clean Slate Scenes</h3>
+<p>Ensuring each scene loads as a clean slate is essential for maintaining modularity and flexibility. Persistent data or
+objects that carry over from previous scenes can introduce hard-to-track bugs and unintended behavior. By adhering to
+the clean slate principle, developers can ensure that each scene starts with a controlled and predictable state,
+reducing the risk of unexpected interactions.</p>
+<h3 id="debugging-issues">Debugging Issues</h3>
+<p>Lack of Debugging Tools
+Debugging complex interactions between components and systems can be difficult without proper tools and strategies. A
+lack of built-in debugging support for custom architectures makes it challenging to diagnose issues. Ensuring that every
+feature has a clear debugging strategy and providing tools to expose runtime state and interactions are crucial for
+effective debugging.</p>
+<h2 id="general-architectural-challenges">General Architectural Challenges</h2>
+<h3 id="maintaining-flexibility-and-extensibility">Maintaining Flexibility and Extensibility</h3>
+<p>As games grow in complexity, maintaining an architecture that is both flexible and extensible becomes increasingly
+challenging. The architecture must allow for easy addition of new features and modifications without extensive
+refactoring. Achieving this balance requires careful planning and adherence to principles that promote modularity and
+decoupling.</p>
+<h3 id="performance-overheads">Performance Overheads</h3>
+<p>Ensuring that architectural patterns do not introduce significant performance overheads is crucial, especially for
+resource-constrained platforms like mobile devices and VR. While achieving a clean and maintainable architecture is
+important, it should not come at the cost of runtime performance. Profiling and optimizing critical paths in the
+architecture are essential to maintain performance.</p>
+<h3 id="design-and-code-separation">Design and Code Separation</h3>
+<p>Balancing the needs of designers and developers can be challenging. Designers require systems that are easy to use and
+flexible, while developers need robust and maintainable code. Creating an architecture that allows designers to work
+independently of developers, through data-driven and component-based systems, helps bridge this gap and improves
+collaboration.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Documentation~/manual/Problems.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made by <a href="https://github.com/aruizrab" target="_blank">aruizrab</a> using <a href="https://dotnet.github.io/docfx" target="_blank">DocFX</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

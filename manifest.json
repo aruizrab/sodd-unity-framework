@@ -1003,6 +1003,146 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Collections.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Collections.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Events.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Events.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/GameArchitecture.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/GameArchitecture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Installation.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Installation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Problems.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Problems.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Theory.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Theory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Variables.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Variables.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/CoinScript.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/CoinScript.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/CreateEvent.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/CreateEvent.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/DebugEvent.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/DebugEvent.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/Event.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/Event.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/GroupOfEvents.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/GroupOfEvents.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/GroupOfVariables.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/GroupOfVariables.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/ScoreManager.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/ScoreManager.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "manual/images/favicon.png",
       "output": {
