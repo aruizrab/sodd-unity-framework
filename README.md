@@ -37,8 +37,13 @@ It is in this context that Ryan Hipple, principal engineer of Schell Games, intr
 The significance of this framework lies in implementing and expanding the fundamental principles of modularity, editability and debuggability introduced by Hipple’s game architecture with ScriptableObjects. The envisioned outcome is a robust tool that enhances productivity and collaboration in Unity’s development environment.
 
 ## Getting started
-To start using **SODD Framework** in your Unity project go to your package manager, click on [add package from git URL](https://docs.unity3d.com/2021.2/Documentation/Manual/upm-ui-giturl.html "Unity Documentation - Installing from a Git URL"), and paste the following URL:
+To integrate the **SODD Framework** into your Unity project:
+1. Navigate to the Unity Package Manager.
+2. Choose '[Add package from git URL](https://docs.unity3d.com/2021.2/Documentation/Manual/upm-ui-giturl.html "Unity Documentation - Installing from a Git URL")'.
+3. Enter the following URL and add to your project:
 ```
 https://github.com/aruizrab/sodd-unity-framework.git
 ```
 
+## License
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/aruizrab/sodd-unity-framework/blob/main/LICENSE) file for details.

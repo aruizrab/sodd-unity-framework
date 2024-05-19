@@ -1,3 +1,63 @@
+# [2.0.0](https://github.com/aruizrab/sodd-unity-framework/compare/v1.2.0...v2.0.0) (2024-05-15)
+
+
+### Features
+
+* add Comparison enum for comparison operations ([b0fc547](https://github.com/aruizrab/sodd-unity-framework/commit/b0fc547b5e5b818cb15e1357ffe34812bd31e35a))
+* **attributes:** add Collapsible attribute ([6362242](https://github.com/aruizrab/sodd-unity-framework/commit/6362242d44b70b8b3821dd795744523446ff25a5))
+* **attributes:** add Disabled attribute ([b5bbad8](https://github.com/aruizrab/sodd-unity-framework/commit/b5bbad8537a29d8bd1ae7d06d0145bc3800be5e2))
+* **attributes:** add DisableIf attribute ([0573352](https://github.com/aruizrab/sodd-unity-framework/commit/05733529b1e2a6df765bb755eca2b9664a8d8eaf))
+* **attributes:** add DisableIfMatch attribute ([d93a292](https://github.com/aruizrab/sodd-unity-framework/commit/d93a292a545f36165be03d4fff4ed6cc7db36d53))
+* **attributes:** add HideIf attribute ([83252af](https://github.com/aruizrab/sodd-unity-framework/commit/83252afe3865bcf9dac19e370cd04e62a581cd2c))
+* **attributes:** add HideIfMatch attribute ([d0601c8](https://github.com/aruizrab/sodd-unity-framework/commit/d0601c8bffa9c6ecd85b99aa1a8203c7bd48eece))
+* **attributes:** add ShowIf attribute ([2a025a7](https://github.com/aruizrab/sodd-unity-framework/commit/2a025a792a7dc1b06ad9a3e4fa9a606c0790e3d3))
+* **attributes:** add ShowIfMatch attribute ([67aef74](https://github.com/aruizrab/sodd-unity-framework/commit/67aef7492278e901484eb84d57e1926084b9a9fd))
+* **observers:** add abstract VariableObserver class ([5df3ab7](https://github.com/aruizrab/sodd-unity-framework/commit/5df3ab74d39373030e34e03078793262c22a5e08))
+* **observers:** add bool variable observer ([fa5cbb8](https://github.com/aruizrab/sodd-unity-framework/commit/fa5cbb858b2e15d3297a89805d28b24c38fac417))
+* **observers:** add float variable observer ([813a326](https://github.com/aruizrab/sodd-unity-framework/commit/813a32625495f0f5babbe5cb20b50cd85f9ed0a4))
+* **observers:** add int variable observer ([f699f82](https://github.com/aruizrab/sodd-unity-framework/commit/f699f8256defcb232b1ad0a9b2f15a08268ad129))
+* **observers:** add string variable observer ([7cfb246](https://github.com/aruizrab/sodd-unity-framework/commit/7cfb246023381d143f360749b79b90abbb577cd7))
+* **observers:** add vector2 variable observer ([ae0b580](https://github.com/aruizrab/sodd-unity-framework/commit/ae0b5802b104ff08a957395f15b4599bf70b9c74))
+* **observers:** add vector3 variable observer ([4a79681](https://github.com/aruizrab/sodd-unity-framework/commit/4a7968126b3c0364f4bc48216c1353d400a7a7ca))
+* **repositories:** add binary file repository ([d233eed](https://github.com/aruizrab/sodd-unity-framework/commit/d233eedefa9ac7b92bdacef6a7f7a50301aaf16b))
+* **repositories:** add file repository abstract class ([7868fe3](https://github.com/aruizrab/sodd-unity-framework/commit/7868fe313d7cf58b14de048510bca8375c914d5a))
+* **repositories:** add IRepository interface ([60c277e](https://github.com/aruizrab/sodd-unity-framework/commit/60c277e03a8535bfc5e7ec4bc9e560b91c57046b))
+* **repositories:** add json file repository ([14c8e15](https://github.com/aruizrab/sodd-unity-framework/commit/14c8e15f8de64defb1a137c05bb466381dcf95dd))
+* **repositories:** add variable repository ([ea8d3c6](https://github.com/aruizrab/sodd-unity-framework/commit/ea8d3c69e8a9b7f128c0b92fcf39ac8648ddbd22))
+
+
+### BREAKING CHANGES
+
+* **repositories:** changes IVariable and Variable signature
+
+Signed-off-by: Alex Ruiz <a.ruiz.rabasseda@gmail.com>
+
+# [1.2.0](https://github.com/aruizrab/sodd-unity-framework/compare/v1.1.0...v1.2.0) (2024-05-07)
+
+
+### Features
+
+* add coroutine builder ([647f3b3](https://github.com/aruizrab/sodd-unity-framework/commit/647f3b34460ed85bc90706ce1e4a1d26410f8b12))
+* **extensions:** add AudioMixer extensions ([481c814](https://github.com/aruizrab/sodd-unity-framework/commit/481c8147ad03ece9323f3cfa4873bba118b66bb7))
+* **extensions:** add GameObject extension methods for retrieving components ([2c1c720](https://github.com/aruizrab/sodd-unity-framework/commit/2c1c72008f4b27fe56ccb37eb9233c3c39193ce5))
+* **extensions:** add GameObject extension methods for sending messages ([4ac7eac](https://github.com/aruizrab/sodd-unity-framework/commit/4ac7eace6541ea035ace555c67e58c57b66c13f3))
+* **extensions:** add GameObject extensions for vector operations ([27fc44f](https://github.com/aruizrab/sodd-unity-framework/commit/27fc44f6537fec26e84b0f410c54dace0af6d124))
+* **extensions:** add IEnumerable<T> extensions ([a060d60](https://github.com/aruizrab/sodd-unity-framework/commit/a060d602321d179633bdcc9bdcf9cd612647e479))
+* **extensions:** add IsInLayerMask extension method for GameObject type ([88d98e0](https://github.com/aruizrab/sodd-unity-framework/commit/88d98e0d9a20fbc181b8fbe70ce39c73063b5cda))
+* **extensions:** add NavMeshAgent extensions ([5abe4a0](https://github.com/aruizrab/sodd-unity-framework/commit/5abe4a00dec18c2d33525fc624f7dd836b402178))
+* **extensions:** add primitive type extensions ([6429033](https://github.com/aruizrab/sodd-unity-framework/commit/6429033558c501d23cd9c569ce91fc1485c9cea9))
+* **extensions:** add Transform extensions for vector operations ([9c647c5](https://github.com/aruizrab/sodd-unity-framework/commit/9c647c5569eef250b418ddd6bd4d9f91add337de))
+* **extensions:** add Vector2 extensions for vector operations ([5d135f3](https://github.com/aruizrab/sodd-unity-framework/commit/5d135f34375a05c54035705b7e406b96c6ab83fb))
+* **extensions:** add Vector3 extensions for vector operations ([4585ba3](https://github.com/aruizrab/sodd-unity-framework/commit/4585ba3dab74b5e15c176a331e08675e105c813d))
+* **variables:** added value reference ([034ada8](https://github.com/aruizrab/sodd-unity-framework/commit/034ada884b5ad7b1cbc216bf6dcf478469a983c6))
+
+# [1.1.0](https://github.com/aruizrab/sodd-unity-framework/compare/v1.0.0...v1.1.0) (2024-04-15)
+
+
+### Features
+
+* **collections:** collections now implement IList interface and have a method to get random items ([48784a1](https://github.com/aruizrab/sodd-unity-framework/commit/48784a198d2cffe1b61d4c15f135a2bda61deae8))
+
 # 1.0.0 (2024-03-02)
 
 
