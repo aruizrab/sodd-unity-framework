@@ -1,3 +1,11 @@
+## [2.0.1](https://github.com/aruizrab/sodd-unity-framework/compare/v2.0.0...v2.0.1) (2024-05-19)
+
+
+### Bug Fixes
+
+* **documentation:** documentation organization ([ba196db](https://github.com/aruizrab/sodd-unity-framework/commit/ba196db70668f7902ec0c1142a7769688813bed7))
+* **documentation:** table of contents ([b48d2e9](https://github.com/aruizrab/sodd-unity-framework/commit/b48d2e9715fd8fb742743c724eab4bd3abe14989))
+
 # [2.0.0](https://github.com/aruizrab/sodd-unity-framework/compare/v1.2.0...v2.0.0) (2024-05-15)
 
 
