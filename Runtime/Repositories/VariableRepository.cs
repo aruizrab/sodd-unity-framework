@@ -2,7 +2,9 @@
 using System.Linq;
 using SODD.Data;
 using SODD.Variables;
+using Unity.Plastic.Newtonsoft.Json;
 using UnityEngine;
+using Logger = SODD.Core.Logger;
 using Object = UnityEngine.Object;
 
 namespace SODD.Repositories
@@ -22,6 +24,11 @@ namespace SODD.Repositories
         [SerializeField] private string filename;
         [SerializeField] private bool loadOnEnable;
         [SerializeField] private bool saveOnDisable;
+#if UNITY_EDITOR
+        [SerializeField]
+        [Tooltip("Enable this setting to log in the console whenever the repository saves or loads variable data.")]
+        public bool debug;
+#endif
         [SerializeField] private List<Object> variables;
 
         private void OnEnable()
@@ -45,6 +52,13 @@ namespace SODD.Repositories
 
             data.Store(list);
             repository.Save(data);
+#if UNITY_EDITOR
+            if (!debug && list.Count > 0) return;
+            Logger.LogAsset(this,
+                $"{list.Count} variable{(list.Count > 1 ? "s" : "")} ha{(list.Count > 1 ? "ve" : "s")} been saved.\n" +
+                $"Destination file: {repository.FullFilename}\n" +
+                $"Data: {JsonConvert.SerializeObject(list, Formatting.Indented)}");
+#endif
         }
 
         /// <summary>
@@ -54,12 +68,30 @@ namespace SODD.Repositories
         {
             var repository = new BinaryFileRepository<VariableStore>(filename);
 
-            if (!repository.Exists()) return;
+            if (!repository.Exists())
+            {
+#if UNITY_EDITOR
+                if (debug)
+                {
+                    Logger.LogAsset(this,
+                        $"Variable data file not found, no data will be loaded.\n" +
+                        $"Source file: {repository.FullFilename}");
+                }
+#endif
+                return;
+            }
 
             var list = variables.OfType<IVariable>().ToList();
             var data = repository.Load();
 
             data.Restore(list);
+#if UNITY_EDITOR
+            if (!debug && list.Count > 0) return;
+            Logger.LogAsset(this,
+                $"{list.Count} variable{(list.Count > 1 ? "s" : "")} ha{(list.Count > 1 ? "ve" : "s")} been loaded.\n" +
+                $"Source file: {repository.FullFilename}\n" +
+                $"Data: {JsonConvert.SerializeObject(list, Formatting.Indented)}");
+#endif
         }
 
         /// <summary>
@@ -67,7 +99,14 @@ namespace SODD.Repositories
         /// </summary>
         public void Delete()
         {
-            new BinaryFileRepository<VariableStore>(filename).Delete();
+            var repository = new BinaryFileRepository<VariableStore>(filename);
+            repository.Delete();
+#if UNITY_EDITOR
+            if (!debug) return;
+            Logger.LogAsset(this,
+                $"Variable data file has been deleted.\n" +
+                $"Deleted file: {repository.FullFilename}");
+#endif
         }
     }
 }

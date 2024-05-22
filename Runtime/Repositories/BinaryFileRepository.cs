@@ -84,5 +84,8 @@ namespace SODD.Repositories
         {
             return File.Exists($"{Application.persistentDataPath}/{filename}.bin");
         }
+        
+        /// <inheritdoc />
+        public override string FullFilename => $"{Application.persistentDataPath}/{filename}.bin";
     }
 }

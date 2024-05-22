@@ -1,4 +1,5 @@
 ﻿using JetBrains.Annotations;
+using UnityEngine;
 
 namespace SODD.Repositories
 {
@@ -42,6 +43,11 @@ namespace SODD.Repositories
             get => filename;
             set => filename = value;
         }
+
+        /// <summary>
+        /// Gets the path and filename used for data storage.
+        /// </summary>
+        public virtual string FullFilename => $"{Application.persistentDataPath}/{filename}";
 
         /// <inheritdoc />
         public abstract void Save(T t);
