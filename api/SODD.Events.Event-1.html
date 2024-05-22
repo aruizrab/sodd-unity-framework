@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class Event&lt;T&gt; | SODD Framework | 2.0.0 </title>
+      <title>Class Event&lt;T&gt; | SODD Framework | 2.0.1 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Event&lt;T&gt; | SODD Framework | 2.0.0 ">
+      <meta name="title" content="Class Event&lt;T&gt; | SODD Framework | 2.0.1 ">
       
       <meta name="description" content="Provides a generic base class for scriptable event implementations, enabling events to be defined with specific data types as payloads.">
       <link rel="icon" href="../manual/images/favicon.png">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/aruizrab/sodd-unity-framework/new/117/merge/apiSpec/new?filename=SODD_Events_Event_1.md&amp;value=---%0Auid%3A%20SODD.Events.Event%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/aruizrab/sodd-unity-framework/new/119/merge/apiSpec/new?filename=SODD_Events_Event_1.md&amp;value=---%0Auid%3A%20SODD.Events.Event%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="SODD_Events_Event_1" data-uid="SODD.Events.Event`1" class="text-break">
-Class Event&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/117/merge/Runtime/Events/Event.cs/#L46"><i class="bi bi-code-slash"></i></a>
+Class Event&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/119/merge/Runtime/Events/Event.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -184,7 +184,7 @@ public class StringEvent : Event&lt;string&gt; {}</code></pre>
 
   <h3 id="SODD_Events_Event_1_GenericEvent" data-uid="SODD.Events.Event`1.GenericEvent">
   GenericEvent
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/117/merge/Runtime/Events/Event.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/119/merge/Runtime/Events/Event.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -219,7 +219,7 @@ public class StringEvent : Event&lt;string&gt; {}</code></pre>
 
   <h3 id="SODD_Events_Event_1_AddListener_System_Action__0__" data-uid="SODD.Events.Event`1.AddListener(System.Action{`0})">
   AddListener(Action&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/117/merge/Runtime/Events/Event.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/119/merge/Runtime/Events/Event.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Subscribes a listener to the event, allowing it to be notified when the event is invoked.</p>
@@ -253,7 +253,7 @@ delegate, accepting a single parameter of type <code class="typeparamref">T</cod
 
   <h3 id="SODD_Events_Event_1_Invoke__0_" data-uid="SODD.Events.Event`1.Invoke(`0)">
   Invoke(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/117/merge/Runtime/Events/Event.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/119/merge/Runtime/Events/Event.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Triggers the event, notifying all subscribed listeners and passing the specified payload to them.</p>
@@ -286,7 +286,7 @@ delegate, accepting a single parameter of type <code class="typeparamref">T</cod
 
   <h3 id="SODD_Events_Event_1_RemoveListener_System_Action__0__" data-uid="SODD.Events.Event`1.RemoveListener(System.Action{`0})">
   RemoveListener(Action&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/117/merge/Runtime/Events/Event.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/119/merge/Runtime/Events/Event.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unsubscribes a previously added listener from the event, preventing it from being notified when the event is

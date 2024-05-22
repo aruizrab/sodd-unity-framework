@@ -2606,6 +2606,23 @@ references:
   fullName.vb: SODD.Repositories.BinaryFileRepository(Of T).Exists
   nameWithType: BinaryFileRepository<T>.Exists
   nameWithType.vb: BinaryFileRepository(Of T).Exists
+- uid: SODD.Repositories.BinaryFileRepository`1.FullFilename
+  name: FullFilename
+  href: api/SODD.Repositories.BinaryFileRepository-1.html#SODD_Repositories_BinaryFileRepository_1_FullFilename
+  commentId: P:SODD.Repositories.BinaryFileRepository`1.FullFilename
+  fullName: SODD.Repositories.BinaryFileRepository<T>.FullFilename
+  fullName.vb: SODD.Repositories.BinaryFileRepository(Of T).FullFilename
+  nameWithType: BinaryFileRepository<T>.FullFilename
+  nameWithType.vb: BinaryFileRepository(Of T).FullFilename
+- uid: SODD.Repositories.BinaryFileRepository`1.FullFilename*
+  name: FullFilename
+  href: api/SODD.Repositories.BinaryFileRepository-1.html#SODD_Repositories_BinaryFileRepository_1_FullFilename_
+  commentId: Overload:SODD.Repositories.BinaryFileRepository`1.FullFilename
+  isSpec: "True"
+  fullName: SODD.Repositories.BinaryFileRepository<T>.FullFilename
+  fullName.vb: SODD.Repositories.BinaryFileRepository(Of T).FullFilename
+  nameWithType: BinaryFileRepository<T>.FullFilename
+  nameWithType.vb: BinaryFileRepository(Of T).FullFilename
 - uid: SODD.Repositories.BinaryFileRepository`1.Load
   name: Load()
   href: api/SODD.Repositories.BinaryFileRepository-1.html#SODD_Repositories_BinaryFileRepository_1_Load
@@ -2728,6 +2745,23 @@ references:
   fullName.vb: SODD.Repositories.FileRepository(Of T).Filename
   nameWithType: FileRepository<T>.Filename
   nameWithType.vb: FileRepository(Of T).Filename
+- uid: SODD.Repositories.FileRepository`1.FullFilename
+  name: FullFilename
+  href: api/SODD.Repositories.FileRepository-1.html#SODD_Repositories_FileRepository_1_FullFilename
+  commentId: P:SODD.Repositories.FileRepository`1.FullFilename
+  fullName: SODD.Repositories.FileRepository<T>.FullFilename
+  fullName.vb: SODD.Repositories.FileRepository(Of T).FullFilename
+  nameWithType: FileRepository<T>.FullFilename
+  nameWithType.vb: FileRepository(Of T).FullFilename
+- uid: SODD.Repositories.FileRepository`1.FullFilename*
+  name: FullFilename
+  href: api/SODD.Repositories.FileRepository-1.html#SODD_Repositories_FileRepository_1_FullFilename_
+  commentId: Overload:SODD.Repositories.FileRepository`1.FullFilename
+  isSpec: "True"
+  fullName: SODD.Repositories.FileRepository<T>.FullFilename
+  fullName.vb: SODD.Repositories.FileRepository(Of T).FullFilename
+  nameWithType: FileRepository<T>.FullFilename
+  nameWithType.vb: FileRepository(Of T).FullFilename
 - uid: SODD.Repositories.FileRepository`1.Load
   name: Load()
   href: api/SODD.Repositories.FileRepository-1.html#SODD_Repositories_FileRepository_1_Load
