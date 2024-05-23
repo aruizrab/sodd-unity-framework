@@ -15,6 +15,66 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/SODD.AI.CollisionDetectionStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.AI.CollisionDetectionStrategy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.AI.CollisionDetector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.AI.CollisionDetector.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.AI.CollisionDetector2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.AI.CollisionDetector2D.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.AI.State.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.AI.State.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.AI.StateMachine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.AI.StateMachine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.AI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.AI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/SODD.Attributes.CollapsibleAttribute.yml",
       "output": {
         ".html": {
@@ -245,6 +305,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Core.LifecycleEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Core.LifecycleEvents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/SODD.Core.Logger.yml",
       "output": {
         ".html": {
@@ -339,6 +409,36 @@
       "output": {
         ".html": {
           "relative_path": "api/SODD.Core.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Data.Range-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Data.Range-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Data.SerializableDictionary-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Data.SerializableDictionary-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Data.html"
         }
       },
       "version": ""
@@ -789,6 +889,26 @@
       "output": {
         ".html": {
           "relative_path": "api/SODD.Repositories.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.UI.OptionSelector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.UI.OptionSelector.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.UI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.UI.html"
         }
       },
       "version": ""

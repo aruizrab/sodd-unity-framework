@@ -1,6 +1,151 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: SODD.AI
+  name: SODD.AI
+  href: api/SODD.AI.html
+  commentId: N:SODD.AI
+  fullName: SODD.AI
+  nameWithType: SODD.AI
+- uid: SODD.AI.CollisionDetectionStrategy
+  name: CollisionDetectionStrategy
+  href: api/SODD.AI.CollisionDetectionStrategy.html
+  commentId: T:SODD.AI.CollisionDetectionStrategy
+  fullName: SODD.AI.CollisionDetectionStrategy
+  nameWithType: CollisionDetectionStrategy
+- uid: SODD.AI.CollisionDetectionStrategy.Colliders
+  name: Colliders
+  href: api/SODD.AI.CollisionDetectionStrategy.html#SODD_AI_CollisionDetectionStrategy_Colliders
+  commentId: F:SODD.AI.CollisionDetectionStrategy.Colliders
+  fullName: SODD.AI.CollisionDetectionStrategy.Colliders
+  nameWithType: CollisionDetectionStrategy.Colliders
+- uid: SODD.AI.CollisionDetectionStrategy.None
+  name: None
+  href: api/SODD.AI.CollisionDetectionStrategy.html#SODD_AI_CollisionDetectionStrategy_None
+  commentId: F:SODD.AI.CollisionDetectionStrategy.None
+  fullName: SODD.AI.CollisionDetectionStrategy.None
+  nameWithType: CollisionDetectionStrategy.None
+- uid: SODD.AI.CollisionDetectionStrategy.TriggerColliders
+  name: TriggerColliders
+  href: api/SODD.AI.CollisionDetectionStrategy.html#SODD_AI_CollisionDetectionStrategy_TriggerColliders
+  commentId: F:SODD.AI.CollisionDetectionStrategy.TriggerColliders
+  fullName: SODD.AI.CollisionDetectionStrategy.TriggerColliders
+  nameWithType: CollisionDetectionStrategy.TriggerColliders
+- uid: SODD.AI.CollisionDetector
+  name: CollisionDetector
+  href: api/SODD.AI.CollisionDetector.html
+  commentId: T:SODD.AI.CollisionDetector
+  fullName: SODD.AI.CollisionDetector
+  nameWithType: CollisionDetector
+- uid: SODD.AI.CollisionDetector2D
+  name: CollisionDetector2D
+  href: api/SODD.AI.CollisionDetector2D.html
+  commentId: T:SODD.AI.CollisionDetector2D
+  fullName: SODD.AI.CollisionDetector2D
+  nameWithType: CollisionDetector2D
+- uid: SODD.AI.State
+  name: State
+  href: api/SODD.AI.State.html
+  commentId: T:SODD.AI.State
+  fullName: SODD.AI.State
+  nameWithType: State
+- uid: SODD.AI.State.Enter
+  name: Enter()
+  href: api/SODD.AI.State.html#SODD_AI_State_Enter
+  commentId: M:SODD.AI.State.Enter
+  fullName: SODD.AI.State.Enter()
+  nameWithType: State.Enter()
+- uid: SODD.AI.State.Enter*
+  name: Enter
+  href: api/SODD.AI.State.html#SODD_AI_State_Enter_
+  commentId: Overload:SODD.AI.State.Enter
+  isSpec: "True"
+  fullName: SODD.AI.State.Enter
+  nameWithType: State.Enter
+- uid: SODD.AI.State.Exit
+  name: Exit()
+  href: api/SODD.AI.State.html#SODD_AI_State_Exit
+  commentId: M:SODD.AI.State.Exit
+  fullName: SODD.AI.State.Exit()
+  nameWithType: State.Exit()
+- uid: SODD.AI.State.Exit*
+  name: Exit
+  href: api/SODD.AI.State.html#SODD_AI_State_Exit_
+  commentId: Overload:SODD.AI.State.Exit
+  isSpec: "True"
+  fullName: SODD.AI.State.Exit
+  nameWithType: State.Exit
+- uid: SODD.AI.StateMachine
+  name: StateMachine
+  href: api/SODD.AI.StateMachine.html
+  commentId: T:SODD.AI.StateMachine
+  fullName: SODD.AI.StateMachine
+  nameWithType: StateMachine
+- uid: SODD.AI.StateMachine.AddFirstToQueue(SODD.AI.State)
+  name: AddFirstToQueue(State)
+  href: api/SODD.AI.StateMachine.html#SODD_AI_StateMachine_AddFirstToQueue_SODD_AI_State_
+  commentId: M:SODD.AI.StateMachine.AddFirstToQueue(SODD.AI.State)
+  fullName: SODD.AI.StateMachine.AddFirstToQueue(SODD.AI.State)
+  nameWithType: StateMachine.AddFirstToQueue(State)
+- uid: SODD.AI.StateMachine.AddFirstToQueue*
+  name: AddFirstToQueue
+  href: api/SODD.AI.StateMachine.html#SODD_AI_StateMachine_AddFirstToQueue_
+  commentId: Overload:SODD.AI.StateMachine.AddFirstToQueue
+  isSpec: "True"
+  fullName: SODD.AI.StateMachine.AddFirstToQueue
+  nameWithType: StateMachine.AddFirstToQueue
+- uid: SODD.AI.StateMachine.AddLastToQueue(SODD.AI.State)
+  name: AddLastToQueue(State)
+  href: api/SODD.AI.StateMachine.html#SODD_AI_StateMachine_AddLastToQueue_SODD_AI_State_
+  commentId: M:SODD.AI.StateMachine.AddLastToQueue(SODD.AI.State)
+  fullName: SODD.AI.StateMachine.AddLastToQueue(SODD.AI.State)
+  nameWithType: StateMachine.AddLastToQueue(State)
+- uid: SODD.AI.StateMachine.AddLastToQueue*
+  name: AddLastToQueue
+  href: api/SODD.AI.StateMachine.html#SODD_AI_StateMachine_AddLastToQueue_
+  commentId: Overload:SODD.AI.StateMachine.AddLastToQueue
+  isSpec: "True"
+  fullName: SODD.AI.StateMachine.AddLastToQueue
+  nameWithType: StateMachine.AddLastToQueue
+- uid: SODD.AI.StateMachine.ConsumeFirstFromQueue
+  name: ConsumeFirstFromQueue()
+  href: api/SODD.AI.StateMachine.html#SODD_AI_StateMachine_ConsumeFirstFromQueue
+  commentId: M:SODD.AI.StateMachine.ConsumeFirstFromQueue
+  fullName: SODD.AI.StateMachine.ConsumeFirstFromQueue()
+  nameWithType: StateMachine.ConsumeFirstFromQueue()
+- uid: SODD.AI.StateMachine.ConsumeFirstFromQueue*
+  name: ConsumeFirstFromQueue
+  href: api/SODD.AI.StateMachine.html#SODD_AI_StateMachine_ConsumeFirstFromQueue_
+  commentId: Overload:SODD.AI.StateMachine.ConsumeFirstFromQueue
+  isSpec: "True"
+  fullName: SODD.AI.StateMachine.ConsumeFirstFromQueue
+  nameWithType: StateMachine.ConsumeFirstFromQueue
+- uid: SODD.AI.StateMachine.ConsumeLastFromQueue
+  name: ConsumeLastFromQueue()
+  href: api/SODD.AI.StateMachine.html#SODD_AI_StateMachine_ConsumeLastFromQueue
+  commentId: M:SODD.AI.StateMachine.ConsumeLastFromQueue
+  fullName: SODD.AI.StateMachine.ConsumeLastFromQueue()
+  nameWithType: StateMachine.ConsumeLastFromQueue()
+- uid: SODD.AI.StateMachine.ConsumeLastFromQueue*
+  name: ConsumeLastFromQueue
+  href: api/SODD.AI.StateMachine.html#SODD_AI_StateMachine_ConsumeLastFromQueue_
+  commentId: Overload:SODD.AI.StateMachine.ConsumeLastFromQueue
+  isSpec: "True"
+  fullName: SODD.AI.StateMachine.ConsumeLastFromQueue
+  nameWithType: StateMachine.ConsumeLastFromQueue
+- uid: SODD.AI.StateMachine.CurrentState
+  name: CurrentState
+  href: api/SODD.AI.StateMachine.html#SODD_AI_StateMachine_CurrentState
+  commentId: P:SODD.AI.StateMachine.CurrentState
+  fullName: SODD.AI.StateMachine.CurrentState
+  nameWithType: StateMachine.CurrentState
+- uid: SODD.AI.StateMachine.CurrentState*
+  name: CurrentState
+  href: api/SODD.AI.StateMachine.html#SODD_AI_StateMachine_CurrentState_
+  commentId: Overload:SODD.AI.StateMachine.CurrentState
+  isSpec: "True"
+  fullName: SODD.AI.StateMachine.CurrentState
+  nameWithType: StateMachine.CurrentState
 - uid: SODD.Attributes
   name: SODD.Attributes
   href: api/SODD.Attributes.html
@@ -1236,6 +1381,12 @@ references:
   isSpec: "True"
   fullName: SODD.Core.GameObjectExtensions.VectorTo
   nameWithType: GameObjectExtensions.VectorTo
+- uid: SODD.Core.LifecycleEvents
+  name: LifecycleEvents
+  href: api/SODD.Core.LifecycleEvents.html
+  commentId: T:SODD.Core.LifecycleEvents
+  fullName: SODD.Core.LifecycleEvents
+  nameWithType: LifecycleEvents
 - uid: SODD.Core.Logger
   name: Logger
   href: api/SODD.Core.Logger.html
@@ -1699,6 +1850,116 @@ references:
   commentId: F:SODD.Core.Void.Instance
   fullName: SODD.Core.Void.Instance
   nameWithType: Void.Instance
+- uid: SODD.Data
+  name: SODD.Data
+  href: api/SODD.Data.html
+  commentId: N:SODD.Data
+  fullName: SODD.Data
+  nameWithType: SODD.Data
+- uid: SODD.Data.Range`1
+  name: Range<T>
+  href: api/SODD.Data.Range-1.html
+  commentId: T:SODD.Data.Range`1
+  name.vb: Range(Of T)
+  fullName: SODD.Data.Range<T>
+  fullName.vb: SODD.Data.Range(Of T)
+  nameWithType: Range<T>
+  nameWithType.vb: Range(Of T)
+- uid: SODD.Data.Range`1.#ctor(`0,`0)
+  name: Range(T, T)
+  href: api/SODD.Data.Range-1.html#SODD_Data_Range_1__ctor__0__0_
+  commentId: M:SODD.Data.Range`1.#ctor(`0,`0)
+  name.vb: New(T, T)
+  fullName: SODD.Data.Range<T>.Range(T, T)
+  fullName.vb: SODD.Data.Range(Of T).New(T, T)
+  nameWithType: Range<T>.Range(T, T)
+  nameWithType.vb: Range(Of T).New(T, T)
+- uid: SODD.Data.Range`1.#ctor*
+  name: Range
+  href: api/SODD.Data.Range-1.html#SODD_Data_Range_1__ctor_
+  commentId: Overload:SODD.Data.Range`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: SODD.Data.Range<T>.Range
+  fullName.vb: SODD.Data.Range(Of T).New
+  nameWithType: Range<T>.Range
+  nameWithType.vb: Range(Of T).New
+- uid: SODD.Data.Range`1.IsInRange(`0)
+  name: IsInRange(T)
+  href: api/SODD.Data.Range-1.html#SODD_Data_Range_1_IsInRange__0_
+  commentId: M:SODD.Data.Range`1.IsInRange(`0)
+  fullName: SODD.Data.Range<T>.IsInRange(T)
+  fullName.vb: SODD.Data.Range(Of T).IsInRange(T)
+  nameWithType: Range<T>.IsInRange(T)
+  nameWithType.vb: Range(Of T).IsInRange(T)
+- uid: SODD.Data.Range`1.IsInRange*
+  name: IsInRange
+  href: api/SODD.Data.Range-1.html#SODD_Data_Range_1_IsInRange_
+  commentId: Overload:SODD.Data.Range`1.IsInRange
+  isSpec: "True"
+  fullName: SODD.Data.Range<T>.IsInRange
+  fullName.vb: SODD.Data.Range(Of T).IsInRange
+  nameWithType: Range<T>.IsInRange
+  nameWithType.vb: Range(Of T).IsInRange
+- uid: SODD.Data.Range`1.max
+  name: max
+  href: api/SODD.Data.Range-1.html#SODD_Data_Range_1_max
+  commentId: F:SODD.Data.Range`1.max
+  fullName: SODD.Data.Range<T>.max
+  fullName.vb: SODD.Data.Range(Of T).max
+  nameWithType: Range<T>.max
+  nameWithType.vb: Range(Of T).max
+- uid: SODD.Data.Range`1.min
+  name: min
+  href: api/SODD.Data.Range-1.html#SODD_Data_Range_1_min
+  commentId: F:SODD.Data.Range`1.min
+  fullName: SODD.Data.Range<T>.min
+  fullName.vb: SODD.Data.Range(Of T).min
+  nameWithType: Range<T>.min
+  nameWithType.vb: Range(Of T).min
+- uid: SODD.Data.SerializableDictionary`2
+  name: SerializableDictionary<TK, TV>
+  href: api/SODD.Data.SerializableDictionary-2.html
+  commentId: T:SODD.Data.SerializableDictionary`2
+  name.vb: SerializableDictionary(Of TK, TV)
+  fullName: SODD.Data.SerializableDictionary<TK, TV>
+  fullName.vb: SODD.Data.SerializableDictionary(Of TK, TV)
+  nameWithType: SerializableDictionary<TK, TV>
+  nameWithType.vb: SerializableDictionary(Of TK, TV)
+- uid: SODD.Data.SerializableDictionary`2.OnAfterDeserialize
+  name: OnAfterDeserialize()
+  href: api/SODD.Data.SerializableDictionary-2.html#SODD_Data_SerializableDictionary_2_OnAfterDeserialize
+  commentId: M:SODD.Data.SerializableDictionary`2.OnAfterDeserialize
+  fullName: SODD.Data.SerializableDictionary<TK, TV>.OnAfterDeserialize()
+  fullName.vb: SODD.Data.SerializableDictionary(Of TK, TV).OnAfterDeserialize()
+  nameWithType: SerializableDictionary<TK, TV>.OnAfterDeserialize()
+  nameWithType.vb: SerializableDictionary(Of TK, TV).OnAfterDeserialize()
+- uid: SODD.Data.SerializableDictionary`2.OnAfterDeserialize*
+  name: OnAfterDeserialize
+  href: api/SODD.Data.SerializableDictionary-2.html#SODD_Data_SerializableDictionary_2_OnAfterDeserialize_
+  commentId: Overload:SODD.Data.SerializableDictionary`2.OnAfterDeserialize
+  isSpec: "True"
+  fullName: SODD.Data.SerializableDictionary<TK, TV>.OnAfterDeserialize
+  fullName.vb: SODD.Data.SerializableDictionary(Of TK, TV).OnAfterDeserialize
+  nameWithType: SerializableDictionary<TK, TV>.OnAfterDeserialize
+  nameWithType.vb: SerializableDictionary(Of TK, TV).OnAfterDeserialize
+- uid: SODD.Data.SerializableDictionary`2.OnBeforeSerialize
+  name: OnBeforeSerialize()
+  href: api/SODD.Data.SerializableDictionary-2.html#SODD_Data_SerializableDictionary_2_OnBeforeSerialize
+  commentId: M:SODD.Data.SerializableDictionary`2.OnBeforeSerialize
+  fullName: SODD.Data.SerializableDictionary<TK, TV>.OnBeforeSerialize()
+  fullName.vb: SODD.Data.SerializableDictionary(Of TK, TV).OnBeforeSerialize()
+  nameWithType: SerializableDictionary<TK, TV>.OnBeforeSerialize()
+  nameWithType.vb: SerializableDictionary(Of TK, TV).OnBeforeSerialize()
+- uid: SODD.Data.SerializableDictionary`2.OnBeforeSerialize*
+  name: OnBeforeSerialize
+  href: api/SODD.Data.SerializableDictionary-2.html#SODD_Data_SerializableDictionary_2_OnBeforeSerialize_
+  commentId: Overload:SODD.Data.SerializableDictionary`2.OnBeforeSerialize
+  isSpec: "True"
+  fullName: SODD.Data.SerializableDictionary<TK, TV>.OnBeforeSerialize
+  fullName.vb: SODD.Data.SerializableDictionary(Of TK, TV).OnBeforeSerialize
+  nameWithType: SerializableDictionary<TK, TV>.OnBeforeSerialize
+  nameWithType.vb: SerializableDictionary(Of TK, TV).OnBeforeSerialize
 - uid: SODD.Events
   name: SODD.Events
   href: api/SODD.Events.html
@@ -2997,6 +3258,134 @@ references:
   isSpec: "True"
   fullName: SODD.Repositories.VariableRepository.Save
   nameWithType: VariableRepository.Save
+- uid: SODD.UI
+  name: SODD.UI
+  href: api/SODD.UI.html
+  commentId: N:SODD.UI
+  fullName: SODD.UI
+  nameWithType: SODD.UI
+- uid: SODD.UI.OptionSelector
+  name: OptionSelector
+  href: api/SODD.UI.OptionSelector.html
+  commentId: T:SODD.UI.OptionSelector
+  fullName: SODD.UI.OptionSelector
+  nameWithType: OptionSelector
+- uid: SODD.UI.OptionSelector.AddOption(System.String)
+  name: AddOption(string)
+  href: api/SODD.UI.OptionSelector.html#SODD_UI_OptionSelector_AddOption_System_String_
+  commentId: M:SODD.UI.OptionSelector.AddOption(System.String)
+  name.vb: AddOption(String)
+  fullName: SODD.UI.OptionSelector.AddOption(string)
+  fullName.vb: SODD.UI.OptionSelector.AddOption(String)
+  nameWithType: OptionSelector.AddOption(string)
+  nameWithType.vb: OptionSelector.AddOption(String)
+- uid: SODD.UI.OptionSelector.AddOption*
+  name: AddOption
+  href: api/SODD.UI.OptionSelector.html#SODD_UI_OptionSelector_AddOption_
+  commentId: Overload:SODD.UI.OptionSelector.AddOption
+  isSpec: "True"
+  fullName: SODD.UI.OptionSelector.AddOption
+  nameWithType: OptionSelector.AddOption
+- uid: SODD.UI.OptionSelector.AddOptions(System.Collections.Generic.List{System.String})
+  name: AddOptions(List<string>)
+  href: api/SODD.UI.OptionSelector.html#SODD_UI_OptionSelector_AddOptions_System_Collections_Generic_List_System_String__
+  commentId: M:SODD.UI.OptionSelector.AddOptions(System.Collections.Generic.List{System.String})
+  name.vb: AddOptions(List(Of String))
+  fullName: SODD.UI.OptionSelector.AddOptions(System.Collections.Generic.List<string>)
+  fullName.vb: SODD.UI.OptionSelector.AddOptions(System.Collections.Generic.List(Of String))
+  nameWithType: OptionSelector.AddOptions(List<string>)
+  nameWithType.vb: OptionSelector.AddOptions(List(Of String))
+- uid: SODD.UI.OptionSelector.AddOptions*
+  name: AddOptions
+  href: api/SODD.UI.OptionSelector.html#SODD_UI_OptionSelector_AddOptions_
+  commentId: Overload:SODD.UI.OptionSelector.AddOptions
+  isSpec: "True"
+  fullName: SODD.UI.OptionSelector.AddOptions
+  nameWithType: OptionSelector.AddOptions
+- uid: SODD.UI.OptionSelector.OnMove(AxisEventData)
+  name: OnMove(AxisEventData)
+  href: api/SODD.UI.OptionSelector.html#SODD_UI_OptionSelector_OnMove_AxisEventData_
+  commentId: M:SODD.UI.OptionSelector.OnMove(AxisEventData)
+  fullName: SODD.UI.OptionSelector.OnMove(AxisEventData)
+  nameWithType: OptionSelector.OnMove(AxisEventData)
+- uid: SODD.UI.OptionSelector.OnMove*
+  name: OnMove
+  href: api/SODD.UI.OptionSelector.html#SODD_UI_OptionSelector_OnMove_
+  commentId: Overload:SODD.UI.OptionSelector.OnMove
+  isSpec: "True"
+  fullName: SODD.UI.OptionSelector.OnMove
+  nameWithType: OptionSelector.OnMove
+- uid: SODD.UI.OptionSelector.SelectNext
+  name: SelectNext()
+  href: api/SODD.UI.OptionSelector.html#SODD_UI_OptionSelector_SelectNext
+  commentId: M:SODD.UI.OptionSelector.SelectNext
+  fullName: SODD.UI.OptionSelector.SelectNext()
+  nameWithType: OptionSelector.SelectNext()
+- uid: SODD.UI.OptionSelector.SelectNext*
+  name: SelectNext
+  href: api/SODD.UI.OptionSelector.html#SODD_UI_OptionSelector_SelectNext_
+  commentId: Overload:SODD.UI.OptionSelector.SelectNext
+  isSpec: "True"
+  fullName: SODD.UI.OptionSelector.SelectNext
+  nameWithType: OptionSelector.SelectNext
+- uid: SODD.UI.OptionSelector.SelectPrevious
+  name: SelectPrevious()
+  href: api/SODD.UI.OptionSelector.html#SODD_UI_OptionSelector_SelectPrevious
+  commentId: M:SODD.UI.OptionSelector.SelectPrevious
+  fullName: SODD.UI.OptionSelector.SelectPrevious()
+  nameWithType: OptionSelector.SelectPrevious()
+- uid: SODD.UI.OptionSelector.SelectPrevious*
+  name: SelectPrevious
+  href: api/SODD.UI.OptionSelector.html#SODD_UI_OptionSelector_SelectPrevious_
+  commentId: Overload:SODD.UI.OptionSelector.SelectPrevious
+  isSpec: "True"
+  fullName: SODD.UI.OptionSelector.SelectPrevious
+  nameWithType: OptionSelector.SelectPrevious
+- uid: SODD.UI.OptionSelector.SetOptions(System.Collections.Generic.List{System.String})
+  name: SetOptions(List<string>)
+  href: api/SODD.UI.OptionSelector.html#SODD_UI_OptionSelector_SetOptions_System_Collections_Generic_List_System_String__
+  commentId: M:SODD.UI.OptionSelector.SetOptions(System.Collections.Generic.List{System.String})
+  name.vb: SetOptions(List(Of String))
+  fullName: SODD.UI.OptionSelector.SetOptions(System.Collections.Generic.List<string>)
+  fullName.vb: SODD.UI.OptionSelector.SetOptions(System.Collections.Generic.List(Of String))
+  nameWithType: OptionSelector.SetOptions(List<string>)
+  nameWithType.vb: OptionSelector.SetOptions(List(Of String))
+- uid: SODD.UI.OptionSelector.SetOptions*
+  name: SetOptions
+  href: api/SODD.UI.OptionSelector.html#SODD_UI_OptionSelector_SetOptions_
+  commentId: Overload:SODD.UI.OptionSelector.SetOptions
+  isSpec: "True"
+  fullName: SODD.UI.OptionSelector.SetOptions
+  nameWithType: OptionSelector.SetOptions
+- uid: SODD.UI.OptionSelector.SetValueWithoutNotify(System.Int32)
+  name: SetValueWithoutNotify(int)
+  href: api/SODD.UI.OptionSelector.html#SODD_UI_OptionSelector_SetValueWithoutNotify_System_Int32_
+  commentId: M:SODD.UI.OptionSelector.SetValueWithoutNotify(System.Int32)
+  name.vb: SetValueWithoutNotify(Integer)
+  fullName: SODD.UI.OptionSelector.SetValueWithoutNotify(int)
+  fullName.vb: SODD.UI.OptionSelector.SetValueWithoutNotify(Integer)
+  nameWithType: OptionSelector.SetValueWithoutNotify(int)
+  nameWithType.vb: OptionSelector.SetValueWithoutNotify(Integer)
+- uid: SODD.UI.OptionSelector.SetValueWithoutNotify*
+  name: SetValueWithoutNotify
+  href: api/SODD.UI.OptionSelector.html#SODD_UI_OptionSelector_SetValueWithoutNotify_
+  commentId: Overload:SODD.UI.OptionSelector.SetValueWithoutNotify
+  isSpec: "True"
+  fullName: SODD.UI.OptionSelector.SetValueWithoutNotify
+  nameWithType: OptionSelector.SetValueWithoutNotify
+- uid: SODD.UI.OptionSelector.Value
+  name: Value
+  href: api/SODD.UI.OptionSelector.html#SODD_UI_OptionSelector_Value
+  commentId: P:SODD.UI.OptionSelector.Value
+  fullName: SODD.UI.OptionSelector.Value
+  nameWithType: OptionSelector.Value
+- uid: SODD.UI.OptionSelector.Value*
+  name: Value
+  href: api/SODD.UI.OptionSelector.html#SODD_UI_OptionSelector_Value_
+  commentId: Overload:SODD.UI.OptionSelector.Value
+  isSpec: "True"
+  fullName: SODD.UI.OptionSelector.Value
+  nameWithType: OptionSelector.Value
 - uid: SODD.Variables
   name: SODD.Variables
   href: api/SODD.Variables.html
