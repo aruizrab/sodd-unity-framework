@@ -1,3 +1,22 @@
+# [3.0.0](https://github.com/aruizrab/sodd-unity-framework/compare/v2.0.1...v3.0.0) (2024-05-23)
+
+
+### Features
+
+* **ai:** add 2D collision detector ([5d7b2f1](https://github.com/aruizrab/sodd-unity-framework/commit/5d7b2f1a2b7ed6ac62af00d96c8d1c402f3a93a9))
+* **ai:** add 3D collision detector ([788899a](https://github.com/aruizrab/sodd-unity-framework/commit/788899a371ea052dea887724dbfae4468b51547e))
+* **ai:** add state machine ([b926c21](https://github.com/aruizrab/sodd-unity-framework/commit/b926c21de5b9040a8c70026364ed5bf9c9fe8a34))
+* **data:** add serializable dictionary data type ([4d5acec](https://github.com/aruizrab/sodd-unity-framework/commit/4d5acecdc13b8bb21eee156fee92e5492647ef98))
+* **data:** add serializable range data type ([cc635fc](https://github.com/aruizrab/sodd-unity-framework/commit/cc635fcd8bbc65f4e1a60faa7c62f7a93903064d))
+* **ui:** add option selector ui component ([3048af5](https://github.com/aruizrab/sodd-unity-framework/commit/3048af5117884a5ec0779621758823e579e7bd36))
+
+
+### BREAKING CHANGES
+
+* **ui:** `Unity.TextMeshPro` is now a package dependency
+
+Signed-off-by: Alex Ruiz <a.ruiz.rabasseda@gmail.com>
+
 ## [2.0.1](https://github.com/aruizrab/sodd-unity-framework/compare/v2.0.0...v2.0.1) (2024-05-19)
 
 

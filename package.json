@@ -1,6 +1,6 @@
 {
   "name": "com.github.aruizrab.sodd-unity-framework",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "displayName": "SODD Framework",
   "description": "ScriptableObject Driven Development (SODD) Framework for Unity",
   "unity": "2022.3",
