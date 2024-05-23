@@ -5,29 +5,29 @@ using UnityEngine.Events;
 
 namespace SODD.AI
 {
-    public sealed class CollisionDetector2D : MonoBehaviour
+    public class CollisionDetector : MonoBehaviour
     {
         [SerializeField] private ValueReference<LayerMask> targetLayers;
         [SerializeField] private CollisionDetectionStrategy detectionStrategy;
         [SerializeField] private UnityEvent<GameObject> onCollisionEnter;
         [SerializeField] private UnityEvent<GameObject> onCollisionExit;
 
-        private void OnCollisionEnter2D(Collision2D other)
+        private void OnCollisionEnter(Collision other)
         {
             if (detectionStrategy.HasFlag(CollisionDetectionStrategy.Colliders)) OnEnter(other.gameObject);
         }
 
-        private void OnCollisionExit2D(Collision2D other)
+        private void OnCollisionExit(Collision other)
         {
             if (detectionStrategy.HasFlag(CollisionDetectionStrategy.Colliders)) OnExit(other.gameObject);
         }
 
-        private void OnTriggerEnter2D(Collider2D other)
+        private void OnTriggerEnter(Collider other)
         {
             if (detectionStrategy.HasFlag(CollisionDetectionStrategy.TriggerColliders)) OnEnter(other.gameObject);
         }
 
-        private void OnTriggerExit2D(Collider2D other)
+        private void OnTriggerExit(Collider other)
         {
             if (detectionStrategy.HasFlag(CollisionDetectionStrategy.TriggerColliders)) OnExit(other.gameObject);
         }
