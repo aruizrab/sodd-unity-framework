@@ -59,6 +59,9 @@ namespace SODD
             public const int ScriptableObject = 72;
             public const int Component = 73;
             public const int Object = 74;
+            public const int StateMachine = 200;
+            public const int State = 201;
+            public const int LifecycleEvents = 220;
         }
 
         public static class Events
@@ -234,6 +237,10 @@ namespace SODD
             public const string Path = Root + "Repositories/";
 
             public const string VariableRepository = Path + "Variable Repository";
-        }
+        } 
+        
+        public const string StateMachine = Root + "State Machine";
+        public const string State = Root + "State";
+        public const string LifecycleEvents = Root + "Lifecycle Events";
     }
 }

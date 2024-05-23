@@ -2,7 +2,8 @@
     "name": "com.github.aruizrab.sodd-unity-framework",
     "rootNamespace": "SODD",
     "references": [
-        "Unity.InputSystem"
+        "Unity.InputSystem",
+        "Unity.TextMeshPro"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -40,6 +40,7 @@ namespace SODD.Editor.Utils
         /// </summary>
         /// <typeparam name="T">The type of component to add to the new game object.</typeparam>
         /// <param name="parent">The selected game object under which the new game object will be created as a child.</param>
+        /// <param name="setIconToGameObject"></param>
         /// <remarks>
         ///     This method creates a new game object with a specified component of type T and sets it as a child of the selected
         ///     game object.
@@ -48,13 +49,34 @@ namespace SODD.Editor.Utils
         ///     Finally, it registers the new game object with the Undo system and makes it the active object in the Unity Editor's
         ///     selection.
         /// </remarks>
-        public static void CreateGameObject<T>(GameObject parent) where T : Component
+        public static void CreateGameObject<T>(GameObject parent, bool setIconToGameObject = false) where T : Component
         {
             var obj = new GameObject(ObjectNames.NicifyVariableName(typeof(T).Name));
-            obj.AddComponent<T>();
+            var component = obj.AddComponent<T>();
             GameObjectUtility.SetParentAndAlign(obj, parent);
+
+            if (setIconToGameObject)
+            {
+                var icon = EditorGUIUtility.GetIconForObject(component);
+                EditorGUIUtility.SetIconForObject(obj, icon);
+            }
+
             Undo.RegisterCreatedObjectUndo(obj, "Create " + obj.name);
             Selection.activeObject = obj;
+            EditorApplication.delayCall += () =>
+            {
+                EditorApplication.ExecuteMenuItem("Window/General/Hierarchy");
+                Selection.activeObject = obj;
+                var hierarchyWindow = EditorWindow.focusedWindow;
+                if (hierarchyWindow == null) return;
+                if (Selection.activeObject != obj) return;
+                var renameEvent = new Event
+                {
+                    type = EventType.ExecuteCommand,
+                    commandName = "Rename"
+                };
+                hierarchyWindow.SendEvent(renameEvent);
+            };
         }
 
         public static object GetValue(SerializedProperty property, string name)
