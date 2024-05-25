@@ -1,3 +1,16 @@
+# [3.2.0](https://github.com/aruizrab/sodd-unity-framework/compare/v3.1.0...v3.2.0) (2024-05-25)
+
+
+### Bug Fixes
+
+* **handlers:** bool action handler now registers value to variable ([bad2ea7](https://github.com/aruizrab/sodd-unity-framework/commit/bad2ea7641efa3097cd719e72b0657d7335f48d4))
+
+
+### Features
+
+* **extensions:** add `isEmpty()` extension method to IEnumerable ([1941f47](https://github.com/aruizrab/sodd-unity-framework/commit/1941f471cd7c545795dc4e759ba4d071dc1a86e6))
+* **repositories:** add variable repository debugging ([5d42ecd](https://github.com/aruizrab/sodd-unity-framework/commit/5d42ecdf0ee4d9a487a2d16994a6c112d16be0cc))
+
 # [3.1.0](https://github.com/aruizrab/sodd-unity-framework/compare/v3.0.0...v3.1.0) (2024-05-25)
 
 
