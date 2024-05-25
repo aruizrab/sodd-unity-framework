@@ -73,6 +73,11 @@ namespace SODD.Core
         {
             output = source.FirstOrDefault(predicate);
             return !EqualityComparer<T>.Default.Equals(output, default);
+        }        
+        
+        public static bool IsEmpty<T>(this IEnumerable<T> source)
+        {
+            return !source.Any();
         }
     }
 }
