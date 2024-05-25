@@ -1,3 +1,15 @@
+# [3.1.0](https://github.com/aruizrab/sodd-unity-framework/compare/v3.0.0...v3.1.0) (2024-05-25)
+
+
+### Bug Fixes
+
+* **data:** serializable dictionary entry height adapts to content ([b90b5b3](https://github.com/aruizrab/sodd-unity-framework/commit/b90b5b3e0785ba9052f13ec1e685af894040baf4))
+
+
+### Features
+
+* **handlers:** action handlers now reference variables too ([67c38c7](https://github.com/aruizrab/sodd-unity-framework/commit/67c38c740f9b30af497edcfcac4e79ffdbe51adf))
+
 # [3.0.0](https://github.com/aruizrab/sodd-unity-framework/compare/v2.0.1...v3.0.0) (2024-05-23)
 
 
