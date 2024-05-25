@@ -89,7 +89,7 @@
 
 
   <h1 id="SODD_Input_ActionHandlers_InputActionHandler_1" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1" class="text-break">
-Class InputActionHandler&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L42"><i class="bi bi-code-slash"></i></a>
+Class InputActionHandler&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -151,9 +151,11 @@ any event subscribers to handle the input action events.</p>
 
   <h2 id="SODD_Input_ActionHandlers_InputActionHandler_1_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>
-        This abstract class serves as the foundation for all input action handler implementations within the SODD Framework.
-It allows for the decoupling of input handling logic from game objects and components by translating the events provided
-by Unity's Input System into the SODD Framework's scriptable event system.
+        This abstract class serves as the foundation for all input action handler implementations within the SODD
+        Framework.
+        It allows for the decoupling of input handling logic from game objects and components by translating the events
+        provided
+        by Unity's Input System into the SODD Framework's scriptable event system.
     </p>
 <p>
         This class listens to three phases of an input action—started, performed, and canceled—and invokes
@@ -175,7 +177,7 @@ by Unity's Input System into the SODD Framework's scriptable event system.
 
   <h3 id="SODD_Input_ActionHandlers_InputActionHandler_1_inputActionReference" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.inputActionReference">
   inputActionReference
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Reference to the InputAction to be handled.</p>
@@ -206,7 +208,7 @@ by Unity's Input System into the SODD Framework's scriptable event system.
 
   <h3 id="SODD_Input_ActionHandlers_InputActionHandler_1_onActionCanceled" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.onActionCanceled">
   onActionCanceled
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Event triggered when the input action is canceled.</p>
@@ -237,7 +239,7 @@ by Unity's Input System into the SODD Framework's scriptable event system.
 
   <h3 id="SODD_Input_ActionHandlers_InputActionHandler_1_onActionPerformed" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.onActionPerformed">
   onActionPerformed
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Event triggered when the input action is performed.</p>
@@ -268,7 +270,7 @@ by Unity's Input System into the SODD Framework's scriptable event system.
 
   <h3 id="SODD_Input_ActionHandlers_InputActionHandler_1_onActionStarted" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.onActionStarted">
   onActionStarted
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Event triggered when the input action starts.</p>
@@ -296,6 +298,36 @@ by Unity's Input System into the SODD Framework's scriptable event system.
 
 
 
+
+  <h3 id="SODD_Input_ActionHandlers_InputActionHandler_1_targetVariable" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.targetVariable">
+  targetVariable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Variable&lt;T&gt; targetVariable</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SODD.Variables.Variable-1.html">Variable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -304,7 +336,7 @@ by Unity's Input System into the SODD Framework's scriptable event system.
 
   <h3 id="SODD_Input_ActionHandlers_InputActionHandler_1_OnActionCanceled_InputAction_CallbackContext_" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.OnActionCanceled(InputAction.CallbackContext)">
   OnActionCanceled(CallbackContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L122"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called when the input action is canceled.</p>
@@ -337,7 +369,7 @@ by Unity's Input System into the SODD Framework's scriptable event system.
 
   <h3 id="SODD_Input_ActionHandlers_InputActionHandler_1_OnActionPerformed_InputAction_CallbackContext_" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.OnActionPerformed(InputAction.CallbackContext)">
   OnActionPerformed(CallbackContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L111"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called when the input action is performed.</p>
@@ -370,7 +402,7 @@ by Unity's Input System into the SODD Framework's scriptable event system.
 
   <h3 id="SODD_Input_ActionHandlers_InputActionHandler_1_OnActionStarted_InputAction_CallbackContext_" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.OnActionStarted(InputAction.CallbackContext)">
   OnActionStarted(CallbackContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called when the input action starts.</p>

@@ -2379,6 +2379,14 @@ references:
   fullName.vb: SODD.Input.ActionHandlers.InputActionHandler(Of T).onActionStarted
   nameWithType: InputActionHandler<T>.onActionStarted
   nameWithType.vb: InputActionHandler(Of T).onActionStarted
+- uid: SODD.Input.ActionHandlers.InputActionHandler`1.targetVariable
+  name: targetVariable
+  href: api/SODD.Input.ActionHandlers.InputActionHandler-1.html#SODD_Input_ActionHandlers_InputActionHandler_1_targetVariable
+  commentId: F:SODD.Input.ActionHandlers.InputActionHandler`1.targetVariable
+  fullName: SODD.Input.ActionHandlers.InputActionHandler<T>.targetVariable
+  fullName.vb: SODD.Input.ActionHandlers.InputActionHandler(Of T).targetVariable
+  nameWithType: InputActionHandler<T>.targetVariable
+  nameWithType.vb: InputActionHandler(Of T).targetVariable
 - uid: SODD.Input.ActionHandlers.Vector2InputActionHandler
   name: Vector2InputActionHandler
   href: api/SODD.Input.ActionHandlers.Vector2InputActionHandler.html
