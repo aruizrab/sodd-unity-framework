@@ -30,19 +30,19 @@ namespace SODD.Input.ActionHandlers
         /// <inheritdoc />
         protected override void OnActionStarted(InputAction.CallbackContext context)
         {
-            if (onActionStarted) onActionStarted.Invoke(new Void());
+            if (onActionStarted) onActionStarted.Invoke(Void.Instance);
         }
 
         /// <inheritdoc />
         protected override void OnActionPerformed(InputAction.CallbackContext context)
         {
-            if (onActionPerformed) onActionPerformed.Invoke(new Void());
+            if (onActionPerformed) onActionPerformed.Invoke(Void.Instance);
         }
 
         /// <inheritdoc />
         protected override void OnActionCanceled(InputAction.CallbackContext context)
         {
-            if (onActionCanceled) onActionCanceled.Invoke(new Void());
+            if (onActionCanceled) onActionCanceled.Invoke(Void.Instance);
         }
     }
 }
