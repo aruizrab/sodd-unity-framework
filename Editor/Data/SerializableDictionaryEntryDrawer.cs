@@ -25,7 +25,7 @@ namespace SODD.Editor.Data
 
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
         {
-            return EditorGUI.GetPropertyHeight(property.FindPropertyRelative("key")) + 4;
+            return Mathf.Max(EditorGUI.GetPropertyHeight(property.FindPropertyRelative("key")), EditorGUI.GetPropertyHeight(property.FindPropertyRelative("value"))) + 4;
         }
     }
 }
