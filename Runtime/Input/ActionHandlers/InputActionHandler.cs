@@ -1,4 +1,5 @@
 ﻿using SODD.Events;
+using SODD.Variables;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,9 +11,11 @@ namespace SODD.Input.ActionHandlers
     /// <typeparam name="T">The data type of the input value, defined by the input action being handled.</typeparam>
     /// <remarks>
     ///     <para>
-    ///         This abstract class serves as the foundation for all input action handler implementations within the SODD Framework.
-    /// It allows for the decoupling of input handling logic from game objects and components by translating the events provided
-    /// by Unity's Input System into the SODD Framework's scriptable event system.
+    ///         This abstract class serves as the foundation for all input action handler implementations within the SODD
+    ///         Framework.
+    ///         It allows for the decoupling of input handling logic from game objects and components by translating the events
+    ///         provided
+    ///         by Unity's Input System into the SODD Framework's scriptable event system.
     ///     </para>
     ///     <para>
     ///         This class listens to three phases of an input action—started, performed, and canceled—and invokes
@@ -50,7 +53,7 @@ namespace SODD.Input.ActionHandlers
         ///     Event triggered when the input action starts.
         /// </summary>
         /// <typeparam name="T">The type of the action payload.</typeparam>
-        [SerializeField] protected Event<T> onActionStarted;
+        [Space] [SerializeField] protected Event<T> onActionStarted;
 
         /// <summary>
         ///     Event triggered when the input action is performed.
@@ -63,6 +66,8 @@ namespace SODD.Input.ActionHandlers
         /// </summary>
         /// <typeparam name="T">The type of the action payload.</typeparam>
         [SerializeField] protected Event<T> onActionCanceled;
+
+        [Space] [SerializeField] protected Variable<T> targetVariable;
 
         private void OnEnable()
         {
@@ -94,7 +99,9 @@ namespace SODD.Input.ActionHandlers
         /// <param name="context">Context of the input action callback.</param>
         protected virtual void OnActionStarted(InputAction.CallbackContext context)
         {
-            if (onActionStarted) onActionStarted.Invoke(context.ReadValue<T>());
+            var value = context.ReadValue<T>();
+            if (onActionStarted) onActionStarted.Invoke(value);
+            if (targetVariable) targetVariable.Value = value;
         }
 
         /// <summary>
@@ -103,7 +110,9 @@ namespace SODD.Input.ActionHandlers
         /// <param name="context">Context of the input action callback.</param>
         protected virtual void OnActionPerformed(InputAction.CallbackContext context)
         {
-            if (onActionPerformed) onActionPerformed.Invoke(context.ReadValue<T>());
+            var value = context.ReadValue<T>();
+            if (onActionPerformed) onActionPerformed.Invoke(value);
+            if (targetVariable) targetVariable.Value = value;
         }
 
         /// <summary>
@@ -112,7 +121,9 @@ namespace SODD.Input.ActionHandlers
         /// <param name="context">Context of the input action callback.</param>
         protected virtual void OnActionCanceled(InputAction.CallbackContext context)
         {
-            if (onActionCanceled) onActionCanceled.Invoke(context.ReadValue<T>());
+            var value = context.ReadValue<T>();
+            if (onActionCanceled) onActionCanceled.Invoke(value);
+            if (targetVariable) targetVariable.Value = value;
         }
     }
 }
