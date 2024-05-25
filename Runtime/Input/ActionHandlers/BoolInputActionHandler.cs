@@ -22,19 +22,25 @@ namespace SODD.Input.ActionHandlers
         /// <inheritdoc />
         protected override void OnActionStarted(InputAction.CallbackContext context)
         {
-            if (onActionStarted) onActionStarted.Invoke(context.ReadValueAsButton());
+            var value = context.ReadValueAsButton();
+            if (onActionStarted) onActionStarted.Invoke(value);
+            if (targetVariable) targetVariable.Value = value;
         }
 
         /// <inheritdoc />
         protected override void OnActionPerformed(InputAction.CallbackContext context)
         {
-            if (onActionPerformed) onActionPerformed.Invoke(context.ReadValueAsButton());
+            var value = context.ReadValueAsButton();
+            if (onActionPerformed) onActionPerformed.Invoke(value);
+            if (targetVariable) targetVariable.Value = value;
         }
 
         /// <inheritdoc />
         protected override void OnActionCanceled(InputAction.CallbackContext context)
         {
-            if (onActionCanceled) onActionCanceled.Invoke(context.ReadValueAsButton());
+            var value = context.ReadValueAsButton();
+            if (onActionCanceled) onActionCanceled.Invoke(value);
+            if (targetVariable) targetVariable.Value = value;
         }
     }
 }
