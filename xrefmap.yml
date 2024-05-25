@@ -1109,6 +1109,22 @@ references:
   fullName.vb: SODD.Core.EnumerableExtensions.ForEach(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Action(Of T))
   nameWithType: EnumerableExtensions.ForEach<T>(IEnumerable<T>, Action<T>)
   nameWithType.vb: EnumerableExtensions.ForEach(Of T)(IEnumerable(Of T), Action(Of T))
+- uid: SODD.Core.EnumerableExtensions.IsEmpty*
+  name: IsEmpty
+  href: api/SODD.Core.EnumerableExtensions.html#SODD_Core_EnumerableExtensions_IsEmpty_
+  commentId: Overload:SODD.Core.EnumerableExtensions.IsEmpty
+  isSpec: "True"
+  fullName: SODD.Core.EnumerableExtensions.IsEmpty
+  nameWithType: EnumerableExtensions.IsEmpty
+- uid: SODD.Core.EnumerableExtensions.IsEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  name: IsEmpty<T>(IEnumerable<T>)
+  href: api/SODD.Core.EnumerableExtensions.html#SODD_Core_EnumerableExtensions_IsEmpty__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:SODD.Core.EnumerableExtensions.IsEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: IsEmpty(Of T)(IEnumerable(Of T))
+  fullName: SODD.Core.EnumerableExtensions.IsEmpty<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: SODD.Core.EnumerableExtensions.IsEmpty(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: EnumerableExtensions.IsEmpty<T>(IEnumerable<T>)
+  nameWithType.vb: EnumerableExtensions.IsEmpty(Of T)(IEnumerable(Of T))
 - uid: SODD.Core.EnumerableExtensions.TryFind*
   name: TryFind
   href: api/SODD.Core.EnumerableExtensions.html#SODD_Core_EnumerableExtensions_TryFind_
