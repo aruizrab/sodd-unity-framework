@@ -219,6 +219,8 @@ namespace SODD
         {
             public const string Path = Root + "Input/";
 
+            public const string ControlSchemeHandler = Path + "Control Scheme Handler";
+
             public static class ActionHandlers
             {
                 public const string Path = Input.Path + "Action Handlers/";
@@ -237,6 +239,7 @@ namespace SODD
             public const string Path = Root + "Repositories/";
 
             public const string VariableRepository = Path + "Variable Repository";
+            public const string InputIconRepository = Path + "Input Icon Repository";
         } 
         
         public const string StateMachine = Root + "State Machine";
