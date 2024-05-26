@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using UnityEditor;
 using UnityEngine;
@@ -90,6 +91,33 @@ namespace SODD.Editor.Utils
             var field = targetObject.GetType().GetField(serializedProperty.propertyPath, PropertyBindingFlags)
                         ?? throw new Exception($"Cannot get field {serializedProperty.propertyPath}.");
             return field.GetValue(targetObject);
+        }
+        
+        [MenuItem("Tools/Reload Resources")]
+        public static void ReloadScriptableObjects()
+        {
+            var assetPaths = AssetDatabase.GetAllAssetPaths();
+            var scriptableObjectPaths = assetPaths
+                .Where(assetPath => assetPath.StartsWith("Assets/Resources") && assetPath.EndsWith(".asset")).ToList();
+            var totalObjects = scriptableObjectPaths.Count;
+
+            for (var i = 0; i < totalObjects; i++)
+            {
+                var path = scriptableObjectPaths[i];
+                var scriptableObject = AssetDatabase.LoadAssetAtPath<ScriptableObject>(path);
+                if (scriptableObject != null)
+                {
+                    EditorUtility.SetDirty(scriptableObject);
+                    AssetDatabase.SaveAssetIfDirty(scriptableObject);
+                    Debug.Log("Reloaded resource: " + path);
+                }
+
+                EditorUtility.DisplayProgressBar("Reloading resources", $"Processing {path}", (float)i / totalObjects);
+            }
+
+            EditorUtility.ClearProgressBar();
+            AssetDatabase.Refresh();
+            Debug.Log("Finished reloading resources.");
         }
     }
 }
