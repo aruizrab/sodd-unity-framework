@@ -1,3 +1,13 @@
+# [3.3.0](https://github.com/aruizrab/sodd-unity-framework/compare/v3.2.0...v3.3.0) (2024-05-26)
+
+
+### Features
+
+* add reload resources button in SODD Menu ([34cf76c](https://github.com/aruizrab/sodd-unity-framework/commit/34cf76c0a146d035401cea8ed63e75774c99bc02))
+* **input:** add input action icon provider ([7791379](https://github.com/aruizrab/sodd-unity-framework/commit/7791379157abcb3e088d6ed6abc6987b231515bb))
+* **input:** add input control scheme handler ([8bc55b3](https://github.com/aruizrab/sodd-unity-framework/commit/8bc55b366722a44e9bb8f9a3355ec45950a276d0))
+* **input:** add input icon repository ([5f67f4a](https://github.com/aruizrab/sodd-unity-framework/commit/5f67f4a0f47a2b685e2e91072b30394b2bd0f843))
+
 # [3.2.0](https://github.com/aruizrab/sodd-unity-framework/compare/v3.1.0...v3.2.0) (2024-05-25)
 
 
