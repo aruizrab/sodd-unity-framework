@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class DisabledAttribute | SODD Framework | 3.2.0 </title>
+      <title>Class ControlSchemeHandler | SODD Framework | 3.2.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DisabledAttribute | SODD Framework | 3.2.0 ">
+      <meta name="title" content="Class ControlSchemeHandler | SODD Framework | 3.2.0 ">
       
-      <meta name="description" content="Disables the property or field, making it visible in the Unity Inspector but not editable.">
+      
       <link rel="icon" href="../manual/images/favicon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/aruizrab/sodd-unity-framework/new/main/apiSpec/new?filename=SODD_Attributes_DisabledAttribute.md&amp;value=---%0Auid%3A%20SODD.Attributes.DisabledAttribute%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/aruizrab/sodd-unity-framework/new/main/apiSpec/new?filename=SODD_Input_ControlSchemeHandler.md&amp;value=---%0Auid%3A%20SODD.Input.ControlSchemeHandler%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,26 +84,24 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="SODD.Attributes.DisabledAttribute">
+        <article data-uid="SODD.Input.ControlSchemeHandler">
 
 
 
-  <h1 id="SODD_Attributes_DisabledAttribute" data-uid="SODD.Attributes.DisabledAttribute" class="text-break">
-Class DisabledAttribute  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Attributes/DisabledAttribute.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <h1 id="SODD_Input_ControlSchemeHandler" data-uid="SODD.Input.ControlSchemeHandler" class="text-break">
+Class ControlSchemeHandler  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ControlSchemeHandler.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="SODD.html">SODD</a>.<a class="xref" href="SODD.Attributes.html">Attributes</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SODD.html">SODD</a>.<a class="xref" href="SODD.Input.html">Input</a></dd></dl>
   
   </div>
 
-  <div class="markdown summary"><p>Disables the property or field, making it visible in the Unity Inspector but not editable.</p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[AttributeUsage(AttributeTargets.Property|AttributeTargets.Field)]
-public class DisabledAttribute : PropertyAttribute</code></pre>
+    <pre><code class="lang-csharp hljs">public class ControlSchemeHandler : ScriptableObject</code></pre>
   </div>
 
 
@@ -113,7 +111,7 @@ public class DisabledAttribute : PropertyAttribute</code></pre>
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">DisabledAttribute</span></div>
+      <div><span class="xref">ControlSchemeHandler</span></div>
     </dd>
   </dl>
 
@@ -122,32 +120,7 @@ public class DisabledAttribute : PropertyAttribute</code></pre>
 
 
 
-  <h2 id="SODD_Attributes_DisabledAttribute_examples">Examples</h2>
-  <p>Here is how you can apply the DisabledAttribute to a property in your class:</p>
-<pre><code class="lang-csharp">public class ExampleClass : MonoBehaviour
-{
-    [Disabled]
-    public float ReadOnlyValue;
 
-    void Update()
-    {
-        ReadOnlyValue = CalculateSomeValue();
-    }
-
-    private float CalculateSomeValue()
-    {
-        return Time.deltaTime * 100;
-    }
-}</code></pre>
-<p>In this example, <code>ReadOnlyValue</code> is displayed in the Unity Inspector but cannot be
-modified by users, ensuring that only calculated values are shown.</p>
-
-
-  <h2 id="SODD_Attributes_DisabledAttribute_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>This attribute is useful for displaying properties or fields in the Inspector without
-allowing changes at runtime. This can be particularly helpful for debugging or for
-showing calculated values.</p>
-</div>
 
 
 

@@ -645,6 +645,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Input.ControlSchemeHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Input.ControlSchemeHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Input.InputActionIconProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Input.InputActionIconProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Input.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Input.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/SODD.Listeners.BoolEventListener.yml",
       "output": {
         ".html": {
@@ -859,6 +889,16 @@
       "output": {
         ".html": {
           "relative_path": "api/SODD.Repositories.IRepository-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Repositories.InputIconRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Repositories.InputIconRepository.html"
         }
       },
       "version": ""

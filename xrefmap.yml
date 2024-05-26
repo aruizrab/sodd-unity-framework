@@ -2246,6 +2246,12 @@ references:
   isSpec: "True"
   fullName: SODD.Events.VoidEvent.Invoke
   nameWithType: VoidEvent.Invoke
+- uid: SODD.Input
+  name: SODD.Input
+  href: api/SODD.Input.html
+  commentId: N:SODD.Input
+  fullName: SODD.Input
+  nameWithType: SODD.Input
 - uid: SODD.Input.ActionHandlers
   name: SODD.Input.ActionHandlers
   href: api/SODD.Input.ActionHandlers.html
@@ -2460,6 +2466,31 @@ references:
   isSpec: "True"
   fullName: SODD.Input.ActionHandlers.VoidInputActionHandler.OnActionStarted
   nameWithType: VoidInputActionHandler.OnActionStarted
+- uid: SODD.Input.ControlSchemeHandler
+  name: ControlSchemeHandler
+  href: api/SODD.Input.ControlSchemeHandler.html
+  commentId: T:SODD.Input.ControlSchemeHandler
+  fullName: SODD.Input.ControlSchemeHandler
+  nameWithType: ControlSchemeHandler
+- uid: SODD.Input.InputActionIconProvider
+  name: InputActionIconProvider
+  href: api/SODD.Input.InputActionIconProvider.html
+  commentId: T:SODD.Input.InputActionIconProvider
+  fullName: SODD.Input.InputActionIconProvider
+  nameWithType: InputActionIconProvider
+- uid: SODD.Input.InputActionIconProvider.UpdateIcon
+  name: UpdateIcon()
+  href: api/SODD.Input.InputActionIconProvider.html#SODD_Input_InputActionIconProvider_UpdateIcon
+  commentId: M:SODD.Input.InputActionIconProvider.UpdateIcon
+  fullName: SODD.Input.InputActionIconProvider.UpdateIcon()
+  nameWithType: InputActionIconProvider.UpdateIcon()
+- uid: SODD.Input.InputActionIconProvider.UpdateIcon*
+  name: UpdateIcon
+  href: api/SODD.Input.InputActionIconProvider.html#SODD_Input_InputActionIconProvider_UpdateIcon_
+  commentId: Overload:SODD.Input.InputActionIconProvider.UpdateIcon
+  isSpec: "True"
+  fullName: SODD.Input.InputActionIconProvider.UpdateIcon
+  nameWithType: InputActionIconProvider.UpdateIcon
 - uid: SODD.Listeners
   name: SODD.Listeners
   href: api/SODD.Listeners.html
@@ -3132,6 +3163,28 @@ references:
   fullName.vb: SODD.Repositories.IRepository(Of T).Save
   nameWithType: IRepository<T>.Save
   nameWithType.vb: IRepository(Of T).Save
+- uid: SODD.Repositories.InputIconRepository
+  name: InputIconRepository
+  href: api/SODD.Repositories.InputIconRepository.html
+  commentId: T:SODD.Repositories.InputIconRepository
+  fullName: SODD.Repositories.InputIconRepository
+  nameWithType: InputIconRepository
+- uid: SODD.Repositories.InputIconRepository.GetIcon(System.String)
+  name: GetIcon(string)
+  href: api/SODD.Repositories.InputIconRepository.html#SODD_Repositories_InputIconRepository_GetIcon_System_String_
+  commentId: M:SODD.Repositories.InputIconRepository.GetIcon(System.String)
+  name.vb: GetIcon(String)
+  fullName: SODD.Repositories.InputIconRepository.GetIcon(string)
+  fullName.vb: SODD.Repositories.InputIconRepository.GetIcon(String)
+  nameWithType: InputIconRepository.GetIcon(string)
+  nameWithType.vb: InputIconRepository.GetIcon(String)
+- uid: SODD.Repositories.InputIconRepository.GetIcon*
+  name: GetIcon
+  href: api/SODD.Repositories.InputIconRepository.html#SODD_Repositories_InputIconRepository_GetIcon_
+  commentId: Overload:SODD.Repositories.InputIconRepository.GetIcon
+  isSpec: "True"
+  fullName: SODD.Repositories.InputIconRepository.GetIcon
+  nameWithType: InputIconRepository.GetIcon
 - uid: SODD.Repositories.JsonFileRepository`1
   name: JsonFileRepository<T>
   href: api/SODD.Repositories.JsonFileRepository-1.html
