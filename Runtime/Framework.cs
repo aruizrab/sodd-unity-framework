@@ -220,6 +220,7 @@ namespace SODD
             public const string Path = Root + "Input/";
 
             public const string ControlSchemeHandler = Path + "Control Scheme Handler";
+            public const string IconProvider = Path + "Icon Provider";
 
             public static class ActionHandlers
             {
