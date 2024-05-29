@@ -66,5 +66,15 @@ namespace SODD.AI
             stateQueue.RemoveAt(lastIndex);
             CurrentState = state;
         }
+
+        public void AddCurrentStateLastToQueue()
+        {
+            AddLastToQueue(currentState);
+        }
+
+        public void AddCurrentStateFirstToQueue()
+        {
+            AddFirstToQueue(currentState);
+        }
     }
 }
