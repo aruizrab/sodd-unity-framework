@@ -35,7 +35,7 @@ namespace SODD.Input
         {
             try
             {
-                if (!inputActionReference || inputIconRepository || !targetIcon || !currentControlScheme) return;
+                if (!inputActionReference || !inputIconRepository || !targetIcon || !currentControlScheme) return;
 
                 var inputAction = inputActionReference.action;
                 var controlScheme =
