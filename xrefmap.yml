@@ -81,6 +81,32 @@ references:
   commentId: T:SODD.AI.StateMachine
   fullName: SODD.AI.StateMachine
   nameWithType: StateMachine
+- uid: SODD.AI.StateMachine.AddCurrentStateFirstToQueue
+  name: AddCurrentStateFirstToQueue()
+  href: api/SODD.AI.StateMachine.html#SODD_AI_StateMachine_AddCurrentStateFirstToQueue
+  commentId: M:SODD.AI.StateMachine.AddCurrentStateFirstToQueue
+  fullName: SODD.AI.StateMachine.AddCurrentStateFirstToQueue()
+  nameWithType: StateMachine.AddCurrentStateFirstToQueue()
+- uid: SODD.AI.StateMachine.AddCurrentStateFirstToQueue*
+  name: AddCurrentStateFirstToQueue
+  href: api/SODD.AI.StateMachine.html#SODD_AI_StateMachine_AddCurrentStateFirstToQueue_
+  commentId: Overload:SODD.AI.StateMachine.AddCurrentStateFirstToQueue
+  isSpec: "True"
+  fullName: SODD.AI.StateMachine.AddCurrentStateFirstToQueue
+  nameWithType: StateMachine.AddCurrentStateFirstToQueue
+- uid: SODD.AI.StateMachine.AddCurrentStateLastToQueue
+  name: AddCurrentStateLastToQueue()
+  href: api/SODD.AI.StateMachine.html#SODD_AI_StateMachine_AddCurrentStateLastToQueue
+  commentId: M:SODD.AI.StateMachine.AddCurrentStateLastToQueue
+  fullName: SODD.AI.StateMachine.AddCurrentStateLastToQueue()
+  nameWithType: StateMachine.AddCurrentStateLastToQueue()
+- uid: SODD.AI.StateMachine.AddCurrentStateLastToQueue*
+  name: AddCurrentStateLastToQueue
+  href: api/SODD.AI.StateMachine.html#SODD_AI_StateMachine_AddCurrentStateLastToQueue_
+  commentId: Overload:SODD.AI.StateMachine.AddCurrentStateLastToQueue
+  isSpec: "True"
+  fullName: SODD.AI.StateMachine.AddCurrentStateLastToQueue
+  nameWithType: StateMachine.AddCurrentStateLastToQueue
 - uid: SODD.AI.StateMachine.AddFirstToQueue(SODD.AI.State)
   name: AddFirstToQueue(State)
   href: api/SODD.AI.StateMachine.html#SODD_AI_StateMachine_AddFirstToQueue_SODD_AI_State_
