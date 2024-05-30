@@ -18,9 +18,9 @@ namespace SODD.Observers
         {
             base.OnVariableValueChanged(value);
 
-            var stringValue =
-                (getValueAsString.decimals != -1 ? Math.Round(value, getValueAsString.decimals) : value).ToString(
-                    CultureInfo.CurrentCulture);
+            var roundedValue = getValueAsString.decimals != -1 ? Math.Round(value, getValueAsString.decimals) : value;
+            var multipliedValue = roundedValue * getValueAsString.multiplier;
+            var stringValue = multipliedValue.ToString(CultureInfo.CurrentCulture);
 
             getValueAsString.onValueChangedAsString?.Invoke(stringValue);
         }
@@ -30,6 +30,7 @@ namespace SODD.Observers
         {
             [Tooltip("Specifies the number of decimal places for rounding the float value. Use -1 for no rounding.")]
             public int decimals = 2;
+            public int multiplier = 1;
 
             public UnityEvent<string> onValueChangedAsString;
         }
