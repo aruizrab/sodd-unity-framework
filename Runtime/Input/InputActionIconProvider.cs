@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using SODD.Core;
 using SODD.Repositories;
 using SODD.Variables;
 using TMPro;
@@ -9,7 +10,7 @@ using UnityEngine.InputSystem;
 namespace SODD.Input
 {
     [CreateAssetMenu(menuName = Framework.Input.IconProvider, fileName = nameof(InputActionIconProvider))]
-    public class InputActionIconProvider : ScriptableObject
+    public class InputActionIconProvider : PassiveScriptableObject
     {
         [SerializeField] private InputActionReference inputActionReference;
         [SerializeField] private InputIconRepository inputIconRepository;

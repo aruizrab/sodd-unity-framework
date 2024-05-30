@@ -9,7 +9,7 @@ using UnityEngine.InputSystem.LowLevel;
 namespace SODD.Input
 {
     [CreateAssetMenu(menuName = Framework.Input.ControlSchemeHandler, fileName = nameof(ControlSchemeHandler))]
-    public class ControlSchemeHandler : ScriptableObject
+    public class ControlSchemeHandler : PassiveScriptableObject
     {
         [SerializeField] private InputActionAsset inputActionAsset;
         [SerializeField] private Event<string> onControlSchemeChanged;
