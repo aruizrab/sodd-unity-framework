@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class InputActionHandler&lt;T&gt; | SODD Framework | 3.3.0 </title>
+      <title>Class InputActionHandler&lt;T&gt; | SODD Framework | 3.4.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class InputActionHandler&lt;T&gt; | SODD Framework | 3.3.0 ">
+      <meta name="title" content="Class InputActionHandler&lt;T&gt; | SODD Framework | 3.4.0 ">
       
       <meta name="description" content="Provides a base class for handling input actions and converting them into scriptable events.">
       <link rel="icon" href="../manual/images/favicon.png">
@@ -89,7 +89,7 @@
 
 
   <h1 id="SODD_Input_ActionHandlers_InputActionHandler_1" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1" class="text-break">
-Class InputActionHandler&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L45"><i class="bi bi-code-slash"></i></a>
+Class InputActionHandler&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class InputActionHandler&lt;T&gt;  <a class="header-action link-secondary" title
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class InputActionHandler&lt;T&gt; : ScriptableObject where T : struct</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class InputActionHandler&lt;T&gt; : PassiveScriptableObject where T : struct</code></pre>
   </div>
 
 
@@ -118,6 +118,7 @@ Class InputActionHandler&lt;T&gt;  <a class="header-action link-secondary" title
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="SODD.Core.PassiveScriptableObject.html">PassiveScriptableObject</a></div>
       <div><span class="xref">InputActionHandler&lt;T&gt;</span></div>
     </dd>
   </dl>
@@ -134,6 +135,13 @@ Class InputActionHandler&lt;T&gt;  <a class="header-action link-secondary" title
     </dd>
   </dl>
 
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="SODD.Core.PassiveScriptableObject.html#SODD_Core_PassiveScriptableObject_reference">PassiveScriptableObject.reference</a>
+    </div>
+  </dd></dl>
 
 
 
@@ -177,7 +185,7 @@ any event subscribers to handle the input action events.</p>
 
   <h3 id="SODD_Input_ActionHandlers_InputActionHandler_1_inputActionReference" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.inputActionReference">
   inputActionReference
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Reference to the InputAction to be handled.</p>
@@ -208,7 +216,7 @@ any event subscribers to handle the input action events.</p>
 
   <h3 id="SODD_Input_ActionHandlers_InputActionHandler_1_onActionCanceled" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.onActionCanceled">
   onActionCanceled
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Event triggered when the input action is canceled.</p>
@@ -239,7 +247,7 @@ any event subscribers to handle the input action events.</p>
 
   <h3 id="SODD_Input_ActionHandlers_InputActionHandler_1_onActionPerformed" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.onActionPerformed">
   onActionPerformed
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Event triggered when the input action is performed.</p>
@@ -270,7 +278,7 @@ any event subscribers to handle the input action events.</p>
 
   <h3 id="SODD_Input_ActionHandlers_InputActionHandler_1_onActionStarted" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.onActionStarted">
   onActionStarted
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Event triggered when the input action starts.</p>
@@ -301,7 +309,7 @@ any event subscribers to handle the input action events.</p>
 
   <h3 id="SODD_Input_ActionHandlers_InputActionHandler_1_targetVariable" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.targetVariable">
   targetVariable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -336,7 +344,7 @@ any event subscribers to handle the input action events.</p>
 
   <h3 id="SODD_Input_ActionHandlers_InputActionHandler_1_OnActionCanceled_InputAction_CallbackContext_" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.OnActionCanceled(InputAction.CallbackContext)">
   OnActionCanceled(CallbackContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L123"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called when the input action is canceled.</p>
@@ -369,7 +377,7 @@ any event subscribers to handle the input action events.</p>
 
   <h3 id="SODD_Input_ActionHandlers_InputActionHandler_1_OnActionPerformed_InputAction_CallbackContext_" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.OnActionPerformed(InputAction.CallbackContext)">
   OnActionPerformed(CallbackContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L112"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called when the input action is performed.</p>
@@ -402,7 +410,7 @@ any event subscribers to handle the input action events.</p>
 
   <h3 id="SODD_Input_ActionHandlers_InputActionHandler_1_OnActionStarted_InputAction_CallbackContext_" data-uid="SODD.Input.ActionHandlers.InputActionHandler`1.OnActionStarted(InputAction.CallbackContext)">
   OnActionStarted(CallbackContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ActionHandlers/InputActionHandler.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called when the input action starts.</p>

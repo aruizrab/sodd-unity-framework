@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class VariableRepository | SODD Framework | 3.3.0 </title>
+      <title>Class VariableRepository | SODD Framework | 3.4.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class VariableRepository | SODD Framework | 3.3.0 ">
+      <meta name="title" content="Class VariableRepository | SODD Framework | 3.4.0 ">
       
       <meta name="description" content="Manages a repository of variables, allowing for their persistent storage and retrieval using binary serialization.">
       <link rel="icon" href="../manual/images/favicon.png">
@@ -89,7 +89,7 @@
 
 
   <h1 id="SODD_Repositories_VariableRepository" data-uid="SODD.Repositories.VariableRepository" class="text-break">
-Class VariableRepository  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Repositories/VariableRepository.cs/#L24"><i class="bi bi-code-slash"></i></a>
+Class VariableRepository  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Repositories/VariableRepository.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class VariableRepository  <a class="header-action link-secondary" title="View so
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class VariableRepository : ScriptableObject</code></pre>
+    <pre><code class="lang-csharp hljs">public class VariableRepository : PassiveScriptableObject</code></pre>
   </div>
 
 
@@ -112,12 +112,20 @@ Class VariableRepository  <a class="header-action link-secondary" title="View so
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="SODD.Core.PassiveScriptableObject.html">PassiveScriptableObject</a></div>
       <div><span class="xref">VariableRepository</span></div>
     </dd>
   </dl>
 
 
 
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="SODD.Core.PassiveScriptableObject.html#SODD_Core_PassiveScriptableObject_reference">PassiveScriptableObject.reference</a>
+    </div>
+  </dd></dl>
 
 
 
@@ -138,7 +146,7 @@ Class VariableRepository  <a class="header-action link-secondary" title="View so
 
   <h3 id="SODD_Repositories_VariableRepository_Delete" data-uid="SODD.Repositories.VariableRepository.Delete">
   Delete()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Repositories/VariableRepository.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Repositories/VariableRepository.cs/#L112"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Deletes the binary file where the variables are stored.</p>
@@ -165,7 +173,7 @@ Class VariableRepository  <a class="header-action link-secondary" title="View so
 
   <h3 id="SODD_Repositories_VariableRepository_Load" data-uid="SODD.Repositories.VariableRepository.Load">
   Load()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Repositories/VariableRepository.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Repositories/VariableRepository.cs/#L75"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Loads the state of variables from a binary file.</p>
@@ -192,7 +200,7 @@ Class VariableRepository  <a class="header-action link-secondary" title="View so
 
   <h3 id="SODD_Repositories_VariableRepository_Save" data-uid="SODD.Repositories.VariableRepository.Save">
   Save()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Repositories/VariableRepository.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Repositories/VariableRepository.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Saves the current state of variables to a binary file.</p>

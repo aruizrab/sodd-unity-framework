@@ -335,6 +335,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Core.PassiveScriptableObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Core.PassiveScriptableObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Core.PassiveScriptableObjectLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Core.PassiveScriptableObjectLoader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SODD.Core.PersistentScriptableObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SODD.Core.PersistentScriptableObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/SODD.Core.PrimitiveTypeExtensions.yml",
       "output": {
         ".html": {

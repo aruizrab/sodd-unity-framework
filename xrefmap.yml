@@ -1483,6 +1483,42 @@ references:
   isSpec: "True"
   fullName: SODD.Core.NavMeshAgentExtensions.HasReachedDestination
   nameWithType: NavMeshAgentExtensions.HasReachedDestination
+- uid: SODD.Core.PassiveScriptableObject
+  name: PassiveScriptableObject
+  href: api/SODD.Core.PassiveScriptableObject.html
+  commentId: T:SODD.Core.PassiveScriptableObject
+  fullName: SODD.Core.PassiveScriptableObject
+  nameWithType: PassiveScriptableObject
+- uid: SODD.Core.PassiveScriptableObject.reference
+  name: reference
+  href: api/SODD.Core.PassiveScriptableObject.html#SODD_Core_PassiveScriptableObject_reference
+  commentId: F:SODD.Core.PassiveScriptableObject.reference
+  fullName: SODD.Core.PassiveScriptableObject.reference
+  nameWithType: PassiveScriptableObject.reference
+- uid: SODD.Core.PassiveScriptableObjectLoader
+  name: PassiveScriptableObjectLoader
+  href: api/SODD.Core.PassiveScriptableObjectLoader.html
+  commentId: T:SODD.Core.PassiveScriptableObjectLoader
+  fullName: SODD.Core.PassiveScriptableObjectLoader
+  nameWithType: PassiveScriptableObjectLoader
+- uid: SODD.Core.PassiveScriptableObjectLoader.passiveScriptableObjects
+  name: passiveScriptableObjects
+  href: api/SODD.Core.PassiveScriptableObjectLoader.html#SODD_Core_PassiveScriptableObjectLoader_passiveScriptableObjects
+  commentId: F:SODD.Core.PassiveScriptableObjectLoader.passiveScriptableObjects
+  fullName: SODD.Core.PassiveScriptableObjectLoader.passiveScriptableObjects
+  nameWithType: PassiveScriptableObjectLoader.passiveScriptableObjects
+- uid: SODD.Core.PersistentScriptableObject
+  name: PersistentScriptableObject
+  href: api/SODD.Core.PersistentScriptableObject.html
+  commentId: T:SODD.Core.PersistentScriptableObject
+  fullName: SODD.Core.PersistentScriptableObject
+  nameWithType: PersistentScriptableObject
+- uid: SODD.Core.PersistentScriptableObject.persist
+  name: persist
+  href: api/SODD.Core.PersistentScriptableObject.html#SODD_Core_PersistentScriptableObject_persist
+  commentId: F:SODD.Core.PersistentScriptableObject.persist
+  fullName: SODD.Core.PersistentScriptableObject.persist
+  nameWithType: PersistentScriptableObject.persist
 - uid: SODD.Core.PrimitiveTypeExtensions
   name: PrimitiveTypeExtensions
   href: api/SODD.Core.PrimitiveTypeExtensions.html
