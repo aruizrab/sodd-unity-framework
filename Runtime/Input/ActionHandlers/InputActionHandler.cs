@@ -1,4 +1,5 @@
-﻿using SODD.Events;
+﻿using SODD.Core;
+using SODD.Events;
 using SODD.Variables;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -42,7 +43,7 @@ namespace SODD.Input.ActionHandlers
     ///     any event subscribers to handle the input action events.
     /// </example>
     /// <seealso cref="Event{T}" />
-    public abstract class InputActionHandler<T> : ScriptableObject where T : struct
+    public abstract class InputActionHandler<T> : PassiveScriptableObject where T : struct
     {
         /// <summary>
         ///     Reference to the <see cref="InputAction" /> to be handled.

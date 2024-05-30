@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using SODD.Attributes;
+using SODD.Core;
 using SODD.Events;
 using Logger = SODD.Core.Logger;
 #if UNITY_EDITOR
@@ -41,7 +42,7 @@ namespace SODD.Variables
     ///         public class IntVariable : Variable&lt;int&gt; {}
     ///     </code>
     /// </example>
-    public abstract class Variable<T> : ScriptableObject, IVariable, IVariable<T>, IListenableEvent<T>
+    public abstract class Variable<T> : PersistentScriptableObject, IVariable, IVariable<T>, IListenableEvent<T>
     {
         [SerializeField] [Disabled] [Tooltip("Variable's unique identifier.")]
         private string id;

@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using SODD.Core;
 using SODD.Data;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -6,7 +7,7 @@ using UnityEngine.InputSystem;
 namespace SODD.Repositories
 {
     [CreateAssetMenu(menuName = Framework.Repositories.InputIconRepository, fileName = nameof(InputIconRepository))]
-    public class InputIconRepository : ScriptableObject
+    public class InputIconRepository : PassiveScriptableObject
     {
         [SerializeField] private Sprite defaultIcon;
         [SerializeField] private SerializableDictionary<InputAction, Sprite> iconMap;
