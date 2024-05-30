@@ -1,3 +1,20 @@
+# [3.5.0](https://github.com/aruizrab/sodd-unity-framework/compare/v3.4.0...v3.5.0) (2024-05-30)
+
+
+### Bug Fixes
+
+* **input:** icon provider ([6deef32](https://github.com/aruizrab/sodd-unity-framework/commit/6deef32e2796afc89bbdb55954f28355e8891d3d))
+
+
+### Features
+
+* add passive scriptable objects ([9e5b703](https://github.com/aruizrab/sodd-unity-framework/commit/9e5b7031d152400c64cfb71b5a23cc3b2601aa35))
+* **icons:** add CollisionDetector icon ([d2e82e0](https://github.com/aruizrab/sodd-unity-framework/commit/d2e82e0509d5328bf1829c2fe0184e6ed43575fa))
+* **icons:** add CollisionDetector2D icon ([3053644](https://github.com/aruizrab/sodd-unity-framework/commit/3053644e1adce69cee558b2480298ecd7b74d302))
+* **icons:** add InputActionIconProvider icon ([dd43290](https://github.com/aruizrab/sodd-unity-framework/commit/dd43290813ffaf7eeec2d2dc8933556bd1926190))
+* **icons:** add OptionSelector icon ([e32b1a4](https://github.com/aruizrab/sodd-unity-framework/commit/e32b1a4d0299d3a5941ea892492344acc2e868d2))
+* **repositories:** add persistent scriptable object functionality ([09db724](https://github.com/aruizrab/sodd-unity-framework/commit/09db724933a972fa8adbd9e16ee576007b757d82))
+
 # [3.4.0](https://github.com/aruizrab/sodd-unity-framework/compare/v3.3.0...v3.4.0) (2024-05-30)
 
 
