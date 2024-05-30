@@ -1,3 +1,11 @@
+# [3.4.0](https://github.com/aruizrab/sodd-unity-framework/compare/v3.3.0...v3.4.0) (2024-05-30)
+
+
+### Features
+
+* **ai:** add state machine method ([6087bfd](https://github.com/aruizrab/sodd-unity-framework/commit/6087bfdacdcde9b7277bcbe60b964a1768f09446))
+* **observers:** added multiplier to float observer ([2efcdfb](https://github.com/aruizrab/sodd-unity-framework/commit/2efcdfb1f81b2363d4e05a0ec2fe81a0d2965f68))
+
 # [3.3.0](https://github.com/aruizrab/sodd-unity-framework/compare/v3.2.0...v3.3.0) (2024-05-26)
 
 
