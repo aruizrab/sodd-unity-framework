@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using SODD.Core;
 using SODD.Data;
 using SODD.Variables;
@@ -22,9 +21,9 @@ namespace SODD.Repositories
     ///     </para>
     /// </remarks>
     [CreateAssetMenu(menuName = Framework.Repositories.VariableRepository, fileName = nameof(VariableRepository))]
-    public class VariableRepository : ScriptableObject
+    public class VariableRepository : PassiveScriptableObject
     {
-        [SerializeField] private string filename;
+        [SerializeField] private string filename = "variables";
         [SerializeField] private bool loadOnEnable;
         [SerializeField] private bool saveOnDisable;
 #if UNITY_EDITOR

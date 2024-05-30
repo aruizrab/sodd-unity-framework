@@ -1,4 +1,5 @@
-﻿using SODD.Repositories;
+﻿using SODD.Core;
+using SODD.Repositories;
 using UnityEditor;
 using UnityEngine;
 
@@ -7,15 +8,43 @@ namespace SODD.Editor.Repositories
     [CustomEditor(typeof(VariableRepository))]
     public class VariableRepositoryCustomEditor : UnityEditor.Editor
     {
+        private VariableRepository _repository;
+        private SerializedProperty _variables;
+
+        private void OnEnable()
+        {
+            _repository = (VariableRepository)target;
+            _variables = serializedObject.FindProperty("variables");
+        }
+
         public override void OnInspectorGUI()
         {
-            var repository = (VariableRepository) target;
-
             DrawDefaultInspector();
 
-            if (GUILayout.Button("Load")) repository.Load();
-            if (GUILayout.Button("Save")) repository.Save();
-            if (GUILayout.Button("Delete")) repository.Delete();
+            if (GUILayout.Button("Add Persistent Variables")) AddPersistentVariables();
+            if (GUILayout.Button("Load")) _repository.Load();
+            if (GUILayout.Button("Save")) _repository.Save();
+            if (GUILayout.Button("Delete")) _repository.Delete();
+        }
+
+        private void AddPersistentVariables()
+        {
+            _variables.ClearArray();
+
+            var guids = AssetDatabase.FindAssets("t:PersistentScriptableObject");
+
+            foreach (var guid in guids)
+            {
+                var path = AssetDatabase.GUIDToAssetPath(guid);
+                var asset = AssetDatabase.LoadAssetAtPath<PersistentScriptableObject>(path);
+                if (!asset || !asset.persist) continue;
+                _variables.InsertArrayElementAtIndex(_variables.arraySize);
+                _variables.GetArrayElementAtIndex(_variables.arraySize - 1).objectReferenceValue = asset;
+            }
+
+            serializedObject.ApplyModifiedProperties();
+            EditorUtility.SetDirty(_repository);
+            AssetDatabase.SaveAssets();
         }
     }
 }
