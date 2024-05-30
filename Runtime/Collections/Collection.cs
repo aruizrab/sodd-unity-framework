@@ -39,7 +39,7 @@ namespace SODD.Collections
     ///         public class GameObjectCollection : Collection&lt;GameObject&gt; {}
     ///     </code>
     /// </example>
-    public abstract class Collection<T> : ScriptableObject, ICollection<T>, IList<T>
+    public abstract class Collection<T> : ScriptableObject, IList<T>
     {
         [SerializeField] 
         private List<T> items = new();
