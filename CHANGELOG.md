@@ -1,3 +1,11 @@
+## [3.5.1](https://github.com/aruizrab/sodd-unity-framework/compare/v3.5.0...v3.5.1) (2024-06-03)
+
+
+### Bug Fixes
+
+* null safety in InputActionIconProvider class ([237ed9d](https://github.com/aruizrab/sodd-unity-framework/commit/237ed9da9f20086321485d965f764e484f02ee5e))
+* reference field of VoidInputActionHandler is now displayed in Inspector ([b5bf4ef](https://github.com/aruizrab/sodd-unity-framework/commit/b5bf4eff87729327d114b3065c86251fc0397dad))
+
 # [3.5.0](https://github.com/aruizrab/sodd-unity-framework/compare/v3.4.0...v3.5.0) (2024-05-30)
 
 
