@@ -2,6 +2,8 @@
   "enableTocForManual": true,
   "enableNewTab": true,
   "pdf": true,
-   "pdfTocPage": true,
-   "pdfPrintBackground": true
+  "pdfTocPage": true,
+  "pdfPrintBackground": true,
+  "pdfCoverPage": "pdfCover.html",
+  "pdfHeaderTemplate": "header.html"
 }

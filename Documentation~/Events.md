@@ -1,15 +1,5 @@
 ﻿# Scriptable Events
 
-<details>
-<summary>Table of Contents</summary>
-
-- [Concept](#concept)
-- [How It Works](#how-it-works)
-- [Implementations in the Framework](#implementations-in-the-framework)
-- [Practical Example](#practical-example)
-
-</details>
-
 ## Concept
 
 A Scriptable Event consists in a Scriptable

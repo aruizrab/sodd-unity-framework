@@ -1,14 +1,5 @@
 ﻿# Scriptable Collections
 
-<details>
-<summary>Table of Contents</summary>
-
-- [Concept](#concept)
-- [How It Works](#how-it-works)
-- [Implementations in the Framework](#implementations-in-the-framework)
-
-</details>
-
 ## Concept
 
 At its core, a Scriptable Collection is a Scriptable Object employed to maintain a dynamic list of items or objects
