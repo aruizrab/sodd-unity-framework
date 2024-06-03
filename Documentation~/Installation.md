@@ -1,5 +1,8 @@
 ﻿# Installation
 
+> [!NOTE]
+> The SODD Framework requires Unity version 2022.3 or later.
+
 To integrate the **SODD Framework** into your Unity project, follow these steps:
 
 1. In your project, open the Package Manager by going to `Window` > `Package Manager`.
@@ -13,7 +16,7 @@ To integrate the **SODD Framework** into your Unity project, follow these steps:
 
 > [!IMPORTANT]  
 > The SODD Framework requires
-> Unity's [Input System](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.8/manual/index.html) package. If it is
+> Unity's [Input System](https://docs.unity3d.com/Packages/com.unity.inputsystem@latest) package and [TextMeshPro](https://docs.unity3d.com/Packages/com.unity.textmeshpro@latest) package. If it is
 > not already installed in your project, Unity will prompt you to install it as a dependency when adding the SODD
 > Framework.
 
