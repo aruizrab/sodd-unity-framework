@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class InputIconRepository | SODD Framework | 3.5.1 ">
       
-      
+      <meta name="description" content="Provides a repository for input action icons, mapping input actions to their respective icons.">
       <link rel="icon" href="../manual/images/favicon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="SODD_Repositories_InputIconRepository" data-uid="SODD.Repositories.InputIconRepository" class="text-break">
-Class InputIconRepository  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Repositories/InputIconRepository.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class InputIconRepository  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Repositories/InputIconRepository.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class InputIconRepository  <a class="header-action link-secondary" title="View s
   
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides a repository for input action icons, mapping input actions to their respective icons.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -129,6 +130,19 @@ Class InputIconRepository  <a class="header-action link-secondary" title="View s
 
 
 
+  <h2 id="SODD_Repositories_InputIconRepository_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+        The <a class="xref" href="SODD.Repositories.InputIconRepository.html">InputIconRepository</a> class manages a dictionary of input actions and their corresponding
+        icons.
+        It allows for retrieving the appropriate icon based on an input action path, facilitating the display of
+        correct
+        icons in the UI depending on the active control scheme.
+    </p>
+<p>
+        This class extends <a class="xref" href="SODD.Core.PassiveScriptableObject.html">PassiveScriptableObject</a> to ensure it is loaded into memory during runtime and
+        can be accessed by other systems that require input action icons.
+    </p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -139,10 +153,11 @@ Class InputIconRepository  <a class="header-action link-secondary" title="View s
 
   <h3 id="SODD_Repositories_InputIconRepository_GetIcon_System_String_" data-uid="SODD.Repositories.InputIconRepository.GetIcon(System.String)">
   GetIcon(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Repositories/InputIconRepository.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Repositories/InputIconRepository.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves the icon associated with a given input action path.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -152,13 +167,15 @@ Class InputIconRepository  <a class="header-action link-secondary" title="View s
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The path of the input action.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">Sprite</span></dt>
-    <dd></dd>
+    <dd><p>The associated icon if found; otherwise, the default icon.</p>
+</dd>
   </dl>
 
 
@@ -167,6 +184,10 @@ Class InputIconRepository  <a class="header-action link-secondary" title="View s
 
 
 
+  <h4 class="section" id="SODD_Repositories_InputIconRepository_GetIcon_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method searches the icon map for an icon associated with the specified input action path. If no matching
+icon is found, the default icon is returned.</p>
+</div>
 
 
 

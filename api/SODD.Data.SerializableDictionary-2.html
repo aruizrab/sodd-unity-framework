@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class SerializableDictionary&lt;TK, TV&gt; | SODD Framework | 3.5.1 ">
       
-      
+      <meta name="description" content="A dictionary that supports Unity serialization.">
       <link rel="icon" href="../manual/images/favicon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="SODD_Data_SerializableDictionary_2" data-uid="SODD.Data.SerializableDictionary`2" class="text-break">
-Class SerializableDictionary&lt;TK, TV&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Data/SerializableDictionary.cs/#L7"><i class="bi bi-code-slash"></i></a>
+Class SerializableDictionary&lt;TK, TV&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Data/SerializableDictionary.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class SerializableDictionary&lt;TK, TV&gt;  <a class="header-action link-seconda
   
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>A dictionary that supports Unity serialization.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -110,9 +111,11 @@ public class SerializableDictionary&lt;TK, TV&gt; : Dictionary&lt;TK, TV&gt;, ID
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TK</code></dt>
-    <dd></dd>
+    <dd><p>The type of the keys in the dictionary.</p>
+</dd>
     <dt><code>TV</code></dt>
-    <dd></dd>
+    <dd><p>The type of the values in the dictionary.</p>
+</dd>
   </dl>
 
   <dl class="typelist inheritance">
@@ -219,7 +222,23 @@ public class SerializableDictionary&lt;TK, TV&gt; : Dictionary&lt;TK, TV&gt;, ID
   </dd></dl>
 
 
+  <h2 id="SODD_Data_SerializableDictionary_2_examples">Examples</h2>
+  <p>Example usage of the <a class="xref" href="SODD.Data.SerializableDictionary-2.html">SerializableDictionary&lt;TK, TV&gt;</a> class:</p>
+<pre><code class="lang-csharp">[Serializable]
+public class MySerializableDictionary : SerializableDictionary&lt;string, int&gt; {}
 
+public class MyComponent : MonoBehaviour
+{
+    [SerializeField]
+    private MySerializableDictionary myDictionary;
+}</code></pre>
+
+
+  <h2 id="SODD_Data_SerializableDictionary_2_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The <a class="xref" href="SODD.Data.SerializableDictionary-2.html">SerializableDictionary&lt;TK, TV&gt;</a> class extends <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary&lt;TKey, TValue&gt;</a> and implements
+ISerializationCallbackReceiver to support Unity's serialization system. It allows dictionaries to be
+serialized and deserialized within Unity, making them usable in the Inspector.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -230,10 +249,11 @@ public class SerializableDictionary&lt;TK, TV&gt; : Dictionary&lt;TK, TV&gt;, ID
 
   <h3 id="SODD_Data_SerializableDictionary_2_OnAfterDeserialize" data-uid="SODD.Data.SerializableDictionary`2.OnAfterDeserialize">
   OnAfterDeserialize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Data/SerializableDictionary.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Data/SerializableDictionary.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invoked after the dictionary is deserialized.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -256,10 +276,11 @@ public class SerializableDictionary&lt;TK, TV&gt; : Dictionary&lt;TK, TV&gt;, ID
 
   <h3 id="SODD_Data_SerializableDictionary_2_OnBeforeSerialize" data-uid="SODD.Data.SerializableDictionary`2.OnBeforeSerialize">
   OnBeforeSerialize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Data/SerializableDictionary.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Data/SerializableDictionary.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invoked before the dictionary is serialized.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">

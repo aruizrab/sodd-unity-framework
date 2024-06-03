@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class PersistentScriptableObject | SODD Framework | 3.5.1 ">
       
-      
+      <meta name="description" content="Represents a ScriptableObject that can be persisted across game sessions.">
       <link rel="icon" href="../manual/images/favicon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="SODD_Core_PersistentScriptableObject" data-uid="SODD.Core.PersistentScriptableObject" class="text-break">
-Class PersistentScriptableObject  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/PersistentScriptableObject.cs/#L5"><i class="bi bi-code-slash"></i></a>
+Class PersistentScriptableObject  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/PersistentScriptableObject.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class PersistentScriptableObject  <a class="header-action link-secondary" title=
   
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents a ScriptableObject that can be persisted across game sessions.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -126,7 +127,29 @@ Class PersistentScriptableObject  <a class="header-action link-secondary" title=
 
 
 
+  <h2 id="SODD_Core_PersistentScriptableObject_examples">Examples</h2>
+  <p>Definition of a custom persistent ScriptableObject:</p>
+<pre><code class="lang-csharp">[CreateAssetMenu(menuName = "My ScriptableObjects/Custom Persistent SO", fileName = nameof(CustomPersistentSO))]
+public class CustomPersistentSO : PersistentScriptableObject
+{
+    // Custom implementation details
+}</code></pre>
 
+
+  <h2 id="SODD_Core_PersistentScriptableObject_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+        The <a class="xref" href="SODD.Core.PersistentScriptableObject.html">PersistentScriptableObject</a> class is designed to enable persistent storage and retrieval of
+        Scriptable Variables within the SODD Framework. It serves as the base class for variables that need to be saved
+        and loaded across game sessions, such as player settings and game states.
+    </p>
+<p>
+        Each instance of a <a class="xref" href="SODD.Core.PersistentScriptableObject.html">PersistentScriptableObject</a> includes a toggle option in the Inspector, which
+        indicates
+        whether the specific variable should be persisted. This toggle option facilitates the management of variables
+        in the
+        Variable Repository, ensuring that only those marked for persistence are saved and loaded.
+    </p>
+</div>
 
 
   <h2 class="section" id="fields">Fields
@@ -136,10 +159,11 @@ Class PersistentScriptableObject  <a class="header-action link-secondary" title=
 
   <h3 id="SODD_Core_PersistentScriptableObject_persist" data-uid="SODD.Core.PersistentScriptableObject.persist">
   persist
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/PersistentScriptableObject.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/PersistentScriptableObject.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Indicates whether this variable should be persisted across game sessions.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -159,6 +183,10 @@ Class PersistentScriptableObject  <a class="header-action link-secondary" title=
 
 
 
+  <h4 class="section" id="SODD_Core_PersistentScriptableObject_persist_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This toggle option determines if the specific instance of the <a class="xref" href="SODD.Core.PersistentScriptableObject.html">PersistentScriptableObject</a> should be
+included in the persistence process managed by the Variable Repository.</p>
+</div>
 
 
 

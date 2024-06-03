@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class State | SODD Framework | 3.5.1 ">
       
-      
+      <meta name="description" content="Represents a state in a state machine, managing its entry and exit logic.">
       <link rel="icon" href="../manual/images/favicon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="SODD_AI_State" data-uid="SODD.AI.State" class="text-break">
-Class State  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/AI/State.cs/#L6"><i class="bi bi-code-slash"></i></a>
+Class State  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/AI/State.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class State  <a class="header-action link-secondary" title="View source" href="h
   
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents a state in a state machine, managing its entry and exit logic.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -121,6 +122,11 @@ Class State  <a class="header-action link-secondary" title="View source" href="h
 
 
 
+  <h2 id="SODD_AI_State_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The <a class="xref" href="SODD.AI.State.html">State</a> class is used within a state machine to define specific states and their associated
+behaviors.
+Each state can execute actions upon entering and exiting, which are managed by Unity events.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -131,10 +137,11 @@ Class State  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="SODD_AI_State_Enter" data-uid="SODD.AI.State.Enter">
   Enter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/AI/State.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/AI/State.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Activates the state and invokes the <a class="xref" href="SODD.AI.State.html#SODD_AI_State_onEnter">onEnter</a> event.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -149,6 +156,11 @@ Class State  <a class="header-action link-secondary" title="View source" href="h
 
 
 
+  <h4 class="section" id="SODD_AI_State_Enter_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method sets the game object associated with the state to active and triggers any actions associated with
+entering the state.
+It is typically called by the state machine managing this state.</p>
+</div>
 
 
 
@@ -157,10 +169,11 @@ Class State  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="SODD_AI_State_Exit" data-uid="SODD.AI.State.Exit">
   Exit()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/AI/State.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/AI/State.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deactivates the state and invokes the <a class="xref" href="SODD.AI.State.html#SODD_AI_State_onExit">onExit</a> event.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -175,6 +188,11 @@ Class State  <a class="header-action link-secondary" title="View source" href="h
 
 
 
+  <h4 class="section" id="SODD_AI_State_Exit_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method sets the game object associated with the state to inactive and triggers any actions associated with
+exiting the state.
+It is typically called by the state machine managing this state.</p>
+</div>
 
 
 

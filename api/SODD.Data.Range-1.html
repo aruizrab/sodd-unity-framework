@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Struct Range&lt;T&gt; | SODD Framework | 3.5.1 ">
       
-      
+      <meta name="description" content="Represents a range of comparable values.">
       <link rel="icon" href="../manual/images/favicon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="SODD_Data_Range_1" data-uid="SODD.Data.Range`1" class="text-break">
-Struct Range&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Data/Range.cs/#L5"><i class="bi bi-code-slash"></i></a>
+Struct Range&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Data/Range.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Struct Range&lt;T&gt;  <a class="header-action link-secondary" title="View sourc
   
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents a range of comparable values.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -110,7 +111,8 @@ public struct Range&lt;T&gt; where T : IComparable&lt;T&gt;</code></pre>
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>The type of the values, which must implement <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable&lt;T&gt;</a>.</p>
+</dd>
   </dl>
 
 
@@ -132,7 +134,18 @@ public struct Range&lt;T&gt; where T : IComparable&lt;T&gt;</code></pre>
 
 
 
+  <h2 id="SODD_Data_Range_1_examples">Examples</h2>
+  <p>Example usage of the <a class="xref" href="SODD.Data.Range-1.html">Range&lt;T&gt;</a> struct:</p>
+<pre><code class="lang-csharp">Range&lt;int&gt; intRange = new Range&lt;int&gt;(0, 10);
+bool isInRange = intRange.IsInRange(5); // Returns true</code></pre>
 
+
+  <h2 id="SODD_Data_Range_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The <a class="xref" href="SODD.Data.Range-1.html">Range&lt;T&gt;</a> struct is used to define a range with minimum and maximum bounds. It provides
+functionality
+to check if a given value is within this range. This struct can be used with any type that implements
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable&lt;T&gt;</a>.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -143,10 +156,11 @@ public struct Range&lt;T&gt; where T : IComparable&lt;T&gt;</code></pre>
 
   <h3 id="SODD_Data_Range_1__ctor__0__0_" data-uid="SODD.Data.Range`1.#ctor(`0,`0)">
   Range(T, T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Data/Range.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Data/Range.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="SODD.Data.Range-1.html">Range&lt;T&gt;</a> struct with specified minimum and maximum values.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -156,9 +170,11 @@ public struct Range&lt;T&gt; where T : IComparable&lt;T&gt;</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>min</code> <span class="xref">T</span></dt>
-    <dd></dd>
+    <dd><p>The minimum value of the range.</p>
+</dd>
     <dt><code>max</code> <span class="xref">T</span></dt>
-    <dd></dd>
+    <dd><p>The maximum value of the range.</p>
+</dd>
   </dl>
 
 
@@ -179,10 +195,11 @@ public struct Range&lt;T&gt; where T : IComparable&lt;T&gt;</code></pre>
 
   <h3 id="SODD_Data_Range_1_max" data-uid="SODD.Data.Range`1.max">
   max
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Data/Range.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Data/Range.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The maximum value of the range.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -209,10 +226,11 @@ public struct Range&lt;T&gt; where T : IComparable&lt;T&gt;</code></pre>
 
   <h3 id="SODD_Data_Range_1_min" data-uid="SODD.Data.Range`1.min">
   min
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Data/Range.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Data/Range.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The minimum value of the range.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -244,10 +262,11 @@ public struct Range&lt;T&gt; where T : IComparable&lt;T&gt;</code></pre>
 
   <h3 id="SODD_Data_Range_1_IsInRange__0_" data-uid="SODD.Data.Range`1.IsInRange(`0)">
   IsInRange(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Data/Range.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Data/Range.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Determines whether a specified value is within the range.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -257,13 +276,15 @@ public struct Range&lt;T&gt; where T : IComparable&lt;T&gt;</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <span class="xref">T</span></dt>
-    <dd></dd>
+    <dd><p>The value to check.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p><code>true</code> if the value is within the range; otherwise, <code>false</code>.</p>
+</dd>
   </dl>
 
 

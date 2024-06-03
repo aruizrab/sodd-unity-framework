@@ -89,7 +89,7 @@
 
 
   <h1 id="SODD_Repositories_VariableRepository" data-uid="SODD.Repositories.VariableRepository" class="text-break">
-Class VariableRepository  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Repositories/VariableRepository.cs/#L23"><i class="bi bi-code-slash"></i></a>
+Class VariableRepository  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Repositories/VariableRepository.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -133,7 +133,18 @@ Class VariableRepository  <a class="header-action link-secondary" title="View so
   <h2 id="SODD_Repositories_VariableRepository_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>
         This ScriptableObject serves as a repository for various game variables, such as settings or player data,
-        and leverages binary serialization for efficient, non-human-readable storage.
+        and leverages binary serialization for efficient, non-human-readable storage. The repository can be configured
+        to automatically load variables when enabled and save them when disabled.
+    </p>
+<p>
+        A custom editor script adds functionality to log variable data when saving or loading, and provides buttons
+        for manual save and load operations, aiding in testing and debugging.
+    </p>
+<p>
+        The repository works with variables that extend <a class="xref" href="SODD.Core.PersistentScriptableObject.html">PersistentScriptableObject</a>, which includes a
+        toggle
+        to indicate whether the variable should be persisted. This toggle allows for automatic management of variables
+        in the repository, simplifying the process of maintaining persistent state across game sessions.
     </p>
 </div>
 
@@ -146,7 +157,7 @@ Class VariableRepository  <a class="header-action link-secondary" title="View so
 
   <h3 id="SODD_Repositories_VariableRepository_Delete" data-uid="SODD.Repositories.VariableRepository.Delete">
   Delete()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Repositories/VariableRepository.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Repositories/VariableRepository.cs/#L146"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Deletes the binary file where the variables are stored.</p>
@@ -173,7 +184,7 @@ Class VariableRepository  <a class="header-action link-secondary" title="View so
 
   <h3 id="SODD_Repositories_VariableRepository_Load" data-uid="SODD.Repositories.VariableRepository.Load">
   Load()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Repositories/VariableRepository.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Repositories/VariableRepository.cs/#L109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Loads the state of variables from a binary file.</p>
@@ -200,7 +211,7 @@ Class VariableRepository  <a class="header-action link-secondary" title="View so
 
   <h3 id="SODD_Repositories_VariableRepository_Save" data-uid="SODD.Repositories.VariableRepository.Save">
   Save()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Repositories/VariableRepository.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Repositories/VariableRepository.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Saves the current state of variables to a binary file.</p>

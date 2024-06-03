@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class OptionSelector | SODD Framework | 3.5.1 ">
       
-      
+      <meta name="description" content="A selectable UI component that allows the user to cycle through a list of options.">
       <link rel="icon" href="../manual/images/favicon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="SODD_UI_OptionSelector" data-uid="SODD.UI.OptionSelector" class="text-break">
-Class OptionSelector  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/UI/OptionSelector.cs/#L12"><i class="bi bi-code-slash"></i></a>
+Class OptionSelector  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/UI/OptionSelector.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class OptionSelector  <a class="header-action link-secondary" title="View source
   
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>A selectable UI component that allows the user to cycle through a list of options.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -120,7 +121,31 @@ Class OptionSelector  <a class="header-action link-secondary" title="View source
 
 
 
+  <h2 id="SODD_UI_OptionSelector_examples">Examples</h2>
+  <p>Example usage of the <a class="xref" href="SODD.UI.OptionSelector.html">OptionSelector</a> class:</p>
+<pre><code class="lang-csharp">[SerializeField]
+private OptionSelector optionSelector;
 
+void Start()
+{
+    optionSelector.SetOptions(new List&lt;string&gt; { "Option 1", "Option 2", "Option 3" });
+    optionSelector.onOptionSelected.AddListener(OnOptionSelected);
+}
+
+private void OnOptionSelected(int index)
+{
+    Debug.Log("Selected option index: " + index);
+}</code></pre>
+
+
+  <h2 id="SODD_UI_OptionSelector_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+        The <a class="xref" href="SODD.UI.OptionSelector.html">OptionSelector</a> class extends Selectable and provides functionality for
+        navigating
+        through a list of string options. It supports both horizontal and vertical navigation and invokes an event
+        when an option is selected.
+    </p>
+</div>
 
 
   <h2 class="section" id="properties">Properties
@@ -131,10 +156,11 @@ Class OptionSelector  <a class="header-action link-secondary" title="View source
 
   <h3 id="SODD_UI_OptionSelector_Value" data-uid="SODD.UI.OptionSelector.Value">
   Value
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/UI/OptionSelector.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/UI/OptionSelector.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the current index of the selected option.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -166,10 +192,11 @@ Class OptionSelector  <a class="header-action link-secondary" title="View source
 
   <h3 id="SODD_UI_OptionSelector_AddOption_System_String_" data-uid="SODD.UI.OptionSelector.AddOption(System.String)">
   AddOption(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/UI/OptionSelector.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/UI/OptionSelector.cs/#L98"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds an option to the list of options.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -179,7 +206,8 @@ Class OptionSelector  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>option</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The option to add.</p>
+</dd>
   </dl>
 
 
@@ -190,6 +218,12 @@ Class OptionSelector  <a class="header-action link-secondary" title="View source
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown if <code class="paramref">option</code> is null.</p>
+</dd>
+  </dl>
 
 
 
@@ -197,10 +231,11 @@ Class OptionSelector  <a class="header-action link-secondary" title="View source
 
   <h3 id="SODD_UI_OptionSelector_AddOptions_System_Collections_Generic_List_System_String__" data-uid="SODD.UI.OptionSelector.AddOptions(System.Collections.Generic.List{System.String})">
   AddOptions(List&lt;string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/UI/OptionSelector.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/UI/OptionSelector.cs/#L110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a list of options to the existing options.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -210,7 +245,8 @@ Class OptionSelector  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>optionsList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The list of options to add.</p>
+</dd>
   </dl>
 
 
@@ -221,6 +257,12 @@ Class OptionSelector  <a class="header-action link-secondary" title="View source
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown if <code class="paramref">optionsList</code> is null.</p>
+</dd>
+  </dl>
 
 
 
@@ -228,10 +270,11 @@ Class OptionSelector  <a class="header-action link-secondary" title="View source
 
   <h3 id="SODD_UI_OptionSelector_OnMove_AxisEventData_" data-uid="SODD.UI.OptionSelector.OnMove(AxisEventData)">
   OnMove(AxisEventData)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/UI/OptionSelector.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/UI/OptionSelector.cs/#L151"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Handles navigation events for the option selector.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -241,7 +284,8 @@ Class OptionSelector  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>eventData</code> <span class="xref">AxisEventData</span></dt>
-    <dd></dd>
+    <dd><p>The event data.</p>
+</dd>
   </dl>
 
 
@@ -259,10 +303,11 @@ Class OptionSelector  <a class="header-action link-secondary" title="View source
 
   <h3 id="SODD_UI_OptionSelector_SelectNext" data-uid="SODD.UI.OptionSelector.SelectNext">
   SelectNext()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/UI/OptionSelector.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/UI/OptionSelector.cs/#L120"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Selects the next option in the list.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -285,10 +330,11 @@ Class OptionSelector  <a class="header-action link-secondary" title="View source
 
   <h3 id="SODD_UI_OptionSelector_SelectPrevious" data-uid="SODD.UI.OptionSelector.SelectPrevious">
   SelectPrevious()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/UI/OptionSelector.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/UI/OptionSelector.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Selects the previous option in the list.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -311,10 +357,11 @@ Class OptionSelector  <a class="header-action link-secondary" title="View source
 
   <h3 id="SODD_UI_OptionSelector_SetOptions_System_Collections_Generic_List_System_String__" data-uid="SODD.UI.OptionSelector.SetOptions(System.Collections.Generic.List{System.String})">
   SetOptions(List&lt;string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/UI/OptionSelector.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/UI/OptionSelector.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the list of options to select from.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -324,7 +371,8 @@ Class OptionSelector  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>optionsList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The list of options.</p>
+</dd>
   </dl>
 
 
@@ -335,6 +383,12 @@ Class OptionSelector  <a class="header-action link-secondary" title="View source
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown if <code class="paramref">optionsList</code> is null.</p>
+</dd>
+  </dl>
 
 
 
@@ -342,10 +396,11 @@ Class OptionSelector  <a class="header-action link-secondary" title="View source
 
   <h3 id="SODD_UI_OptionSelector_SetValueWithoutNotify_System_Int32_" data-uid="SODD.UI.OptionSelector.SetValueWithoutNotify(System.Int32)">
   SetValueWithoutNotify(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/UI/OptionSelector.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/UI/OptionSelector.cs/#L189"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the value without invoking the option selected event.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -355,7 +410,8 @@ Class OptionSelector  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The index of the option to select.</p>
+</dd>
   </dl>
 
 
@@ -366,6 +422,12 @@ Class OptionSelector  <a class="header-action link-secondary" title="View source
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>Thrown if <code class="paramref">value</code> is out of range.</p>
+</dd>
+  </dl>
 
 
 

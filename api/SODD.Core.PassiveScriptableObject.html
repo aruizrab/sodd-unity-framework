@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class PassiveScriptableObject | SODD Framework | 3.5.1 ">
       
-      
+      <meta name="description" content="Represents a passive ScriptableObject that ensures it is loaded into memory during runtime.">
       <link rel="icon" href="../manual/images/favicon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="SODD_Core_PassiveScriptableObject" data-uid="SODD.Core.PassiveScriptableObject" class="text-break">
-Class PassiveScriptableObject  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/PassiveScriptableObject.cs/#L5"><i class="bi bi-code-slash"></i></a>
+Class PassiveScriptableObject  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/PassiveScriptableObject.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class PassiveScriptableObject  <a class="header-action link-secondary" title="Vi
   
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents a passive ScriptableObject that ensures it is loaded into memory during runtime.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -130,7 +131,35 @@ Class PassiveScriptableObject  <a class="header-action link-secondary" title="Vi
 
 
 
+  <h2 id="SODD_Core_PassiveScriptableObject_examples">Examples</h2>
+  <p>Definition of a custom passive ScriptableObject:</p>
+<pre><code class="lang-csharp">[CreateAssetMenu(menuName = "My ScriptableObjects/Custom Passive SO", fileName = nameof(CustomPassiveSO))]
+public class CustomPassiveSO : PassiveScriptableObject
+{
+    // Custom implementation details
+}</code></pre>
 
+
+  <h2 id="SODD_Core_PassiveScriptableObject_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+        The <a class="xref" href="SODD.Core.PassiveScriptableObject.html">PassiveScriptableObject</a> class is designed for ScriptableObjects that do not populate a scene
+        but need to provide functionality passively as assets loaded into memory. It includes a mechanism to ensure
+        these ScriptableObjects are referenced and loaded into memory during runtime.
+    </p>
+<p>
+        Each instance of a <a class="xref" href="SODD.Core.PassiveScriptableObject.html">PassiveScriptableObject</a> includes a toggle option in the Inspector, which is
+        enabled by default, indicating whether the specific instance should be loaded into memory. This class is part
+        of the SODD Framework's approach to managing ScriptableObject-based systems that interact with features such
+        as Input Action Handlers or Control Scheme Handlers.
+    </p>
+<p>
+        The SODD Framework provides a menu option that scans the project files for
+        <a class="xref" href="SODD.Core.PassiveScriptableObject.html">PassiveScriptableObject</a>
+        instances with the enabled toggle option. It then creates a GameObject with a Component that contains a list
+        of all the collected <a class="xref" href="SODD.Core.PassiveScriptableObject.html">PassiveScriptableObject</a> instances, ensuring they are loaded into memory
+        during runtime.
+    </p>
+</div>
 
 
   <h2 class="section" id="fields">Fields
@@ -140,10 +169,11 @@ Class PassiveScriptableObject  <a class="header-action link-secondary" title="Vi
 
   <h3 id="SODD_Core_PassiveScriptableObject_reference" data-uid="SODD.Core.PassiveScriptableObject.reference">
   reference
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/PassiveScriptableObject.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Core/PassiveScriptableObject.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Indicates whether this instance should be loaded into memory.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -163,6 +193,10 @@ Class PassiveScriptableObject  <a class="header-action link-secondary" title="Vi
 
 
 
+  <h4 class="section" id="SODD_Core_PassiveScriptableObject_reference_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This toggle option, enabled by default, determines if the specific instance of the
+<a class="xref" href="SODD.Core.PassiveScriptableObject.html">PassiveScriptableObject</a> should be included in the memory loading process.</p>
+</div>
 
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class InputActionIconProvider | SODD Framework | 3.5.1 ">
       
-      
+      <meta name="description" content="Provides input action icons based on the current control scheme.">
       <link rel="icon" href="../manual/images/favicon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="SODD_Input_InputActionIconProvider" data-uid="SODD.Input.InputActionIconProvider" class="text-break">
-Class InputActionIconProvider  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/InputActionIconProvider.cs/#L12"><i class="bi bi-code-slash"></i></a>
+Class InputActionIconProvider  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/InputActionIconProvider.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class InputActionIconProvider  <a class="header-action link-secondary" title="Vi
   
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides input action icons based on the current control scheme.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -129,6 +130,20 @@ Class InputActionIconProvider  <a class="header-action link-secondary" title="Vi
 
 
 
+  <h2 id="SODD_Input_InputActionIconProvider_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+        The <a class="xref" href="SODD.Input.InputActionIconProvider.html">InputActionIconProvider</a> class is responsible for providing icons representing input actions
+        based on the current control scheme.
+        It listens for changes in the control scheme and updates the displayed icon accordingly. This class extends
+        <a class="xref" href="SODD.Core.PassiveScriptableObject.html">PassiveScriptableObject</a>
+        to ensure it is loaded into memory during runtime.
+    </p>
+<p>
+        This class uses an <a class="xref" href="SODD.Repositories.InputIconRepository.html">InputIconRepository</a> to fetch the appropriate icons for different input
+        actions and control schemes. The icons are then
+        applied to a target TMP_SpriteAsset for display.
+    </p>
+</div>
 
 
 

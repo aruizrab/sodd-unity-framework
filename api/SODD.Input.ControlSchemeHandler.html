@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ControlSchemeHandler | SODD Framework | 3.5.1 ">
       
-      
+      <meta name="description" content="Manages control schemes and handles switching between them based on input device events.">
       <link rel="icon" href="../manual/images/favicon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="SODD_Input_ControlSchemeHandler" data-uid="SODD.Input.ControlSchemeHandler" class="text-break">
-Class ControlSchemeHandler  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ControlSchemeHandler.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class ControlSchemeHandler  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/Input/ControlSchemeHandler.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class ControlSchemeHandler  <a class="header-action link-secondary" title="View 
   
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Manages control schemes and handles switching between them based on input device events.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -129,6 +130,20 @@ Class ControlSchemeHandler  <a class="header-action link-secondary" title="View 
 
 
 
+  <h2 id="SODD_Input_ControlSchemeHandler_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+        The <a class="xref" href="SODD.Input.ControlSchemeHandler.html">ControlSchemeHandler</a> class is responsible for managing control schemes within a Unity
+        project.
+        It listens to input system events and switches control schemes based on the active input device. This class
+        extends <a class="xref" href="SODD.Core.PassiveScriptableObject.html">PassiveScriptableObject</a> to ensure it is loaded into memory during runtime.
+    </p>
+<p>
+        When an input event is detected from a new device, the control scheme associated with that device is activated.
+        The class invokes an event to notify other systems of the control scheme change and updates a variable to
+        reflect
+        the current control scheme.
+    </p>
+</div>
 
 
 

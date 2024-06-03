@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class StateMachine | SODD Framework | 3.5.1 ">
       
-      
+      <meta name="description" content="Manages the states in a state machine, handling state transitions and maintaining a state queue.">
       <link rel="icon" href="../manual/images/favicon.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="SODD_AI_StateMachine" data-uid="SODD.AI.StateMachine" class="text-break">
-Class StateMachine  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/AI/StateMachine.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class StateMachine  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/AI/StateMachine.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class StateMachine  <a class="header-action link-secondary" title="View source" 
   
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Manages the states in a state machine, handling state transitions and maintaining a state queue.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -121,6 +122,11 @@ Class StateMachine  <a class="header-action link-secondary" title="View source" 
 
 
 
+  <h2 id="SODD_AI_StateMachine_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The <a class="xref" href="SODD.AI.StateMachine.html">StateMachine</a> class is responsible for managing the lifecycle of states within a state machine.
+It provides mechanisms to transition between states, queue states for later execution, and maintain the current
+state.</p>
+</div>
 
 
   <h2 class="section" id="properties">Properties
@@ -131,10 +137,11 @@ Class StateMachine  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="SODD_AI_StateMachine_CurrentState" data-uid="SODD.AI.StateMachine.CurrentState">
   CurrentState
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/AI/StateMachine.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/AI/StateMachine.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the current state. Exits the previous state and enters the new state.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -148,12 +155,18 @@ Class StateMachine  <a class="header-action link-secondary" title="View source" 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="SODD.AI.State.html">State</a></dt>
-    <dd></dd>
+    <dd><p>The current state of the state machine.</p>
+</dd>
   </dl>
 
 
 
 
+  <h4 class="section" id="SODD_AI_StateMachine_CurrentState_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When setting the <a class="xref" href="SODD.AI.StateMachine.html#SODD_AI_StateMachine_CurrentState">CurrentState</a>, the state machine exits the previous state (if any) and enters the
+new state.
+If the new state is the same as the current state, no transition occurs.</p>
+</div>
 
 
 
@@ -166,10 +179,11 @@ Class StateMachine  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="SODD_AI_StateMachine_AddCurrentStateFirstToQueue" data-uid="SODD.AI.StateMachine.AddCurrentStateFirstToQueue">
   AddCurrentStateFirstToQueue()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/AI/StateMachine.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/AI/StateMachine.cs/#L131"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds the current state to the beginning of the state queue.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -184,6 +198,9 @@ Class StateMachine  <a class="header-action link-secondary" title="View source" 
 
 
 
+  <h4 class="section" id="SODD_AI_StateMachine_AddCurrentStateFirstToQueue_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method inserts the current state of the state machine at the beginning of the state queue.</p>
+</div>
 
 
 
@@ -192,10 +209,11 @@ Class StateMachine  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="SODD_AI_StateMachine_AddCurrentStateLastToQueue" data-uid="SODD.AI.StateMachine.AddCurrentStateLastToQueue">
   AddCurrentStateLastToQueue()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/AI/StateMachine.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/AI/StateMachine.cs/#L120"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds the current state to the end of the state queue.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -210,6 +228,9 @@ Class StateMachine  <a class="header-action link-secondary" title="View source" 
 
 
 
+  <h4 class="section" id="SODD_AI_StateMachine_AddCurrentStateLastToQueue_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method appends the current state of the state machine to the end of the state queue.</p>
+</div>
 
 
 
@@ -218,10 +239,11 @@ Class StateMachine  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="SODD_AI_StateMachine_AddFirstToQueue_SODD_AI_State_" data-uid="SODD.AI.StateMachine.AddFirstToQueue(SODD.AI.State)">
   AddFirstToQueue(State)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/AI/StateMachine.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/AI/StateMachine.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a state to the beginning of the state queue.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -231,7 +253,8 @@ Class StateMachine  <a class="header-action link-secondary" title="View source" 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>state</code> <a class="xref" href="SODD.AI.State.html">State</a></dt>
-    <dd></dd>
+    <dd><p>The state to add to the queue.</p>
+</dd>
   </dl>
 
 
@@ -241,6 +264,10 @@ Class StateMachine  <a class="header-action link-secondary" title="View source" 
 
 
 
+  <h4 class="section" id="SODD_AI_StateMachine_AddFirstToQueue_SODD_AI_State__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method inserts the specified <code class="paramref">state</code> at the beginning of the state queue.
+The state queue is processed in a first-in-first-out (FIFO) manner.</p>
+</div>
 
 
 
@@ -249,10 +276,11 @@ Class StateMachine  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="SODD_AI_StateMachine_AddLastToQueue_SODD_AI_State_" data-uid="SODD.AI.StateMachine.AddLastToQueue(SODD.AI.State)">
   AddLastToQueue(State)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/AI/StateMachine.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/AI/StateMachine.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a state to the end of the state queue.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -262,7 +290,8 @@ Class StateMachine  <a class="header-action link-secondary" title="View source" 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>state</code> <a class="xref" href="SODD.AI.State.html">State</a></dt>
-    <dd></dd>
+    <dd><p>The state to add to the queue.</p>
+</dd>
   </dl>
 
 
@@ -272,6 +301,10 @@ Class StateMachine  <a class="header-action link-secondary" title="View source" 
 
 
 
+  <h4 class="section" id="SODD_AI_StateMachine_AddLastToQueue_SODD_AI_State__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method appends the specified <code class="paramref">state</code> to the end of the state queue.
+The state queue is processed in a first-in-first-out (FIFO) manner.</p>
+</div>
 
 
 
@@ -280,10 +313,11 @@ Class StateMachine  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="SODD_AI_StateMachine_ConsumeFirstFromQueue" data-uid="SODD.AI.StateMachine.ConsumeFirstFromQueue">
   ConsumeFirstFromQueue()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/AI/StateMachine.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/AI/StateMachine.cs/#L90"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the current state to the first state in the queue and removes it from the queue.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -298,6 +332,10 @@ Class StateMachine  <a class="header-action link-secondary" title="View source" 
 
 
 
+  <h4 class="section" id="SODD_AI_StateMachine_ConsumeFirstFromQueue_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method transitions the state machine to the first state in the queue and removes that state from the queue.
+If the queue is empty, no state transition occurs.</p>
+</div>
 
 
 
@@ -306,10 +344,11 @@ Class StateMachine  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="SODD_AI_StateMachine_ConsumeLastFromQueue" data-uid="SODD.AI.StateMachine.ConsumeLastFromQueue">
   ConsumeLastFromQueue()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/AI/StateMachine.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Runtime/AI/StateMachine.cs/#L105"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the current state to the last state in the queue and removes it from the queue.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -324,6 +363,10 @@ Class StateMachine  <a class="header-action link-secondary" title="View source" 
 
 
 
+  <h4 class="section" id="SODD_AI_StateMachine_ConsumeLastFromQueue_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method transitions the state machine to the last state in the queue and removes that state from the queue.
+If the queue is empty, no state transition occurs.</p>
+</div>
 
 
 
