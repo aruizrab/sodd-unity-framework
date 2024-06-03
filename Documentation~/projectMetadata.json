@@ -1,5 +1,7 @@
 ﻿{
   "enableTocForManual": true,
   "enableNewTab": true,
-  "pdf": true
+  "pdf": true,
+   "pdfTocPage": true,
+   "pdfPrintBackground": true
 }
