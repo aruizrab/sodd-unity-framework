@@ -27,7 +27,7 @@ To integrate the **SODD Framework** into your Unity project, follow one of the t
 
 1. Download the source code of the latest release from
    the [SODD Framework releases page](https://github.com/aruizrab/sodd-unity-framework/releases).
-2. Uncompress the downloaded file into your Unity project's `Assets` folder.
+2. Unzip the downloaded file into your Unity project's `Packages` folder.
 
 > [!IMPORTANT]  
 > Before uncompressing the SODD Framework source code, ensure
