@@ -40,10 +40,6 @@ broadcasters, sending out signals when certain conditions in the game are met.
   events without writing additional code. The Inspector provides an `Invoke` button and a field to enter the payload
   value, enabling quick and easy testing.
 
-> [!NOTE]  
-> By separating the event definition from the objects that trigger and respond to it, Scriptable Events promote a more
-> modular and maintainable architecture.
-
 ## Implementations in the Framework
 
 The SODD Framework provides several implementations of Scriptable Events to cover various data types and use cases.
