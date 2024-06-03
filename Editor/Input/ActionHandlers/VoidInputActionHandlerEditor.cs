@@ -6,6 +6,7 @@ namespace SODD.Editor.Input.ActionHandlers
     [CustomEditor(typeof(VoidInputActionHandler))]
     public class VoidInputActionHandlerEditor: UnityEditor.Editor
     {
+        private SerializedProperty _reference;
         private SerializedProperty _inputActionReference;
         private SerializedProperty _onActionStarted;
         private SerializedProperty _onActionPerformed;
@@ -13,6 +14,7 @@ namespace SODD.Editor.Input.ActionHandlers
 
         private void OnEnable()
         {
+            _reference = serializedObject.FindProperty("reference");
             _inputActionReference = serializedObject.FindProperty("inputActionReference");
             _onActionStarted = serializedObject.FindProperty("onActionStarted");
             _onActionStarted = serializedObject.FindProperty("onActionStarted");
@@ -24,6 +26,7 @@ namespace SODD.Editor.Input.ActionHandlers
         {
             serializedObject.Update();
 
+            EditorGUILayout.PropertyField(_reference);
             EditorGUILayout.PropertyField(_inputActionReference);
             EditorGUILayout.PropertyField(_onActionStarted);
             EditorGUILayout.PropertyField(_onActionPerformed);
