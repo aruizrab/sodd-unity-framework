@@ -31,16 +31,16 @@ namespace SODD.Editor.Repositories
         {
             _variables.ClearArray();
 
-            var guids = AssetDatabase.FindAssets("t:PersistentScriptableObject");
-
-            foreach (var guid in guids)
+            AssetDatabase.FindAssets("t:PersistentScriptableObject").ForEach(guid =>
             {
                 var path = AssetDatabase.GUIDToAssetPath(guid);
                 var asset = AssetDatabase.LoadAssetAtPath<PersistentScriptableObject>(path);
-                if (!asset || !asset.persist) continue;
+
+                if (!asset || !asset.persist) return;
+
                 _variables.InsertArrayElementAtIndex(_variables.arraySize);
                 _variables.GetArrayElementAtIndex(_variables.arraySize - 1).objectReferenceValue = asset;
-            }
+            });
 
             serializedObject.ApplyModifiedProperties();
             EditorUtility.SetDirty(_repository);

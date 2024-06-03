@@ -34,15 +34,16 @@ namespace SODD.Editor.Utils
             AssetDatabase.Refresh();
             Debug.Log("Finished reloading resources.");
         }
-        
+
         [MenuItem("Tools/Add References to Passive ScriptableObjects")]
         public static void ShowWindow()
         {
-            var guids = AssetDatabase.FindAssets("t:PassiveScriptableObject");
-            var passiveScriptableObjects = guids
+            var passiveScriptableObjects = AssetDatabase
+                .FindAssets("t:PassiveScriptableObject")
                 .Select(AssetDatabase.GUIDToAssetPath)
                 .Select(AssetDatabase.LoadAssetAtPath<PassiveScriptableObject>)
-                .Where(asset => asset && asset.reference).ToList();
+                .Where(asset => asset && asset.reference)
+                .ToList();
 
             if (passiveScriptableObjects.Count == 0)
             {
@@ -50,14 +51,15 @@ namespace SODD.Editor.Utils
                 return;
             }
 
-            foreach (var scene in EditorBuildSettings.scenes)
-                if (scene.enabled)
+            EditorBuildSettings.scenes
+                .Where(scene => scene.enabled)
+                .Select(scene => scene.path)
+                .ForEach(path =>
                 {
-                    var scenePath = scene.path;
-                    var sceneAsset = AssetDatabase.LoadAssetAtPath<SceneAsset>(scenePath);
+                    var sceneAsset = AssetDatabase.LoadAssetAtPath<SceneAsset>(path);
+                    if (!sceneAsset) return;
 
-                    if (!sceneAsset) continue;
-                    EditorSceneManager.OpenScene(scenePath, OpenSceneMode.Single);
+                    EditorSceneManager.OpenScene(path, OpenSceneMode.Single);
 
                     var loaderObject = GameObject.Find("Passive ScriptableObject Loader");
                     if (!loaderObject) loaderObject = new GameObject("Passive ScriptableObject Loader");
@@ -70,7 +72,7 @@ namespace SODD.Editor.Utils
 
                     EditorSceneManager.MarkSceneDirty(loaderObject.scene);
                     EditorSceneManager.SaveScene(loaderObject.scene);
-                }
+                });
 
             AssetDatabase.Refresh();
         }
