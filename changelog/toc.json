@@ -1,2 +1,2 @@
 
-{"items":[{"name":"Changes","href":"CHANGELOG.html","topicHref":"CHANGELOG.html"}],"enableNewTab":true,"enableTocForManual":true,"pdf":true,"pdfPrintBackground":true,"pdfTocPage":true}
+{"items":[{"name":"Changes","href":"CHANGELOG.html","topicHref":"CHANGELOG.html"}],"enableNewTab":true,"enableTocForManual":true,"pdf":true,"pdfCoverPage":"pdfCover.html","pdfHeaderTemplate":"header.html","pdfPrintBackground":true,"pdfTocPage":true}
