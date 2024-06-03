@@ -337,7 +337,7 @@
   "api/SODD.Input.InputActionIconProvider.html": {
     "href": "api/SODD.Input.InputActionIconProvider.html",
     "title": "Class InputActionIconProvider | SODD Framework | 3.5.0",
-    "keywords": "Class InputActionIconProvider Namespace SODD.Input public class InputActionIconProvider : PassiveScriptableObject Inheritance object PassiveScriptableObject InputActionIconProvider Inherited Members PassiveScriptableObject.reference Methods UpdateIcon() public void UpdateIcon()"
+    "keywords": "Class InputActionIconProvider Namespace SODD.Input public class InputActionIconProvider : PassiveScriptableObject Inheritance object PassiveScriptableObject InputActionIconProvider Inherited Members PassiveScriptableObject.reference"
   },
   "api/SODD.Input.html": {
     "href": "api/SODD.Input.html",

@@ -2540,19 +2540,6 @@ references:
   commentId: T:SODD.Input.InputActionIconProvider
   fullName: SODD.Input.InputActionIconProvider
   nameWithType: InputActionIconProvider
-- uid: SODD.Input.InputActionIconProvider.UpdateIcon
-  name: UpdateIcon()
-  href: api/SODD.Input.InputActionIconProvider.html#SODD_Input_InputActionIconProvider_UpdateIcon
-  commentId: M:SODD.Input.InputActionIconProvider.UpdateIcon
-  fullName: SODD.Input.InputActionIconProvider.UpdateIcon()
-  nameWithType: InputActionIconProvider.UpdateIcon()
-- uid: SODD.Input.InputActionIconProvider.UpdateIcon*
-  name: UpdateIcon
-  href: api/SODD.Input.InputActionIconProvider.html#SODD_Input_InputActionIconProvider_UpdateIcon_
-  commentId: Overload:SODD.Input.InputActionIconProvider.UpdateIcon
-  isSpec: "True"
-  fullName: SODD.Input.InputActionIconProvider.UpdateIcon
-  nameWithType: InputActionIconProvider.UpdateIcon
 - uid: SODD.Listeners
   name: SODD.Listeners
   href: api/SODD.Listeners.html
