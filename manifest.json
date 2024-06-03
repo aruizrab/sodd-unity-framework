@@ -1194,6 +1194,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "manual/ActionHandlers.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/ActionHandlers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "manual/Collections.md",
       "output": {
         ".html": {
@@ -1228,6 +1238,26 @@
       "output": {
         ".html": {
           "relative_path": "manual/Installation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Listeners.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Listeners.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Observers.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Observers.html"
         }
       },
       "version": ""

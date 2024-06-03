@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Variable Observers | SODD Framework | 3.5.1 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Variable Observers | SODD Framework | 3.5.1 ">
+      
+      
+      <link rel="icon" href="../manual/images/favicon.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      <meta name="docfx:disablenewtab" content="true">
+      
+      <meta name="docfx:docurl" content="https://github.com/aruizrab/sodd-unity-framework/blob/main/Documentation~/manual/Observers.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../manual/images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="variable-observers">Variable Observers</h1>
+
+<h2 id="concept">Concept</h2>
+<p>Variable Observers are components designed to monitor changes in ScriptableObject variables and trigger UnityEvents in response. They provide a way to react to variable changes without tightly coupling the game logic to the variable implementation. This makes the architecture more modular and easier to maintain.</p>
+<h2 id="how-it-works">How It Works</h2>
+<ul>
+<li><strong>Observer Creation</strong>: Variable Observers are MonoBehaviour components that can be added to GameObjects. They are configured to observe specific ScriptableObject variables and respond with UnityEvents.</li>
+<li><strong>Variable Binding</strong>: Each observer is assigned a ScriptableObject variable to monitor. When the variable's value changes, the observer triggers the associated UnityEvent.</li>
+<li><strong>Inspector Integration</strong>: Observers can be configured directly in the Unity Inspector, enabling quick setup and testing without writing additional code.</li>
+<li><strong>Event Invocation</strong>: When the variable's value changes, the observer invokes the configured UnityEvent, passing the new value along to the registered methods.</li>
+</ul>
+<h2 id="implementations-in-the-framework">Implementations in the Framework</h2>
+<p>The SODD Framework provides several implementations of Variable Observers to handle different types of variables. Below is a table detailing the core observer types included in the framework:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Observer Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>BoolVariableObserver</strong></td>
+<td>Observes changes in boolean variables and triggers UnityEvents accordingly.</td>
+</tr>
+<tr>
+<td><strong>FloatVariableObserver</strong></td>
+<td>Observes changes in float variables and triggers UnityEvents accordingly.</td>
+</tr>
+<tr>
+<td><strong>IntVariableObserver</strong></td>
+<td>Observes changes in integer variables and triggers UnityEvents accordingly.</td>
+</tr>
+<tr>
+<td><strong>StringVariableObserver</strong></td>
+<td>Observes changes in string variables and triggers UnityEvents accordingly.</td>
+</tr>
+<tr>
+<td><strong>Vector2VariableObserver</strong></td>
+<td>Observes changes in Vector2 variables and triggers UnityEvents accordingly.</td>
+</tr>
+<tr>
+<td><strong>Vector3VariableObserver</strong></td>
+<td>Observes changes in Vector3 variables and triggers UnityEvents accordingly.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="practical-example">Practical Example</h2>
+<p>This example expands upon the example stated earlier in the Scriptable Events section, consisting in the management of a player’s score.</p>
+<h3 id="step-1-adding-the-variable-observer">Step 1: Adding the Variable Observer</h3>
+<p>First, add an Int Variable Observer to the GameObject that holds the Score Manager component.</p>
+<ol>
+<li>Select the GameObject with the Score Manager component in the Unity Editor.</li>
+<li>Click <code>Add Component</code> and choose <code>IntVariableObserver</code>.</li>
+</ol>
+<h3 id="step-2-configuring-the-variable-observer">Step 2: Configuring the Variable Observer</h3>
+<p>Next, assign the &quot;Player Score&quot; variable to the observer.</p>
+<ol>
+<li>In the Unity Inspector, find the <code>IntVariableObserver</code> component.</li>
+<li>Assign the &quot;Player Score&quot; variable to the observer.</li>
+</ol>
+<h3 id="step-3-setting-up-the-unity-event">Step 3: Setting Up the Unity Event</h3>
+<p>Within the Unity Event section of the observer, configure the method to update the UI component when the variable changes.</p>
+<ol>
+<li>In the <code>IntVariableObserver</code> component, find the <code>UnityEvent</code> section.</li>
+<li>Click the <code>+</code> button to add a new listener.</li>
+<li>Drag the UI component (e.g., a TextMeshProUGUI) into the <code>None (Object)</code> field.</li>
+<li>Select the method responsible for updating the UI from the dropdown list.</li>
+<li>Ensure the variable's value is passed dynamically.</li>
+</ol>
+<h3 id="step-4-testing-the-setup">Step 4: Testing the Setup</h3>
+<p>Run Play Mode and observe the UI element displaying the Player Score. It should be initially set to the variable's value and update automatically whenever the variable's value changes.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>By using Variable Observers, the <code>PlayerScoreDisplay</code> script becomes redundant. The function to update the UI component is specified directly within the UnityEvent of the observer. This setup enhances the modularity and responsiveness of the game architecture, ensuring that UI elements and other components remain synchronized with the underlying data without requiring additional scripting effort.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/aruizrab/sodd-unity-framework/blob/main/Documentation~/manual/Observers.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made by <a href="https://github.com/aruizrab" target="_blank">aruizrab</a> using <a href="https://dotnet.github.io/docfx" target="_blank">DocFX</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
