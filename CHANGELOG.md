@@ -1,3 +1,10 @@
+# [3.6.0](https://github.com/aruizrab/sodd-unity-framework/compare/v3.5.1...v3.6.0) (2024-06-03)
+
+
+### Features
+
+* **documentation:** update documentation ([0815911](https://github.com/aruizrab/sodd-unity-framework/commit/0815911ab1215ee22583d22662a10b4b492e1005))
+
 ## [3.5.1](https://github.com/aruizrab/sodd-unity-framework/compare/v3.5.0...v3.5.1) (2024-06-03)
 
 
