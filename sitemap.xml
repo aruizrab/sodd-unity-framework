@@ -2,751 +2,751 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.AI.CollisionDetectionStrategy.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.AI.CollisionDetector.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.AI.CollisionDetector2D.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.AI.State.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.AI.StateMachine.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.AI.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Attributes.CollapsibleAttribute.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Attributes.DisableIfAttribute.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Attributes.DisableIfMatchAttribute.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Attributes.DisabledAttribute.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Attributes.HideIfAttribute.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Attributes.HideIfMatchAttribute.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Attributes.OnValueChangedAttribute.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Attributes.ShowIfAttribute.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Attributes.ShowIfMatchAttribute.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Attributes.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Collections.AudioClipCollection.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Collections.Collection-1.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Collections.ComponentCollection.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Collections.GameObjectCollection.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Collections.ObjectCollection.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Collections.ScriptableObjectCollection.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Collections.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Core.AudioMixerExtensions.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Core.Comparison.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Core.ComparisonExtensions.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Core.CoroutineBuilder.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Core.EnumerableExtensions.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Core.GameObjectExtensions.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Core.LifecycleEvents.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Core.Logger.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Core.NavMeshAgentExtensions.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Core.PassiveScriptableObject.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Core.PassiveScriptableObjectLoader.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Core.PersistentScriptableObject.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Core.PrimitiveTypeExtensions.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Core.Scope.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Core.ToStringStrategy.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Core.TransformExtensions.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Core.Vector2Extensions.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Core.Vector3Extensions.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Core.Void.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Core.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Data.Range-1.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Data.SerializableDictionary-2.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Data.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Events.BoolEvent.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Events.Event-1.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Events.FloatEvent.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Events.GameObjectEvent.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Events.GenericEvent-1.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Events.IEvent-1.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Events.IListenableEvent-1.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Events.IntEvent.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Events.StringEvent.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Events.Vector2Event.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Events.Vector3Event.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Events.VoidEvent.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Events.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Input.ActionHandlers.BoolInputActionHandler.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Input.ActionHandlers.FloatInputActionHandler.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Input.ActionHandlers.InputActionHandler-1.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Input.ActionHandlers.Vector2InputActionHandler.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Input.ActionHandlers.Vector3InputActionHandler.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Input.ActionHandlers.VoidInputActionHandler.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Input.ActionHandlers.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Input.ControlSchemeHandler.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Input.InputActionIconProvider.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Input.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Listeners.BoolEventListener.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Listeners.EventListener-1.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Listeners.FloatEventListener.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Listeners.GameObjectEventListener.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Listeners.IEventListener-1.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Listeners.IntEventListener.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Listeners.StringEventListener.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Listeners.Vector2EventListener.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Listeners.Vector3EventListener.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Listeners.VoidEventListener.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Listeners.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Observers.BoolVariableObserver.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Observers.FloatVariableObserver.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Observers.IntVariableObserver.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Observers.StringVariableObserver.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Observers.VariableObserver-1.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Observers.Vector2VariableObserver.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Observers.Vector3VariableObserver.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Observers.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Repositories.BinaryFileRepository-1.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Repositories.FileRepository-1.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Repositories.IRepository-1.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Repositories.InputIconRepository.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Repositories.JsonFileRepository-1.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Repositories.VariableRepository.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Repositories.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.UI.OptionSelector.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.UI.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Variables.BoolVariable.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Variables.FloatVariable.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Variables.GameObjectVariable.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Variables.IVariable-1.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Variables.IVariable.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Variables.IntVariable.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Variables.LayerMaskVariable.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Variables.StringVariable.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Variables.ValueReference-1.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Variables.Variable-1.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Variables.Vector2Variable.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Variables.Vector3Variable.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/SODD.Variables.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/api/index.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/changelog/CHANGELOG.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/index.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/license/LICENSE.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/manual/ActionHandlers.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/manual/Collections.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/manual/Events.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/manual/GameArchitecture.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/manual/Installation.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/manual/Listeners.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/manual/Observers.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/manual/Problems.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/manual/Theory.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/manual/Variables.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aruizrab.github.io/sodd-unity-framework/manual/index.html</loc>
-    <lastmod>2024-06-03T07:29:38+00:00</lastmod>
+    <lastmod>2024-06-03T08:17:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
