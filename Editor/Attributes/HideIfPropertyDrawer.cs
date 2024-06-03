@@ -25,7 +25,7 @@ namespace SODD.Editor.Attributes
         {
             try
             {
-                var hideIfAttribute = (HideIfAttribute) attribute;
+                var hideIfAttribute = (HideIfAttribute)attribute;
                 var value = EditorHelper.GetValue(property, hideIfAttribute.Name);
                 return hideIfAttribute.Comparison.Evaluate(hideIfAttribute.Value, value);
             }

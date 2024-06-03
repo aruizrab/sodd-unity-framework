@@ -25,7 +25,7 @@ namespace SODD.Editor.Attributes
         {
             try
             {
-                var hideIfMatchAttribute = (HideIfMatchAttribute) attribute;
+                var hideIfMatchAttribute = (HideIfMatchAttribute)attribute;
                 var value = EditorHelper.GetValue(property, hideIfMatchAttribute.Name);
                 return hideIfMatchAttribute.Values.Aggregate(false, (current, val) => current || Equals(value, val));
             }

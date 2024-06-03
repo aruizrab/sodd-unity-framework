@@ -10,10 +10,10 @@ namespace SODD.Editor.Data
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             EditorGUI.BeginProperty(position, label, property);
-            
+
             var entriesProperty = property.FindPropertyRelative("entries");
-            var entriesPosition = new Rect(position.x-3, position.y, position.width, position.height);
-            
+            var entriesPosition = new Rect(position.x - 3, position.y, position.width, position.height);
+
             EditorGUI.PropertyField(entriesPosition, entriesProperty, label, true);
             EditorGUI.EndProperty();
         }

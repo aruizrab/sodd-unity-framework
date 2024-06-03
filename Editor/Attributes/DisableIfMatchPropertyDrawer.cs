@@ -22,7 +22,7 @@ namespace SODD.Editor.Attributes
         {
             try
             {
-                var disableIfMatchAttribute = (DisableIfMatchAttribute) attribute;
+                var disableIfMatchAttribute = (DisableIfMatchAttribute)attribute;
                 var value = EditorHelper.GetValue(property, disableIfMatchAttribute.Name);
                 return disableIfMatchAttribute.Values.Aggregate(false, (current, val) => current || Equals(value, val));
             }

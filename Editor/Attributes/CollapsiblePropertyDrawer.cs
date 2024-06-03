@@ -16,7 +16,6 @@ namespace SODD.Editor.Attributes
                 ? label.text
                 : collapsibleAttribute.Label;
 
-            // Create a foldout to toggle visibility
             _foldout = EditorGUI.Foldout(
                 new Rect(position.x, position.y, position.width, EditorGUIUtility.singleLineHeight), _foldout,
                 foldoutLabel, true);

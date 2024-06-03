@@ -19,44 +19,32 @@ namespace SODD.Input
 
         private void OnEnable()
         {
-            currentControlScheme.AddListener(OnControlSchemeChanged);
+            if (currentControlScheme) OnControlSchemeChanged(currentControlScheme.Value);
+            currentControlScheme?.AddListener(OnControlSchemeChanged);
         }
 
         private void OnDisable()
         {
-            currentControlScheme.RemoveListener(OnControlSchemeChanged);
+            currentControlScheme?.RemoveListener(OnControlSchemeChanged);
         }
 
         private void OnControlSchemeChanged(string controlSchemeName)
         {
-            UpdateIcon();
-        }
+            if (!inputActionReference || !inputIconRepository || !targetIcon || !currentControlScheme) return;
 
-        public void UpdateIcon()
-        {
-            try
-            {
-                if (!inputActionReference || !inputIconRepository || !targetIcon || !currentControlScheme) return;
+            var inputAction = inputActionReference.action;
+            var controlScheme =
+                inputActionReference.asset.controlSchemes.FirstOrDefault(scheme =>
+                    scheme.name == controlSchemeName);
 
-                var inputAction = inputActionReference.action;
-                var controlScheme =
-                    inputActionReference.asset.controlSchemes.FirstOrDefault(scheme =>
-                        scheme.name == currentControlScheme.Value);
+            if (controlScheme == default) return;
 
-                if (controlScheme == default) return;
+            var bindingIndex = inputAction.GetBindingIndex(controlScheme.bindingGroup);
+            var binding = inputAction.bindings[bindingIndex];
+            var path = binding.hasOverrides ? binding.overridePath : binding.path;
+            var sprite = inputIconRepository.GetIcon(path);
 
-                var bindingIndex = inputAction.GetBindingIndex(controlScheme.bindingGroup);
-                var binding = inputAction.bindings[bindingIndex];
-                var path = binding.hasOverrides ? binding.overridePath : binding.path;
-                var sprite = inputIconRepository.GetIcon(path);
-
-                targetIcon.material.SetTexture(ShaderUtilities.ID_MainTex, sprite.texture);
-            }
-            catch (Exception e)
-            {
-                // ignored
-                Debug.LogError(e);
-            }
+            targetIcon.material.SetTexture(ShaderUtilities.ID_MainTex, sprite.texture);
         }
     }
 }

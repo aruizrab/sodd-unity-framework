@@ -28,11 +28,13 @@ namespace SODD.Editor.Variables
             var fieldValue = property.FindPropertyRelative("field");
 
             var buttonRect = new Rect(position);
+
             buttonRect.yMin += _popupStyle.margin.top;
             buttonRect.width = _popupStyle.fixedWidth + _popupStyle.margin.right;
             position.xMin = buttonRect.xMax;
 
             var indentLevel = EditorGUI.indentLevel;
+
             EditorGUI.indentLevel = 0;
 
             var result = EditorGUI.Popup(buttonRect, useField.boolValue ? 0 : 1, _popupOptions, _popupStyle);

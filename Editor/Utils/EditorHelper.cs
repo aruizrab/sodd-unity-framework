@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Linq;
 using System.Reflection;
 using UnityEditor;
 using UnityEngine;
@@ -54,6 +53,7 @@ namespace SODD.Editor.Utils
         {
             var obj = new GameObject(ObjectNames.NicifyVariableName(typeof(T).Name));
             var component = obj.AddComponent<T>();
+
             GameObjectUtility.SetParentAndAlign(obj, parent);
 
             if (setIconToGameObject)
