@@ -1,4 +1,5 @@
 ﻿{
   "enableTocForManual": true,
-  "enableNewTab": true
+  "enableNewTab": true,
+  "pdf": true
 }
