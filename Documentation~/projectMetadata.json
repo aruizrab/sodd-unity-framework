@@ -4,6 +4,6 @@
   "pdf": true,
   "pdfTocPage": true,
   "pdfPrintBackground": true,
-  "pdfCoverPage": "pdfCover.html",
-  "pdfHeaderTemplate": "header.html"
+  "pdfCoverPage": "./pdfCover.html",
+  "pdfHeaderTemplate": "./header.html"
 }
