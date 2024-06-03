@@ -3,6 +3,14 @@ using UnityEngine.Events;
 
 namespace SODD.Core
 {
+    /// <summary>
+    ///     Invokes Unity events corresponding to the lifecycle events of a Unity MonoBehaviour.
+    /// </summary>
+    /// <remarks>
+    ///     The <see cref="LifecycleEvents" /> class is used to hook into the lifecycle events of a Unity MonoBehaviour.
+    ///     It provides Unity events for Awake, Start, OnEnable, OnDisable, and OnDestroy, allowing for flexible event-driven
+    ///     programming within the Unity Editor.
+    /// </remarks>
     [AddComponentMenu(Framework.LifecycleEvents, Framework.MenuOrders.LifecycleEvents)]
     public class LifecycleEvents : MonoBehaviour
     {
