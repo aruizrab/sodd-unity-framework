@@ -5,5 +5,8 @@
      * [Solution: Game Architecture with ScriptableObjects](GameArchitecture.md)
 * [Using the SODD Framework]()
      * [Scriptable Events](Events.md)
+     * [Scriptable Event Listeners](Listeners.md)
      * [Scriptable Variables](Variables.md)
+     * [Scriptable VariableObservers](Observers.md)
      * [Scriptable Collections](Collections.md)
+     * [Input Action Handlers](ActionHandlers.md)
