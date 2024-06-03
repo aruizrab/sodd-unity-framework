@@ -22,7 +22,7 @@ namespace SODD.Editor.Attributes
         {
             try
             {
-                var disableIfAttribute = (DisableIfAttribute) attribute;
+                var disableIfAttribute = (DisableIfAttribute)attribute;
                 var value = EditorHelper.GetValue(property, disableIfAttribute.Name);
                 return disableIfAttribute.Comparison.Evaluate(disableIfAttribute.Value, value);
             }

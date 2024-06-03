@@ -8,37 +8,37 @@ namespace SODD.Editor.AI
     [CustomEditor(typeof(StateMachine))]
     public class StateMachineEditor : UnityEditor.Editor
     {
-        private SerializedProperty statesProperty;
+        private SerializedProperty _statesProperty;
+        private StateMachine _stateMachine;
 
         private void OnEnable()
         {
-            statesProperty = serializedObject.FindProperty("states");
+            _statesProperty = serializedObject.FindProperty("states");
+            _stateMachine = (StateMachine) target;
         }
 
         public override void OnInspectorGUI()
         {
             DrawDefaultInspector();
 
-            var stateMachine = (StateMachine)target;
-
-            if (GUILayout.Button("Add all children states")) AddChildStates(stateMachine);
+            if (GUILayout.Button("Add all children states")) AddChildStates();
         }
 
-        private void AddChildStates(StateMachine stateMachine)
+        private void AddChildStates()
         {
-            var childStates = stateMachine.GetComponentsInChildren<State>().ToList();
+            var childStates = _stateMachine.GetComponentsInChildren<State>().ToList();
 
             serializedObject.Update();
-            statesProperty.ClearArray();
+            _statesProperty.ClearArray();
             
             for (var i = 0; i < childStates.Count; i++)
             {
-                statesProperty.InsertArrayElementAtIndex(i);
-                statesProperty.GetArrayElementAtIndex(i).objectReferenceValue = childStates[i];
+                _statesProperty.InsertArrayElementAtIndex(i);
+                _statesProperty.GetArrayElementAtIndex(i).objectReferenceValue = childStates[i];
             }
 
             serializedObject.ApplyModifiedProperties();
-            EditorUtility.SetDirty(stateMachine);
+            EditorUtility.SetDirty(_stateMachine);
         }
     }
 }

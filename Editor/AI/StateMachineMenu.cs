@@ -1,6 +1,5 @@
 ﻿using SODD.AI;
 using SODD.Core;
-using SODD.Editor.Utils;
 using UnityEditor;
 using UnityEngine;
 
@@ -14,9 +13,12 @@ namespace SODD.Editor.AI
         {
             var obj = new GameObject(ObjectNames.NicifyVariableName(nameof(StateMachine)));
             var component = obj.AddComponent<StateMachine>();
+            
             obj.AddComponent<LifecycleEvents>();
             GameObjectUtility.SetParentAndAlign(obj, command.context as GameObject);
+            
             var icon = EditorGUIUtility.GetIconForObject(component);
+            
             EditorGUIUtility.SetIconForObject(obj, icon);
             Undo.RegisterCreatedObjectUndo(obj, "Create " + obj.name);
             Selection.activeObject = obj;

@@ -3,10 +3,6 @@ using UnityEngine;
 
 namespace SODD.Editor.Events
 {
-    /// <summary>
-    ///     Base class for custom event editors.
-    /// </summary>
-    /// <typeparam name="T">The type of payload for the event.</typeparam>
     public abstract class EventEditor<T> : UnityEditor.Editor
     {
         private Event<T> _event;
