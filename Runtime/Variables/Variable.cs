@@ -124,7 +124,7 @@ namespace SODD.Variables
         }
         
 #if UNITY_EDITOR
-        private void OnValidate()
+        protected virtual void OnValidate()
         {
             if (!string.IsNullOrEmpty(id)) return;
             id = GUID.Generate().ToString();
