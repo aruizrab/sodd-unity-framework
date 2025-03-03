@@ -94,7 +94,7 @@ namespace SODD.Variables
         }
         
         /// <summary>
-        /// Invokes the OnValueChanged event and can log the change if debugging is enabled.
+        ///     Invokes the OnValueChanged event and can log the change if debugging is enabled.
         /// </summary>
         protected virtual void HandleValueChange()
         {
@@ -129,6 +129,11 @@ namespace SODD.Variables
             if (!string.IsNullOrEmpty(id)) return;
             id = GUID.Generate().ToString();
             EditorUtility.SetDirty(this);
+        }
+
+        protected virtual void Reset()
+        {
+            Value = default;
         }
 #endif
     }
