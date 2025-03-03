@@ -1,3 +1,13 @@
+# [3.7.0](https://github.com/aruizrab/sodd-unity-framework/compare/v3.6.0...v3.7.0) (2025-03-03)
+
+
+### Features
+
+* **variables:** add DateTimeVariable ([7ba7776](https://github.com/aruizrab/sodd-unity-framework/commit/7ba77763bd7ad71b6d92239460caf6df15f53aa2))
+* **variables:** add Variable.Reset() method ([cba477b](https://github.com/aruizrab/sodd-unity-framework/commit/cba477bb1a52c2a786bd7017ea338ae2be3be416))
+* **variables:** Variable.HandleValueChange is now virtual ([24234f6](https://github.com/aruizrab/sodd-unity-framework/commit/24234f6d15144740296f6fdadd6d81658c77d1f8))
+* **variables:** Variable.OnValidate is now protected virtual ([5db7157](https://github.com/aruizrab/sodd-unity-framework/commit/5db7157bf9aab116b3195ea6a9a2e0c01ac542cf))
+
 # [3.6.0](https://github.com/aruizrab/sodd-unity-framework/compare/v3.5.1...v3.6.0) (2024-06-03)
 
 
