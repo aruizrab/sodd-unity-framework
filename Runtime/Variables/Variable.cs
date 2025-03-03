@@ -96,7 +96,7 @@ namespace SODD.Variables
         /// <summary>
         /// Invokes the OnValueChanged event and can log the change if debugging is enabled.
         /// </summary>
-        protected void HandleValueChange()
+        protected virtual void HandleValueChange()
         {
             OnValueChanged?.Invoke(value);
 #if UNITY_EDITOR
