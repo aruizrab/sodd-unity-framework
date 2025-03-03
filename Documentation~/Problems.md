@@ -1,33 +1,5 @@
 ﻿# Problem: Common Scripting Challenges in Unity
 
-<details>
-  <summary>Table of Contents</summary>
-
-- [Singleton Problems](#singleton-problems)
-    - [Rigid Connections](#rigid-connections)
-    - [Loss of Polymorphism](#loss-of-polymorphism)
-    - [Testing Difficulties](#testing-difficulties)
-    - [Dependency Nightmares](#dependency-nightmares)
-    - [Global State](#global-state)
-    - [Single Instance Limitation](#single-instance-limitation)
-- [Challenges with Traditional Event Systems](#challenges-with-traditional-event-systems)
-    - [Unity Event Limitations](#unity-event-limitations)
-    - [Hard References](#hard-references)
-- [Issues with Enums](#issues-with-enums)
-    - [Code-Driven](#code-driven)
-    - [Difficult to Reorder or Remove](#difficult-to-reorder-or-remove)
-    - [No Additional Data](#no-additional-data)
-- [Scene Management Problems](#scene-management-problems)
-    - [Transient Data Management](#transient-data-management)
-    - [Clean Slate Scenes](#clean-slate-scenes)
-    - [Debugging Issues](#debugging-issues)
-- [General Architectural Challenges](#general-architectural-challenges)
-    - [Maintaining Flexibility and Extensibility](#maintaining-flexibility-and-extensibility)
-    - [Performance Overheads](#performance-overheads)
-    - [Design and Code Separation](#design-and-code-separation)
-
-</details>
-
 ## Singleton Problems
 
 ### Rigid Connections

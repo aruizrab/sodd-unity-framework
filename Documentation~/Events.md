@@ -1,15 +1,5 @@
 ﻿# Scriptable Events
 
-<details>
-<summary>Table of Contents</summary>
-
-- [Concept](#concept)
-- [How It Works](#how-it-works)
-- [Implementations in the Framework](#implementations-in-the-framework)
-- [Practical Example](#practical-example)
-
-</details>
-
 ## Concept
 
 A Scriptable Event consists in a Scriptable
@@ -49,10 +39,6 @@ broadcasters, sending out signals when certain conditions in the game are met.
 - **Event Testing**: Scriptable Events can be invoked directly from the Unity Inspector. This allows developers to test
   events without writing additional code. The Inspector provides an `Invoke` button and a field to enter the payload
   value, enabling quick and easy testing.
-
-> [!NOTE]  
-> By separating the event definition from the objects that trigger and respond to it, Scriptable Events promote a more
-> modular and maintainable architecture.
 
 ## Implementations in the Framework
 

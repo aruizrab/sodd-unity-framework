@@ -94,9 +94,9 @@ namespace SODD.Variables
         }
         
         /// <summary>
-        /// Invokes the OnValueChanged event and can log the change if debugging is enabled.
+        ///     Invokes the OnValueChanged event and can log the change if debugging is enabled.
         /// </summary>
-        protected void HandleValueChange()
+        protected virtual void HandleValueChange()
         {
             OnValueChanged?.Invoke(value);
 #if UNITY_EDITOR
@@ -124,11 +124,16 @@ namespace SODD.Variables
         }
         
 #if UNITY_EDITOR
-        private void OnValidate()
+        protected virtual void OnValidate()
         {
             if (!string.IsNullOrEmpty(id)) return;
             id = GUID.Generate().ToString();
             EditorUtility.SetDirty(this);
+        }
+
+        protected virtual void Reset()
+        {
+            Value = default;
         }
 #endif
     }

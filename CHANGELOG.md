@@ -1,3 +1,97 @@
+# [3.6.0](https://github.com/aruizrab/sodd-unity-framework/compare/v3.5.1...v3.6.0) (2024-06-03)
+
+
+### Features
+
+* **documentation:** update documentation ([0815911](https://github.com/aruizrab/sodd-unity-framework/commit/0815911ab1215ee22583d22662a10b4b492e1005))
+
+## [3.5.1](https://github.com/aruizrab/sodd-unity-framework/compare/v3.5.0...v3.5.1) (2024-06-03)
+
+
+### Bug Fixes
+
+* null safety in InputActionIconProvider class ([237ed9d](https://github.com/aruizrab/sodd-unity-framework/commit/237ed9da9f20086321485d965f764e484f02ee5e))
+* reference field of VoidInputActionHandler is now displayed in Inspector ([b5bf4ef](https://github.com/aruizrab/sodd-unity-framework/commit/b5bf4eff87729327d114b3065c86251fc0397dad))
+
+# [3.5.0](https://github.com/aruizrab/sodd-unity-framework/compare/v3.4.0...v3.5.0) (2024-05-30)
+
+
+### Bug Fixes
+
+* **input:** icon provider ([6deef32](https://github.com/aruizrab/sodd-unity-framework/commit/6deef32e2796afc89bbdb55954f28355e8891d3d))
+
+
+### Features
+
+* add passive scriptable objects ([9e5b703](https://github.com/aruizrab/sodd-unity-framework/commit/9e5b7031d152400c64cfb71b5a23cc3b2601aa35))
+* **icons:** add CollisionDetector icon ([d2e82e0](https://github.com/aruizrab/sodd-unity-framework/commit/d2e82e0509d5328bf1829c2fe0184e6ed43575fa))
+* **icons:** add CollisionDetector2D icon ([3053644](https://github.com/aruizrab/sodd-unity-framework/commit/3053644e1adce69cee558b2480298ecd7b74d302))
+* **icons:** add InputActionIconProvider icon ([dd43290](https://github.com/aruizrab/sodd-unity-framework/commit/dd43290813ffaf7eeec2d2dc8933556bd1926190))
+* **icons:** add OptionSelector icon ([e32b1a4](https://github.com/aruizrab/sodd-unity-framework/commit/e32b1a4d0299d3a5941ea892492344acc2e868d2))
+* **repositories:** add persistent scriptable object functionality ([09db724](https://github.com/aruizrab/sodd-unity-framework/commit/09db724933a972fa8adbd9e16ee576007b757d82))
+
+# [3.4.0](https://github.com/aruizrab/sodd-unity-framework/compare/v3.3.0...v3.4.0) (2024-05-30)
+
+
+### Features
+
+* **ai:** add state machine method ([6087bfd](https://github.com/aruizrab/sodd-unity-framework/commit/6087bfdacdcde9b7277bcbe60b964a1768f09446))
+* **observers:** added multiplier to float observer ([2efcdfb](https://github.com/aruizrab/sodd-unity-framework/commit/2efcdfb1f81b2363d4e05a0ec2fe81a0d2965f68))
+
+# [3.3.0](https://github.com/aruizrab/sodd-unity-framework/compare/v3.2.0...v3.3.0) (2024-05-26)
+
+
+### Features
+
+* add reload resources button in SODD Menu ([34cf76c](https://github.com/aruizrab/sodd-unity-framework/commit/34cf76c0a146d035401cea8ed63e75774c99bc02))
+* **input:** add input action icon provider ([7791379](https://github.com/aruizrab/sodd-unity-framework/commit/7791379157abcb3e088d6ed6abc6987b231515bb))
+* **input:** add input control scheme handler ([8bc55b3](https://github.com/aruizrab/sodd-unity-framework/commit/8bc55b366722a44e9bb8f9a3355ec45950a276d0))
+* **input:** add input icon repository ([5f67f4a](https://github.com/aruizrab/sodd-unity-framework/commit/5f67f4a0f47a2b685e2e91072b30394b2bd0f843))
+
+# [3.2.0](https://github.com/aruizrab/sodd-unity-framework/compare/v3.1.0...v3.2.0) (2024-05-25)
+
+
+### Bug Fixes
+
+* **handlers:** bool action handler now registers value to variable ([bad2ea7](https://github.com/aruizrab/sodd-unity-framework/commit/bad2ea7641efa3097cd719e72b0657d7335f48d4))
+
+
+### Features
+
+* **extensions:** add `isEmpty()` extension method to IEnumerable ([1941f47](https://github.com/aruizrab/sodd-unity-framework/commit/1941f471cd7c545795dc4e759ba4d071dc1a86e6))
+* **repositories:** add variable repository debugging ([5d42ecd](https://github.com/aruizrab/sodd-unity-framework/commit/5d42ecdf0ee4d9a487a2d16994a6c112d16be0cc))
+
+# [3.1.0](https://github.com/aruizrab/sodd-unity-framework/compare/v3.0.0...v3.1.0) (2024-05-25)
+
+
+### Bug Fixes
+
+* **data:** serializable dictionary entry height adapts to content ([b90b5b3](https://github.com/aruizrab/sodd-unity-framework/commit/b90b5b3e0785ba9052f13ec1e685af894040baf4))
+
+
+### Features
+
+* **handlers:** action handlers now reference variables too ([67c38c7](https://github.com/aruizrab/sodd-unity-framework/commit/67c38c740f9b30af497edcfcac4e79ffdbe51adf))
+
+# [3.0.0](https://github.com/aruizrab/sodd-unity-framework/compare/v2.0.1...v3.0.0) (2024-05-23)
+
+
+### Features
+
+* **ai:** add 2D collision detector ([5d7b2f1](https://github.com/aruizrab/sodd-unity-framework/commit/5d7b2f1a2b7ed6ac62af00d96c8d1c402f3a93a9))
+* **ai:** add 3D collision detector ([788899a](https://github.com/aruizrab/sodd-unity-framework/commit/788899a371ea052dea887724dbfae4468b51547e))
+* **ai:** add state machine ([b926c21](https://github.com/aruizrab/sodd-unity-framework/commit/b926c21de5b9040a8c70026364ed5bf9c9fe8a34))
+* **data:** add serializable dictionary data type ([4d5acec](https://github.com/aruizrab/sodd-unity-framework/commit/4d5acecdc13b8bb21eee156fee92e5492647ef98))
+* **data:** add serializable range data type ([cc635fc](https://github.com/aruizrab/sodd-unity-framework/commit/cc635fcd8bbc65f4e1a60faa7c62f7a93903064d))
+* **ui:** add option selector ui component ([3048af5](https://github.com/aruizrab/sodd-unity-framework/commit/3048af5117884a5ec0779621758823e579e7bd36))
+
+
+### BREAKING CHANGES
+
+* **ui:** `Unity.TextMeshPro` is now a package dependency
+
+Signed-off-by: Alex Ruiz <a.ruiz.rabasseda@gmail.com>
+
 ## [2.0.1](https://github.com/aruizrab/sodd-unity-framework/compare/v2.0.0...v2.0.1) (2024-05-19)
 
 

@@ -1,15 +1,5 @@
 ﻿# Scriptable Variables
 
-<details>
-<summary>Table of Contents</summary>
-
-- [Concept](#concept)
-- [How It Works](#how-it-works)
-- [Implementations in the Framework](#implementations-in-the-framework)
-- [Practical Example](#practical-example)
-
-</details>
-
 ## Concept
 
 A Scriptable Variable consists in a Scriptable Object that encapsulates a single value of a specific data type, such as

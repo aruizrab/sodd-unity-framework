@@ -6,26 +6,6 @@ architecture. This approach addresses key issues such as rigid dependencies, inf
 challenges. Central to this methodology are three core principles of game engineering: modularity, editability, and
 debuggability.
 
-<details>
-<summary>Table of Contents</summary>
-
-- [The Three Principles of Game Engineering](#the-three-principles-of-game-engineering)
-    - [Modularity](#modularity)
-    - [Editability](#editability)
-    - [Debuggability](#debuggability)
-- [Replacing Singletons](#replacing-singletons)
-    - [Modularizing Data with ScriptableObjects](#modularizing-data-with-scriptableobjects)
-    - [Runtime Sets](#runtime-sets)
-    - [Dependency Injection Principles](#dependency-injection-principles)
-- [Enhancing Event Systems](#enhancing-event-systems)
-- [Replacing Enums](#replacing-enums)
-- [Improving Scene Management](#improving-scene-management)
-- [Debugging Enhancements](#debugging-enhancements)
-- [Data-Driven Design](#data-driven-design)
-- [Single Responsibility Principle](#single-responsibility-principle)
-
-</details>
-
 ## The Three Principles of Game Engineering
 
 ### Modularity

@@ -22,7 +22,6 @@ namespace SODD
 
             // Data structures
             public const string List = "List";
-
             public const string Dictionary = "Dictionary";
 
             // Unity data types
@@ -38,6 +37,9 @@ namespace SODD
             public const string ScriptableObject = "ScriptableObject";
             public const string Component = "Component";
             public const string Object = "Object";
+            
+            // Other types
+            public const string DateTime = "DateTime";
         }
 
         public static class MenuOrders
@@ -62,6 +64,7 @@ namespace SODD
             public const int StateMachine = 200;
             public const int State = 201;
             public const int LifecycleEvents = 220;
+            public const int DateTime = 300;
         }
 
         public static class Events
@@ -149,6 +152,7 @@ namespace SODD
             public const string ScriptableObject = Path + DataTypes.ScriptableObject;
             public const string Component = Path + DataTypes.Component;
             public const string Object = Path + DataTypes.Object;
+            public const string DateTime = Path + DataTypes.DateTime;
         }
         
         public static class VariableObservers
