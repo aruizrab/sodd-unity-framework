@@ -1,3 +1,11 @@
+# [3.8.0](https://github.com/aruizrab/sodd-unity-framework/compare/v3.7.0...v3.8.0) (2025-03-04)
+
+
+### Features
+
+* **observers:** add datetime variable observer ([15d7528](https://github.com/aruizrab/sodd-unity-framework/commit/15d7528eb9f6204e1bffd5f9f5d2dd03e5fbb486))
+* **observers:** add gameobject variable observer ([50af326](https://github.com/aruizrab/sodd-unity-framework/commit/50af326d00d75681e3f7fd2cd1f508fb3e238582))
+
 # [3.7.0](https://github.com/aruizrab/sodd-unity-framework/compare/v3.6.0...v3.7.0) (2025-03-03)
 
 
