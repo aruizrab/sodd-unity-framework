@@ -38,17 +38,17 @@ namespace SODD.Observers
     /// <seealso cref="Variable{T}" />
     public abstract class VariableObserver<T> : MonoBehaviour
     {
-        [SerializeField] private Variable<T> targetVariable;
-        [SerializeField] private bool initialValueCheck = true;
-        [SerializeField] private UnityEvent<T> onValueChanged;
+        [SerializeField] protected Variable<T> targetVariable;
+        [SerializeField] protected bool initialValueCheck = true;
+        [SerializeField] protected UnityEvent<T> onValueChanged;
 
-        private void OnEnable()
+        protected virtual void OnEnable()
         {
             if (initialValueCheck) OnVariableValueChanged(targetVariable.Value);
             targetVariable.AddListener(OnVariableValueChanged);
         }
 
-        private void OnDisable()
+        protected virtual void OnDisable()
         {
             targetVariable.RemoveListener(OnVariableValueChanged);
         }
