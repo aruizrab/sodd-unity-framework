@@ -177,6 +177,7 @@ namespace SODD
             public const string ScriptableObject = Path + DataTypes.ScriptableObject;
             public const string Component = Path + DataTypes.Component;
             public const string Object = Path + DataTypes.Object;
+            public const string DateTime = Path + DataTypes.DateTime;
 
             public const string VoidVariableObserver = Path + DataTypes.Void + Name;
             public const string BoolVariableObserver = Path + DataTypes.Bool + Name;
@@ -194,6 +195,7 @@ namespace SODD
             public const string GameObjectVariableObserver = Path + DataTypes.GameObject + Name;
             public const string ComponentVariableObserver = Path + DataTypes.Component + Name;
             public const string ObjectVariableObserver = Path + DataTypes.Object + Name;
+            public const string DateTimeVariableObserver = Path + DataTypes.DateTime + Name;
         }
         
         public static class Collections
